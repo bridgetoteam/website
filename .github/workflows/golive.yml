@@ -1,0 +1,43 @@
+name: go live to github pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Set up Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.6'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: install
+        run: npm install
+
+      - name: generate
+        run: |
+          npm run generate
+          cp ./copyToLive/CNAME ./dist/CNAME
+          cp ./copyToLive/.nojekyll ./dist/.nojekyll
+
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v2.5.0
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./dist
+        with:
+          emptyCommits: false
