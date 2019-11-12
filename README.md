@@ -1,3 +1,3 @@
 # bridgetosite
 
-> brrg.to public site
+> brdg.to public site

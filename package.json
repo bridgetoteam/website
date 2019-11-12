@@ -12,8 +12,11 @@
     "g": "npm run generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "node-sass": "^4.13.0",
     "nuxt": "^2.0.0",
-    "@nuxtjs/axios": "^5.3.6"
+    "nuxt-i18n": "^6.3.1",
+    "sass-loader": "^8.0.0"
   },
   "devDependencies": {}
 }
