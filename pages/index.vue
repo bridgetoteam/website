@@ -14,6 +14,7 @@ export default {
     return {
       title: 'Kyoto',
       meta: [
+        { property: 'og:title', content: 'Bridge To Kyoto' },
         {
           hid: `og:url`,
           property: 'og:url',
