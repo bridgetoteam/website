@@ -10,8 +10,17 @@ import Intro from '~/components/sections/Intro.vue'
 import About from '~/components/sections/About.vue'
 
 export default {
-  head: {
-    title: 'Bridge To Kyoto',
+  head() {
+    return {
+      title: 'Kyoto',
+      meta: [
+        {
+          hid: `og:url`,
+          property: 'og:url',
+          content: `https://www.brdg.to/`,
+        },
+      ],
+    }
   },
   components: {
     Intro,

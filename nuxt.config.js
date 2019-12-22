@@ -2,15 +2,28 @@ export default {
   mode: 'spa',
 
   head: {
-    title: `Bridge To`,
+    titleTemplate(titleChunk) {
+      return `Bridge To` + (titleChunk ? ' ' + titleChunk : '')
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        // todo
         hid: 'description',
         name: 'description',
-        content: ``,
+        content: `A creative residency for urbanists.`,
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: `A creative residency for urbanists.`,
+      },
+      { hid: `og:type`, property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'Bridge To Kyoto' },
+      {
+        hid: `og:image`,
+        property: 'og:image',
+        content: `https://www.brdg.to/assets/img/sitethumbnail.png`,
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
