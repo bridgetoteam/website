@@ -1,23 +1,56 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">Bridge To</h1>
-      <h2 class="subtitle">Kyoto</h2>
-    </div>
-  </div>
+  <main>
+    <Intro />
+    <About />
+  </main>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Intro from '~/components/sections/Intro.vue'
+import About from '~/components/sections/About.vue'
 
 export default {
+  head: {
+    title: 'Bridge To Kyoto',
+  },
   components: {
-    Logo,
+    Intro,
+    About,
   },
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
+main {
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--accent);
+}
 
+.intro {
+  width: 580px;
+  position: absolute;
+  top: 350px;
+  left: 5vw;
+}
+
+.headline {
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.subhead {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.bgillustration {
+  width: 85vw;
+  margin-left: 13vw;
+  margin-top: 15vh;
+}
 </style>

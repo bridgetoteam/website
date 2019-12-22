@@ -2,14 +2,15 @@ export default {
   mode: 'spa',
 
   head: {
-    title: `==Bridge==To==`,
+    title: `Bridge To`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
+        // todo
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: ``,
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -17,7 +18,9 @@ export default {
 
   loading: { color: '#fff' },
 
-  plugins: [],
+  css: ['~/assets/css/global'],
+
+  plugins: ['~/plugins/lazyLoad'],
 
   buildModules: [],
 
@@ -26,7 +29,18 @@ export default {
   axios: {},
 
   i18n: {
-    locales: ['en', 'ja'],
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+      },
+      {
+        code: 'ja',
+        iso: 'ja-JP',
+        name: '日本語',
+      },
+    ],
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',

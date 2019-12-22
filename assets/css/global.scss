@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/pn-regular.woff2') format('woff2'),
+    url('/fonts/pn-regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/pn-bold.woff2') format('woff2'),
+    url('/fonts/pn-bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/pn-black.woff2') format('woff2'),
+    url('/fonts/pn-black.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+html:root {
+  // colors
+  --text: #211b04;
+  --primary: #00d8ff;
+  --primaryd1: #00c9ec;
+  --primaryl1: #3ce2ff;
+  --accent: #ffdb49;
+  --bg: #fff;
+  --border: #211b04;
+
+  // spacing
+  --p0: 5px;
+  --p1: 10px;
+  --p2: 20px;
+  --p3: 40px;
+  --p4: 80px;
+  --p5: 160px;
+}
+
+html {
+  font-family: 'Proxima Nova', 'Yu Gothic', 'YuGothic', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--text);
+  letter-spacing: 0.01em;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: var(--bg);
+  scroll-behavior: smooth;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a,
+a:active,
+a:visited {
+  color: var(--primary);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 15px;
+  margin-top: 0;
+  padding: 0;
+  letter-spacing: 0;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 30px 0;
+  padding: 0;
+  letter-spacing: 0;
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+}
+
+.contentcolumn {
+  width: 100%;
+  max-width: 1100px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
