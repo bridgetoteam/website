@@ -8,7 +8,7 @@
         <div class="flex text1">
           <div class="textbox left">
             <template v-if="$i18n.locale === 'ja'">
-              <h1>アバウト</h1>
+              <h1>About</h1>
               <p>
                 建築・街づくりの実践者が、国境をこえて成功事例や課題を共有しあえる場所は、まだあまりありません。
                 <b>Bridge to Kyoto</b>は、世界中からアーバニストを受け入れ、国内の建築・街づくりの実践者と交流し、コラボレーションが生まれるきっかけをつくる場所です。
@@ -24,7 +24,7 @@
                 to connect to it.
                 <b>Bridge to Kyoto</b> is a vibrant and
                 inviting space for visiting urbanists to stay, exchange ideas,
-                and explore Kyoto. It is a home base for anyone interested in
+                and explore Kyoto. It's a home base for anyone interested in
                 urbanism, architecture and sustainable living.
               </p>
             </template>
@@ -49,9 +49,9 @@
                 of the world to our city, but that doesn’t mean that we can't
                 learn from each other. We believe that more urbanists coming
                 from different backgrounds &amp; sharing their work helps change
-                the discourse and practices of urbanism across the globe. By
+                the discourse and practice of urbanism across the globe. By
                 inviting urbanists from around the world, we’d like to encourage
-                international collaborations to locally within a global frame of
+                local-scale international collaboration within a global frame of
                 mind.
               </p>
             </template>
@@ -76,11 +76,11 @@
               <h2>Live and Work, Kyoto Style.</h2>
               <p>
                 Bridge to Kyoto is a residence for urbanists as well as an
-                event/workshop/gallery space. Anyone who considers themselves as
-                a phenomenon of “a city’ can stay with us and/or use our space,
-                to meet other urbanists and exchange ideas both internationally
-                and interdisciplinarily to seek for future collaboration and
-                inspiration.
+                event, workshop, and gallery space. Anyone who considers themselves part of
+                the phenomenon of “the city" is welcome to stay with us and/or use our space.
+                Come meet other urbanists, exchange ideas both internationally
+                and interdisciplinarily, and find collaboration and
+                inspiration in Kyoto!
               </p>
             </template>
           </div>

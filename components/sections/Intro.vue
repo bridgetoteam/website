@@ -2,8 +2,11 @@
   <PageSection class="section">
     <div class="introtext">
       <template v-if="$i18n.locale === 'ja'">
-        <h1>（日本語）</h1>
-        <h2>（日本語）</h2>
+        <h1>
+          A creative residency
+          <br v-if="!isMobile" />for urbanists.
+        </h1>
+        <h2 class="ja">Bridge to Kyotoは、「都市」をテーマにした、建築・街づくり・不動産など都市に関わる実践者のための「アーバニスト・イン・レジデンス」です。</h2>
       </template>
       <template v-else>
         <h1>
@@ -61,6 +64,11 @@ export default {
     bottom: 15px;
   }
 }
+
+.ja {
+  line-height: 1.5;
+}
+
 .bgillustration {
   width: 85vw;
   margin-left: 13vw;

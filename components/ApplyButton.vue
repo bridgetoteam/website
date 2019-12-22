@@ -4,7 +4,7 @@
     target="_blank"
   >
     <div :class="{ collapse: isMobile }">
-      <span v-if="$i18n.locale === 'ja'">申し込む</span>
+      <span v-if="$i18n.locale === 'ja'">Apply Now</span>
       <span v-else>Apply Now</span>
     </div>
   </a>
@@ -46,7 +46,7 @@ div {
   }
 
   @media (max-width: 768px) {
-    width: 150px;
+    width: 15px;
     letter-spacing: 2.5px;
     font-size: 1rem;
 
@@ -59,5 +59,9 @@ div {
 div:hover {
   background: var(--primaryl1);
   letter-spacing: 5.5px;
+
+  @media (max-width: 768px) {
+    letter-spacing: 2.5px;
+  }
 }
 </style>
