@@ -314,11 +314,11 @@
         <div class="text">
           <div ref="intro" label="intro" class="textsection" :class="{active: isMobile || activeItem === 'intro'}">
           <template v-if="$i18n.locale === 'ja'">
-            <p>戦後に建てられた京都の古い一軒家。目の前には水路が走り、このエリアで唯一という個人用の橋がかかっています。2019年に改装・補強をし、クリエイティブレジデンスおよびコミュニティスペースとしてオープンしました。コンパクトなスペースですが、自分達自身の棲家としながら、レジデンスの他、イベント・ギャラリー・ワークショップなど多目的に使用しています。</p>
-            <p>家の一部は自分達で改修をし、DIY精神を大切にしています。また、出来る限り再生可能なエネルギーを使用したり、プラスチックや使い捨てのゴミを出さない、ゼロウェイストの生活を心がけています。日本の空き家や中古物件を、できるだけ環境に優しい形でDIYし、日本の不動産のもつ可能性と価値を発信したいと考えています。</p>
+            <p>戦後に建てられた京都の古い一軒家。目の前には川が走り、このエリアで唯一という個人用の橋がかかっています。2019年に改装・補強をし、アーバニストのクリエイティブレジデンスおよびコミュニティスペースとしてオープンしました。コンパクトなスペースですが、自分達自身の棲家としながら、レジデンスの他、イベント・ギャラリー・ワークショップなど多目的に使用しています。</p>
+            <p>家の一部は自分達で改修をし、DIY精神を大切にするようにしています。また、電力は100%自然エネルギーを使用し、プラスチックや使い捨てのゴミを出さない、ゼロウェイストの生活を心がけています。日本の空き家や中古物件を、できるだけ環境に優しい形でDIYし、日本の不動産のもつ可能性と価値を発信したいと考えています。</p>
           </template>
           <template v-else>
-            <p>Bridge To is based in an old, postwar, Kyoto-style home with a stream flowing in front and a bridge (yes, the name isn't only metaphorical!) crossing over it to enter. After a renovation in 2019, it has found new life as a creative residence and community space. Though small, it functions fully as a residence as well as an event, gallery, and workshop space.</p>
+            <p>Bridge To Kyoto is based in an old, postwar, Kyoto-style home with a stream flowing in front and a bridge (yes, the name isn't only metaphorical!) crossing over it to enter. After a renovation in 2019, it has found new life as a creative residence and community space. Though small, it functions fully as a residence as well as an event, gallery, and workshop space.</p>
             <p>Having remodeled a large portion of the space by hand, we welcome all those with a DIY spirit. On top of that, we use renewable energy, try to limit plastic and one-time-use products as much as possible, and do our best to keep our establishment zero-waste. We're working to continue to shift the conversation around how valuable Japan's old and vacant houses are, and how possible it is renovate them using materials that are good for the environment.</p>
           </template>
           </div>
@@ -326,21 +326,21 @@
           <div ref="residence" label="residence" class="textsection" :class="{active: isMobile || activeItem === 'residence'}">
           <h2>Residence</h2>
           <template v-if="$i18n.locale === 'ja'">
-            <p>Bridge Toには滞在用のゲストルームが2階に1部屋あります。1度に1名〜2名での滞在が可能です。ベッド、デスクなど基本的な家具は揃っています。</p>
+            <p>Bridge To Kyotoには滞在用のゲストルームが2階に1部屋あります。建築、街づくり、不動産などに関わるアーバニストを対象に、1度に1名〜2名 / 1ヶ月〜での滞在が可能です。ベッド、デスクなど基本的な家具は揃っており、滞在中はコミュニティスペースの自由な利用が可能です。</p>
           </template>
           <template v-else>
-            <p>We currently have one furnished room open for residency on the second floor of our building, which can fit 1–2 guests at a time.</p>
+            <p>We currently have one furnished room open for residency on the second floor of our building, which can fit 1–2 guests at a time for periods starting from one month. Use of the common spaces and the workshop &amp; gallery space are also included in your stay.</p>
           </template>
           </div>
 
           <div ref="workshop" label="workshop" class="textsection" :class="{active: isMobile || activeItem === 'workshop'}">
           <h2>Workshop &amp; Gallery Space</h2>
           <template v-if="$i18n.locale === 'ja'">
-            <p>1階のリビングダイニングは、コミュニティスペースとして使用できます。滞在中に自身の活動を発表するための展示会や、現地のアーバニストと交流するためのミートアップなどを開催できます。滞在者以外でも、「都市」をテーマにワークショップやイベントを定期的に開催予定です。イベント内容と日時はFACEBOOKかInstagramからご確認ください。</p>
+            <p>1階のリビングダイニングは、コミュニティスペースとして使用できます。滞在中に自身の活動を発表するための展示会や、現地のアーバニストと交流するためのミートアップなどを開催できます。滞在者以外でも、「都市」をテーマにワークショップやイベントを定期的に開催予定です。イベント内容と日時はFacebookかInstagramからご確認ください。(Coming soon)</p>
             <p>最大収容人数：10〜15名程度</p>
           </template>
           <template v-else>
-            <p>Our tatami-floored living &amp; dining space doubles as a community space for events of all kinds — such as exhibitions of your work while in residence, meetups to engage and collaborate with local urbanists, and more. There will also be regularly scheduled city-related workshops and events held in the community space, outside of what the residents themselves organize. Follow our Facebook or Instagram for more information about our events!</p>
+            <p>Our tatami-floored living &amp; dining space doubles as a community space for events of all kinds — such as exhibitions of your work while in residence, meetups to engage and collaborate with local urbanists, and more. There will also be regularly scheduled city-related workshops and events held in the community space, outside of what the residents themselves organize. Follow our Facebook or Instagram for more information about our events! (Coming soon)</p>
             <p>The space has a capacity of about 10–15 people.</p>
           </template>
           </div>
@@ -348,7 +348,7 @@
           <div ref="bridge" label="bridge" class="textsection" :class="{active: isMobile || activeItem === 'bridge'}">
           <h2>Bridge &amp; Garden</h2>
           <template v-if="$i18n.locale === 'ja'">
-            <p>家の前には水路が走り、このエリアで唯一という個人用の橋がかかっています。コンパクトではありますが庭もあり、アーバンガーデニングなど実験的な取り組みも行えます。</p>
+            <p>家の前にある個人用の橋の他、コンパクトなガーデンスペースもあり、アーバンガーデニングなど実験的な取り組みが行えます。</p>
           </template>
           <template v-else>
             <p>There's a stream running in front of our space, and we have the area's only private bridge. There's also a small garden, and anyone interested in urban gardening is welcome to participate in its upkeep and expansion.</p>
