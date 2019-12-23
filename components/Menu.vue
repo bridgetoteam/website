@@ -51,9 +51,10 @@ a {
 nav {
   position: fixed;
   z-index: 100;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
+  max-width: 100vw;
   display: flex;
   justify-content: space-between;
 
@@ -94,7 +95,7 @@ nav {
   white-space: nowrap;
 
   @media (max-width: 768px) {
-    margin-top: 15px;
+    margin-top: 12px;
     margin-right: 20px;
   }
 }

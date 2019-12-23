@@ -2,12 +2,16 @@
   <main>
     <Intro />
     <About />
+    <Space />
+    <Contact />
   </main>
 </template>
 
 <script>
 import Intro from '~/components/sections/Intro.vue'
 import About from '~/components/sections/About.vue'
+import Space from '~/components/sections/Space.vue'
+import Contact from '~/components/sections/Contact.vue'
 
 export default {
   head() {
@@ -26,13 +30,15 @@ export default {
   components: {
     Intro,
     About,
+    Space,
+    Contact,
   },
 }
 </script>
 
 <style lang="scss" scoped>
 main {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background: var(--accent);
 }

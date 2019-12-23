@@ -109,6 +109,8 @@ $bg: rgb(255, 255, 255);
 
 .section {
   background: $bg;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .grid {

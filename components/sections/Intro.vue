@@ -46,10 +46,12 @@ export default {
 <style lang="scss" scoped>
 .section {
   min-height: 115vh;
+  width: 100%;
+  overflow-x: hidden;
   position: relative;
 
   @media (max-width: 768px) {
-    min-height: 590px;
+    min-height: 650px;
   }
 }
 .introtext {
@@ -77,8 +79,8 @@ export default {
   @media (max-width: 768px) {
     width: 180vw;
     max-width: 10000%;
-    margin-left: -70vw;
-    margin-top: -2vh;
+    margin-left: -55vw;
+    margin-top: -4vh;
     // todo bigger line weight!!!
   }
 }

@@ -4,8 +4,8 @@
     target="_blank"
   >
     <div :class="{ collapse: isMobile }">
-      <span v-if="$i18n.locale === 'ja'">Apply Now</span>
-      <span v-else>Apply Now</span>
+      <span v-if="$i18n.locale === 'ja'">Apply</span>
+      <span v-else>Apply</span>
     </div>
   </a>
 </template>
