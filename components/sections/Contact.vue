@@ -5,10 +5,13 @@
       <template v-if="$i18n.locale === 'ja'">
         <p>
           ご質問やご相談は、お気軽に
-          <a href="mailto:bridgetoresidency@gmail.com">bridgetoresidency@gmail.com</a>まで。
+          <a
+            href="mailto:bridgetoresidency@gmail.com"
+            target="_blank"
+          >bridgetoresidency@gmail.com</a>まで。
         </p>
         <p>
-          We are here:
+          <span class="sub">We are here:</span>
           <br />28-3 Jōdoji BanbachōSakyō-ku, Kyoto, 606-8412
           <br />〒606-8412 京都市左京区浄土寺馬場町28-3
         </p>
@@ -18,10 +21,11 @@
           Still have questions? Don't hesitate to
           <a
             href="mailto:bridgetoresidency@gmail.com"
+            target="_blank"
           >send us a message!</a>
         </p>
         <p>
-          We are located at:
+          <span class="sub">We are located at:</span>
           <br />28-3 Jōdoji Banbachō Sakyō-ku, Kyoto, 606-8412
           <br />〒606-8412 京都市左京区浄土寺馬場町28-3
         </p>
@@ -55,6 +59,10 @@ export default {
   padding-bottom: 30vh;
 }
 
+h1 {
+  margin-bottom: 0.8em;
+}
+
 p {
   margin-bottom: 1.2em;
 }
@@ -62,6 +70,6 @@ p {
 pre {
 }
 iframe {
-  max-width: 100%;
+  width: 100%;
 }
 </style>

@@ -3,6 +3,7 @@
     <Intro />
     <About />
     <Space />
+    <Apply />
     <Contact />
   </main>
 </template>
@@ -11,6 +12,7 @@
 import Intro from '~/components/sections/Intro.vue'
 import About from '~/components/sections/About.vue'
 import Space from '~/components/sections/Space.vue'
+import Apply from '~/components/sections/Apply.vue'
 import Contact from '~/components/sections/Contact.vue'
 
 export default {
@@ -31,6 +33,7 @@ export default {
     Intro,
     About,
     Space,
+    Apply,
     Contact,
   },
 }

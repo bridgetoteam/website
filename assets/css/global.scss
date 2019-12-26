@@ -29,6 +29,8 @@ html:root {
   --text: #211b04;
   --primary: #00d8ff;
   --primaryd1: #00c9ec;
+  --primaryd2: #00bcdd;
+  --primaryd3: #02b0cf;
   --primaryl1: #3ce2ff;
   --accent: #ffdb49;
   --bg: #fff;
@@ -49,7 +51,7 @@ html {
   font-weight: 500;
   font-size: 16px;
   font-size: 1.05rem;
-  line-height: 1.65;
+  line-height: 1.6;
   color: var(--text);
   letter-spacing: 0.01em;
   -ms-text-size-adjust: 100%;
@@ -115,6 +117,19 @@ h2 {
   }
 }
 
+h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+  font-size: 1.05rem;
+  // font-weight: 600;
+}
+
+.sub {
+  font-size: 0.85em;
+  opacity: 0.85;
+  line-height: 1.2;
+}
+
 .contentcolumn {
   width: 100%;
   max-width: 1100px;
@@ -129,4 +144,13 @@ h2 {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }

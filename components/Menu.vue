@@ -9,7 +9,9 @@
       >
         <Logo class="logo" :collapse="isCollapsed && !logoHover" />
       </nuxt-link>
-      <ApplyButton />
+      <transition name="fade">
+        <ApplyButton targetElementId="apply" v-if="!hideApplyButton" />
+      </transition>
     </div>
     <LangPicker class="langpicker" />
   </nav>
@@ -26,6 +28,8 @@ export default {
   data() {
     return {
       logoHover: false,
+      observer: null,
+      hideApplyButton: false,
     }
   },
 
@@ -39,7 +43,27 @@ export default {
     },
   },
 
-  methods: {},
+  mounted() {
+    let toObserve = document.getElementById('apply')
+    this.observer = new IntersectionObserver(this.intersectEvent, {
+      threshold: 0.2,
+    })
+    this.observer.observe(toObserve)
+  },
+  beforeDestroy() {
+    this.observer.disconnect()
+    this.observer = null
+  },
+  methods: {
+    intersectEvent(entries, observer) {
+      entries.forEach(entry => {
+        if (!this.hideApplyButton && entry.intersectionRatio > 0.2)
+          this.hideApplyButton = true
+        else if (this.hideApplyButton && entry.intersectionRatio <= 0.2)
+          this.hideApplyButton = false
+      })
+    },
+  },
 }
 </script>
 
