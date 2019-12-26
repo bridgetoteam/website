@@ -16,7 +16,7 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: `A creative residency for urbanists.`,
+        content: `A creative residency for urbanists. Open for applications!`,
       },
       { hid: `og:type`, property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Bridge To Kyoto' },
