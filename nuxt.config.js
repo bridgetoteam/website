@@ -11,7 +11,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: `A creative residency for urbanists.`,
+        content: `A creative residency for urbanists. Open for applications!`,
       },
       {
         hid: 'og:description',
@@ -19,7 +19,7 @@ export default {
         content: `A creative residency for urbanists. Open for applications!`,
       },
       { hid: `og:type`, property: 'og:type', content: 'website' },
-      { property: 'og:site_name', content: 'Bridge To Kyoto' },
+      { property: 'og:site_name', content: 'Bridge To' },
       {
         hid: `og:image`,
         property: 'og:image',
@@ -57,14 +57,6 @@ export default {
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
-      messages: {
-        en: {
-          welcome: 'Welcome',
-        },
-        ja: {
-          welcome: 'ようこそ',
-        },
-      },
     },
     vuex: {
       syncLocale: true,
