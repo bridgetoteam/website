@@ -44,13 +44,15 @@
               Stay between 1–6 months
               Includes: private room + office use + minimum 1 day workshop / event / presentation
               <br />¥70,000 + ¥5,000 utility fee per month (the price may change depending on season)
-              <br />Please consult us if you want to stay less than 1 month or more than 6 months
+              <br />Please
+              <a href="mailto:bridgetoresidency@gmail.com" target="_blank">consult us</a> if you want to stay less than 1 month or more than 6 months
             </p>
 
             <h3>Event / Workshop</h3>
             <p>
               Price varies depending on the type &amp; length of the event.
-              <br />Please contact us for inquiry.
+              <br />Please
+              <a href="mailto:bridgetoresidency@gmail.com" target="_blank">contact us</a> for inquiry.
             </p>
           </template>
         </div>
@@ -82,9 +84,10 @@
         <h2>What if I want to stay less than a month?</h2>
         <p>
           <template v-if="$i18n.locale === 'ja'"></template>
-          <template
-            v-else
-          >Please understand that this house is not an airbnb or a guest house, so one month is our minimum period. That said, we also understand that not everyone can take a month off to live in Japan. Please contact us if you are interested in staying with us but have only a few weeks to spare — hopefully we can figure something out!</template>
+          <template v-else>
+            Please understand that this house is not an airbnb or a guest house, so one month is our minimum period. That said, we also understand that not everyone can take a month off to live in Japan. Please
+            <a href="mailto:bridgetoresidency@gmail.com" target="_blank">contact us</a> if you are interested in staying with us but have only a few weeks to spare — hopefully we can figure something out!
+          </template>
         </p>
       </div>
     </div>
