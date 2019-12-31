@@ -56,11 +56,11 @@
               <li>Promotion and exhibition of the fellows’ work both online and locally</li>
             </template>
           </ul>
-          <h3>
+
+          <!-- <h3>
             <template v-if="$i18n.locale === 'ja'">費用</template>
             <template v-else>Price</template>
           </h3>
-
           <div class="indent">
             <template v-if="$i18n.locale === 'ja'">
               <p>プライベートルーム + オフィススペース、滞在中最低1回のコミュニティスペースの利用</p>
@@ -79,7 +79,7 @@
                 class="sub"
               >Please consult us if you want to stay less than 1 month / more than 6 months</div>
             </template>
-          </div>
+          </div>-->
 
           <ApplyButton
             class="applybutton"
@@ -236,8 +236,11 @@ li {
 }
 
 h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+
   @media (max-width: 768px) {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 

@@ -9,6 +9,13 @@
       >
         <Logo class="logo" :collapse="isCollapsed && !logoHover" />
       </nuxt-link>
+      <!-- <div class="pagelinks">
+        <a href="#about">About</a>
+        <a href="#space">Our Space</a>
+        <a href="#apply">Apply</a>
+        <a href="#faq" v-if="$i18n.locale !== 'ja'">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>-->
       <transition name="fade">
         <ApplyButton targetElementId="apply" v-if="!hideApplyButton" />
       </transition>
@@ -121,6 +128,28 @@ nav {
   @media (max-width: 768px) {
     margin-top: 12px;
     margin-right: 20px;
+  }
+}
+
+.pagelinks {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  padding: 10px 20px;
+  // background: white;
+
+  & > * {
+    padding: 2px 25px;
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+
+    &:hover {
+      color: var(--primaryd4);
+    }
   }
 }
 </style>
