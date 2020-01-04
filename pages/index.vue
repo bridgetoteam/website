@@ -24,9 +24,19 @@ export default {
       meta: [
         { property: 'og:title', hid: `og:title`, content: 'Bridge To Kyoto' },
         {
+          property: 'twitter:title',
+          hid: `twitter:title`,
+          content: 'Bridge To Kyoto',
+        },
+        {
           hid: `og:url`,
           property: 'og:url',
           content: `https://www.brdg.to/`,
+        },
+        {
+          hid: `og:site_name`,
+          property: 'og:site_name',
+          content: 'Bridge To Kyoto',
         },
       ],
     }

@@ -8,6 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { property: 'og:title', hid: `og:title`, content: 'Bridge To Kyoto' },
       {
         hid: 'description',
         name: 'description',
@@ -19,7 +20,7 @@ export default {
         content: `A creative residency for urbanists. Open for applications!`,
       },
       { hid: `og:type`, property: 'og:type', content: 'website' },
-      { property: 'og:site_name', content: 'Bridge To' },
+      { hid: `og:site_name`, property: 'og:site_name', content: 'Bridge To' },
       {
         hid: `og:image`,
         property: 'og:image',
