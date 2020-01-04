@@ -32,7 +32,7 @@
         </div>
 
         <div class="illustration ill1">
-          <img src="/assets/img/about1.png" />
+          <img v-lazy="'/assets/img/about1.png'" />
         </div>
 
         <div class="flex text2">
@@ -59,7 +59,7 @@
         </div>
 
         <div class="illustration ill2">
-          <img src="/assets/img/about2.png" />
+          <img v-lazy="'/assets/img/about2.png'" />
         </div>
 
         <div class="flex text3">
@@ -87,7 +87,7 @@
         </div>
 
         <div class="illustration ill3">
-          <img src="/assets/img/about3.png" />
+          <img v-lazy="'/assets/img/about3.png'" />
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 <template>
   <PageSection class="section" id="faq" v-if="$i18n.locale !== 'ja'">
+    <div class="interstitial" v-lazy:background-image="'/assets/img/interstitial2.jpg'"></div>
     <div class="contentcolumn">
       <h1>FAQ</h1>
       <div class="columns">
@@ -86,7 +87,10 @@
           <template v-if="$i18n.locale === 'ja'"></template>
           <template v-else>
             Please understand that this house is not an airbnb or a guest house, so one month is our minimum period. That said, we also understand that not everyone can take a month off to live in Japan. Please
-            <a href="mailto:bridgetoresidency@gmail.com" target="_blank">contact us</a> if you are interested in staying with us but have only a few weeks to spare — hopefully we can figure something out!
+            <a
+              href="mailto:bridgetoresidency@gmail.com"
+              target="_blank"
+            >contact us</a> if you are interested in staying with us but have only a few weeks to spare — hopefully we can figure something out!
           </template>
         </p>
       </div>
@@ -113,9 +117,32 @@ export default {
   padding-bottom: 10vh;
   overflow: hidden;
   width: 100%;
+  position: relative;
 
   @media (max-width: 768px) {
     padding-bottom: 5vh;
+  }
+}
+
+.interstitial {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+  background-position: center center;
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: overlay;
+  opacity: 0.4;
+
+  @media (max-width: 768px) {
+    top: 30%;
+    left: 20%;
+    width: 80%;
+    height: 25%;
+    // opacity: 0.3;
   }
 }
 
@@ -150,6 +177,13 @@ h3 {
     margin-bottom: 0;
     margin-top: 20px;
   }
+}
+
+h2,
+h3,
+p {
+  text-shadow: 0 1px 3px rgb(141, 115, 160), 0 0px 3px rgb(141, 115, 160),
+    0 1px 5px rgb(141, 115, 160), 0 1px 5px rgb(141, 115, 160);
 }
 
 a {

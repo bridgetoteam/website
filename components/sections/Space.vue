@@ -1,5 +1,8 @@
 <template>
   <PageSection class="section" id="space">
+    <div v-lazy:background-image="'/assets/img/interstitial1.jpg'" class="interstitial">
+      <div class="overlay"></div>
+    </div>
     <div class="contentcolumn">
       <h1>Our Space</h1>
       <div class="leftright">
@@ -151,6 +154,34 @@ $bg: #a2ffc4;
   }
 }
 
+.interstitial {
+  height: 90vh;
+  background-size: cover;
+  background-position: center center;
+  // overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -100px;
+  width: 100%;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    height: 50vh;
+    margin-bottom: -50px;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: -10%;
+    top: 90%;
+    left: -50%;
+    right: -50%;
+    background: $bg;
+    // mix-blend-mode: multiply;
+    transform: rotate(-4deg);
+  }
+}
+
 .leftright {
   width: 100%;
   display: flex;
@@ -219,10 +250,10 @@ $bg: #a2ffc4;
 h1 {
   padding-top: 30px;
   margin-bottom: 1em;
+  position: relative;
+  z-index: 4;
 
   @media (max-width: 768px) {
-    position: relative;
-    z-index: 4;
     margin-bottom: -1.6em;
   }
 }
