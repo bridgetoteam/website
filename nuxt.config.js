@@ -9,16 +9,6 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { property: 'og:title', hid: `og:title`, content: 'Bridge To Kyoto' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: `A creative residency for urbanists. Open for applications!`,
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: `A creative residency for urbanists. Open for applications!`,
-      },
       { hid: `og:type`, property: 'og:type', content: 'website' },
       { hid: `og:site_name`, property: 'og:site_name', content: 'Bridge To' },
       {
