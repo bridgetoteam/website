@@ -6,6 +6,7 @@
         exact
         @mouseover.native="logoHover = true"
         @mouseleave.native="logoHover = false"
+        @click.native="scrollToTop"
       >
         <Logo class="logo" :collapse="isCollapsed && !logoHover" />
       </nuxt-link>
@@ -69,6 +70,9 @@ export default {
         else if (this.hideApplyButton && entry.intersectionRatio <= 0.2)
           this.hideApplyButton = false
       })
+    },
+    scrollToTop() {
+      document.getElementById('top').scrollIntoView(true)
     },
   },
 }

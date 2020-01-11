@@ -32,14 +32,21 @@
         </div>
 
         <div class="illustration ill1">
-          <img v-lazy="'/assets/img/about1.png'" />
+          <img v-lazy="'/assets/img/about1.jpg'" />
         </div>
 
         <div class="flex text2">
           <div class="textbox right">
             <template v-if="$i18n.locale === 'ja'">
               <h2>Global Discourse, Local Practice.</h2>
-              <p>地域の活性化を目的としたアーティスト・イン・レジデンスが注目を集める一方で、より地域の課題解決や長期的なコラボレーションを目的としたアーバニスト・イン・レジデンスの可能性が、近年注目を集め始めています。海外の街づくりの事例をそのままコピーアンドペーストすることは出来なくとも、お互いから学ぶことはできるはず。グローバルな目線で、ローカルに活動することで、国境を超えた建築・街づくりプロジェクトが生まれる可能性を追求したいと思っています。</p>
+              <p>
+                地域の活性化を目的としたアーティスト・イン・レジデンスが注目を集める一方で、より地域の課題解決や長期的なコラボレーションを目的としたアーバニスト・イン・レジデンスの可能性が、近年注目を集め始めています。海外の街づくりの事例をそのままコピーアンドペーストすることは出来なくとも、お互いから学ぶことはできるはず。
+                グローバルな目線で、ローカルに活動することで、国境を超えた建築・街づくりプロジェクトが生まれる可能性を追求したいと思っています。海外のアーバニズムをもっと詳しく知りたいなら是非
+                <a
+                  href="https://www.travelingcircusofurbanism.com/"
+                  target="_blank"
+                >ブログを参考してください</a>。
+              </p>
             </template>
 
             <template v-else>
@@ -52,14 +59,18 @@
                 the discourse and practice of urbanism across the globe. By
                 inviting urbanists from around the world, we’d like to encourage
                 local-scale international collaboration within a global frame of
-                mind.
+                mind. Check out
+                <a
+                  href="https://www.travelingcircusofurbanism.com/"
+                  target="_blank"
+                >our sister site</a> for more on global urbanism!
               </p>
             </template>
           </div>
         </div>
 
         <div class="illustration ill2">
-          <img v-lazy="'/assets/img/about2.png'" />
+          <img v-lazy="'/assets/img/about2.jpg'" />
         </div>
 
         <div class="flex text3">
@@ -87,7 +98,7 @@
         </div>
 
         <div class="illustration ill3">
-          <img v-lazy="'/assets/img/about3.png'" />
+          <img v-lazy="'/assets/img/about3.jpg'" />
         </div>
       </div>
     </div>
@@ -196,5 +207,9 @@ img {
     margin-right: 0 !important;
     max-width: 100% !important;
   }
+}
+
+a {
+  color: var(--primaryd2);
 }
 </style>

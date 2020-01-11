@@ -3,32 +3,34 @@
     <div class="contentcolumn">
       <h1>Contact Us</h1>
       <template v-if="$i18n.locale === 'ja'">
-        <p>
-          ご質問やご相談は、お気軽に
-          <a
-            href="mailto:bridgetoresidency@gmail.com"
-            target="_blank"
-          >bridgetoresidency@gmail.com</a>まで。
-        </p>
-        <p>
-          <span class="sub">We are here:</span>
-          <br />28-3 Jōdoji BanbachōSakyō-ku, Kyoto, 606-8412
-          <br />〒606-8412 京都市左京区浄土寺馬場町28-3
-        </p>
+        <div class="p">
+          <div>ご質問やご相談は、</div>
+          <a class="button" href="mailto:bridgetoresidency@gmail.com" target="_blank">
+            <div>メールをください。</div>
+          </a>
+        </div>
+        <div>
+          We are here:
+          <blockquote>
+            28-3 Jōdoji Banbachō, Sakyō-ku, Kyoto, 606-8412
+            <br />〒606-8412 京都市左京区浄土寺馬場町28-3
+          </blockquote>
+        </div>
       </template>
       <template v-else>
-        <p>
-          Still have questions? Don't hesitate to
-          <a
-            href="mailto:bridgetoresidency@gmail.com"
-            target="_blank"
-          >send us a message!</a>
-        </p>
-        <p>
-          <span class="sub">We are located at:</span>
-          <br />28-3 Jōdoji Banbachō Sakyō-ku, Kyoto, 606-8412
-          <br />〒606-8412 京都市左京区浄土寺馬場町28-3
-        </p>
+        <div class="p">
+          <div>Still have questions?</div>
+          <a class="button" href="mailto:bridgetoresidency@gmail.com" target="_blank">
+            <div>Email us!</div>
+          </a>
+        </div>
+        <div>
+          We are located at:
+          <blockquote>
+            28-3 Jōdoji Banbachō, Sakyō-ku, Kyoto, 606-8412
+            <br />〒606-8412 京都市左京区浄土寺馬場町28-3
+          </blockquote>
+        </div>
       </template>
       <iframe
         width="600"
@@ -63,12 +65,34 @@ h1 {
   margin-bottom: 0.8em;
 }
 
-p {
-  margin-bottom: 1.2em;
+.p {
+  display: block;
+  margin-bottom: 6em;
+
+  & > *:first-child {
+    margin-bottom: 5px;
+  }
 }
 
-pre {
+.button {
+  max-width: 500px;
 }
+
+.sub {
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.4;
+}
+
+blockquote {
+  max-width: 500px;
+  text-align: center;
+  margin: 5px 0 10px 0;
+  padding: 20px 30px;
+  background: rgba(black, 0.05);
+  border: 1px solid rgba(black, 0.1);
+}
+
 iframe {
   width: 100%;
 }

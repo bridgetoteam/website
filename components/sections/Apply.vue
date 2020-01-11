@@ -82,7 +82,7 @@
           </div>-->
 
           <ApplyButton
-            class="applybutton"
+            class="applybutton button"
             label="Apply for Residency"
             :reverse="true"
             target="https://docs.google.com/forms/d/e/1FAIpQLSfE7Pf0-G1MoVrvJR4YHYq1rXk8SGwUnXP8xW7Njhaq3Li7NA/viewform"
@@ -144,7 +144,7 @@
           </ul>
 
           <ApplyButton
-            class="applybutton"
+            class="applybutton button"
             label="Apply for Event or Workshop"
             :reverse="true"
             target="https://docs.google.com/forms/d/e/1FAIpQLSe0iPDaULQMc6BfS4puRMV0rfJcdrViyUOg-jjcSzefF_ivwA/viewform"
@@ -258,16 +258,5 @@ h3 {
 
 .applybutton {
   margin-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: stretch;
-  height: 90px;
-  line-height: 1.4;
-
-  @media (max-width: 768px) {
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 </style>

@@ -44,7 +44,7 @@
             <p>
               Stay between 1–6 months
               Includes: private room + office use + minimum 1 day workshop / event / presentation
-              <br />¥70,000 + ¥5,000 utility fee per month (the price may change depending on season)
+              <br />¥70,000 + ¥10,000 common space &amp; utility fee per month (the price may change depending on season)
               <br />Please
               <a href="mailto:bridgetoresidency@gmail.com" target="_blank">consult us</a> if you want to stay less than 1 month or more than 6 months
             </p>
@@ -100,12 +100,10 @@
 
 <script>
 import PageSection from '~/components/PageSection.vue'
-import ApplyButton from '~/components/ApplyButton.vue'
 
 export default {
   components: {
     PageSection,
-    ApplyButton,
   },
 }
 </script>

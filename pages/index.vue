@@ -5,6 +5,7 @@
     <Space />
     <Apply />
     <FAQ />
+    <TCU />
     <Contact />
   </main>
 </template>
@@ -14,6 +15,7 @@ import Intro from '~/components/sections/Intro.vue'
 import About from '~/components/sections/About.vue'
 import Space from '~/components/sections/Space.vue'
 import Apply from '~/components/sections/Apply.vue'
+import TCU from '~/components/sections/TCU.vue'
 import FAQ from '~/components/sections/FAQ.vue'
 import Contact from '~/components/sections/Contact.vue'
 
@@ -46,6 +48,7 @@ export default {
     About,
     Space,
     Apply,
+    TCU,
     FAQ,
     Contact,
   },

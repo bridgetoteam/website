@@ -1,5 +1,5 @@
 <template>
-  <PageSection class="section">
+  <PageSection class="section" id="top">
     <div class="introtext">
       <template v-if="$i18n.locale === 'ja'">
         <h1>
