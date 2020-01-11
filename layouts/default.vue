@@ -42,7 +42,21 @@ export default {
         ...i18nSeo.meta,
       ],
       link: [...i18nSeo.link],
+      script: [
+        {
+          async: true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=UA-112989318-2',
+        },
+      ],
     }
+  },
+  mounted() {
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+    gtag('config', 'UA-112989318-2')
   },
 }
 </script>
