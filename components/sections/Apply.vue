@@ -54,6 +54,7 @@
               <li>Support in locating events, resources, and connections relevant to the fellows’ research interests</li>
               <li>Support to create self-initiated public events or works</li>
               <li>Promotion and exhibition of the fellows’ work both online and locally</li>
+              <li>(See FAQ section for price)</li>
             </template>
           </ul>
 

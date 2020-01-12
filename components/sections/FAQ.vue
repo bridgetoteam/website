@@ -28,7 +28,7 @@
         <p>
           <template v-if="$i18n.locale === 'ja'"></template>
           <template v-else>
-            We're only a 5 minute walk away from the Silver Temple (Ginkakuji) &amp; the Philosopher’s Path, one of the most popular icons of Kyoto. Kyoto University is very close by, as well. The neighborhood is quiet, but you can easily find many restaurants, cafes, and grocery stores within walking distance. On top of that, there are many small independent art galleries, book stores, and craft shops nearby. One of our favorites is
+            We're only a 5 minute walk away from the Silver Temple (Ginkakuji) &amp; the Philosopher’s Path (one of the most popular icons of Kyoto), and 25 minutes by bus from the city center. Kyoto University is very close by, as well. The neighborhood is quiet, but you can easily find many restaurants, cafes, and grocery stores within walking distance. On top of that, there are many small independent art galleries, book stores, and craft shops nearby. One of our favorites is
             <a
               href="http://hohohoza.com/"
               target="_blank"
