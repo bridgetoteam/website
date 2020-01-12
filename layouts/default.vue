@@ -51,6 +51,7 @@ export default {
     }
   },
   mounted() {
+    if (this.$nuxt.context.isDev) return
     window.dataLayer = window.dataLayer || []
     function gtag() {
       dataLayer.push(arguments)
