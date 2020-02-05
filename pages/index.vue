@@ -3,6 +3,7 @@
     <Intro />
     <About />
     <Space />
+    <Insta />
     <Apply />
     <FAQ />
     <TCU />
@@ -17,6 +18,7 @@ import Space from '~/components/sections/Space.vue'
 import Apply from '~/components/sections/Apply.vue'
 import TCU from '~/components/sections/TCU.vue'
 import FAQ from '~/components/sections/FAQ.vue'
+import Insta from '~/components/sections/Insta.vue'
 import Contact from '~/components/sections/Contact.vue'
 
 export default {
@@ -50,6 +52,7 @@ export default {
     Apply,
     TCU,
     FAQ,
+    Insta,
     Contact,
   },
 }
