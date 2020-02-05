@@ -5,7 +5,8 @@
       <h1>Apply</h1>
       <div class="columns">
         <div class="residency">
-          <h2>Residency</h2>
+          <h2 v-if="$i18n.locale === 'ja'">レジデンス</h2>
+          <h2 v-else>Residency</h2>
           <p class="indent">
             <template
               v-if="$i18n.locale === 'ja'"
@@ -41,7 +42,7 @@
           </h3>
           <ul>
             <template v-if="$i18n.locale === 'ja'">
-              <li>滞在場所、オフィススペース（家具、Wifi付き）</li>
+              <li>プライベートルーム、オフィススペース（家具、Wifi付き）</li>
               <li>キッチン、バルコニー、庭、お風呂やリビングなどのコモンスペース（共用）</li>
               <li>イベントやワークショップ開催に際しての場所の提供と最低限のサポート</li>
               <li>滞在者の活動内容のプロモーションとネットワーキングのお手伝い</li>
@@ -91,7 +92,8 @@
         </div>
 
         <div class="event">
-          <h2>Event or Workshop</h2>
+          <h2 v-if="$i18n.locale === 'ja'">イベント、ワークショップ、展示</h2>
+          <h2 v-else>EVENT OR WORKSHOP</h2>
           <p class="indent">
             <template
               v-if="$i18n.locale === 'ja'"
@@ -157,15 +159,15 @@
 </template>
 
 <script>
-import PageSection from '~/components/PageSection.vue'
-import ApplyButton from '~/components/ApplyButton.vue'
+import PageSection from "~/components/PageSection.vue";
+import ApplyButton from "~/components/ApplyButton.vue";
 
 export default {
   components: {
     PageSection,
-    ApplyButton,
-  },
-}
+    ApplyButton
+  }
+};
 </script>
 
 <style lang="scss" scoped>

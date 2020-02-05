@@ -1,60 +1,65 @@
 export default {
-  mode: 'spa',
+  mode: "spa",
 
   head: {
     titleTemplate(titleChunk) {
-      return `Bridge To` + (titleChunk ? ' ' + titleChunk : '')
+      return `Bridge To` + (titleChunk ? " " + titleChunk : "");
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { property: 'og:title', hid: `og:title`, content: 'Bridge To Kyoto' },
-      { hid: `og:type`, property: 'og:type', content: 'website' },
-      { hid: `og:site_name`, property: 'og:site_name', content: 'Bridge To' },
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { property: "og:title", hid: `og:title`, content: "Bridge To Kyoto" },
+      {
+        property: "og:description",
+        hid: `og:description`,
+        content: "Open Call: An urbanist residency in Kyoto, Japan"
+      },
+      { hid: `og:type`, property: "og:type", content: "website" },
+      { hid: `og:site_name`, property: "og:site_name", content: "Bridge To" },
       {
         hid: `og:image`,
-        property: 'og:image',
-        content: `https://www.brdg.to/assets/img/sitethumbnail.png`,
-      },
+        property: "og:image",
+        content: `https://www.brdg.to/assets/img/sitethumbnail.png`
+      }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
-  loading: { color: '#fff' },
+  loading: { color: "#fff" },
 
-  css: ['~/assets/css/global'],
+  css: ["~/assets/css/global"],
 
-  plugins: ['~/plugins/lazyLoad'],
+  plugins: ["~/plugins/lazyLoad"],
 
   buildModules: [],
 
-  modules: ['@nuxtjs/axios', 'nuxt-i18n'],
+  modules: ["@nuxtjs/axios", "nuxt-i18n"],
 
   axios: {},
 
   i18n: {
     locales: [
       {
-        code: 'en',
-        iso: 'en-US',
-        name: 'English',
+        code: "en",
+        iso: "en-US",
+        name: "English"
       },
       {
-        code: 'ja',
-        iso: 'ja-JP',
-        name: '日本語',
-      },
+        code: "ja",
+        iso: "ja-JP",
+        name: "日本語"
+      }
     ],
-    defaultLocale: 'en',
+    defaultLocale: "en",
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: "en"
     },
     vuex: {
-      syncLocale: true,
-    },
+      syncLocale: true
+    }
   },
 
   build: {
-    extend(config, ctx) {},
-  },
-}
+    extend(config, ctx) {}
+  }
+};
