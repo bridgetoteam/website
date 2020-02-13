@@ -41,11 +41,11 @@
               <h2>Global Discourse, Local Practice.</h2>
               <p>
                 地域の活性化を目的としたアーティスト・イン・レジデンスが注目を集める一方で、より地域の課題解決や長期的なコラボレーションを目的としたアーバニスト・イン・レジデンスの可能性が、近年注目を集め始めています。海外の街づくりの事例をそのままコピーアンドペーストすることは出来なくとも、お互いから学ぶことはできるはず。
-                グローバルな目線で、ローカルに活動することで、国境を超えた建築・街づくりプロジェクトが生まれる可能性を追求したいと思っています。海外のアーバニズムをもっと詳しく知りたいなら是非
+                グローバルな目線で、ローカルに活動することで、国境を超えた建築・街づくりプロジェクトが生まれる可能性を追求したいと思っています。海外の街づくりの事例については、
                 <a
                   href="https://www.travelingcircusofurbanism.com/"
                   target="_blank"
-                >ブログを参考してください</a>。
+                >こちら</a>もご参照ください。
               </p>
             </template>
 
@@ -106,13 +106,13 @@
 </template>
 
 <script>
-import PageSection from '~/components/PageSection.vue'
+import PageSection from "~/components/PageSection.vue";
 
 export default {
   components: {
-    PageSection,
-  },
-}
+    PageSection
+  }
+};
 </script>
 
 <style lang="scss" scoped>
