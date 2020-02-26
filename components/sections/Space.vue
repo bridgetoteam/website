@@ -55,11 +55,25 @@
             />
             <h2>Workshop &amp; Gallery Space</h2>
             <template v-if="$i18n.locale === 'ja'">
-              <p>1階のリビングダイニングは、コミュニティスペースとして使用できます。滞在中に自身の活動を発表するための展示会や、現地のアーバニストと交流するためのミートアップなどを開催できます。滞在者以外でも、「都市」をテーマにワークショップやイベントを定期的に開催予定です。イベント内容と日時はFacebookかInstagramからご確認ください。(Coming soon)</p>
+              <p>
+                1階のリビングダイニングは、コミュニティスペースとして使用できます。滞在中に自身の活動を発表するための展示会や、現地のアーバニストと交流するためのミートアップなどを開催できます。滞在者以外でも、「都市」をテーマにワークショップやイベントを定期的に開催予定です。イベント内容と日時は
+                <a
+                  href="https://www.facebook.com/bridgetokyoto/"
+                  target="_blank"
+                >Facebook</a>か
+                <a href="https://www.instagram.com/bridgetokyoto/" target="_blank">Instagram</a>からご確認ください。
+              </p>
               <p>最大収容人数：10〜15名程度</p>
             </template>
             <template v-else>
-              <p>Our tatami-floored living &amp; dining space doubles as a community space for events of all kinds — such as exhibitions of your work while in residence, meetups to engage and collaborate with local urbanists, and more. There will also be regularly scheduled city-related workshops and events held in the community space, outside of what the residents themselves organize. Follow our Facebook or Instagram for more information about our events! (Coming soon)</p>
+              <p>
+                Our tatami-floored living &amp; dining space doubles as a community space for events of all kinds — such as exhibitions of your work while in residence, meetups to engage and collaborate with local urbanists, and more. There will also be regularly scheduled city-related workshops and events held in the community space, outside of what the residents themselves organize. Follow our
+                <a
+                  href="https://www.facebook.com/bridgetokyoto/"
+                  target="_blank"
+                >Facebook</a> or
+                <a href="https://www.instagram.com/bridgetokyoto/" target="_blank">Instagram</a> for more information about our events!
+              </p>
               <p>The space has a capacity of about 10–15 people.</p>
             </template>
           </div>
@@ -91,43 +105,43 @@
 </template>
 
 <script>
-import PageSection from '~/components/PageSection.vue'
-import useWindowWidth from '~/components/mixins/useWindowWidth'
-import ConditionalIllustration from '~/components/ConditionalIllustration.vue'
+import PageSection from "~/components/PageSection.vue";
+import useWindowWidth from "~/components/mixins/useWindowWidth";
+import ConditionalIllustration from "~/components/ConditionalIllustration.vue";
 
 export default {
   components: {
     PageSection,
-    ConditionalIllustration,
+    ConditionalIllustration
   },
   mixins: [useWindowWidth],
 
   data() {
     return {
       observer: null,
-      activeItem: 'intro',
-    }
+      activeItem: "intro"
+    };
   },
   computed: {
     instersectionThreshold() {
-      return this.isMobile ? 0.1 : 0.9
-    },
+      return this.isMobile ? 0.1 : 0.9;
+    }
   },
   mounted() {
     let toObserve = [
       this.$refs.intro,
       this.$refs.residence,
       this.$refs.workshop,
-      this.$refs.bridge,
-    ]
+      this.$refs.bridge
+    ];
     this.observer = new IntersectionObserver(this.intersectEvent, {
-      threshold: this.instersectionThreshold,
-    })
-    toObserve.forEach(el => this.observer.observe(el))
+      threshold: this.instersectionThreshold
+    });
+    toObserve.forEach(el => this.observer.observe(el));
   },
   beforeDestroy() {
-    this.observer.disconnect()
-    this.observer = null
+    this.observer.disconnect();
+    this.observer = null;
   },
   methods: {
     intersectEvent(entries, observer) {
@@ -137,11 +151,11 @@ export default {
           !this.isMobile &&
           entry.intersectionRatio > this.instersectionThreshold
         )
-          this.activeItem = entry.target.getAttribute('label')
-      })
-    },
-  },
-}
+          this.activeItem = entry.target.getAttribute("label");
+      });
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
