@@ -6,7 +6,7 @@
           A creative residency
           <br v-if="!isMobile" />for urbanists.
         </h1>
-        <h2 class="ja">Bridge to Kyotoは、「都市」をテーマにした、建築・街づくり・不動産など都市に関わる実践者のための「アーバニスト・イン・レジデンス」です。</h2>
+        <h2 class="ja">Bridge to Kyotoは、「都市」をテーマにした、建築・街づくり・アートなど都市に関わる実践者のための「アーバニスト・イン・レジデンス」です。</h2>
       </template>
       <template v-else>
         <h1>
@@ -25,22 +25,22 @@
 </template>
 
 <script>
-import PageSection from '~/components/PageSection.vue'
-import useWindowWidth from '~/components/mixins/useWindowWidth'
+import PageSection from "~/components/PageSection.vue";
+import useWindowWidth from "~/components/mixins/useWindowWidth";
 
 export default {
   components: {
-    PageSection,
+    PageSection
   },
 
   mixins: [useWindowWidth],
 
   methods: {
     scrollDown() {
-      document.getElementById('about').scrollIntoView(true)
-    },
-  },
-}
+      document.getElementById("about").scrollIntoView(true);
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>

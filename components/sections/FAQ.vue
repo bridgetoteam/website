@@ -28,7 +28,7 @@
         <p>
           <template
             v-if="$i18n.locale === 'ja'"
-          >都市、建築、まちづくりに興味がある人であれば誰でもご使用いただけます。レジデンス募集の場合は、面談・ビデオ面接をさせて頂く場合もあります。ワークショップやイベントの開催希望の方も、お気軽にお問い合わせください。</template>
+          >都市、建築、まちづくり、アートに興味がある人であれば誰でもご使用いただけます。レジデンス募集の場合は、面談・ビデオ面接をさせて頂く場合もあります。ワークショップやイベントの開催希望の方も、お気軽にお問い合わせください。</template>
           <template
             v-else
           >It’s important for us to get to know you better, so we’ll carefully examine your application and perhaps ask for an online interview depending on how long you want to stay. We’ll get back to you within a week to let you know our availability.</template>
