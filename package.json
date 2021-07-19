@@ -1,7 +1,7 @@
 {
   "name": "bridgetosite",
   "version": "1.0.0",
-  "description": "brrg.to public site",
+  "description": "brdg.to public site",
   "author": "Jasper Stephenson",
   "private": true,
   "scripts": {
