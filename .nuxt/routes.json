@@ -1,0 +1,30 @@
+[
+  {
+    "name": "index___ja",
+    "path": "/ja/",
+    "component": "/Users/jasperstephenson/Code/github/bridgetosite/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_fb5f71f4"
+  },
+  {
+    "name": "ex-ex___ja",
+    "path": "/ja/ex/:ex?",
+    "component": "/Users/jasperstephenson/Code/github/bridgetosite/pages/ex/_ex.vue",
+    "chunkName": "pages/ex/_ex",
+    "_name": "_347cff1c"
+  },
+  {
+    "name": "ex-ex___en",
+    "path": "/ex/:ex?",
+    "component": "/Users/jasperstephenson/Code/github/bridgetosite/pages/ex/_ex.vue",
+    "chunkName": "pages/ex/_ex",
+    "_name": "_347cff1c"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "/Users/jasperstephenson/Code/github/bridgetosite/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_fb5f71f4"
+  }
+]
