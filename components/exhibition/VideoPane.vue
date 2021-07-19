@@ -69,7 +69,10 @@ export default {
           }
           this.displaySrc = this.src
         }, 200)
-      } else this.isLoaded = false
+      } else {
+        this.isLoaded = false
+        this.showMask = false
+      }
     },
   },
   mounted() {

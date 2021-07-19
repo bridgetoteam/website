@@ -1,5 +1,5 @@
 <template>
-  <PageSection class="section" id="about">
+  <PageSection class="section" id="insta">
     <template v-if="$i18n.locale === 'ja'"></template>
 
     <div class="grid">
@@ -23,7 +23,11 @@
         v-lazy:background-image="`/assets/img/insta7.jpg`"
         alt="Photo from the Bridge To Kyoto Instagram"
       ></div>
-      <a class="button" href="https://www.instagram.com/bridgetokyoto/" target="_blank">
+      <a
+        class="button"
+        href="https://www.instagram.com/bridgetokyoto/"
+        target="_blank"
+      >
         <div>More Photos on Instagram →</div>
       </a>
     </div>

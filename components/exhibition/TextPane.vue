@@ -121,7 +121,8 @@ export default {
   display: inline-block;
   box-shadow: 0 6vh 6vh rgba(0, 0, 0, 0.2), 0 0.3vh 0.6vh rgba(0, 0, 0, 0.2);
   transition: opacity 0.5s transform 0.5s;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   &.top {
     bottom: auto;

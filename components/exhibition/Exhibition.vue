@@ -64,16 +64,18 @@
 <script>
 //todo
 /*
-double click zooms image
-slow slide buggy, zooms to different sections of the image depending on the size of the window
+break out of b2?
 intro super fade / start button
-fade in/out on sounds
-check if bgm stops on no-bgm state
-
+custom controller for sounds
+fade out on sounds
+pinch image 
+zoom is a little wonky on holds and such
+browser check
+mobile
 */
 
 import Blank from '~/components/exhibition/Blank'
-import BgImage from '~/components/exhibition/BgImage'
+import BgImage from '~/components/exhibition/BgImage2'
 import TextPane from '~/components/exhibition/TextPane'
 import Navigation from '~/components/exhibition/Navigation'
 import OverlayNav from '~/components/exhibition/OverlayNav'

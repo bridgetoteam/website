@@ -5,6 +5,7 @@
     <Space />
     <Insta />
     <Apply />
+    <Residents />
     <FAQ />
     <TCU />
     <Contact />
@@ -19,6 +20,7 @@ import Apply from '~/components/sections/Apply.vue'
 import TCU from '~/components/sections/TCU.vue'
 import FAQ from '~/components/sections/FAQ.vue'
 import Insta from '~/components/sections/Insta.vue'
+import Residents from '~/components/sections/Residents.vue'
 import Contact from '~/components/sections/Contact.vue'
 
 export default {
@@ -26,7 +28,11 @@ export default {
     return {
       title: 'Kyoto',
       meta: [
-        { property: 'og:title', hid: `og:title`, content: 'Bridge To Kyoto' },
+        {
+          property: 'og:title',
+          hid: `og:title`,
+          content: 'Bridge To Kyoto',
+        },
         {
           property: 'twitter:title',
           hid: `twitter:title`,
@@ -54,6 +60,7 @@ export default {
     FAQ,
     Insta,
     Contact,
+    Residents,
   },
 }
 </script>
