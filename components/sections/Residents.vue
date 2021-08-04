@@ -98,8 +98,8 @@ export default {
       ],
       upcoming: [
         {
-          id: 'severen',
-          name: 'Studio Severen',
+          id: 'severin',
+          name: 'Studio B Severin',
           description:
             'Berlin-based design studio exploring culture and society.',
           url: 'https://studiobseverin.com/',
