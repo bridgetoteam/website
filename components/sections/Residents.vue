@@ -28,7 +28,7 @@
                 {{ r.description }}
                 <span class="website" v-if="r.url">
                   <a :href="r.url" target="_blank"
-                    >ウエブサイト</a
+                    >Website</a
                   >
                 </span>
               </div>
@@ -57,7 +57,7 @@
                 {{ r.description }}
                 <span class="website" v-if="r.url">
                   <a :href="r.url" target="_blank"
-                    >ウエブサイト</a
+                    >Website</a
                   >
                 </span>
               </div>
