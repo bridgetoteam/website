@@ -5,14 +5,18 @@
       <template v-if="$i18n.locale === 'ja'">
         <div class="p">
           <div>ご質問やご相談は、</div>
-          <a class="button" href="mailto:bridgetoresidency@gmail.com" target="_blank">
+          <a
+            class="button"
+            href="mailto:bridgetoresidency@gmail.com"
+            target="_blank"
+          >
             <div>メールをください。</div>
           </a>
         </div>
         <div>
           We are here:
           <blockquote>
-            28-3 Jōdoji Banbachō, Sakyō-ku, Kyoto, 606-8412
+            28-3 Jodoji Banbacho, Sakyo-ku, Kyoto, 606-8412
             <br />〒606-8412 京都市左京区浄土寺馬場町28-3
           </blockquote>
         </div>
@@ -20,7 +24,11 @@
       <template v-else>
         <div class="p">
           <div>Still have questions?</div>
-          <a class="button" href="mailto:bridgetoresidency@gmail.com" target="_blank">
+          <a
+            class="button"
+            href="mailto:bridgetoresidency@gmail.com"
+            target="_blank"
+          >
             <div>Email us!</div>
           </a>
         </div>

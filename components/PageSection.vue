@@ -1,6 +1,6 @@
 <template>
   <section>
-    <slot>asdf</slot>
+    <slot></slot>
   </section>
 </template>
 

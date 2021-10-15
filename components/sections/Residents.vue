@@ -3,7 +3,69 @@
     class="section contentcolumn full"
     id="residents"
   >
-    <template v-if="$i18n.locale === 'ja'"></template>
+    <template v-if="$i18n.locale === 'ja'">
+      <h1>Residents</h1>
+
+      <div class="row">
+        <div>
+          <h3>Upcoming</h3>
+
+          <div class="grid">
+            <div
+              class="resident"
+              v-for="r in ($i18n.locale === 'ja' ? ja : en)
+                .upcoming"
+            >
+              <div
+                class="img"
+                v-lazy:background-image="
+                  `/assets/img/residents/${r.id}.jpg`
+                "
+                :alt="`Photo of ${r.name}`"
+              ></div>
+              <h2 class="name">{{ r.name }}</h2>
+              <div class="description">
+                {{ r.description }}
+                <span class="website" v-if="r.url">
+                  <a :href="r.url" target="_blank"
+                    >ウエブサイト</a
+                  >
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Past</h3>
+
+          <div class="grid">
+            <div
+              class="resident"
+              v-for="r in ($i18n.locale === 'ja' ? ja : en)
+                .past"
+            >
+              <div
+                class="img"
+                v-lazy:background-image="
+                  `/assets/img/residents/${r.id}.jpg`
+                "
+                :alt="`Photo of ${r.name}`"
+              ></div>
+              <h2 class="name">{{ r.name }}</h2>
+              <div class="description">
+                {{ r.description }}
+                <span class="website" v-if="r.url">
+                  <a :href="r.url" target="_blank"
+                    >ウエブサイト</a
+                  >
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
 
     <template v-else>
       <h1>Residents</h1>
@@ -13,7 +75,7 @@
           <h3>Upcoming</h3>
 
           <div class="grid">
-            <div class="resident" v-for="r in upcoming">
+            <div class="resident" v-for="r in en.upcoming">
               <div
                 class="img"
                 v-lazy:background-image="
@@ -38,7 +100,7 @@
           <h3>Past</h3>
 
           <div class="grid">
-            <div class="resident" v-for="r in past">
+            <div class="resident" v-for="r in en.past">
               <div
                 class="img"
                 v-lazy:background-image="
@@ -72,64 +134,132 @@ export default {
   },
   data() {
     return {
-      past: [
-        {
-          id: 'uenosono',
-          name: 'Uenosono Masato',
-          description: 'Architect and project director.',
-        },
-        {
-          id: 'kanako',
-          name: 'Kanako Shintaku',
-          description: 'Visual and sculptural artist.',
-          url: 'https://www.shintakukanako.com/',
-        },
-        {
-          id: 'pierre',
-          name: 'Pierre Verret',
-          description: 'Michelin-starred chef from Quebec.',
-        },
-        {
-          id: 'eva',
-          name: 'Eva Ešnerová',
-          description: `Urban strategic planner and researcher from Prague, Czechia.`,
-          url: 'https://camp.ofcn.cz/en/index.html',
-        },
-      ],
-      upcoming: [
-        {
-          id: 'severin',
-          name: 'Studio B Severin',
-          description:
-            'Berlin-based design studio exploring culture and society.',
-          url: 'https://studiobseverin.com/',
-        },
-        {
-          id: 'taina',
-          name: 'Tainá Guedes',
-          description: `Berlin-based artist, food activist, book author and trained cook.`,
-          url: 'https://entretempo-kitchen-gallery.com/',
-        },
-        {
-          id: 'august',
-          name: 'August Henry Moehrke',
-          description: `Visual artist located in New York City.`,
-          url: 'https://www.ahm-art.com/',
-        },
-        {
-          id: 'cleo',
-          name: 'Cléo Verstrepen',
-          description: `Graduate in cultural studies preparing research community art spaces.`,
-          url:
-            'https://www.instagram.com/cleoverstrepen/?hl=en',
-        },
-        {
-          id: 'rocky',
-          name: 'Rocky Hudson',
-          description: `Music maker, book maker, artist/writer.`,
-          url: 'https://rockyfuckinghudson.com',
-        },
-      ],
+      en: {
+        past: [
+          {
+            id: 'uenosono',
+            name: 'Uenosono Masato',
+            description: 'Architect and project director.',
+          },
+          {
+            id: 'kanako',
+            name: 'Kanako Shintaku',
+            description: 'Visual and sculptural artist.',
+            url: 'https://www.shintakukanako.com/',
+          },
+          {
+            id: 'pierre',
+            name: 'Pierre Verret',
+            description:
+              'Michelin-starred chef from Quebec.',
+          },
+          {
+            id: 'eva',
+            name: 'Eva Ešnerová',
+            description: `Urban strategic planner and researcher from Prague, Czechia.`,
+            url: 'https://camp.ofcn.cz/en/index.html',
+          },
+        ],
+        upcoming: [
+          {
+            id: 'severin',
+            name: 'Studio B Severin',
+            description:
+              'Berlin-based design studio exploring culture and society.',
+            url: 'https://studiobseverin.com/',
+          },
+          {
+            id: 'taina',
+            name: 'Tainá Guedes',
+            description: `Berlin-based artist, food activist, book author and trained cook.`,
+            url: 'https://entretempo-kitchen-gallery.com/',
+          },
+          {
+            id: 'august',
+            name: 'August Henry Moehrke',
+            description: `Visual artist located in New York City.`,
+            url: 'https://www.ahm-art.com/',
+          },
+          {
+            id: 'cleo',
+            name: 'Cléo Verstrepen',
+            description: `Graduate in cultural studies preparing research community art spaces.`,
+            url:
+              'https://www.instagram.com/cleoverstrepen/?hl=en',
+          },
+          {
+            id: 'rocky',
+            name: 'Rocky Hudson',
+            description: `Music maker, book maker, artist/writer.`,
+            url: 'https://rockyfuckinghudson.com',
+          },
+        ],
+      },
+
+      ja: {
+        past: [
+          {
+            id: 'uenosono',
+            name: 'Uenosono Masato',
+            description: `建築家・プロジェクトディレクター`,
+          },
+          {
+            id: 'kanako',
+            name: 'Kanako Shintaku',
+            description: `身体表現を行うアーティスト`,
+            url: 'https://www.shintakukanako.com/',
+          },
+          {
+            id: 'pierre',
+            name: 'Pierre Verret',
+            description: `ケベック出身のミシュランシェフ`,
+          },
+          {
+            id: 'eva',
+            name: 'Eva Ešnerová',
+            description: `チェコ出身の都市戦略プランナー`,
+            url: 'https://camp.ofcn.cz/en/index.html',
+          },
+        ],
+        upcoming: [
+          {
+            id: 'severin',
+            name: 'Studio B Severin',
+            description: `ベルリン拠点のデザインスタジオ`,
+            url: 'https://studiobseverin.com/',
+          },
+          {
+            id: 'taina',
+            name: 'Tainá Guedes',
+            description: `ベルリン 拠点のアーティスト、フードアクティビスト、シェフ`,
+            url: 'https://entretempo-kitchen-gallery.com/',
+          },
+          {
+            id: 'august',
+            name: 'August Henry Moehrke',
+            description: `ニューヨーク拠点のビジュアルアーティスト`,
+            url: 'https://www.ahm-art.com/',
+          },
+          {
+            id: 'cleo',
+            name: 'Cléo Verstrepen',
+            description: `コミュニティ・アート・スペースのリサーチャー`,
+            url:
+              'https://www.instagram.com/cleoverstrepen/?hl=en',
+          },
+          {
+            id: 'rocky',
+            name: 'Rocky Hudson',
+            description: `アーティスト、ミュージックメーカー`,
+            url: 'https://rockyfuckinghudson.com',
+          },
+          {
+            id: 'erika',
+            name: 'Erika Rodríguez',
+            description: `シネマティックな都市の言語を研究する建築家、劇作家`,
+          },
+        ],
+      },
     }
   },
 }

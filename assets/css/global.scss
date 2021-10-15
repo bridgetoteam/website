@@ -68,6 +68,9 @@ html {
     font-size: 1rem;
   }
 }
+html[lang='ja-JP'] {
+  font-weight: 600;
+}
 
 html,
 body {
@@ -86,7 +89,7 @@ body {
 a,
 a:active,
 a:visited {
-  color: var(--primary);
+  color: inherit;
 }
 
 img {
