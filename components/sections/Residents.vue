@@ -8,6 +8,35 @@
 
       <div class="row">
         <div>
+          <h3>Current</h3>
+
+          <div class="grid">
+            <div
+              class="resident"
+              v-for="r in ($i18n.locale === 'ja' ? ja : en)
+                .current"
+            >
+              <div
+                class="img"
+                v-lazy:background-image="
+                  `/assets/img/residents/${r.id}.jpg`
+                "
+                :alt="`Photo of ${r.name}`"
+              ></div>
+              <h2 class="name">{{ r.name }}</h2>
+              <div class="description">
+                {{ r.description }}
+                <span class="website" v-if="r.url">
+                  <a :href="r.url" target="_blank"
+                    >Website</a
+                  >
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
           <h3>Upcoming</h3>
 
           <div class="grid">
@@ -135,6 +164,21 @@ export default {
   data() {
     return {
       en: {
+        current: [
+          {
+            id: 'misa',
+            name: 'Misa Murata',
+            description:
+              'Phytotherapist / Botanical artist',
+            url: 'https://verseau.me/',
+          },
+          {
+            id: 'pierre',
+            name: 'Pierre Verret',
+            description:
+              'Michelin-starred chef from Quebec.',
+          },
+        ],
         past: [
           {
             id: 'uenosono',
@@ -147,12 +191,7 @@ export default {
             description: 'Visual and sculptural artist.',
             url: 'https://www.shintakukanako.com/',
           },
-          {
-            id: 'pierre',
-            name: 'Pierre Verret',
-            description:
-              'Michelin-starred chef from Quebec.',
-          },
+
           {
             id: 'eva',
             name: 'Eva Ešnerová',
@@ -203,11 +242,25 @@ export default {
             name: 'Eliza Soroga',
             description:
               'Site-Specific Performance Artist from Athens.',
+            url: 'http://www.elizasoroga.com/',
           },
         ],
       },
 
       ja: {
+        current: [
+          {
+            id: 'misa',
+            name: 'Misa Murata',
+            description: '植物療法士／植物表現家',
+            url: 'https://verseau.me/',
+          },
+          {
+            id: 'pierre',
+            name: 'Pierre Verret',
+            description: `ケベック出身のミシュランシェフ`,
+          },
+        ],
         past: [
           {
             id: 'uenosono',
@@ -220,11 +273,7 @@ export default {
             description: `身体表現を行うアーティスト`,
             url: 'https://www.shintakukanako.com/',
           },
-          {
-            id: 'pierre',
-            name: 'Pierre Verret',
-            description: `ケベック出身のミシュランシェフ`,
-          },
+
           {
             id: 'eva',
             name: 'Eva Ešnerová',
@@ -273,6 +322,7 @@ export default {
             id: 'eliza',
             name: 'Eliza Soroga',
             description: 'パフォーミングアーティスト',
+            url: 'http://www.elizasoroga.com/',
           },
         ],
       },
