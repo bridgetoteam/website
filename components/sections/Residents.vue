@@ -101,6 +101,33 @@
 
       <div class="row">
         <div>
+          <h3>Current</h3>
+
+          <div class="grid">
+            <div
+              class="resident"
+              v-for="r in en.current"
+            >
+              <div
+                class="img"
+                v-lazy:background-image="
+                  `/assets/img/residents/${r.id}.jpg`
+                "
+                :alt="`Photo of ${r.name}`"
+              ></div>
+              <h2 class="name">{{ r.name }}</h2>
+              <div class="description">
+                {{ r.description }}
+                <span class="website" v-if="r.url">
+                  <a :href="r.url" target="_blank"
+                    >Website</a
+                  >
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
           <h3>Upcoming</h3>
 
           <div class="grid">
@@ -160,9 +187,6 @@ import PageSection from '~/components/PageSection.vue'
 export default {
   components: {
     PageSection,
-  },
-  mounted() {
-    console.log(this.en, this.ja)
   },
   data() {
     return {
