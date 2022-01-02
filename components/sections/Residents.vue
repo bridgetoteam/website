@@ -104,10 +104,7 @@
           <h3>Current</h3>
 
           <div class="grid">
-            <div
-              class="resident"
-              v-for="r in en.current"
-            >
+            <div class="resident" v-for="r in en.current">
               <div
                 class="img"
                 v-lazy:background-image="
@@ -128,6 +125,7 @@
           </div>
         </div>
 
+        <div>
           <h3>Upcoming</h3>
 
           <div class="grid">
