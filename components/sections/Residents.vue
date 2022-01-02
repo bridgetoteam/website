@@ -193,6 +193,17 @@ export default {
             description: `Music maker, book maker, artist/writer.`,
             url: 'https://rockyfuckinghudson.com',
           },
+          {
+            id: 'erika',
+            name: 'Erika Rodríguez',
+            description: `Architect and scriptwriter researching appropiation of space. `,
+          },
+          {
+            id: 'eliza',
+            name: 'Eliza Soroga',
+            description:
+              'Site-Specific Performance Artist from Athens.',
+          },
         ],
       },
 
