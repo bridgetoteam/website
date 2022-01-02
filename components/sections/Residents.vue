@@ -162,7 +162,7 @@ export default {
     PageSection,
   },
   mounted() {
-    console.log(en, ja)
+    console.log(this.en, this.ja)
   },
   data() {
     return {
