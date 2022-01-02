@@ -269,6 +269,11 @@ export default {
             name: 'Erika Rodríguez',
             description: `シネマティックな都市の言語を研究する建築家、劇作家`,
           },
+          {
+            id: 'eliza',
+            name: 'Eliza Soroga',
+            description: 'パフォーミングアーティスト',
+          },
         ],
       },
     }
