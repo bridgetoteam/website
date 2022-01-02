@@ -161,6 +161,9 @@ export default {
   components: {
     PageSection,
   },
+  mounted() {
+    console.log(en, ja)
+  },
   data() {
     return {
       en: {
