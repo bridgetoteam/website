@@ -203,6 +203,11 @@ export default {
             description:
               'Michelin-starred chef from Quebec.',
           },
+          {
+            id: 'harry',
+            name: 'Harry Lee',
+            description: 'Tea / Ceramic / Landscape artist',
+          },
         ],
         past: [
           {
@@ -284,6 +289,12 @@ export default {
             id: 'pierre',
             name: 'Pierre Verret',
             description: `ケベック出身のミシュランシェフ`,
+          },
+          {
+            id: 'harry',
+            name: 'Harry Lee',
+            description:
+              '茶人 / 陶芸家 / ランドスケープアーティスト',
           },
         ],
         past: [
