@@ -191,6 +191,13 @@ export default {
       en: {
         current: [
           {
+            id: 'harry',
+            name: 'Harry Lee',
+            description: 'Tea / Ceramic / Landscape artist',
+          },
+        ],
+        past: [
+          {
             id: 'misa',
             name: 'Misa Murata',
             description:
@@ -203,13 +210,6 @@ export default {
             description:
               'Michelin-starred chef from Quebec.',
           },
-          {
-            id: 'harry',
-            name: 'Harry Lee',
-            description: 'Tea / Ceramic / Landscape artist',
-          },
-        ],
-        past: [
           {
             id: 'uenosono',
             name: 'Uenosono Masato',
@@ -274,11 +274,25 @@ export default {
               'Site-Specific Performance Artist from Athens.',
             url: 'http://www.elizasoroga.com/',
           },
+          {
+            id: 'juliette',
+            name: 'Juliette Pénélope Pépin',
+            description: 'Artist',
+            url: 'https://juliettepenelope.com/',
+          },
         ],
       },
 
       ja: {
         current: [
+          {
+            id: 'harry',
+            name: 'Harry Lee',
+            description:
+              '茶人 / 陶芸家 / ランドスケープアーティスト',
+          },
+        ],
+        past: [
           {
             id: 'misa',
             name: 'Misa Murata',
@@ -290,14 +304,6 @@ export default {
             name: 'Pierre Verret',
             description: `ケベック出身のミシュランシェフ`,
           },
-          {
-            id: 'harry',
-            name: 'Harry Lee',
-            description:
-              '茶人 / 陶芸家 / ランドスケープアーティスト',
-          },
-        ],
-        past: [
           {
             id: 'uenosono',
             name: 'Uenosono Masato',
@@ -359,6 +365,12 @@ export default {
             name: 'Eliza Soroga',
             description: 'パフォーミングアーティスト',
             url: 'http://www.elizasoroga.com/',
+          },
+          {
+            id: 'juliette',
+            name: 'Juliette Pénélope Pépin',
+            description: 'アーティスト',
+            url: 'https://juliettepenelope.com/',
           },
         ],
       },
