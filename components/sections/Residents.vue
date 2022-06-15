@@ -280,6 +280,13 @@ export default {
             description: 'Artist',
             url: 'https://juliettepenelope.com/',
           },
+          {
+            id: 'lemos',
+            name: 'Lemos + Lehmann',
+            description:
+              'Perception, contemplation, and emotion.',
+            url: 'https://www.lemosandlehmann.com',
+          },
         ],
       },
 
@@ -371,6 +378,12 @@ export default {
             name: 'Juliette Pénélope Pépin',
             description: 'アーティスト',
             url: 'https://juliettepenelope.com/',
+          },
+          {
+            id: 'lemos',
+            name: 'Lemos + Lehmann',
+            description: 'アーティスト・デュオ',
+            url: 'https://www.lemosandlehmann.com',
           },
         ],
       },
