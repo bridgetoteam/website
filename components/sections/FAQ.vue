@@ -54,7 +54,7 @@
           <template v-if="$i18n.locale === 'ja'">
             <h3>レジデンス</h3>
             <p>
-              1ヶ月〜6ヶ月の滞在で、家賃¥70,000 &amp; 共益費¥10,000でご利用頂けます。
+              1ヶ月〜6ヶ月の滞在で、700ユーロでご利用頂けます。
               １ヶ月以下、6ヶ月以上ご利用希望の方は、
               <a
                 href="mailto:bridgetoresidency@gmail.com"
@@ -73,7 +73,7 @@
             <p>
               Stay between 1–6 months
               Includes: private room + office use + minimum 1 day workshop / event / presentation
-              <br />¥70,000 + ¥10,000 common space &amp; utility fee per month (the price may change depending on season)
+              <br />700 Euros per month (the price may change depending on season)
               <br />Please
               <a href="mailto:bridgetoresidency@gmail.com" target="_blank">consult us</a> if you want to stay less than 1 month or more than 6 months.
             </p>
