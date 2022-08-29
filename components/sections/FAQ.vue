@@ -67,6 +67,10 @@
               企画内容によって
               <a href="mailto:bridgetoresidency@gmail.com" target="_blank">ご相談</a>ください。
             </p>
+
+            <p>
+              空間の一般利用は無料ですが、有料イベントに際してお金の４割をいただきます。
+            </p>
           </template>
           <template v-else>
             <h3>Residency</h3>
@@ -83,6 +87,10 @@
               Price varies depending on the type &amp; length of the event.
               <br />Please
               <a href="mailto:bridgetoresidency@gmail.com" target="_blank">contact us</a> for inquiry.
+            </p>
+
+            <p>
+              General use of the space is free, but we will ask for 40% of the profit from any paid events.
             </p>
           </template>
         </div>
