@@ -55,11 +55,14 @@
             <h3>レジデンス</h3>
             <p>
               1ヶ月〜6ヶ月の滞在で、700ユーロでご利用頂けます。
-              １ヶ月以下、6ヶ月以上ご利用希望の方は、
+              1ヶ月以下、6ヶ月以上ご利用希望の方は、
               <a
                 href="mailto:bridgetoresidency@gmail.com"
                 target="_blank"
               >ご相談</a>ください。
+            </p>
+            <p>
+              スペースの一般利用は無料ですが、有料イベントやグッズ販売がある際には、利益の40%を頂戴しております。
             </p>
 
             <h3>イベント、ワークショップ、展示など</h3>
@@ -68,9 +71,7 @@
               <a href="mailto:bridgetoresidency@gmail.com" target="_blank">ご相談</a>ください。
             </p>
 
-            <p>
-              空間の一般利用は無料ですが、有料イベントに際してお金の４割をいただきます。
-            </p>
+           
           </template>
           <template v-else>
             <h3>Residency</h3>
@@ -81,6 +82,9 @@
               <br />Please
               <a href="mailto:bridgetoresidency@gmail.com" target="_blank">consult us</a> if you want to stay less than 1 month or more than 6 months.
             </p>
+            <p>
+              General use of the space is free. We prefer the space to be noncommercial, but in the event that you make a profit from ticket or goods sales, we kindly ask for 40% of the earnings for our help with planning, translation, setup/teardown, etc.
+            </p>
 
             <h3>Event / Workshop</h3>
             <p>
@@ -89,9 +93,6 @@
               <a href="mailto:bridgetoresidency@gmail.com" target="_blank">contact us</a> for inquiry.
             </p>
 
-            <p>
-              General use of the space is free, but we will ask for 40% of the profit from any paid events.
-            </p>
           </template>
         </div>
 
