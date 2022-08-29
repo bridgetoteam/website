@@ -85,7 +85,7 @@
 
             <h3>Event / Workshop</h3>
                         <p>
-              General use of the space for events and workshops is free for the residents. We prefer the space to be noncommercial, but in the event that you make a profit from ticket or goods sales, we kindly ask for 40% of the earnings for our help with planning, promption, translation, setup/teardown, etc.
+              General use of the space for events and workshops is free for the residents. We prefer the space to be noncommercial, but in the event that you make a profit from ticket or goods sales, we kindly ask for 40% of the earnings for our help with planning, promption, translation, setup/teardown, documentation etc.
             </p>
             <p>
               For non-residents, the price varies depending on the type &amp; length of the event.
