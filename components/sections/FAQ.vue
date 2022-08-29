@@ -83,7 +83,10 @@
               <a href="mailto:bridgetoresidency@gmail.com" target="_blank">consult us</a> if you want to stay less than 1 month or more than 6 months.
             </p>
             <p>
-              General use of the space is free. We prefer the space to be noncommercial, but in the event that you make a profit from ticket or goods sales, we kindly ask for 40% of the earnings for our help with planning, translation, setup/teardown, etc.
+              General use of the space for events and workshops is free for the residents. We prefer the space to be noncommercial, but in the event that you make a profit from ticket or goods sales, we kindly ask for 40% of the earnings for our help with planning, translation, setup/teardown, etc.
+            </p>
+            <p>
+              For non-residents, the price varies depending on the type &amp; length of the event. Please contact us for inquiries.
             </p>
 
             <h3>Event / Workshop</h3>
