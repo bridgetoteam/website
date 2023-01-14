@@ -8,7 +8,10 @@
         @mouseleave.native="logoHover = false"
         @click.native="scrollToTop"
       >
-        <Logo class="logo" :collapse="isCollapsed && !logoHover" />
+        <Logo
+          class="logo"
+          :collapse="isCollapsed && !logoHover"
+        />
       </nuxt-link>
       <!-- <div class="pagelinks">
         <a href="#about">About</a>
@@ -17,9 +20,9 @@
         <a href="#faq" v-if="$i18n.locale !== 'ja'">FAQ</a>
         <a href="#contact">Contact</a>
       </div>-->
-      <transition name="fade">
+      <!-- <transition name="fade">
         <ApplyButton targetElementId="apply" v-if="!hideApplyButton" />
-      </transition>
+      </transition> -->
     </div>
     <LangPicker class="langpicker" />
   </nav>
@@ -53,9 +56,12 @@ export default {
 
   mounted() {
     let toObserve = document.getElementById('apply')
-    this.observer = new IntersectionObserver(this.intersectEvent, {
-      threshold: 0.2,
-    })
+    this.observer = new IntersectionObserver(
+      this.intersectEvent,
+      {
+        threshold: 0.2,
+      },
+    )
     this.observer.observe(toObserve)
   },
   beforeDestroy() {
@@ -64,10 +70,16 @@ export default {
   },
   methods: {
     intersectEvent(entries, observer) {
-      entries.forEach(entry => {
-        if (!this.hideApplyButton && entry.intersectionRatio > 0.2)
+      entries.forEach((entry) => {
+        if (
+          !this.hideApplyButton &&
+          entry.intersectionRatio > 0.2
+        )
           this.hideApplyButton = true
-        else if (this.hideApplyButton && entry.intersectionRatio <= 0.2)
+        else if (
+          this.hideApplyButton &&
+          entry.intersectionRatio <= 0.2
+        )
           this.hideApplyButton = false
       })
     },

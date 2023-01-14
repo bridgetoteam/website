@@ -1,10 +1,17 @@
 <template>
   <PageSection class="section" id="faq">
-    <div class="interstitial" v-lazy:background-image="'/assets/img/interstitial2.jpg'"></div>
+    <div
+      class="interstitial"
+      v-lazy:background-image="
+        '/assets/img/interstitial2.jpg'
+      "
+    ></div>
     <div class="contentcolumn">
       <h1>FAQ</h1>
       <div class="columns">
-        <h2 v-if="$i18n.locale === 'ja'">誰が運営しているの？</h2>
+        <h2 v-if="$i18n.locale === 'ja'">
+          誰が運営しているの？
+        </h2>
         <h2 v-else>Who is behind this?</h2>
         <p>
           <template v-if="$i18n.locale === 'ja'">
@@ -12,47 +19,79 @@
             <a
               href="https://www.travelingcircusofurbanism.com"
               target="_blank"
-            >Traveling Circus of Urbanism（アーバニズムの旅するサーカス）</a>も運営しています。
+              >Traveling Circus of
+              Urbanism（アーバニズムの旅するサーカス）</a
+            >も運営しています。
           </template>
           <template v-else>
-            We are Mariko Sugita (an editor and writer on urban affairs) and Jasper Stephenson (a designer and developer). We own an online platform called
+            We are Mariko Sugita (an editor and writer on
+            urban affairs) and Jasper Stephenson (a designer
+            and developer). We own an online platform called
             <a
               href="https://www.travelingcircusofurbanism.com"
               target="_blank"
-            >Traveling Circus of Urbanism</a>, which collects urban narratives from around the world through traveling. We run Bridge To Kyoto by ourselves (we also live here!) through our passion for cities and urbanism, and it’s entirely an independent project. We have good connections with different urbanism-related practitioners here in Japan as well as in the U.S., Europe, and Southeast Asia, and we will do our best to connect you with the local urbanist scene!
+              >Traveling Circus of Urbanism</a
+            >, which collects urban narratives from around
+            the world through traveling. We run Bridge To
+            Kyoto by ourselves (we also live here!) through
+            our passion for cities and urbanism, and it’s
+            entirely an independent project. We have good
+            connections with different urbanism-related
+            practitioners here in Japan as well as in the
+            U.S., Europe, and Southeast Asia, and we will do
+            our best to connect you with the local urbanist
+            scene!
           </template>
         </p>
 
-        <h2 v-if="$i18n.locale === 'ja'">誰が使用できるの？</h2>
+        <h2 v-if="$i18n.locale === 'ja'">
+          誰が使用できるの？
+        </h2>
         <h2 v-else>What happens after I apply?</h2>
         <p>
-          <template
-            v-if="$i18n.locale === 'ja'"
-          >都市、建築、まちづくり、アートに興味がある人であれば誰でもご使用いただけます。レジデンス募集の場合は、面談・ビデオ面接をさせて頂く場合もあります。ワークショップやイベントの開催希望の方も、お気軽にお問い合わせください。</template>
-          <template
-            v-else
-          >It’s important for us to get to know you better, so we’ll carefully examine your application and perhaps ask for an online interview depending on how long you want to stay. We’ll get back to you within a week to let you know our availability.</template>
+          <template v-if="$i18n.locale === 'ja'"
+            >都市、建築、まちづくり、アートに興味がある人であれば誰でもご使用いただけます。レジデンス募集の場合は、面談・ビデオ面接をさせて頂く場合もあります。ワークショップやイベントの開催希望の方も、お気軽にお問い合わせください。</template
+          >
+          <template v-else
+            >It’s important for us to get to know you
+            better, so we’ll carefully examine your
+            application and perhaps ask for an online
+            interview depending on how long you want to
+            stay. We’ll get back to you within a week to let
+            you know our availability.</template
+          >
         </p>
 
-        <h2 v-if="$i18n.locale === 'ja'">どんなエリアなの？</h2>
+        <h2 v-if="$i18n.locale === 'ja'">
+          どんなエリアなの？
+        </h2>
         <h2 v-else>What’s in the neighborhood?</h2>
         <p>
-          <template
-            v-if="$i18n.locale === 'ja'"
-          >銀閣寺と哲学の道から、徒歩5分ほどの場所にあります。京都大学も近く、カフェやレストランなどが徒歩圏内に数多くあるほか、クリエイティブな本屋や隠れ家的なアートスペースも点在するエリアです。</template>
+          <template v-if="$i18n.locale === 'ja'"
+            >銀閣寺と哲学の道から、徒歩5分ほどの場所にあります。京都大学も近く、カフェやレストランなどが徒歩圏内に数多くあるほか、クリエイティブな本屋や隠れ家的なアートスペースも点在するエリアです。</template
+          >
           <template v-else>
-            We're only a 5 minute walk away from the Silver Temple (Ginkakuji) &amp; the Philosopher’s Path (one of the most popular icons of Kyoto), and 25 minutes by bus from the city center. Kyoto University is very close by, as well. The neighborhood is quiet, but you can easily find many restaurants, cafes, and grocery stores within walking distance. On top of that, there are many small independent art galleries, book stores, and craft shops nearby. One of our favorites is
-            <a
-              href="http://hohohoza.com/"
-              target="_blank"
-            >Hohohoza</a>!
+            We're only a 5 minute walk away from the Silver
+            Temple (Ginkakuji) &amp; the Philosopher’s Path
+            (one of the most popular icons of Kyoto), and 25
+            minutes by bus from the city center. Kyoto
+            University is very close by, as well. The
+            neighborhood is quiet, but you can easily find
+            many restaurants, cafes, and grocery stores
+            within walking distance. On top of that, there
+            are many small independent art galleries, book
+            stores, and craft shops nearby. One of our
+            favorites is
+            <a href="http://hohohoza.com/" target="_blank"
+              >Hohohoza</a
+            >!
           </template>
         </p>
         <h2 v-if="$i18n.locale === 'ja'">利用料金は？</h2>
         <h2 v-else>How much does it cost?</h2>
         <div>
           <template v-if="$i18n.locale === 'ja'">
-            <h3>レジデンス</h3>
+            <!-- <h3>レジデンス</h3>
             <p>
               1ヶ月〜6ヶ月の滞在で、700ユーロでご利用頂けます。
               1ヶ月以下、6ヶ月以上ご利用希望の方は、
@@ -63,18 +102,20 @@
             </p>
             <p>
               スペースの一般利用は無料ですが、有料イベントやグッズ販売がある際には、利益の40%を頂戴しております。
-            </p>
+            </p> -->
 
             <h3>イベント、ワークショップ、展示など</h3>
             <p>
               企画内容によって
-              <a href="mailto:bridgetoresidency@gmail.com" target="_blank">ご相談</a>ください。
+              <a
+                href="mailto:bridgetoresidency@gmail.com"
+                target="_blank"
+                >ご相談</a
+              >ください。
             </p>
-
-           
           </template>
           <template v-else>
-            <h3>Residency</h3>
+            <!-- <h3>Residency</h3>
             <p>
               Stay between 1–6 months
               Includes: private room + office use + minimum 1 day workshop / event / presentation
@@ -87,55 +128,105 @@
             </p>
             <p>
               For non-residents, the price varies depending on the type &amp; length of the event. Please contact us for inquiries.
-            </p>
+            </p> -->
 
             <h3>Event / Workshop</h3>
             <p>
-              Price varies depending on the type &amp; length of the event.
+              Price varies depending on the type &amp;
+              length of the event.
               <br />Please
-              <a href="mailto:bridgetoresidency@gmail.com" target="_blank">contact us</a> for inquiry.
+              <a
+                href="mailto:bridgetoresidency@gmail.com"
+                target="_blank"
+                >contact us</a
+              >
+              for inquiry.
             </p>
-
           </template>
         </div>
 
         <h2 v-if="$i18n.locale === 'ja'">使用言語は？</h2>
-        <h2 v-else>What languages are spoken in the house?</h2>
+        <h2 v-else>
+          What languages are spoken in the house?
+        </h2>
         <p>
-          <template v-if="$i18n.locale === 'ja'">英語を中心に、日本語とのバイリンガルです。</template>
-          <template
-            v-else
-          >Mariko is a native Japanese speaker and Jasper speaks American English. We both speak English and Japanese fluently, though English is our primary language at the house. Also, we are currently learning Spanish!</template>
+          <template v-if="$i18n.locale === 'ja'"
+            >英語を中心に、日本語とのバイリンガルです。</template
+          >
+          <template v-else
+            >Mariko is a native Japanese speaker and Jasper
+            speaks American English. We both speak English
+            and Japanese fluently, though English is our
+            primary language at the house. Also, we are
+            currently learning Spanish!</template
+          >
         </p>
 
-        <h2 v-if="$i18n.locale === 'ja'">アーバニストって誰のこと？</h2>
-        <h2 v-else>”Urbanist” means a lot of things. What do you mean by it?</h2>
+        <h2 v-if="$i18n.locale === 'ja'">
+          アーバニストって誰のこと？
+        </h2>
+        <h2 v-else>
+          ”Urbanist” means a lot of things. What do you mean
+          by it?
+        </h2>
         <p>
-          <template
-            v-if="$i18n.locale === 'ja'"
-          >アーバニストという言葉は、日本では都市プランナーや土木工学系の技術者と捉えられることが多いようです。しかし、私たちは、都市、建築、まちづくりに少しでもつながりのある活動を行う全ての実践者を、広い意味でアーバニストと名付けています。アーティストでも、不動産業者でも、フローリストでも、パン屋さんでも、「都市」という枠組みを頭の片隅において活動する人は、アーバニストです。このように広義に名付けることで、都市に関わる分野横断的な取り組みが可能になると、私たちは考えています。特に、小さなグラスルーツの活動や、コミュニティ主導のプロジェクトを支援しています。</template>
-          <template
-            v-else
-          >In a Japanese context, “urbanist” often means city planners and civil engineers. However, urbanists do not have to be only architects, urban designers, or other related specialists — we define the term in a broader way. Urbanists, for us, are anyone whose work concerns the scale of cities and urban living. For instance, an artist who stages performances in public spaces, or an environmentalist who does research on implementating fermentation technology into people’s everyday lives in cities — these people are also urbanists to us.</template>
+          <template v-if="$i18n.locale === 'ja'"
+            >アーバニストという言葉は、日本では都市プランナーや土木工学系の技術者と捉えられることが多いようです。しかし、私たちは、都市、建築、まちづくりに少しでもつながりのある活動を行う全ての実践者を、広い意味でアーバニストと名付けています。アーティストでも、不動産業者でも、フローリストでも、パン屋さんでも、「都市」という枠組みを頭の片隅において活動する人は、アーバニストです。このように広義に名付けることで、都市に関わる分野横断的な取り組みが可能になると、私たちは考えています。特に、小さなグラスルーツの活動や、コミュニティ主導のプロジェクトを支援しています。</template
+          >
+          <template v-else
+            >In a Japanese context, “urbanist” often means
+            city planners and civil engineers. However,
+            urbanists do not have to be only architects,
+            urban designers, or other related specialists —
+            we define the term in a broader way. Urbanists,
+            for us, are anyone whose work concerns the scale
+            of cities and urban living. For instance, an
+            artist who stages performances in public spaces,
+            or an environmentalist who does research on
+            implementating fermentation technology into
+            people’s everyday lives in cities — these people
+            are also urbanists to us.</template
+          >
         </p>
         <template v-if="$i18n.locale !== 'ja'">
-          <h2>What kind of urbanists are you looking for?</h2>
+          <h2>
+            What kind of urbanists are you looking for?
+          </h2>
           <p>
-            <template v-if="$i18n.locale === 'ja'"></template>
             <template
-              v-else
-            >We appreciate urban movements and architectural projects that are small-scale, incremental, resident-generated, and bottom-up, rather than top-down planning and mega-projects. We’d love to invite inspiring practitioners who truly love their cities who are part of motivating initiatives and topics that are unique to each city.</template>
+              v-if="$i18n.locale === 'ja'"
+            ></template>
+            <template v-else
+              >We appreciate urban movements and
+              architectural projects that are small-scale,
+              incremental, resident-generated, and
+              bottom-up, rather than top-down planning and
+              mega-projects. We’d love to invite inspiring
+              practitioners who truly love their cities who
+              are part of motivating initiatives and topics
+              that are unique to each city.</template
+            >
           </p>
 
           <h2>What if I want to stay less than a month?</h2>
           <p>
-            <template v-if="$i18n.locale === 'ja'"></template>
+            <template
+              v-if="$i18n.locale === 'ja'"
+            ></template>
             <template v-else>
-              Please understand that this house is not an airbnb or a guest house, so one month is our minimum period. That said, we also understand that not everyone can take a month off to live in Japan. Please
+              Please understand that this house is not an
+              airbnb or a guest house, so one month is our
+              minimum period. That said, we also understand
+              that not everyone can take a month off to live
+              in Japan. Please
               <a
                 href="mailto:bridgetoresidency@gmail.com"
                 target="_blank"
-              >contact us</a> if you are interested in staying with us but have only a few weeks to spare — hopefully we can figure something out!
+                >contact us</a
+              >
+              if you are interested in staying with us but
+              have only a few weeks to spare — hopefully we
+              can figure something out!
             </template>
           </p>
         </template>
@@ -143,19 +234,15 @@
     </div>
   </PageSection>
 </template>
-      </div>
-    </div>
-  </PageSection>
-</template>
 
 <script>
-import PageSection from "~/components/PageSection.vue";
+import PageSection from '~/components/PageSection.vue'
 
 export default {
   components: {
-    PageSection
-  }
-};
+    PageSection,
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -230,8 +317,10 @@ h3 {
 h2,
 h3,
 p {
-  text-shadow: 0 1px 3px rgb(141, 115, 160), 0 0px 3px rgb(141, 115, 160),
-    0 1px 5px rgb(141, 115, 160), 0 1px 5px rgb(141, 115, 160);
+  text-shadow: 0 1px 3px rgb(141, 115, 160),
+    0 0px 3px rgb(141, 115, 160),
+    0 1px 5px rgb(141, 115, 160),
+    0 1px 5px rgb(141, 115, 160);
 }
 
 a {
