@@ -291,15 +291,32 @@ export default {
       },
 
       ja: {
-        current: [
+        current: [],
+        past: [
+          {
+            id: 'eliza',
+            name: 'Eliza Soroga',
+            description: 'パフォーミングアーティスト',
+            url: 'http://www.elizasoroga.com/',
+          },
+          {
+            id: 'juliette',
+            name: 'Juliette Pénélope Pépin',
+            description: 'アーティスト',
+            url: 'https://juliettepenelope.com/',
+          },
+          {
+            id: 'taina',
+            name: 'Tainá Guedes',
+            description: `ベルリン 拠点のアーティスト、フードアクティビスト、シェフ`,
+            url: 'https://entretempo-kitchen-gallery.com/',
+          },
           {
             id: 'harry',
             name: 'Harry Lee',
             description:
               '茶人 / 陶芸家 / ランドスケープアーティスト',
           },
-        ],
-        past: [
           {
             id: 'misa',
             name: 'Misa Murata',
@@ -338,12 +355,6 @@ export default {
             url: 'https://studiobseverin.com/',
           },
           {
-            id: 'taina',
-            name: 'Tainá Guedes',
-            description: `ベルリン 拠点のアーティスト、フードアクティビスト、シェフ`,
-            url: 'https://entretempo-kitchen-gallery.com/',
-          },
-          {
             id: 'august',
             name: 'August Henry Moehrke',
             description: `ニューヨーク拠点のビジュアルアーティスト`,
@@ -366,18 +377,6 @@ export default {
             id: 'erika',
             name: 'Erika Rodríguez',
             description: `シネマティックな都市の言語を研究する建築家、劇作家`,
-          },
-          {
-            id: 'eliza',
-            name: 'Eliza Soroga',
-            description: 'パフォーミングアーティスト',
-            url: 'http://www.elizasoroga.com/',
-          },
-          {
-            id: 'juliette',
-            name: 'Juliette Pénélope Pépin',
-            description: 'アーティスト',
-            url: 'https://juliettepenelope.com/',
           },
           {
             id: 'lemos',
