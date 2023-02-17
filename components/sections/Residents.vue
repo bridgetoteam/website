@@ -3,11 +3,29 @@
     class="section contentcolumn full"
     id="residents"
   >
+    <div
+      v-lazy:background-image="
+        '/assets/img/2023/3.jpg'
+      "
+      class="interstitial"
+    >
+      <div class="overlay"></div>
+    </div>
+
     <template v-if="$i18n.locale === 'ja'">
       <h1>Residents</h1>
 
+      <p>
+        We're not currently accepting new residents, but
+        these are the people who have stayed or organized
+        events and workshops here!
+      </p>
+
       <div class="row">
-        <div>
+        <div
+          v-if="($i18n.locale === 'ja' ? ja : en)
+                .current?.length"
+        >
           <h3>Current</h3>
 
           <div class="grid">
@@ -15,6 +33,7 @@
               class="resident"
               v-for="r in ($i18n.locale === 'ja' ? ja : en)
                 .current"
+              :key="r.id + r.name + $i18n.locale"
             >
               <div
                 class="img"
@@ -44,6 +63,7 @@
               class="resident"
               v-for="r in ($i18n.locale === 'ja' ? ja : en)
                 .upcoming"
+              :key="r.id + r.name + $i18n.locale"
             >
               <div
                 class="img"
@@ -73,6 +93,7 @@
               class="resident"
               v-for="r in ($i18n.locale === 'ja' ? ja : en)
                 .past"
+              :key="r.id + r.name + $i18n.locale"
             >
               <div
                 class="img"
@@ -99,12 +120,25 @@
     <template v-else>
       <h1>Residents</h1>
 
+      <p>
+        We're not currently accepting new residents, but
+        these are the people who have stayed or organized
+        events and workshops here!
+      </p>
+
       <div class="row">
-        <div>
+        <div
+          v-if="($i18n.locale === 'ja' ? ja : en)
+                .current?.length"
+        >
           <h3>Current</h3>
 
           <div class="grid">
-            <div class="resident" v-for="r in en.current">
+            <div
+              class="resident"
+              v-for="r in en.current"
+              :key="r.id + r.name + $i18n.locale"
+            >
               <div
                 class="img"
                 v-lazy:background-image="
@@ -129,7 +163,11 @@
           <h3>Upcoming</h3>
 
           <div class="grid">
-            <div class="resident" v-for="r in en.upcoming">
+            <div
+              class="resident"
+              v-for="r in en.upcoming"
+              :key="r.id + r.name + $i18n.locale"
+            >
               <div
                 class="img"
                 v-lazy:background-image="
@@ -154,7 +192,11 @@
           <h3>Past</h3>
 
           <div class="grid">
-            <div class="resident" v-for="r in en.past">
+            <div
+              class="resident"
+              v-for="r in en.past"
+              :key="r.id + r.name + $i18n.locale"
+            >
               <div
                 class="img"
                 v-lazy:background-image="
@@ -190,13 +232,30 @@ export default {
     return {
       en: {
         current: [
+        ],
+        past: [{
+            id: 'eliza',
+            name: 'Eliza Soroga',
+            description:
+              'Site-Specific Performance Artist from Athens.',
+            url: 'http://www.elizasoroga.com/',
+          },
+          {
+            id: 'juliette',
+            name: 'Juliette Pénélope Pépin',
+            description: 'Artist',
+            url: 'https://juliettepenelope.com/',
+          },{
+            id: 'taina',
+            name: 'Tainá Guedes',
+            description: `Berlin-based artist, food activist, book author and trained cook.`,
+            url: 'https://entretempo-kitchen-gallery.com/',
+          },
           {
             id: 'harry',
             name: 'Harry Lee',
             description: 'Tea / Ceramic / Landscape artist',
           },
-        ],
-        past: [
           {
             id: 'misa',
             name: 'Misa Murata',
@@ -237,12 +296,7 @@ export default {
               'Berlin-based design studio exploring culture and society.',
             url: 'https://studiobseverin.com/',
           },
-          {
-            id: 'taina',
-            name: 'Tainá Guedes',
-            description: `Berlin-based artist, food activist, book author and trained cook.`,
-            url: 'https://entretempo-kitchen-gallery.com/',
-          },
+
           {
             id: 'august',
             name: 'August Henry Moehrke',
@@ -253,8 +307,7 @@ export default {
             id: 'cleo',
             name: 'Cléo Verstrepen',
             description: `Graduate in cultural studies preparing research community art spaces.`,
-            url:
-              'https://www.instagram.com/cleoverstrepen/?hl=en',
+            url: 'https://www.instagram.com/cleoverstrepen/?hl=en',
           },
           {
             id: 'rocky',
@@ -267,19 +320,7 @@ export default {
             name: 'Erika Rodríguez',
             description: `Architect and scriptwriter researching appropiation of space. `,
           },
-          {
-            id: 'eliza',
-            name: 'Eliza Soroga',
-            description:
-              'Site-Specific Performance Artist from Athens.',
-            url: 'http://www.elizasoroga.com/',
-          },
-          {
-            id: 'juliette',
-            name: 'Juliette Pénélope Pépin',
-            description: 'Artist',
-            url: 'https://juliettepenelope.com/',
-          },
+
           {
             id: 'lemos',
             name: 'Lemos + Lehmann',
@@ -364,8 +405,7 @@ export default {
             id: 'cleo',
             name: 'Cléo Verstrepen',
             description: `コミュニティ・アート・スペースのリサーチャー`,
-            url:
-              'https://www.instagram.com/cleoverstrepen/?hl=en',
+            url: 'https://www.instagram.com/cleoverstrepen/?hl=en',
           },
           {
             id: 'rocky',
@@ -392,20 +432,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$bg: var(--accentl1);
-
 .section {
+  --bg: var(--accentl1);
   --side-pad: 5%;
 
-  background: $bg;
+  background: var(--bg);
   width: 100%;
   overflow-x: hidden;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
+  padding-top: 0;
 }
 h1 {
+  margin-top: 130px;
+}
+h1,
+p {
   margin-left: var(--side-pad);
+}
+p {
+  max-width: 550px;
 }
 h2 {
   margin-top: 0;

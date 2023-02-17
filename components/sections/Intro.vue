@@ -2,45 +2,50 @@
   <PageSection class="section" id="top">
     <div class="introtext">
       <template v-if="$i18n.locale === 'ja'">
-        <h1>
-          A creative residency
-          <br v-if="!isMobile" />for urbanists.
-        </h1>
-        <h2 class="ja">Bridge to Kyotoは、「都市」をテーマにした、建築・街づくり・アートなど都市に関わる実践者のための「アーバニスト・イン・レジデンス」です。</h2>
+        <h1></h1>
+        <h2 class="ja">
+          Bridge to
+          Kyotoは、「都市」をテーマにした、建築・街づくり・アートなど都市に関わる実践者のための「アーバニスト・イン・レジデンス」です。
+        </h2>
       </template>
       <template v-else>
-        <h1>
-          A creative residency
-          <br v-if="!isMobile" />for urbanists.
-        </h1>
+        <h1>A place for urbanists.</h1>
         <h2>
-          Investigate Kyoto, share your work,
-          <br v-if="!isMobile" />and engage with the local scene.
+          Bridge To Kyoto is an urban library and event
+          space for cities.
         </h2>
       </template>
     </div>
-    <img class="bgillustration" src="~/assets/img/bg_illustration.svg" />
-    <img v-if="!isMobile" class="downarrow" src="~/assets/img/down_arrow.svg" @click="scrollDown" />
+    <img
+      class="bgillustration"
+      src="~/assets/img/bg_illustration.svg"
+    />
+    <img
+      v-if="!isMobile"
+      class="downarrow"
+      src="~/assets/img/down_arrow.svg"
+      @click="scrollDown"
+    />
   </PageSection>
 </template>
 
 <script>
-import PageSection from "~/components/PageSection.vue";
-import useWindowWidth from "~/components/mixins/useWindowWidth";
+import PageSection from '~/components/PageSection.vue'
+import useWindowWidth from '~/components/mixins/useWindowWidth'
 
 export default {
   components: {
-    PageSection
+    PageSection,
   },
 
   mixins: [useWindowWidth],
 
   methods: {
     scrollDown() {
-      document.getElementById("about").scrollIntoView(true);
-    }
-  }
-};
+      document.getElementById('about').scrollIntoView(true)
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

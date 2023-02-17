@@ -25,17 +25,11 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  loading: { color: '#fff' },
-
-  css: ['~/assets/css/global'],
+  css: ['~assets/css/global'],
 
   plugins: ['~/plugins/lazyLoad'],
 
-  buildModules: [],
-
-  modules: ['@nuxtjs/axios', 'nuxt-i18n'],
-
-  axios: {},
+  modules: [ '@nuxtjs/axios', 'nuxt-i18n'],
 
   i18n: {
     locales: [
@@ -57,9 +51,5 @@ export default {
     vuex: {
       syncLocale: true,
     },
-  },
-
-  build: {
-    extend(config, ctx) {},
   },
 }

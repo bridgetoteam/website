@@ -1,5 +1,14 @@
 <template>
   <PageSection class="section" id="contact">
+    <div
+      v-lazy:background-image="
+        '/assets/img/2023/7.jpg'
+      "
+      class="interstitial"
+    >
+      <div class="overlay"></div>
+    </div>
+
     <div class="contentcolumn">
       <h1>Contact Us</h1>
       <template v-if="$i18n.locale === 'ja'">
@@ -64,9 +73,11 @@ export default {
 
 <style lang="scss" scoped>
 .section {
+  --bg: #333;
   background: #333;
   color: white;
   padding-bottom: 30vh;
+  padding-top: 0;
 }
 
 h1 {

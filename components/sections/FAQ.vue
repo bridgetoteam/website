@@ -1,11 +1,21 @@
 <template>
   <PageSection class="section" id="faq">
     <div
-      class="interstitial"
       v-lazy:background-image="
-        '/assets/img/interstitial2.jpg'
+        '/assets/img/2023/4.jpg'
+      "
+      class="interstitial"
+    >
+      <div class="overlay"></div>
+    </div>
+
+    <div
+      class="interstitialbg"
+      v-lazy:background-image="
+        '/assets/img/2023/6.jpg'
       "
     ></div>
+
     <div class="contentcolumn">
       <h1>FAQ</h1>
       <div class="columns">
@@ -34,7 +44,7 @@
             >, which collects urban narratives from around
             the world through traveling. We run Bridge To
             Kyoto by ourselves (we also live here!) through
-            our passion for cities and urbanism, and it’s
+            our passion for cities and urbanism, and it's
             entirely an independent project. We have good
             connections with different urbanism-related
             practitioners here in Japan as well as in the
@@ -53,35 +63,31 @@
             >都市、建築、まちづくり、アートに興味がある人であれば誰でもご使用いただけます。レジデンス募集の場合は、面談・ビデオ面接をさせて頂く場合もあります。ワークショップやイベントの開催希望の方も、お気軽にお問い合わせください。</template
           >
           <template v-else
-            >It’s important for us to get to know you
-            better, so we’ll carefully examine your
+            >It's important for us to get to know you
+            better, so we'll carefully examine your
             application and perhaps ask for an online
-            interview depending on how long you want to
-            stay. We’ll get back to you within a week to let
-            you know our availability.</template
+            interview. We'll get back to you within a week
+            to let you know our availability.</template
           >
         </p>
 
         <h2 v-if="$i18n.locale === 'ja'">
           どんなエリアなの？
         </h2>
-        <h2 v-else>What’s in the neighborhood?</h2>
+        <h2 v-else>What's in the neighborhood?</h2>
         <p>
           <template v-if="$i18n.locale === 'ja'"
             >銀閣寺と哲学の道から、徒歩5分ほどの場所にあります。京都大学も近く、カフェやレストランなどが徒歩圏内に数多くあるほか、クリエイティブな本屋や隠れ家的なアートスペースも点在するエリアです。</template
           >
           <template v-else>
             We're only a 5 minute walk away from the Silver
-            Temple (Ginkakuji) &amp; the Philosopher’s Path
+            Temple (Ginkakuji) &amp; the Philosopher's Path
             (one of the most popular icons of Kyoto), and 25
             minutes by bus from the city center. Kyoto
-            University is very close by, as well. The
-            neighborhood is quiet, but you can easily find
-            many restaurants, cafes, and grocery stores
-            within walking distance. On top of that, there
-            are many small independent art galleries, book
-            stores, and craft shops nearby. One of our
-            favorites is
+            University is very close by, as well. On top of
+            that, there are many small independent art
+            galleries, book stores, and craft shops nearby.
+            One of our favorites is
             <a href="http://hohohoza.com/" target="_blank"
               >Hohohoza</a
             >!
@@ -132,12 +138,10 @@
 
             <h3>Event / Workshop</h3>
             <p>
-              General use of the space for events and
-              workshops is free for the residents. We prefer
-              the space to be noncommercial, but in the
-              event that you make a profit from ticket or
-              goods sales, we kindly ask for 40% of the
-              earnings for our help with planning,
+              We prefer the space to be noncommercial, but
+              in the event that you make a profit from
+              ticket or goods sales, we kindly ask for 40%
+              of the earnings for our help with planning,
               promption, translation, setup/teardown,
               documentation etc.
             </p>
@@ -194,7 +198,7 @@
             artist who stages performances in public spaces,
             or an environmentalist who does research on
             implementating fermentation technology into
-            people’s everyday lives in cities — these people
+            people's everyday lives in cities — these people
             are also urbanists to us.</template
           >
         </p>
@@ -211,14 +215,14 @@
               architectural projects that are small-scale,
               incremental, resident-generated, and
               bottom-up, rather than top-down planning and
-              mega-projects. We’d love to invite inspiring
+              mega-projects. We'd love to invite inspiring
               practitioners who truly love their cities who
               are part of motivating initiatives and topics
               that are unique to each city.</template
             >
           </p>
 
-          <h2>What if I want to stay less than a month?</h2>
+          <!-- <h2>What if I want to stay less than a month?</h2>
           <p>
             <template
               v-if="$i18n.locale === 'ja'"
@@ -238,7 +242,7 @@
               have only a few weeks to spare — hopefully we
               can figure something out!
             </template>
-          </p>
+          </p> -->
         </template>
       </div>
     </div>
@@ -257,21 +261,23 @@ export default {
 
 <style lang="scss" scoped>
 .section {
+  --bg: rgb(141, 115, 160);
   background: rgb(141, 115, 160);
   color: white;
   padding-bottom: 10vh;
   overflow: hidden;
   width: 100%;
   position: relative;
+  padding-top: 0;
 
   @media (max-width: 768px) {
     padding-bottom: 5vh;
   }
 }
 
-.interstitial {
+.interstitialbg {
   position: absolute;
-  top: 25%;
+  top: 40%;
   left: 50%;
   width: 50%;
   height: 50%;
@@ -280,7 +286,7 @@ export default {
   pointer-events: none;
   z-index: 1;
   mix-blend-mode: overlay;
-  opacity: 0.4;
+  opacity: 0.2;
 
   @media (max-width: 768px) {
     top: 30%;

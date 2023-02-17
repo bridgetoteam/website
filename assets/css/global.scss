@@ -217,6 +217,34 @@ a.button {
   }
 }
 
+.interstitial {
+  height: 90vh;
+  background-size: cover;
+  background-position: center center;
+  // overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -100px;
+  width: 100%;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    height: 50vh;
+    margin-bottom: -50px;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: -10%;
+    top: 90%;
+    left: -50%;
+    right: -50%;
+    background: var(--bg);
+    // mix-blend-mode: multiply;
+    transform: rotate(-4deg);
+  }
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.2s;

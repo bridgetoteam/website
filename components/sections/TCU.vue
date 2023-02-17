@@ -1,29 +1,39 @@
 <template>
   <PageSection class="section" id="tcu">
-    <div class="bgimage" v-lazy:background-image="'/assets/img/tcu.jpg'"></div>
+    <div
+      class="bgimage"
+      v-lazy:background-image="'/assets/img/tcu.jpg'"
+    ></div>
     <div class="contentcolumn">
       <h1>Blog</h1>
       <template v-if="$i18n.locale === 'ja'">
         <p>
           世界各地の都市から、都市・建築・街づくりに関わる事例を紹介する
-          <a
-            :href="localeLink"
-            target="_blank"
-          >Traveling Circus of Urbanism</a>, を運営しています。
+          <a :href="localeLink" target="_blank"
+            >Traveling Circus of Urbanism</a
+          >, を運営しています。
         </p>
-        <a class="button" :href="localeLink" target="_blank">
+        <a
+          class="button"
+          :href="localeLink"
+          target="_blank"
+        >
           <div>ブログを読む</div>
         </a>
       </template>
       <template v-else>
         <p>
           We also run a website called
-          <a
-            :href="localeLink"
-            target="_blank"
-          >Traveling Circus of Urbanism</a>, where we cover global and local urban practices and ideas.
+          <a :href="localeLink" target="_blank"
+            >Traveling Circus of Urbanism</a
+          >, where we cover global and local urban practices
+          and ideas.
         </p>
-        <a class="button" :href="localeLink" target="_blank">
+        <a
+          class="button"
+          :href="localeLink"
+          target="_blank"
+        >
           <div>Check it out!</div>
         </a>
       </template>
@@ -50,6 +60,7 @@ export default {
 
 <style lang="scss" scoped>
 .section {
+  --bg: #333;
   background: #333;
   // color: var(--primary);
   color: white;

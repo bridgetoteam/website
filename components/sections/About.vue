@@ -11,21 +11,20 @@
               <h1>About</h1>
               <p>
                 建築・街づくりの実践者が、国境をこえて成功事例や課題を共有しあえる場所は、まだあまりありません。
-                <b>Bridge to Kyoto</b>は、世界中からアーバニストやアーティストを受け入れ、国内の建築・街づくりの実践者と交流し、コラボレーションが生まれるきっかけをつくる場所です。
+                <b>Bridge to Kyoto</b
+                >は、世界中からアーバニストやアーティストを受け入れ、国内の建築・街づくりの実践者と交流し、コラボレーションが生まれるきっかけをつくる場所です。
               </p>
             </template>
 
             <template v-else>
               <h1>About</h1>
               <p>
-                Urbanists and creators from around the world come to Japan
-                looking to engage with the local scene. Sadly, though, it’s easy
-                to miss the depth and scope of urbanism in Japan without a hub
-                to connect to it.
-                <b>Bridge to Kyoto</b> is a vibrant and
-                inviting space for visiting urbanists to stay, exchange ideas,
-                and explore Kyoto. It's a home base for anyone interested in
-                urbanism, architecture and sustainable living.
+                <b>"Bridge To Kyoto"</b> is a curatorial
+                platform and cultural space for architecture
+                and urbanism based in Kyoto, Japan. It is a
+                private gallery and library that showcases a
+                collection of publications and items in the
+                fields of architecture and urbanism.
               </p>
             </template>
           </div>
@@ -45,25 +44,32 @@
                 <a
                   href="https://www.travelingcircusofurbanism.com/"
                   target="_blank"
-                >こちら</a>もご参照ください。
+                  >こちら</a
+                >もご参照ください。
               </p>
             </template>
 
             <template v-else>
               <h2>Global Discourse, Local Practice.</h2>
               <p>
-                We can’t just copy and paste the best practices from other parts
-                of the world to our city, but that doesn’t mean that we can't
-                learn from each other. We believe that more urbanists coming
-                from different backgrounds &amp; sharing their work helps change
-                the discourse and practice of urbanism across the globe. By
-                inviting urbanists from around the world, we’d like to encourage
-                local-scale international collaboration within a global frame of
-                mind. Check out
+                We can't just copy and paste the best
+                practices from other parts of the world to
+                our city, but that doesn't mean that we
+                can't learn from each other. We believe that
+                more urbanists coming from different
+                backgrounds &amp; sharing their work helps
+                change the discourse and practice of
+                urbanism across the globe. By inviting
+                urbanists from around the world, we'd like
+                to encourage local-scale international
+                collaboration within a global frame of mind.
+                Check out
                 <a
                   href="https://www.travelingcircusofurbanism.com/"
                   target="_blank"
-                >our sister site</a> for more on global urbanism!
+                  >our sister site</a
+                >
+                for more on global urbanism!
               </p>
             </template>
           </div>
@@ -79,19 +85,24 @@
               <h2>Live and Work, Kyoto Style.</h2>
               <p>
                 Bridge to
-                Kyotoは、建築や街づくりに関わるアーバニストや、都市や公共空間をテーマに活動を行うアーティストが１〜6ヶ月の期間で滞在して活動できるアーバニスト・イン・レジデンスです。滞在中は、イベントやワークショップ、展示会などの開催も可能です。レジデンス滞在者以外でも、「都市」をテーマに、イベントやワークショップ、展示会などを定期的に開催しています。
+                Kyotoは、建築や街づくりに関わるアーバニストや、都市や公共空間をテーマに活動を行うアーティストが1〜6ヶ月の期間で滞在して活動できるアーバニスト・イン・レジデンスです。滞在中は、イベントやワークショップ、展示会などの開催も可能です。レジデンス滞在者以外でも、「都市」をテーマに、イベントやワークショップ、展示会などを定期的に開催しています。
               </p>
             </template>
 
             <template v-else>
               <h2>Live and Work, Kyoto Style.</h2>
               <p>
-                Bridge to Kyoto is a residence for urbanists as well as an
-                event, workshop, and gallery space. Anyone who considers themselves part of
-                the phenomenon of “the city" is welcome to stay with us and/or use our space.
-                Come meet other urbanists, exchange ideas both internationally
-                and interdisciplinarily, and find collaboration and
-                inspiration in Kyoto!
+                Since 2020, Bridge To Kyoto has been serving
+                as a residence for urbanists as well as an
+                event, workshop, and gallery space. It is
+                based in a newly renovated postwar
+                Kyoto-style home with a stream in front,
+                adjacent to the Philosopher's Path. It has
+                hosted many creative-minded people from
+                varied backgrounds from around the world
+                since its opening, as well as a multitude of
+                talks, workshops, performances, and
+                exhibitions.
               </p>
             </template>
           </div>
@@ -106,20 +117,19 @@
 </template>
 
 <script>
-import PageSection from "~/components/PageSection.vue";
+import PageSection from '~/components/PageSection.vue'
 
 export default {
   components: {
-    PageSection
-  }
-};
+    PageSection,
+  },
+}
 </script>
 
 <style lang="scss" scoped>
-$bg: rgb(255, 255, 255);
-
 .section {
-  background: $bg;
+  --bg: rgb(255, 255, 255);
+  background: var(--bg);
   width: 100%;
   overflow-x: hidden;
 }
@@ -141,7 +151,7 @@ $bg: rgb(255, 255, 255);
 }
 
 .textbox {
-  background: rgba($bg, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   position: relative;
   z-index: 3;
 

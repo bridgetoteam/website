@@ -45,10 +45,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$bg: rgb(255, 255, 255);
-
 .section {
-  background: $bg;
+  --bg: rgb(255, 255, 255);
+  background: var(--bg);
   width: 100%;
   overflow-x: hidden;
 }

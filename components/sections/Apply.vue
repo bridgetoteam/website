@@ -1,10 +1,10 @@
 <template>
   <PageSection class="section" id="apply">
-    <div class="bghalf"></div>
+    <!-- <div class="bghalf"></div> -->
     <div class="contentcolumn">
       <h1>Apply</h1>
       <div class="columns">
-        <div class="residency">
+        <!-- <div class="residency">
           <h2 v-if="$i18n.locale === 'ja'">レジデンス</h2>
           <h2 v-else>Residency</h2>
           <p class="indent">
@@ -149,11 +149,10 @@
                 Promotion and exhibition of the fellows’
                 work both online and locally
               </li>
-              <!-- <li>(See FAQ section for price)</li> -->
             </template>
           </ul>
 
-          <!-- <h3>
+          <h3>
             <template v-if="$i18n.locale === 'ja'">費用</template>
             <template v-else>Price</template>
           </h3>
@@ -175,15 +174,15 @@
                 class="sub"
               >Please consult us if you want to stay less than 1 month / more than 6 months</div>
             </template>
-          </div>-->
+          </div>
 
-          <!-- <ApplyButton
+          <ApplyButton
             class="applybutton button"
             label="Apply for Residency"
             :reverse="true"
             target="https://docs.google.com/forms/d/e/1FAIpQLSfE7Pf0-G1MoVrvJR4YHYq1rXk8SGwUnXP8xW7Njhaq3Li7NA/viewform"
-          /> -->
-        </div>
+          />
+        </div> -->
 
         <div class="event">
           <h2 v-if="$i18n.locale === 'ja'">
@@ -196,21 +195,17 @@
               Kyotoは、「都市」をテーマにしたイベント、ワークショップ、展示などの企画を常時応募しています。イベントスペースの収容人数は10名〜15名と小規模ですが、京都での実験的なプロジェクトや地元の実践者との交流など、面白いアイデアの応募をお待ちしています。</template
             >
             <template v-else
-              >Got only a week in Kyoto but still want to do
-              something interesting and meet some local
-              urbanists here? You can organize an event,
-              workshop, or meetup etc. at our place to
-              introduce your practices or share your ideas!
-              Instead of being a regular tourist, organizing
-              something engaging here helps to gain
-              awareness from the local community & helps you
-              to build meaningful relationships with local
-              practitioners, which might turn into future
-              collaborations. Our space is not big, but it
-              can comfortably fit 10–15 people (depending on
-              the event type), and we can help you promote
-              your event and communicate with participants
-              in Japanese.</template
+              >You can organize an event, workshop, meetup,
+              etc. at our place to introduce your practices
+              or share your ideas! Instead of being a
+              regular tourist, organize something engaging
+              here to gain awareness of the local community
+              and start building meaningful relationships
+              with local practitioners. Our space is not
+              big, but it can comfortably fit 10–15 people
+              (depending on the event type), and we can help
+              you promote your event and communicate with
+              participants in Japanese.</template
             >
           </p>
 
@@ -305,6 +300,7 @@ export default {
 
 <style lang="scss" scoped>
 .section {
+  --bg: var(--primaryd2);
   background: var(--primaryd2);
   color: white;
   padding-bottom: 10vh;
@@ -317,19 +313,19 @@ export default {
   }
 }
 
-.bghalf {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 50%;
-  height: 100%;
-  background: var(--primaryd3);
+// .bghalf {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: 1;
+//   width: 50%;
+//   height: 100%;
+//   background: var(--primaryd3);
 
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
+//   @media (max-width: 768px) {
+//     display: none;
+//   }
+// }
 
 .contentcolumn {
   position: relative;
@@ -342,17 +338,17 @@ h1 {
 
 .columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 100px;
+  // grid-template-columns: 1fr 1fr;
+  // grid-gap: 100px;
 
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  // @media (max-width: 768px) {
+  grid-template-columns: 1fr;
+  // }
 }
 
 .event {
   @media (max-width: 768px) {
-    background: var(--primaryd3);
+    // background: var(--primaryd3);
     margin: -30px -50vw -15vh -50vw;
     padding: 30px 50vw 15vh 50vw;
   }
