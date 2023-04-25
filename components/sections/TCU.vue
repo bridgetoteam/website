@@ -8,10 +8,10 @@
       <h1>Blog</h1>
       <template v-if="$i18n.locale === 'ja'">
         <p>
-          世界各地の都市から、都市・建築・街づくりに関わる事例を紹介する
+          世界各地の都市から、建築・都市・まちづくりに関わる事例を紹介する
           <a :href="localeLink" target="_blank"
             >Traveling Circus of Urbanism</a
-          >, を運営しています。
+          >を運営しています。
         </p>
         <a
           class="button"

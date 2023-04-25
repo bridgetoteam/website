@@ -16,9 +16,7 @@
       <h1>Residents</h1>
 
       <p>
-        We're not currently accepting new residents, but
-        these are the people who have stayed or organized
-        events and workshops here!
+        ※現在、新たなレジデンスの申し込みは受付しておりません。
       </p>
 
       <div class="row">
