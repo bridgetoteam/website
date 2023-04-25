@@ -19,25 +19,26 @@ export default {
         {
           hid: `content-language`,
           'http-equiv': 'content-language',
-          content: this.$i18n.locale === 'ja' ? 'ja-JP' : 'en-US',
+          content:
+            this.$i18n.locale === 'ja' ? 'ja-JP' : 'en-US',
         },
         {
           hid: 'keywords',
           name: 'keywords',
           content:
             this.$i18n.locale === 'ja'
-              ? 'レジデンス, アーバニストインレジデンス, アーティストインレジデンス, シェアハウス, 都市, 建築, 京都'
-              : 'urbanism, residency, japan, urbanist in residence, artist in residence, sharehouse, kyoto',
+              ? 'アーバニスト, アーティス, 都市, 建築, 京都'
+              : 'urbanism, library, japan, urbanist, exhibition, kyoto',
         },
         {
           hid: 'description',
           name: 'description',
-          content: `A creative residency for urbanists. Open for applications!`,
+          content: `An urban library and event space for cities.`,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: `A creative residency for urbanists. Open for applications!`,
+          content: `An urban library and event space for cities.`,
         },
         ...i18nSeo.meta,
       ],
