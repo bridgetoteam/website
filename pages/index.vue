@@ -7,6 +7,7 @@
     <Apply />
     <Residents />
     <FAQ />
+    <MailingList />
     <TCU />
     <Contact />
   </main>
@@ -20,6 +21,7 @@ import Apply from '~/components/sections/Apply.vue'
 import TCU from '~/components/sections/TCU.vue'
 import FAQ from '~/components/sections/FAQ.vue'
 import Insta from '~/components/sections/Insta.vue'
+import MailingList from '~/components/sections/MailingList.vue'
 import Residents from '~/components/sections/Residents.vue'
 import Contact from '~/components/sections/Contact.vue'
 
@@ -49,6 +51,18 @@ export default {
           content: 'Bridge To Kyoto',
         },
       ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://cdn-images.mailchimp.com/embedcode/classic-071822.css',
+        },
+      ],
+      script: [
+        {
+          src: 'https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',
+          type: 'text/javascript',
+        },
+      ],
     }
   },
   components: {
@@ -60,6 +74,7 @@ export default {
     FAQ,
     Insta,
     Contact,
+    MailingList,
     Residents,
   },
 }

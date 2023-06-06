@@ -137,7 +137,13 @@ h3 {
   line-height: 1.2;
 }
 
-a.button {
+button,
+a.button,
+#mc_embed_signup
+  #mc-embedded-subscribe-form
+  #mc_embed_signup_scroll
+  #mc-embedded-subscribe,
+#mc_embed_signup .button {
   text-transform: uppercase;
   font-size: 1.1em;
   letter-spacing: 5px;
@@ -149,6 +155,7 @@ a.button {
   justify-content: stretch;
   height: 90px;
   line-height: 1.4;
+  border-radius: 0;
 
   @media (max-width: 768px) {
     height: 70px;

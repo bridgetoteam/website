@@ -42,20 +42,20 @@
 </template>
 
 <script>
-import PageSection from "~/components/PageSection.vue";
+import PageSection from '~/components/PageSection.vue'
 
 export default {
   components: {
-    PageSection
+    PageSection,
   },
   computed: {
     localeLink() {
-      return this.$i18n.locale === "ja"
-        ? "https://www.travelingcircusofurbanism.com/ja"
-        : "https://www.travelingcircusofurbanism.com";
-    }
-  }
-};
+      return this.$i18n.locale === 'ja'
+        ? 'https://www.travelingcircusofurbanism.com/ja'
+        : 'https://www.travelingcircusofurbanism.com'
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
