@@ -4,9 +4,7 @@
     id="residents"
   >
     <div
-      v-lazy:background-image="
-        '/assets/img/2023/3.jpg'
-      "
+      v-lazy:background-image="'/assets/img/2023/3.jpg'"
       class="interstitial"
     >
       <div class="overlay"></div>
@@ -21,8 +19,10 @@
 
       <div class="row">
         <div
-          v-if="($i18n.locale === 'ja' ? ja : en)
-                .current?.length"
+          v-if="
+            ($i18n.locale === 'ja' ? ja : en).current
+              ?.length
+          "
         >
           <h3>Current</h3>
 
@@ -126,8 +126,10 @@
 
       <div class="row">
         <div
-          v-if="($i18n.locale === 'ja' ? ja : en)
-                .current?.length"
+          v-if="
+            ($i18n.locale === 'ja' ? ja : en).current
+              ?.length
+          "
         >
           <h3>Current</h3>
 
@@ -229,9 +231,32 @@ export default {
   data() {
     return {
       en: {
-        current: [
-        ],
-        past: [{
+        current: [],
+        past: [
+          {
+            id: 'waldo',
+            name: 'Waldo De Keersmaecker',
+            description: `Architect.`,
+          },
+          {
+            id: 'anneleen',
+            name: 'Anneleen Bertels',
+            description: `Textile designer.`,
+          },
+          {
+            id: 'lemos',
+            name: 'Lemos + Lehmann',
+            description:
+              'Perception, contemplation, and emotion.',
+            url: 'https://www.lemosandlehmann.com',
+          },
+          {
+            id: 'august',
+            name: 'August Henry Moehrke',
+            description: `Visual artist located in New York City.`,
+            url: 'https://www.ahm-art.com/',
+          },
+          {
             id: 'eliza',
             name: 'Eliza Soroga',
             description:
@@ -243,7 +268,8 @@ export default {
             name: 'Juliette Pénélope Pépin',
             description: 'Artist',
             url: 'https://juliettepenelope.com/',
-          },{
+          },
+          {
             id: 'taina',
             name: 'Tainá Guedes',
             description: `Berlin-based artist, food activist, book author and trained cook.`,
@@ -278,7 +304,6 @@ export default {
             description: 'Visual and sculptural artist.',
             url: 'https://www.shintakukanako.com/',
           },
-
           {
             id: 'eva',
             name: 'Eva Ešnerová',
@@ -293,13 +318,6 @@ export default {
             description:
               'Berlin-based design studio exploring culture and society.',
             url: 'https://studiobseverin.com/',
-          },
-
-          {
-            id: 'august',
-            name: 'August Henry Moehrke',
-            description: `Visual artist located in New York City.`,
-            url: 'https://www.ahm-art.com/',
           },
           {
             id: 'cleo',
@@ -317,14 +335,6 @@ export default {
             id: 'erika',
             name: 'Erika Rodríguez',
             description: `Architect and scriptwriter researching appropiation of space. `,
-          },
-
-          {
-            id: 'lemos',
-            name: 'Lemos + Lehmann',
-            description:
-              'Perception, contemplation, and emotion.',
-            url: 'https://www.lemosandlehmann.com',
           },
         ],
       },
