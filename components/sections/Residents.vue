@@ -234,6 +234,11 @@ export default {
         current: [],
         past: [
           {
+            id: 'momoko',
+            name: 'Momoko Watanabe',
+            description: `Dance & body expression.`,
+          },
+          {
             id: 'waldo',
             name: 'Waldo De Keersmaecker',
             description: `Architect.`,
@@ -342,6 +347,33 @@ export default {
       ja: {
         current: [],
         past: [
+          {
+            id: 'momoko',
+            name: 'Momoko Watanabe',
+            description: `ダンス、身体表現。`,
+          },
+          {
+            id: 'waldo',
+            name: 'Waldo De Keersmaecker',
+            description: `建築家。`,
+          },
+          {
+            id: 'anneleen',
+            name: 'Anneleen Bertels',
+            description: `テキスタイルデザイナー。`,
+          },
+          {
+            id: 'lemos',
+            name: 'Lemos + Lehmann',
+            description: '知覚、熟考、感情。',
+            url: 'https://www.lemosandlehmann.com',
+          },
+          {
+            id: 'august',
+            name: 'August Henry Moehrke',
+            description: `NYCから来たビジュアルアーティスト。`,
+            url: 'https://www.ahm-art.com/',
+          },
           {
             id: 'eliza',
             name: 'Eliza Soroga',
