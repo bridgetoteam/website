@@ -1,83 +1,60 @@
 <template>
   <main>
-    <Intro />
-    <About />
-    <Space />
-    <Insta />
-    <Apply />
-    <Residents />
-    <FAQ />
-    <MailingList />
-    <TCU />
-    <Contact />
+    <HomeIntro />
+    <HomeAbout />
+    <HomeSpace />
+    <HomeInsta />
+    <HomeApply />
+    <HomeResidents />
+    <HomeFAQ />
+    <HomeMailingList />
+    <!-- <HomeTCU /> -->
+    <HomeContact />
   </main>
 </template>
 
-<script>
-import Intro from '~/components/sections/Intro.vue'
-import About from '~/components/sections/About.vue'
-import Space from '~/components/sections/Space.vue'
-import Apply from '~/components/sections/Apply.vue'
-import TCU from '~/components/sections/TCU.vue'
-import FAQ from '~/components/sections/FAQ.vue'
-import Insta from '~/components/sections/Insta.vue'
-import MailingList from '~/components/sections/MailingList.vue'
-import Residents from '~/components/sections/Residents.vue'
-import Contact from '~/components/sections/Contact.vue'
+<script setup lang="ts">
+import * as state from '~/assets/state'
+const i18n = useI18n()
+const locale = i18n.locale
 
-export default {
-  head() {
-    return {
-      title: 'Kyoto',
-      meta: [
-        {
-          property: 'og:title',
-          hid: `og:title`,
-          content: 'Bridge To Kyoto',
-        },
-        {
-          property: 'twitter:title',
-          hid: `twitter:title`,
-          content: 'Bridge To Kyoto',
-        },
-        {
-          hid: `og:url`,
-          property: 'og:url',
-          content: `https://www.brdg.to/`,
-        },
-        {
-          hid: `og:site_name`,
-          property: 'og:site_name',
-          content: 'Bridge To Kyoto',
-        },
-      ],
-      link: [
-        {
-          rel: 'stylesheet',
-          href: 'https://cdn-images.mailchimp.com/embedcode/classic-071822.css',
-        },
-      ],
-      script: [
-        {
-          src: 'https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',
-          type: 'text/javascript',
-        },
-      ],
-    }
-  },
-  components: {
-    Intro,
-    About,
-    Space,
-    Apply,
-    TCU,
-    FAQ,
-    Insta,
-    Contact,
-    MailingList,
-    Residents,
-  },
-}
+useHead({
+  title: 'Kyoto',
+  meta: [
+    {
+      property: 'og:title',
+      hid: `og:title`,
+      content: 'Bridge To Kyoto',
+    },
+    {
+      property: 'twitter:title',
+      hid: `twitter:title`,
+      content: 'Bridge To Kyoto',
+    },
+    {
+      hid: `og:url`,
+      property: 'og:url',
+      content: `https://www.brdg.to/`,
+    },
+    {
+      hid: `og:site_name`,
+      property: 'og:site_name',
+      content: 'Bridge To Kyoto',
+    },
+  ],
+  link: [
+    {
+      rel: 'stylesheet',
+      href: 'https://cdn-images.mailchimp.com/embedcode/classic-071822.css',
+    },
+  ],
+  script: [
+    {
+      src: 'https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',
+      type: 'text/javascript',
+    },
+  ],
+})
 </script>
 
 <style lang="scss" scoped>

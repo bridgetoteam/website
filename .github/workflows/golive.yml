@@ -1,9 +1,11 @@
 name: go live to github pages
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [published]
+#   push:
+#     branches:
+#       - master
 
 jobs:
   build-deploy:
