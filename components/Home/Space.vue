@@ -211,6 +211,7 @@
         <div class="leftright padbotbig">
           <img
             src="/assets/img/bridgeTo.svg"
+            class="flip"
             style="mix-blend-mode: multiply"
           />
           <div class="text">
@@ -330,9 +331,10 @@ const locale = i18n.locale
   display: inline-block;
   background: var(--text);
   color: white;
-  padding: 0.2em 0.4em;
+  padding: 0.4em 0.4em 0.3em 0.4em;
+  line-height: 1;
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: -5em;
 
   mix-blend-mode: multiply;
@@ -341,6 +343,11 @@ const locale = i18n.locale
 img {
   transform: scale(1.5);
   transform-origin: top right;
+
+  &.flip {
+    transform: scale(-1.5, 1.5);
+    transform-origin: top center;
+  }
 }
 
 .leftright {
