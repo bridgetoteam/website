@@ -39,7 +39,7 @@ export default defineNuxtConfig({
         {
           hid: `og:image`,
           property: 'og:image',
-          content: `https://www.brdg.to/assets/img/sitethumbnail.png`,
+          content: `https://www.brdg.to/img/sitethumbnail.png`,
         },
       ],
       link: [

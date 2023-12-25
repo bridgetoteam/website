@@ -11,29 +11,32 @@
       </template>
       <template v-else>
         <h1>A place for urbanists.</h1>
-        <h2>Bridge To Kyoto is an urban library and event space for cities.</h2>
+        <h2>
+          Bridge To Kyoto is an urban library and event
+          space for cities.
+        </h2>
       </template>
     </div>
     <img
       class="bgillustration"
-      src="/assets/img/2024/20231202_kyoto_258_4000.jpg"
+      src="/img/2024/20231202_kyoto_258_4000.jpg"
     />
     <img
       v-if="!state.mobile.value"
       class="downarrow"
-      src="~/assets/img/down_arrow.svg"
+      src="/img/down_arrow.svg"
       @click="scrollDown"
     />
   </PageSection>
 </template>
 
 <script setup lang="ts">
-import * as state from "~/assets/state";
-const i18n = useI18n();
-const locale = i18n.locale;
+import * as state from '~/assets/state'
+const i18n = useI18n()
+const locale = i18n.locale
 
 function scrollDown() {
-  document.getElementById("about")?.scrollIntoView(true);
+  document.getElementById('about')?.scrollIntoView(true)
 }
 </script>
 

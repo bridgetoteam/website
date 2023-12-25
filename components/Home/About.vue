@@ -18,18 +18,19 @@
             <template v-else>
               <h1>About</h1>
               <p>
-                <b>"Bridge To Kyoto"</b> is a curatorial platform and cultural
-                space for architecture and urbanism based in Kyoto, Japan. It is
-                a private gallery and library that showcases a collection of
-                publications and items in the fields of architecture and
-                urbanism.
+                <b>"Bridge To Kyoto"</b> is a curatorial
+                platform and cultural space for architecture
+                and urbanism based in Kyoto, Japan. It is a
+                private gallery and library that showcases a
+                collection of publications and items in the
+                fields of architecture and urbanism.
               </p>
             </template>
           </div>
         </div>
 
         <!-- <div class="illustration ill1">
-          <img src="/assets/img/about1.jpg" />
+          <img src="/img/about1.jpg" />
         </div> -->
         <!-- 
         <div class="flex text2">
@@ -70,7 +71,7 @@
         </div>
 
         <div class="illustration ill2">
-          <img src="/assets/img/about2.jpg" />
+          <img src="/img/about2.jpg" />
         </div>
 
         <div class="flex text3">
@@ -104,7 +105,7 @@
         </div>
 
         <div class="illustration ill3">
-          <img src="/assets/img/about3.jpg" />
+          <img src="/img/about3.jpg" />
         </div> -->
       </div>
     </div>
@@ -112,9 +113,9 @@
 </template>
 
 <script setup lang="ts">
-import * as state from "~/assets/state";
-const i18n = useI18n();
-const locale = i18n.locale;
+import * as state from '~/assets/state'
+const i18n = useI18n()
+const locale = i18n.locale
 </script>
 
 <style lang="scss" scoped>

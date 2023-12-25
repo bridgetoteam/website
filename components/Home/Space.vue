@@ -1,7 +1,9 @@
 <template>
   <PageSection class="section" id="space">
     <div
-      v-lazy:background-image="'/assets/img/2024/20231202_kyoto_238_4000.jpg'"
+      v-lazy:background-image="
+        '/img/2024/20231202_kyoto_238_4000.jpg'
+      "
       class="interstitial"
     >
       <div class="overlay"></div>
@@ -12,10 +14,15 @@
 
       <div class="leftright">
         <div class="sticky">
-          <div class="overlayTitle smallcaps">Bridge Studio</div>
+          <div class="overlayTitle smallcaps">
+            Bridge Studio
+          </div>
           <img
-            src="/assets/img/bridgeStudio.svg"
-            style="mix-blend-mode: multiply; padding-bottom: 300px"
+            src="/img/bridgeStudio.svg"
+            style="
+              mix-blend-mode: multiply;
+              padding-bottom: 300px;
+            "
           />
         </div>
         <div class="text">
@@ -36,22 +43,28 @@
             </template>
             <template v-else>
               <p>
-                Bridge To Kyoto is based in an old, postwar, Kyoto-style home
-                with a stream flowing in front and a bridge (yes, the name isn't
-                only metaphorical!) crossing over it to enter. After a
-                renovation in 2019, it has found new life as a creative
-                residence and community space. Though small, it functions fully
-                as a residence as well as an event, gallery, and workshop space.
+                Bridge To Kyoto is based in an old, postwar,
+                Kyoto-style home with a stream flowing in
+                front and a bridge (yes, the name isn't only
+                metaphorical!) crossing over it to enter.
+                After a renovation in 2019, it has found new
+                life as a creative residence and community
+                space. Though small, it functions fully as a
+                residence as well as an event, gallery, and
+                workshop space.
               </p>
               <p>
-                Having remodeled a large portion of the space by hand, we
-                welcome all those with a DIY spirit. On top of that, we use
-                renewable energy, try to limit plastic and one-time-use products
-                as much as possible, and do our best to keep our establishment
-                zero-waste. We're working to continue to shift the conversation
-                around how valuable Japan's old and vacant houses are, and how
-                possible it is renovate them using materials that are good for
-                the environment.
+                Having remodeled a large portion of the
+                space by hand, we welcome all those with a
+                DIY spirit. On top of that, we use renewable
+                energy, try to limit plastic and
+                one-time-use products as much as possible,
+                and do our best to keep our establishment
+                zero-waste. We're working to continue to
+                shift the conversation around how valuable
+                Japan's old and vacant houses are, and how
+                possible it is renovate them using materials
+                that are good for the environment.
               </p>
             </template>
           </div>
@@ -73,12 +86,16 @@
             </template>
             <template v-else>
               <p>
-                We currently don't have a room open for residency (we live
-                here!) but while we're abroad we rent the whole house to
-                creative-minded people who are also interested in hosting pop-up
-                exhibitions &amp; events in our space during their stay. We're
-                also planning to expand to more spaces in the same neighborhood
-                in Kyoto, so message us if you're looking for a residency!
+                We currently don't have a room open for
+                residency (we live here!) but while we're
+                abroad we rent the whole house to
+                creative-minded people who are also
+                interested in hosting pop-up exhibitions
+                &amp; events in our space during their stay.
+                We're also planning to expand to more spaces
+                in the same neighborhood in Kyoto, so
+                message us if you're looking for a
+                residency!
               </p>
             </template>
           </div>
@@ -98,10 +115,11 @@
 
             <template v-else>
               <p>
-                The library is regularly open to the public, showcasing our
-                collection of publications and items in the fields of
-                architecture and urbanism with the intention of creating a hub
-                for open research and dialogue.
+                The library is regularly open to the public,
+                showcasing our collection of publications
+                and items in the fields of architecture and
+                urbanism with the intention of creating a
+                hub for open research and dialogue.
               </p>
             </template>
 
@@ -130,12 +148,15 @@
             </template>
             <template v-else>
               <p>
-                Our tatami-floored living &amp; dining spaces double as
-                community space for events of all kinds, such as exhibitions of
-                your work, meetups to engage and collaborate with local
-                urbanists, and more. There are also regularly scheduled
-                city-related workshops and events held in the community space,
-                outside of what the residents themselves organize. Follow our
+                Our tatami-floored living &amp; dining
+                spaces double as community space for events
+                of all kinds, such as exhibitions of your
+                work, meetups to engage and collaborate with
+                local urbanists, and more. There are also
+                regularly scheduled city-related workshops
+                and events held in the community space,
+                outside of what the residents themselves
+                organize. Follow our
                 <a
                   href="https://www.facebook.com/bridgetokyoto/"
                   target="_blank"
@@ -149,7 +170,10 @@
                 >
                 for more information about our events!
               </p>
-              <p>The space has a capacity of about 10–15 people.</p>
+              <p>
+                The space has a capacity of about 10–15
+                people.
+              </p>
             </template>
           </div>
 
@@ -169,10 +193,12 @@
             </template>
             <template v-else>
               <p>
-                There's a stream running in front of our space, and we have the
-                area's only private bridge. There's also a small garden, and
-                anyone interested in urban gardening is welcome to participate
-                in its upkeep and expansion.
+                There's a stream running in front of our
+                space, and we have the area's only private
+                bridge. There's also a small garden, and
+                anyone interested in urban gardening is
+                welcome to participate in its upkeep and
+                expansion.
               </p>
             </template>
           </div>
@@ -184,11 +210,13 @@
       <div class="relative padtopbig padbotbig">
         <div class="fullBg"></div>
 
-        <div class="overlayTitle smallcaps">Bridge To Kyoto</div>
+        <div class="overlayTitle smallcaps">
+          Bridge To Kyoto
+        </div>
 
         <div class="leftright padbotbig">
           <img
-            src="/assets/img/bridgeTo.svg"
+            src="/img/bridgeTo.svg"
             class="flip"
             style="mix-blend-mode: multiply"
           />
@@ -210,23 +238,30 @@
               </template>
               <template v-else>
                 <p>
-                  Bridge To Kyoto is based in an old, postwar, Kyoto-style home
-                  with a stream flowing in front and a bridge (yes, the name
-                  isn't only metaphorical!) crossing over it to enter. After a
-                  renovation in 2019, it has found new life as a creative
-                  residence and community space. Though small, it functions
-                  fully as a residence as well as an event, gallery, and
-                  workshop space.
+                  Bridge To Kyoto is based in an old,
+                  postwar, Kyoto-style home with a stream
+                  flowing in front and a bridge (yes, the
+                  name isn't only metaphorical!) crossing
+                  over it to enter. After a renovation in
+                  2019, it has found new life as a creative
+                  residence and community space. Though
+                  small, it functions fully as a residence
+                  as well as an event, gallery, and workshop
+                  space.
                 </p>
                 <p>
-                  Having remodeled a large portion of the space by hand, we
-                  welcome all those with a DIY spirit. On top of that, we use
-                  renewable energy, try to limit plastic and one-time-use
-                  products as much as possible, and do our best to keep our
-                  establishment zero-waste. We're working to continue to shift
-                  the conversation around how valuable Japan's old and vacant
-                  houses are, and how possible it is renovate them using
-                  materials that are good for the environment.
+                  Having remodeled a large portion of the
+                  space by hand, we welcome all those with a
+                  DIY spirit. On top of that, we use
+                  renewable energy, try to limit plastic and
+                  one-time-use products as much as possible,
+                  and do our best to keep our establishment
+                  zero-waste. We're working to continue to
+                  shift the conversation around how valuable
+                  Japan's old and vacant houses are, and how
+                  possible it is renovate them using
+                  materials that are good for the
+                  environment.
                 </p>
               </template>
             </div>
@@ -238,9 +273,9 @@
 </template>
 
 <script setup lang="ts">
-import * as state from "~/assets/state";
-const i18n = useI18n();
-const locale = i18n.locale;
+import * as state from '~/assets/state'
+const i18n = useI18n()
+const locale = i18n.locale
 
 // data() {
 //   return {

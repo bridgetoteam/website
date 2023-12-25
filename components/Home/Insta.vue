@@ -5,22 +5,22 @@
     <div class="grid">
       <div
         class="img"
-        v-lazy:background-image="`/assets/img/insta1.jpg`"
+        v-lazy:background-image="`/img/insta1.jpg`"
         alt="Photo from the Bridge To Kyoto Instagram"
       ></div>
       <div
         class="img"
-        v-lazy:background-image="`/assets/img/insta8.jpg`"
+        v-lazy:background-image="`/img/insta8.jpg`"
         alt="Photo from the Bridge To Kyoto Instagram"
       ></div>
       <div
         class="img"
-        v-lazy:background-image="`/assets/img/insta6.jpg`"
+        v-lazy:background-image="`/img/insta6.jpg`"
         alt="Photo from the Bridge To Kyoto Instagram"
       ></div>
       <div
         class="img"
-        v-lazy:background-image="`/assets/img/insta7.jpg`"
+        v-lazy:background-image="`/img/insta7.jpg`"
         alt="Photo from the Bridge To Kyoto Instagram"
       ></div>
       <a
