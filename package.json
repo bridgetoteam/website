@@ -14,14 +14,17 @@
   "dependencies": {
     "@nuxt/devtools": "latest",
     "nuxt": "^3.8.0",
-    "vue": "^3.3.7",
-    "vue-router": "^4.2.5",
-    "vue-tsc": "^1.8.19",
     "sass": "^1.69.5",
     "typescript": "^5.3.2",
-    "vue-lazyload": "3.0.0"
+    "vue": "^3.3.7",
+    "vue-lazyload": "3.0.0",
+    "vue-router": "^4.2.5",
+    "vue-tsc": "^1.8.19"
   },
   "devDependencies": {
-    "@nuxtjs/i18n": "^8.0.0-rc.5"
+    "@intlify/vue-i18n-bridge": "^1.0.1",
+    "@intlify/vue-router-bridge": "^1.0.1",
+    "@nuxtjs/i18n": "^8.0.0-rc.5",
+    "vue-i18n-routing": "^1.1.4"
   }
 }

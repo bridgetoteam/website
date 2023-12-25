@@ -4,21 +4,19 @@
       <template v-if="locale === 'ja'">
         <h1></h1>
         <h2 class="ja">
-          Bridge to
-          Kyotoは、「都市」をテーマにした、建築・街づくり・アートなど都市に関わる実践者のための私設ライブラリー&イベントスペースです。
+          Bridge
+          Toは、建築・まちづくり・デザイン・アートなどに関わる実践者のための複合スペース
+          & プラットフォームです。
         </h2>
       </template>
       <template v-else>
         <h1>A place for urbanists.</h1>
-        <h2>
-          Bridge To Kyoto is an urban library and event
-          space for cities.
-        </h2>
+        <h2>Bridge To Kyoto is an urban library and event space for cities.</h2>
       </template>
     </div>
     <img
       class="bgillustration"
-      src="~/assets/img/bg_illustration.svg"
+      src="/assets/img/2024/20231202_kyoto_258_4000.jpg"
     />
     <img
       v-if="!state.mobile.value"
@@ -30,12 +28,12 @@
 </template>
 
 <script setup lang="ts">
-import * as state from '~/assets/state'
-const i18n = useI18n()
-const locale = i18n.locale
+import * as state from "~/assets/state";
+const i18n = useI18n();
+const locale = i18n.locale;
 
 function scrollDown() {
-  document.getElementById('about')?.scrollIntoView(true)
+  document.getElementById("about")?.scrollIntoView(true);
 }
 </script>
 
@@ -45,6 +43,7 @@ function scrollDown() {
   width: 100%;
   overflow-x: hidden;
   position: relative;
+  background: white;
 
   @media (max-width: 768px) {
     min-height: 650px;
@@ -68,9 +67,9 @@ function scrollDown() {
 }
 
 .bgillustration {
-  width: 85vw;
-  margin-left: 13vw;
-  margin-top: 3vh;
+  width: 100vw;
+  // margin-left: 13vw;
+  // margin-top: 3vh;
 
   @media (max-width: 768px) {
     width: 180vw;

@@ -1,7 +1,7 @@
 <template>
   <PageSection class="section" id="faq">
     <div
-      v-lazy:background-image="'/assets/img/2023/4.jpg'"
+      v-lazy:background-image="'/assets/img/2024/20231202_kyoto_244_4000.jpg'"
       class="interstitial"
     >
       <div class="overlay"></div>
@@ -20,31 +20,23 @@
         <p>
           <template v-if="locale === 'ja'">
             都市、建築、まちづくりの分野で編集やリサーチの仕事を行う杉田真理子と、デザイナー・ディベロッパーのジャスパー・スティーベンソンの個人プロジェクトとして運営しています。海外の都市から集めた都市、建築、まちづくりの事例を紹介する
-            <a
-              href="https://www.travelingcircusofurbanism.com"
-              target="_blank"
-              >Traveling Circus of
-              Urbanism（アーバニズムの旅するサーカス）</a
+            <a href="https://www.travelingcircusofurbanism.com" target="_blank"
+              >Traveling Circus of Urbanism（アーバニズムの旅するサーカス）</a
             >も運営しています。
           </template>
           <template v-else>
-            We are Mariko Sugita (an editor and writer on
-            urban affairs) and Jasper Stephenson (a designer
-            and developer). We own an online platform called
-            <a
-              href="https://www.travelingcircusofurbanism.com"
-              target="_blank"
+            We are Mariko Sugita (an editor and writer on urban affairs) and
+            Jasper Stephenson (a designer and developer). We own an online
+            platform called
+            <a href="https://www.travelingcircusofurbanism.com" target="_blank"
               >Traveling Circus of Urbanism</a
-            >, which collects urban narratives from around
-            the world through traveling. We run Bridge To
-            Kyoto by ourselves (we also live here!) through
-            our passion for cities and urbanism, and it's
-            entirely an independent project. We have good
-            connections with different urbanism-related
-            practitioners here in Japan as well as in the
-            U.S., Europe, and Southeast Asia, and we will do
-            our best to connect you with the local urbanist
-            scene!
+            >, which collects urban narratives from around the world through
+            traveling. We run Bridge To Kyoto by ourselves (we also live here!)
+            through our passion for cities and urbanism, and it's entirely an
+            independent project. We have good connections with different
+            urbanism-related practitioners here in Japan as well as in the U.S.,
+            Europe, and Southeast Asia, and we will do our best to connect you
+            with the local urbanist scene!
           </template>
         </p>
 
@@ -55,11 +47,10 @@
             >都市、建築、まちづくり、アートに興味がある人であれば誰でもご使用いただけます。レジデンス募集の場合は、面談・ビデオ面接をさせて頂く場合もあります。ワークショップやイベントの開催希望の方も、お気軽にお問い合わせください。</template
           >
           <template v-else
-            >It's important for us to get to know you
-            better, so we'll carefully examine your
-            application and perhaps ask for an online
-            interview. We'll get back to you within a week
-            to let you know our availability.</template
+            >It's important for us to get to know you better, so we'll carefully
+            examine your application and perhaps ask for an online interview.
+            We'll get back to you within a week to let you know our
+            availability.</template
           >
         </p>
 
@@ -70,20 +61,18 @@
             >銀閣寺と哲学の道から、徒歩5分ほどの場所にあります。京都大学も近く、カフェやレストランなどが徒歩圏内に数多くあるほか、クリエイティブな本屋や隠れ家的なアートスペースも点在するエリアです。</template
           >
           <template v-else>
-            We're only a 5 minute walk away from the Silver
-            Temple (Ginkakuji) &amp; the Philosopher's Path
-            (one of the most popular icons of Kyoto), and 25
-            minutes by bus from the city center. Kyoto
-            University is very close by, as well. On top of
-            that, there are many small independent art
-            galleries, book stores, and craft shops nearby.
-            One of our favorites is
-            <a href="http://hohohoza.com/" target="_blank"
-              >Hohohoza</a
-            >!
+            We're only a 5 minute walk away from the Silver Temple (Ginkakuji)
+            &amp; the Philosopher's Path (one of the most popular icons of
+            Kyoto), and 25 minutes by bus from the city center. Kyoto University
+            is very close by, as well. On top of that, there are many small
+            independent art galleries, book stores, and craft shops nearby. One
+            of our favorites is
+            <a href="http://hohohoza.com/" target="_blank">Hohohoza</a>!
           </template>
         </p>
-        <h2 v-if="locale === 'ja'">利用料金は？</h2>
+        <h2 v-if="locale === 'ja'">
+          建物の保存活動はどのようなプロセスで行われているの？
+        </h2>
         <h2 v-else>How much does it cost?</h2>
         <div>
           <template v-if="locale === 'ja'">
@@ -101,12 +90,7 @@
             </p> -->
 
             <template v-if="locale === 'ja'"
-              >イベント、ワークショップ、展示など。企画内容によって
-              <a
-                href="mailto:bridgetoresidency@gmail.com"
-                target="_blank"
-                >ご相談</a
-              >ください。</template
+              >自分たちで改修費を工面し、まずはキッチンやお風呂場、トイレなどの水回り工事を優先的に行ったのち、痛み始めている外壁の工事を行います。元々使われていたレンガやタイル、瓦屋根などの素材を再利用し、歴史的な趣をそのまま残しながら、現代の生活にもフィットする形で時間をかけて改修を行います。改修費へのカンパ、ドネーションを常に受け付けております。</template
             >
           </template>
           <template v-else>
@@ -127,20 +111,15 @@
 
             <h3>Event / Workshop</h3>
             <p>
-              We prefer the space to be noncommercial, but
-              in the event that you make a profit from
-              ticket or goods sales, we kindly ask for 40%
-              of the earnings for our help with planning,
-              promption, translation, setup/teardown,
-              documentation etc.
+              We prefer the space to be noncommercial, but in the event that you
+              make a profit from ticket or goods sales, we kindly ask for 40% of
+              the earnings for our help with planning, promption, translation,
+              setup/teardown, documentation etc.
             </p>
             <p>
-              Price varies depending on the type &amp;
-              length of the event.
+              Price varies depending on the type &amp; length of the event.
               <br />Please
-              <a
-                href="mailto:bridgetoresidency@gmail.com"
-                target="_blank"
+              <a href="mailto:bridgetoresidency@gmail.com" target="_blank"
                 >contact us</a
               >
               for inquiry.
@@ -148,29 +127,23 @@
           </template>
         </div>
 
-        <h2 v-if="locale === 'ja'">使用言語は？</h2>
-        <h2 v-else>
-          What languages are spoken in the house?
-        </h2>
+        <!-- <h2 v-if="locale === 'ja'">使用言語は？</h2>
+        <h2 v-else>What languages are spoken in the house?</h2>
         <p>
           <template v-if="locale === 'ja'"
             >英語を中心に、日本語とのバイリンガルです。</template
           >
           <template v-else
-            >Mariko is a native Japanese speaker and Jasper
-            speaks American English. We both speak English
-            and Japanese fluently, though English is our
-            primary language at the house. Also, we are
-            currently learning Spanish!</template
+            >Mariko is a native Japanese speaker and Jasper speaks American
+            English. We both speak English and Japanese fluently, though English
+            is our primary language at the house. Also, we are currently
+            learning Spanish!</template
           >
-        </p>
+        </p> -->
 
-        <h2 v-if="locale === 'ja'">
-          アーバニストって誰のこと？
-        </h2>
+        <!-- <h2 v-if="locale === 'ja'">アーバニストって誰のこと？</h2>
         <h2 v-else>
-          ”Urbanist” means a lot of things. What do you mean
-          by it?
+          ”Urbanist” means a lot of things. What do you mean by it?
         </h2>
         <p>
           <template v-if="locale === 'ja'"
@@ -178,35 +151,28 @@
             Toでは特に、小さなグラスルーツの活動や、コミュニティ主導のプロジェクトを支援しています。</template
           >
           <template v-else
-            >In a Japanese context, “urbanist” often means
-            city planners and civil engineers. However,
-            urbanists do not have to be only architects,
-            urban designers, or other related specialists —
-            we define the term in a broader way. Urbanists,
-            for us, are anyone whose work concerns the scale
-            of cities and urban living. For instance, an
-            artist who stages performances in public spaces,
-            or an environmentalist who does research on
-            implementating fermentation technology into
-            people's everyday lives in cities — these people
-            are also urbanists to us.</template
+            >In a Japanese context, “urbanist” often means city planners and
+            civil engineers. However, urbanists do not have to be only
+            architects, urban designers, or other related specialists — we
+            define the term in a broader way. Urbanists, for us, are anyone
+            whose work concerns the scale of cities and urban living. For
+            instance, an artist who stages performances in public spaces, or an
+            environmentalist who does research on implementating fermentation
+            technology into people's everyday lives in cities — these people are
+            also urbanists to us.</template
           >
-        </p>
+        </p> -->
         <template v-if="locale !== 'ja'">
-          <h2>
-            What kind of urbanists are you looking for?
-          </h2>
+          <h2>What kind of urbanists are you looking for?</h2>
           <p>
             <template v-if="locale === 'ja'"></template>
             <template v-else
-              >We appreciate urban movements and
-              architectural projects that are small-scale,
-              incremental, resident-generated, and
-              bottom-up, rather than top-down planning and
-              mega-projects. We'd love to invite inspiring
-              practitioners who truly love their cities who
-              are part of motivating initiatives and topics
-              that are unique to each city.</template
+              >We appreciate urban movements and architectural projects that are
+              small-scale, incremental, resident-generated, and bottom-up,
+              rather than top-down planning and mega-projects. We'd love to
+              invite inspiring practitioners who truly love their cities who are
+              part of motivating initiatives and topics that are unique to each
+              city.</template
             >
           </p>
 
@@ -238,9 +204,9 @@
 </template>
 
 <script setup lang="ts">
-import * as state from '~/assets/state'
-const i18n = useI18n()
-const locale = i18n.locale
+import * as state from "~/assets/state";
+const i18n = useI18n();
+const locale = i18n.locale;
 </script>
 
 <style lang="scss" scoped>
@@ -317,10 +283,8 @@ h3 {
 h2,
 h3,
 p {
-  text-shadow: 0 1px 3px rgb(141, 115, 160),
-    0 0px 3px rgb(141, 115, 160),
-    0 1px 5px rgb(141, 115, 160),
-    0 1px 5px rgb(141, 115, 160);
+  text-shadow: 0 1px 3px rgb(141, 115, 160), 0 0px 3px rgb(141, 115, 160),
+    0 1px 5px rgb(141, 115, 160), 0 1px 5px rgb(141, 115, 160);
 }
 
 a {

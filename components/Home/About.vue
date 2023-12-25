@@ -10,30 +10,28 @@
             <template v-if="locale === 'ja'">
               <h1>About</h1>
               <p>
-                建築・都市・まちづくりの実践者が、国境をこえて学び合える場は、まだあまりありません。
-                <b>Bridge to Kyoto</b
-                >は、世界中からアーバニストやアーティストを受け入れ、国内の建築・都市・まちづくり関係者や市民と交流し、コラボレーションが生まれるきっかけをつくる場所です。
+                京都・左京区に位置するBridge
+                Toは、世界中からアーバニストやアーティストを受け入れ、国内の建築・都市・まちづくり・アート関係者や市民と交流し、コラボレーションが生まれるきっかけをつくる場所です。国内外のアーティストが1〜6ヶ月の中長期で滞在できるレジデンスや、シェアアトリエ、イベントスペース、建築・都市・まちづくり関係の蔵書やアイテムを公開する私設ライブラリーほか、文化芸術事業の企画運営・展覧会の企画やキュレーションなども行なっています。
               </p>
             </template>
 
             <template v-else>
               <h1>About</h1>
               <p>
-                <b>"Bridge To Kyoto"</b> is a curatorial
-                platform and cultural space for architecture
-                and urbanism based in Kyoto, Japan. It is a
-                private gallery and library that showcases a
-                collection of publications and items in the
-                fields of architecture and urbanism.
+                <b>"Bridge To Kyoto"</b> is a curatorial platform and cultural
+                space for architecture and urbanism based in Kyoto, Japan. It is
+                a private gallery and library that showcases a collection of
+                publications and items in the fields of architecture and
+                urbanism.
               </p>
             </template>
           </div>
         </div>
 
-        <div class="illustration ill1">
+        <!-- <div class="illustration ill1">
           <img src="/assets/img/about1.jpg" />
-        </div>
-
+        </div> -->
+        <!-- 
         <div class="flex text2">
           <div class="textbox right">
             <template v-if="locale === 'ja'">
@@ -52,18 +50,14 @@
             <template v-else>
               <h2>Global Discourse, Local Practice.</h2>
               <p>
-                We can't just copy and paste the best
-                practices from other parts of the world to
-                our city, but that doesn't mean that we
-                can't learn from each other. We believe that
-                more urbanists coming from different
-                backgrounds &amp; sharing their work helps
-                change the discourse and practice of
-                urbanism across the globe. By inviting
-                urbanists from around the world, we'd like
-                to encourage local-scale international
-                collaboration within a global frame of mind.
-                Check out
+                We can't just copy and paste the best practices from other parts
+                of the world to our city, but that doesn't mean that we can't
+                learn from each other. We believe that more urbanists coming
+                from different backgrounds &amp; sharing their work helps change
+                the discourse and practice of urbanism across the globe. By
+                inviting urbanists from around the world, we'd like to encourage
+                local-scale international collaboration within a global frame of
+                mind. Check out
                 <a
                   href="https://www.travelingcircusofurbanism.com/"
                   target="_blank"
@@ -97,17 +91,13 @@
             <template v-else>
               <h2>Live and Work, Kyoto Style.</h2>
               <p>
-                Since 2020, Bridge To Kyoto has been serving
-                as a residence for urbanists as well as an
-                event, workshop, and gallery space. It is
-                based in a newly renovated postwar
-                Kyoto-style home with a stream in front,
-                adjacent to the Philosopher's Path. It has
-                hosted many creative-minded people from
-                varied backgrounds from around the world
-                since its opening, as well as a multitude of
-                talks, workshops, performances, and
-                exhibitions.
+                Since 2020, Bridge To Kyoto has been serving as a residence for
+                urbanists as well as an event, workshop, and gallery space. It
+                is based in a newly renovated postwar Kyoto-style home with a
+                stream in front, adjacent to the Philosopher's Path. It has
+                hosted many creative-minded people from varied backgrounds from
+                around the world since its opening, as well as a multitude of
+                talks, workshops, performances, and exhibitions.
               </p>
             </template>
           </div>
@@ -115,16 +105,16 @@
 
         <div class="illustration ill3">
           <img src="/assets/img/about3.jpg" />
-        </div>
+        </div> -->
       </div>
     </div>
   </PageSection>
 </template>
 
 <script setup lang="ts">
-import * as state from '~/assets/state'
-const i18n = useI18n()
-const locale = i18n.locale
+import * as state from "~/assets/state";
+const i18n = useI18n();
+const locale = i18n.locale;
 </script>
 
 <style lang="scss" scoped>

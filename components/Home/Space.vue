@@ -1,7 +1,7 @@
 <template>
   <PageSection class="section" id="space">
     <div
-      v-lazy:background-image="'/assets/img/2023/1.jpg'"
+      v-lazy:background-image="'/assets/img/2024/20231202_kyoto_238_4000.jpg'"
       class="interstitial"
     >
       <div class="overlay"></div>
@@ -12,15 +12,10 @@
 
       <div class="leftright">
         <div class="sticky">
-          <div class="overlayTitle smallcaps">
-            Bridge Studio
-          </div>
+          <div class="overlayTitle smallcaps">Bridge Studio</div>
           <img
             src="/assets/img/bridgeStudio.svg"
-            style="
-              mix-blend-mode: multiply;
-              padding-bottom: 300px;
-            "
+            style="mix-blend-mode: multiply; padding-bottom: 300px"
           />
         </div>
         <div class="text">
@@ -34,34 +29,29 @@
           >
             <template v-if="locale === 'ja'">
               <p>
-                戦後に建てられた京都の古い一軒家。目の前には川が走り、このエリアで唯一という個人用の橋がかかっています。2019年に改装・補強をし、アーバニストのクリエイティブレジデンスおよびコミュニティスペースとしてオープンしました。コンパクトなスペースですが、自分達自身の棲家としながら、イベント・ギャラリー・ワークショップなど多目的に使用しています。
+                元々小児科病院として使われていた、1932年（昭和7年）築の「Bridge
+                Studio」。23年間の空き家期間を経て、2024年1月に新しい活動をスタートします。洋館と数寄屋造りという2つの顔を持ち合わす特徴的な建物で、残置物の掃除やリノベーションをボランティアの方々の協力も頂きながら行い、建造物保存に取り組んでいます。元診察室や待合室、居住空間だった場所も含め、1階・2階で合計8部屋。アーティスト・イン・レジデンス、コワーキングスペース、シェアアトリエ、レンタルスペースなどとして広くコミュニティを巻き込みながら、改修費用の工面を行なっています。
               </p>
               <p></p>
             </template>
             <template v-else>
               <p>
-                Bridge To Kyoto is based in an old, postwar,
-                Kyoto-style home with a stream flowing in
-                front and a bridge (yes, the name isn't only
-                metaphorical!) crossing over it to enter.
-                After a renovation in 2019, it has found new
-                life as a creative residence and community
-                space. Though small, it functions fully as a
-                residence as well as an event, gallery, and
-                workshop space.
+                Bridge To Kyoto is based in an old, postwar, Kyoto-style home
+                with a stream flowing in front and a bridge (yes, the name isn't
+                only metaphorical!) crossing over it to enter. After a
+                renovation in 2019, it has found new life as a creative
+                residence and community space. Though small, it functions fully
+                as a residence as well as an event, gallery, and workshop space.
               </p>
               <p>
-                Having remodeled a large portion of the
-                space by hand, we welcome all those with a
-                DIY spirit. On top of that, we use renewable
-                energy, try to limit plastic and
-                one-time-use products as much as possible,
-                and do our best to keep our establishment
-                zero-waste. We're working to continue to
-                shift the conversation around how valuable
-                Japan's old and vacant houses are, and how
-                possible it is renovate them using materials
-                that are good for the environment.
+                Having remodeled a large portion of the space by hand, we
+                welcome all those with a DIY spirit. On top of that, we use
+                renewable energy, try to limit plastic and one-time-use products
+                as much as possible, and do our best to keep our establishment
+                zero-waste. We're working to continue to shift the conversation
+                around how valuable Japan's old and vacant houses are, and how
+                possible it is renovate them using materials that are good for
+                the environment.
               </p>
             </template>
           </div>
@@ -77,22 +67,18 @@
             <h2>Residence</h2>
             <template v-if="locale === 'ja'">
               <p>
-                Bridge To
-                Kyotoには滞在用の寝室が2階に1部屋あります。
+                Bridge
+                Studioでは、京都で滞在制作を行いたいアーティストやデザイナー、リサーチャー、文筆家などを積極的に受け入れています。数週間〜3ヶ月程度の中長期滞在が基本です。詳しくは、下記のAPPLY項目をご参照ください。
               </p>
             </template>
             <template v-else>
               <p>
-                We currently don't have a room open for
-                residency (we live here!) but while we're
-                abroad we rent the whole house to
-                creative-minded people who are also
-                interested in hosting pop-up exhibitions
-                &amp; events in our space during their stay.
-                We're also planning to expand to more spaces
-                in the same neighborhood in Kyoto, so
-                message us if you're looking for a
-                residency!
+                We currently don't have a room open for residency (we live
+                here!) but while we're abroad we rent the whole house to
+                creative-minded people who are also interested in hosting pop-up
+                exhibitions &amp; events in our space during their stay. We're
+                also planning to expand to more spaces in the same neighborhood
+                in Kyoto, so message us if you're looking for a residency!
               </p>
             </template>
           </div>
@@ -105,27 +91,29 @@
               active: true,
             }"
           >
-            <h2>Library</h2>
-            <template v-if="locale === 'ja'"> </template>
+            <h2>Shared Studio</h2>
+            <template v-if="locale === 'ja'">
+              洋館部分の2階は、オープンなシェア工房になっています。随時入居アーティストを募集しています。詳しくは、下記のAPPLY項目をご参照ください。
+            </template>
+
             <template v-else>
               <p>
-                The library is regularly open to the public,
-                showcasing our collection of publications
-                and items in the fields of architecture and
-                urbanism with the intention of creating a
-                hub for open research and dialogue.
+                The library is regularly open to the public, showcasing our
+                collection of publications and items in the fields of
+                architecture and urbanism with the intention of creating a hub
+                for open research and dialogue.
               </p>
             </template>
 
-            <h2>Event Space</h2>
+            <h2>Gallery & Event Space</h2>
             <template v-if="locale === 'ja'">
               <p>
-                1階のリビングダイニングと2階のダイニングルームは、ライブラリーとイベントスペースとして使用できます。世界中から集まった建築・都市・まちづくり関係の本、雑誌、ZINE、ポスター、グッズ、古物などを楽しんで頂けます。
+                1階のコモンスペースは、ギャラリーやイベントスペースとして使用できます。
               </p>
-              <p>
+              <!-- <p>
                 ◉ライブラリー利用方法<br />最大収容人数：10名程度<br />利用可能日時:
                 毎週土曜日（変動あり）<br />利用時間：11:00～17:00<br />利用料金：無料（3月のみ）<br />設備：WIFI・冷暖房・トイレ<br />お申し込み方法：InstagramかfacebookにてDM
-              </p>
+              </p> -->
               <p>
                 イベント内容と日時は
                 <a
@@ -142,15 +130,12 @@
             </template>
             <template v-else>
               <p>
-                Our tatami-floored living &amp; dining
-                spaces double as community space for events
-                of all kinds, such as exhibitions of your
-                work, meetups to engage and collaborate with
-                local urbanists, and more. There are also
-                regularly scheduled city-related workshops
-                and events held in the community space,
-                outside of what the residents themselves
-                organize. Follow our
+                Our tatami-floored living &amp; dining spaces double as
+                community space for events of all kinds, such as exhibitions of
+                your work, meetups to engage and collaborate with local
+                urbanists, and more. There are also regularly scheduled
+                city-related workshops and events held in the community space,
+                outside of what the residents themselves organize. Follow our
                 <a
                   href="https://www.facebook.com/bridgetokyoto/"
                   target="_blank"
@@ -164,10 +149,7 @@
                 >
                 for more information about our events!
               </p>
-              <p>
-                The space has a capacity of about 10–15
-                people.
-              </p>
+              <p>The space has a capacity of about 10–15 people.</p>
             </template>
           </div>
 
@@ -179,20 +161,18 @@
               active: true,
             }"
           >
-            <h2>Bridge &amp; Garden</h2>
+            <h2>Coworking Space</h2>
             <template v-if="locale === 'ja'">
               <p>
-                家の前にある個人用の橋の他、コンパクトなガーデンスペースもあり、アーバンガーデニングなど実験的な取り組みが行えます。
+                会員の皆様には、コワーキングスペースとしての使用が可能です。
               </p>
             </template>
             <template v-else>
               <p>
-                There's a stream running in front of our
-                space, and we have the area's only private
-                bridge. There's also a small garden, and
-                anyone interested in urban gardening is
-                welcome to participate in its upkeep and
-                expansion.
+                There's a stream running in front of our space, and we have the
+                area's only private bridge. There's also a small garden, and
+                anyone interested in urban gardening is welcome to participate
+                in its upkeep and expansion.
               </p>
             </template>
           </div>
@@ -204,9 +184,7 @@
       <div class="relative padtopbig padbotbig">
         <div class="fullBg"></div>
 
-        <div class="overlayTitle smallcaps">
-          Bridge To Kyoto
-        </div>
+        <div class="overlayTitle smallcaps">Bridge To Kyoto</div>
 
         <div class="leftright padbotbig">
           <img
@@ -225,36 +203,30 @@
             >
               <template v-if="locale === 'ja'">
                 <p>
-                  戦後に建てられた京都の古い一軒家。目の前には川が走り、このエリアで唯一という個人用の橋がかかっています。2019年に改装・補強をし、アーバニストのクリエイティブレジデンスおよびコミュニティスペースとしてオープンしました。コンパクトなスペースですが、自分達自身の棲家としながら、イベント・ギャラリー・ワークショップなど多目的に使用しています。
+                  戦後に建てられた一軒家「Bridge
+                  To」。目の前には川が走り、このエリアで唯一という個人用の橋がかかっています。2019年に改装・補強をし、アーバニストのクリエイティブレジデンスおよびコミュニティスペースとしてオープンしました。現在はチームの事務所兼住居として使用しながら、イベント・ギャラリー・ワークショップなど多目的に活用しています。
                 </p>
                 <p></p>
               </template>
               <template v-else>
                 <p>
-                  Bridge To Kyoto is based in an old,
-                  postwar, Kyoto-style home with a stream
-                  flowing in front and a bridge (yes, the
-                  name isn't only metaphorical!) crossing
-                  over it to enter. After a renovation in
-                  2019, it has found new life as a creative
-                  residence and community space. Though
-                  small, it functions fully as a residence
-                  as well as an event, gallery, and workshop
-                  space.
+                  Bridge To Kyoto is based in an old, postwar, Kyoto-style home
+                  with a stream flowing in front and a bridge (yes, the name
+                  isn't only metaphorical!) crossing over it to enter. After a
+                  renovation in 2019, it has found new life as a creative
+                  residence and community space. Though small, it functions
+                  fully as a residence as well as an event, gallery, and
+                  workshop space.
                 </p>
                 <p>
-                  Having remodeled a large portion of the
-                  space by hand, we welcome all those with a
-                  DIY spirit. On top of that, we use
-                  renewable energy, try to limit plastic and
-                  one-time-use products as much as possible,
-                  and do our best to keep our establishment
-                  zero-waste. We're working to continue to
-                  shift the conversation around how valuable
-                  Japan's old and vacant houses are, and how
-                  possible it is renovate them using
-                  materials that are good for the
-                  environment.
+                  Having remodeled a large portion of the space by hand, we
+                  welcome all those with a DIY spirit. On top of that, we use
+                  renewable energy, try to limit plastic and one-time-use
+                  products as much as possible, and do our best to keep our
+                  establishment zero-waste. We're working to continue to shift
+                  the conversation around how valuable Japan's old and vacant
+                  houses are, and how possible it is renovate them using
+                  materials that are good for the environment.
                 </p>
               </template>
             </div>
@@ -266,9 +238,9 @@
 </template>
 
 <script setup lang="ts">
-import * as state from '~/assets/state'
-const i18n = useI18n()
-const locale = i18n.locale
+import * as state from "~/assets/state";
+const i18n = useI18n();
+const locale = i18n.locale;
 
 // data() {
 //   return {
