@@ -1,6 +1,6 @@
 <template>
   <PageSection
-    class="section contentcolumn full"
+    class="section v5 contentcolumn full"
     id="residents"
   >
     <div
@@ -18,16 +18,13 @@
       <p>2024年3月〜随時レジデンスの受付をしています</p>
 
       <div class="row">
-        <div
-          v-if="(locale === 'ja' ? ja : en).current?.length"
-        >
+        <div v-if="people.current?.length">
           <h3>Current</h3>
 
           <div class="grid">
             <div
               class="resident"
-              v-for="r in (locale === 'ja' ? ja : en)
-                .current"
+              v-for="r in people.current"
               :key="r.id + r.name + locale"
             >
               <div
@@ -39,7 +36,11 @@
               ></div>
               <h2 class="name">{{ r.name }}</h2>
               <div class="description">
-                {{ r.description }}
+                {{
+                  locale === 'ja'
+                    ? r.descriptionJa
+                    : r.description
+                }}
                 <span class="website" v-if="r.url">
                   <a :href="r.url" target="_blank"
                     >Website</a
@@ -56,8 +57,7 @@
           <div class="grid">
             <div
               class="resident"
-              v-for="r in (locale === 'ja' ? ja : en)
-                .upcoming"
+              v-for="r in people.upcoming"
               :key="r.id + r.name + locale"
             >
               <div
@@ -69,7 +69,11 @@
               ></div>
               <h2 class="name">{{ r.name }}</h2>
               <div class="description">
-                {{ r.description }}
+                {{
+                  locale === 'ja'
+                    ? r.descriptionJa
+                    : r.description
+                }}
                 <span class="website" v-if="r.url">
                   <a :href="r.url" target="_blank"
                     >Website</a
@@ -86,7 +90,7 @@
           <div class="grid">
             <div
               class="resident"
-              v-for="r in (locale === 'ja' ? ja : en).past"
+              v-for="r in people.past"
               :key="r.id + r.name + locale"
             >
               <div
@@ -98,7 +102,11 @@
               ></div>
               <h2 class="name">{{ r.name }}</h2>
               <div class="description">
-                {{ r.description }}
+                {{
+                  locale === 'ja'
+                    ? r.descriptionJa
+                    : r.description
+                }}
                 <span class="website" v-if="r.url">
                   <a :href="r.url" target="_blank"
                     >Website</a
@@ -121,15 +129,13 @@
       </p>
 
       <div class="row">
-        <div
-          v-if="(locale === 'ja' ? ja : en).current?.length"
-        >
+        <div v-if="people.current?.length">
           <h3>Current</h3>
 
           <div class="grid">
             <div
               class="resident"
-              v-for="r in en.current"
+              v-for="r in people.current"
               :key="r.id + r.name + locale"
             >
               <div
@@ -141,7 +147,11 @@
               ></div>
               <h2 class="name">{{ r.name }}</h2>
               <div class="description">
-                {{ r.description }}
+                {{
+                  locale === 'ja'
+                    ? r.descriptionJa
+                    : r.description
+                }}
                 <span class="website" v-if="r.url">
                   <a :href="r.url" target="_blank"
                     >Website</a
@@ -152,13 +162,13 @@
           </div>
         </div>
 
-        <div>
+        <div v-if="people.upcoming.length">
           <h3>Upcoming</h3>
 
           <div class="grid">
             <div
               class="resident"
-              v-for="r in en.upcoming"
+              v-for="r in people.upcoming"
               :key="r.id + r.name + locale"
             >
               <div
@@ -170,7 +180,11 @@
               ></div>
               <h2 class="name">{{ r.name }}</h2>
               <div class="description">
-                {{ r.description }}
+                {{
+                  locale === 'ja'
+                    ? r.descriptionJa
+                    : r.description
+                }}
                 <span class="website" v-if="r.url">
                   <a :href="r.url" target="_blank"
                     >Website</a
@@ -187,7 +201,7 @@
           <div class="grid">
             <div
               class="resident"
-              v-for="r in en.past"
+              v-for="r in people.past"
               :key="r.id + r.name + locale"
             >
               <div
@@ -199,7 +213,11 @@
               ></div>
               <h2 class="name">{{ r.name }}</h2>
               <div class="description">
-                {{ r.description }}
+                {{
+                  locale === 'ja'
+                    ? r.descriptionJa
+                    : r.description
+                }}
                 <span class="website" v-if="r.url">
                   <a :href="r.url" target="_blank"
                     >Website</a
@@ -223,6 +241,7 @@ interface ResidentHomepageData {
   id: string
   name: string
   description: string
+  descriptionJa: string
   url?: string
 }
 interface ResidentHomepage {
@@ -230,35 +249,40 @@ interface ResidentHomepage {
   past: ResidentHomepageData[]
   upcoming: ResidentHomepageData[]
 }
-const en: ResidentHomepage = {
+const people: ResidentHomepage = {
   current: [],
   past: [
     {
       id: 'momoko',
       name: 'Momoko Watanabe',
       description: `Dance & body expression.`,
+      descriptionJa: `ダンス、身体表現。`,
     },
     {
       id: 'waldo',
       name: 'Waldo De Keersmaecker',
       description: `Architect.`,
+      descriptionJa: `建築家。`,
     },
     {
       id: 'anneleen',
       name: 'Anneleen Bertels',
       description: `Textile designer.`,
+      descriptionJa: `テキスタイルデザイナー。`,
     },
     {
       id: 'lemos',
       name: 'Lemos + Lehmann',
       description:
         'Perception, contemplation, and emotion.',
+      descriptionJa: 'アーティスト・デュオ',
       url: 'https://www.lemosandlehmann.com',
     },
     {
       id: 'august',
       name: 'August Henry Moehrke',
       description: `Visual artist located in New York City.`,
+      descriptionJa: `ニューヨーク拠点のビジュアルアーティスト`,
       url: 'https://www.ahm-art.com/',
     },
     {
@@ -266,17 +290,20 @@ const en: ResidentHomepage = {
       name: 'Eliza Soroga',
       description:
         'Site-Specific Performance Artist from Athens.',
+      descriptionJa: 'パフォーミングアーティスト',
       url: 'http://www.elizasoroga.com/',
     },
     {
       id: 'juliette',
       name: 'Juliette Pénélope Pépin',
       description: 'Artist',
+      descriptionJa: 'アーティスト',
       url: 'https://juliettepenelope.com/',
     },
     {
       id: 'taina',
       name: 'Tainá Guedes',
+      descriptionJa: `ベルリン 拠点のアーティスト、フードアクティビスト、シェフ`,
       description: `Berlin-based artist, food activist, book author and trained cook.`,
       url: 'https://entretempo-kitchen-gallery.com/',
     },
@@ -284,33 +311,40 @@ const en: ResidentHomepage = {
       id: 'harry',
       name: 'Harry Lee',
       description: 'Tea / Ceramic / Landscape artist',
+      descriptionJa:
+        '茶人 / 陶芸家 / ランドスケープアーティスト',
     },
     {
       id: 'misa',
       name: 'Misa Murata',
       description: 'Phytotherapist / Botanical artist',
+      descriptionJa: '植物療法士／植物表現家',
       url: 'https://verseau.me/',
     },
     {
       id: 'pierre',
       name: 'Pierre Verret',
       description: 'Michelin-starred chef from Quebec.',
+      descriptionJa: `ケベック出身のミシュランシェフ`,
     },
     {
       id: 'uenosono',
       name: 'Uenosono Masato',
       description: 'Architect and project director.',
+      descriptionJa: `建築家・プロジェクトディレクター`,
     },
     {
       id: 'kanako',
       name: 'Kanako Shintaku',
       description: 'Visual and sculptural artist.',
+      descriptionJa: `身体表現を行うアーティスト`,
       url: 'https://www.shintakukanako.com/',
     },
     {
       id: 'eva',
       name: 'Eva Ešnerová',
       description: `Urban strategic planner and researcher from Prague, Czechia.`,
+      descriptionJa: `チェコ出身の都市戦略プランナー`,
       url: 'https://camp.ofcn.cz/en/index.html',
     },
   ],
@@ -320,114 +354,14 @@ const en: ResidentHomepage = {
       name: 'Studio B Severin',
       description:
         'Berlin-based design studio exploring culture and society.',
+      descriptionJa: `ベルリン拠点のデザインスタジオ`,
       url: 'https://studiobseverin.com/',
     },
     {
       id: 'cleo',
       name: 'Cléo Verstrepen',
       description: `Graduate in cultural studies preparing research community art spaces.`,
-      url: 'https://www.instagram.com/cleoverstrepen/?hl=en',
-    },
-  ],
-}
-
-const ja: ResidentHomepage = {
-  current: [],
-  past: [
-    {
-      id: 'august',
-      name: 'August Henry Moehrke',
-      description: `ニューヨーク拠点のビジュアルアーティスト`,
-      url: 'https://www.ahm-art.com/',
-    },
-    {
-      id: 'lemos',
-      name: 'Lemos + Lehmann',
-      description: 'アーティスト・デュオ',
-      url: 'https://www.lemosandlehmann.com',
-    },
-    {
-      id: 'momoko',
-      name: 'Momoko Watanabe',
-      description: `ダンス、身体表現。`,
-    },
-    {
-      id: 'waldo',
-      name: 'Waldo De Keersmaecker',
-      description: `建築家。`,
-    },
-    {
-      id: 'anneleen',
-      name: 'Anneleen Bertels',
-      description: `テキスタイルデザイナー。`,
-    },
-
-    {
-      id: 'eliza',
-      name: 'Eliza Soroga',
-      description: 'パフォーミングアーティスト',
-      url: 'http://www.elizasoroga.com/',
-    },
-    {
-      id: 'juliette',
-      name: 'Juliette Pénélope Pépin',
-      description: 'アーティスト',
-      url: 'https://juliettepenelope.com/',
-    },
-    {
-      id: 'taina',
-      name: 'Tainá Guedes',
-      description: `ベルリン 拠点のアーティスト、フードアクティビスト、シェフ`,
-      url: 'https://entretempo-kitchen-gallery.com/',
-    },
-    {
-      id: 'harry',
-      name: 'Harry Lee',
-      description:
-        '茶人 / 陶芸家 / ランドスケープアーティスト',
-    },
-    {
-      id: 'misa',
-      name: 'Misa Murata',
-      description: '植物療法士／植物表現家',
-      url: 'https://verseau.me/',
-    },
-    {
-      id: 'pierre',
-      name: 'Pierre Verret',
-      description: `ケベック出身のミシュランシェフ`,
-    },
-    {
-      id: 'uenosono',
-      name: 'Uenosono Masato',
-      description: `建築家・プロジェクトディレクター`,
-    },
-    {
-      id: 'kanako',
-      name: 'Kanako Shintaku',
-      description: `身体表現を行うアーティスト`,
-      url: 'https://www.shintakukanako.com/',
-    },
-
-    {
-      id: 'eva',
-      name: 'Eva Ešnerová',
-      description: `チェコ出身の都市戦略プランナー`,
-      url: 'https://camp.ofcn.cz/en/index.html',
-    },
-  ],
-  upcoming: [
-    {
-      id: 'severin',
-      name: 'Studio B Severin',
-      description: `ベルリン拠点のデザインスタジオ`,
-      url: 'https://studiobseverin.com/',
-    },
-
-    {
-      id: 'cleo',
-      name: 'Cléo Verstrepen',
-      description: `コミュニティ・アート・スペースのリサーチャー`,
+      descriptionJa: `コミュニティ・アート・スペースのリサーチャー`,
       url: 'https://www.instagram.com/cleoverstrepen/?hl=en',
     },
   ],
@@ -436,10 +370,8 @@ const ja: ResidentHomepage = {
 
 <style lang="scss" scoped>
 .section {
-  --bg: var(--accentl1);
   --side-pad: 5%;
 
-  background: white;
   width: 100%;
   overflow-x: hidden;
   padding-left: 0;

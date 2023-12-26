@@ -42,8 +42,6 @@ const locale = i18n.locale
 
 <style lang="scss" scoped>
 .section {
-  --bg: rgb(255, 255, 255);
-  background: var(--bg);
   width: 100%;
   overflow-x: hidden;
 }
@@ -81,14 +79,14 @@ h2 {
   height: 100%;
   width: 230px;
 
-  div {
-    background: var(--accent);
+  // div {
+  //   background: var(--accent);
 
-    &:hover,
-    &:active {
-      background: var(--accentl1);
-    }
-  }
+  //   &:hover,
+  //   &:active {
+  //     background: var(--accentl1);
+  //   }
+  // }
 
   @media (max-width: 768px) {
     width: 100%;

@@ -27,12 +27,12 @@ a {
   text-decoration: none;
   font-weight: 600;
   padding: 0.4em 0.5em;
-  background-color: var(--bg);
-  color: var(--text);
+  background-color: var(--base-d);
+  color: var(--base-l2);
 
   &.current {
-    background-color: var(--text);
-    color: var(--bg);
+    background-color: var(--base-l2);
+    color: var(--base-d);
   }
 }
 </style>

@@ -91,39 +91,11 @@
         <h2 v-else>How much does it cost?</h2>
         <div>
           <template v-if="locale === 'ja'">
-            <!-- <h3>レジデンス</h3>
-            <p>
-              1ヶ月〜6ヶ月の滞在で、700ユーロでご利用頂けます。
-              1ヶ月以下、6ヶ月以上ご利用希望の方は、
-              <a
-                href="mailto:bridgetoresidency@gmail.com"
-                target="_blank"
-              >ご相談</a>ください。
-            </p>
-            <p>
-              スペースの一般利用は無料ですが、有料イベントやグッズ販売がある際には、利益の40%を頂戴しております。
-            </p> -->
-
             <template v-if="locale === 'ja'"
               >自分たちで改修費を工面し、まずはキッチンやお風呂場、トイレなどの水回り工事を優先的に行ったのち、痛み始めている外壁の工事を行います。元々使われていたレンガやタイル、瓦屋根などの素材を再利用し、歴史的な趣をそのまま残しながら、現代の生活にもフィットする形で時間をかけて改修を行います。改修費へのカンパ、ドネーションを常に受け付けております。</template
             >
           </template>
           <template v-else>
-            <!-- <h3>Residency</h3>
-            <p>
-              Stay between 1–6 months
-              Includes: private room + office use + minimum 1 day workshop / event / presentation
-              <br />700 Euros per month (the price may change depending on season)
-              <br />Please
-              <a href="mailto:bridgetoresidency@gmail.com" target="_blank">consult us</a> if you want to stay less than 1 month or more than 6 months.
-            </p>
-            <p>
-              General use of the space for events and workshops is free for the residents. We prefer the space to be noncommercial, but in the event that you make a profit from ticket or goods sales, we kindly ask for 40% of the earnings for our help with planning, translation, setup/teardown, etc.
-            </p>
-            <p>
-              For non-residents, the price varies depending on the type &amp; length of the event. Please contact us for inquiries.
-            </p> -->
-
             <h3>Event / Workshop</h3>
             <p>
               We prefer the space to be noncommercial, but
@@ -147,41 +119,6 @@
           </template>
         </div>
 
-        <!-- <h2 v-if="locale === 'ja'">使用言語は？</h2>
-        <h2 v-else>What languages are spoken in the house?</h2>
-        <p>
-          <template v-if="locale === 'ja'"
-            >英語を中心に、日本語とのバイリンガルです。</template
-          >
-          <template v-else
-            >Mariko is a native Japanese speaker and Jasper speaks American
-            English. We both speak English and Japanese fluently, though English
-            is our primary language at the house. Also, we are currently
-            learning Spanish!</template
-          >
-        </p> -->
-
-        <!-- <h2 v-if="locale === 'ja'">アーバニストって誰のこと？</h2>
-        <h2 v-else>
-          ”Urbanist” means a lot of things. What do you mean by it?
-        </h2>
-        <p>
-          <template v-if="locale === 'ja'"
-            >アーバニストという言葉は、日本では都市プランナーや土木工学系の技術者と捉えられることが多いようです。しかし、私たちは、都市、建築、まちづくりに少しでもつながりのある活動を行う全ての実践者を、広い意味でアーバニストと名付けています。Bridge
-            Toでは特に、小さなグラスルーツの活動や、コミュニティ主導のプロジェクトを支援しています。</template
-          >
-          <template v-else
-            >In a Japanese context, “urbanist” often means city planners and
-            civil engineers. However, urbanists do not have to be only
-            architects, urban designers, or other related specialists — we
-            define the term in a broader way. Urbanists, for us, are anyone
-            whose work concerns the scale of cities and urban living. For
-            instance, an artist who stages performances in public spaces, or an
-            environmentalist who does research on implementating fermentation
-            technology into people's everyday lives in cities — these people are
-            also urbanists to us.</template
-          >
-        </p> -->
         <template v-if="locale !== 'ja'">
           <h2>
             What kind of urbanists are you looking for?
@@ -199,28 +136,6 @@
               that are unique to each city.</template
             >
           </p>
-
-          <!-- <h2>What if I want to stay less than a month?</h2>
-          <p>
-            <template
-              v-if="locale === 'ja'"
-            ></template>
-            <template v-else>
-              Please understand that this house is not an
-              airbnb or a guest house, so one month is our
-              minimum period. That said, we also understand
-              that not everyone can take a month off to live
-              in Japan. Please
-              <a
-                href="mailto:bridgetoresidency@gmail.com"
-                target="_blank"
-                >contact us</a
-              >
-              if you are interested in staying with us but
-              have only a few weeks to spare — hopefully we
-              can figure something out!
-            </template>
-          </p> -->
         </template>
       </div>
     </div>
@@ -235,9 +150,6 @@ const locale = i18n.locale
 
 <style lang="scss" scoped>
 .section {
-  --bg: rgb(141, 115, 160);
-  background: rgb(141, 115, 160);
-  color: white;
   padding-bottom: 10vh;
   overflow: hidden;
   width: 100%;
@@ -251,10 +163,10 @@ const locale = i18n.locale
 
 .interstitialbg {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   width: 50%;
-  height: 50%;
+  height: 40%;
   background-size: cover;
   background-position: center center;
   pointer-events: none;
@@ -302,19 +214,6 @@ h3 {
     margin-bottom: 0;
     margin-top: 20px;
   }
-}
-
-h2,
-h3,
-p {
-  text-shadow: 0 1px 3px rgb(141, 115, 160),
-    0 0px 3px rgb(141, 115, 160),
-    0 1px 5px rgb(141, 115, 160),
-    0 1px 5px rgb(141, 115, 160);
-}
-
-a {
-  color: white;
 }
 
 p {

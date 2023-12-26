@@ -59,6 +59,7 @@ useHead({
 
 <style lang="scss" scoped>
 main {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   background: var(--accent);

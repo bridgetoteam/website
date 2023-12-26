@@ -1,5 +1,5 @@
 <template>
-  <PageSection class="section" id="space">
+  <PageSection class="section v2" id="space">
     <div
       v-lazy:background-image="
         '/img/2024/20231202_kyoto_238_4000.jpg'
@@ -12,15 +12,15 @@
     <div class="contentcolumn">
       <h1>Our Spaces</h1>
 
-      <div class="leftright">
+      <div class="leftright" style="mix-blend-mode: screen">
         <div class="sticky">
-          <div class="overlayTitle smallcaps">
+          <div class="overlayTitle titlefont">
             Bridge Studio
           </div>
           <img
             src="/img/bridgeStudio.svg"
             style="
-              mix-blend-mode: multiply;
+              mix-blend-mode: screen;
               padding-bottom: 300px;
             "
           />
@@ -208,17 +208,18 @@
       <div class="spacer martopbig padtopbig"></div>
 
       <div class="relative padtopbig padbotbig">
-        <div class="fullBg"></div>
-
-        <div class="overlayTitle smallcaps">
-          Bridge To Kyoto
+        <div
+          class="overlayTitle titlefont"
+          style="mix-blend-mode: screen"
+        >
+          Bridge to Kyoto
         </div>
 
-        <div class="leftright padbotbig">
+        <div class="leftright padbotbig marbotbig">
           <img
             src="/img/bridgeTo.svg"
             class="flip"
-            style="mix-blend-mode: multiply"
+            style="mix-blend-mode: screen"
           />
           <div class="text">
             <div
@@ -268,6 +269,7 @@
           </div>
         </div>
       </div>
+      <div class="padbig"></div>
     </div>
   </PageSection>
 </template>
@@ -325,9 +327,6 @@ const locale = i18n.locale
 
 <style lang="scss" scoped>
 .section {
-  --bg: #a2ffc4;
-  background: var(--bg);
-
   @media (max-width: 768px) {
     overflow-x: hidden;
   }
@@ -336,7 +335,7 @@ const locale = i18n.locale
 .overlayTitle {
   font-size: 2em;
   display: inline-block;
-  background: var(--text);
+  background: var(--base-d);
   color: white;
   padding: 0.4em 0.4em 0.3em 0.4em;
   line-height: 1;
@@ -397,7 +396,7 @@ img {
     width: 145%;
     left: -40%;
     padding: 12vh 0 4vh 0;
-    background: var(--bg);
+    background: var(--base-l2);
   }
 }
 
@@ -463,8 +462,7 @@ p {
   left: -100vw;
   right: -100vw;
   bottom: 0;
-  background: var(--bg);
-  filter: saturate(0.9) brightness(1.1);
+  background: var(--base-d);
 }
 
 .contentcolumn {

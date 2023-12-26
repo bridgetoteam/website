@@ -1,5 +1,5 @@
 <template>
-  <PageSection class="section" id="about">
+  <PageSection class="section v2" id="about">
     <div class="contentcolumn">
       <div class="textcolumn">
         <h1>Newsletter</h1>
@@ -136,8 +136,6 @@ onMounted(async () => {
 
 <style lang="scss" scoped>
 .section {
-  --bg: var(--accent);
-  background: var(--bg);
   width: 100%;
   overflow-x: hidden;
 }
@@ -188,7 +186,7 @@ onMounted(async () => {
 
     &.reverse {
       background: white;
-      color: var(--primaryd2);
+      color: var(--primary-d2);
     }
 
     @media (max-width: 768px) {

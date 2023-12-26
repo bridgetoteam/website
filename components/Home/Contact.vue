@@ -67,9 +67,6 @@ const locale = i18n.locale
 
 <style lang="scss" scoped>
 .section {
-  --bg: #333;
-  background: #333;
-  color: white;
   padding-bottom: 30vh;
   padding-top: 0;
 }
