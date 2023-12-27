@@ -1,18 +1,18 @@
 <template>
   <PageSection class="section" id="faq">
+    <div class="light v2"></div>
+
     <div
       v-lazy:background-image="
         '/img/2024/20231202_kyoto_244_4000.jpg'
       "
       class="interstitial"
-    >
-      <div class="overlay"></div>
-    </div>
+    ></div>
 
-    <div
+    <!-- <div
       class="interstitialbg"
       v-lazy:background-image="'/img/2023/6.jpg'"
-    ></div>
+    ></div> -->
 
     <div class="contentcolumn">
       <h1>FAQ</h1>

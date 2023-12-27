@@ -1,11 +1,7 @@
 <template>
-  <svg
-    viewBox="0 0 1944 972"
-    preserveAspectRatio="xMinYMin"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  ></svg>
+  <div class="logo flexcenter">
+    <img src="/img/logos/bridgeTo.svg" />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -21,9 +17,14 @@ const { collapse } = defineProps({
 </script>
 
 <style lang="scss" scoped>
-svg {
-  background: var(--base-d2);
-  transition: all 0.2s ease-out;
+.logo {
+  padding: 1em 2em;
+  background: var(--base-l);
+
+  img {
+    width: 10em;
+  }
+  // transition: all 0.2s ease-out;
 
   // &:hover {
   //   background: var(--primary);

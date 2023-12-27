@@ -7,10 +7,8 @@
       v-lazy:background-image="
         '/img/2024/20231202_kyoto_184_4000.jpg'
       "
-      class="interstitial"
-    >
-      <div class="overlay"></div>
-    </div>
+      class="interstitial shadow"
+    ></div>
 
     <template v-if="locale === 'ja'">
       <h1>Residents</h1>

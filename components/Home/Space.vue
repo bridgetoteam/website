@@ -1,28 +1,25 @@
 <template>
   <PageSection class="section v2" id="space">
+    <div class="light"></div>
     <div
       v-lazy:background-image="
         '/img/2024/20231202_kyoto_238_4000.jpg'
       "
-      class="interstitial"
-    >
-      <div class="overlay"></div>
-    </div>
+      class="interstitial shadow"
+    ></div>
 
     <div class="contentcolumn">
       <h1>Our Spaces</h1>
 
-      <div class="leftright" style="mix-blend-mode: screen">
+      <div class="leftright">
         <div class="sticky">
-          <div class="overlayTitle titlefont">
-            Bridge Studio
+          <div class="overlayTitle">
+            <img src="/img/logos/bridgeStudio.svg" />
           </div>
           <img
-            src="/img/bridgeStudio.svg"
-            style="
-              mix-blend-mode: screen;
-              padding-bottom: 300px;
-            "
+            class="screen"
+            src="/img/bridgeStudioWhite.svg"
+            style="padding-bottom: 300px"
           />
         </div>
         <div class="text">
@@ -43,7 +40,7 @@
             </template>
             <template v-else>
               <p>
-                Bridge To Kyoto is based in an old, postwar,
+                Bridge To is based in an old, postwar,
                 Kyoto-style home with a stream flowing in
                 front and a bridge (yes, the name isn't only
                 metaphorical!) crossing over it to enter.
@@ -208,18 +205,14 @@
       <div class="spacer martopbig padtopbig"></div>
 
       <div class="relative padtopbig padbotbig">
-        <div
-          class="overlayTitle titlefont"
-          style="mix-blend-mode: screen"
-        >
-          Bridge to Kyoto
+        <div class="overlayTitle">
+          <img src="/img/logos/bridgeToKyoto.svg" />
         </div>
 
         <div class="leftright padbotbig marbotbig">
           <img
             src="/img/bridgeTo.svg"
-            class="flip"
-            style="mix-blend-mode: screen"
+            class="flip screen"
           />
           <div class="text">
             <div
@@ -239,16 +232,15 @@
               </template>
               <template v-else>
                 <p>
-                  Bridge To Kyoto is based in an old,
-                  postwar, Kyoto-style home with a stream
-                  flowing in front and a bridge (yes, the
-                  name isn't only metaphorical!) crossing
-                  over it to enter. After a renovation in
-                  2019, it has found new life as a creative
-                  residence and community space. Though
-                  small, it functions fully as a residence
-                  as well as an event, gallery, and workshop
-                  space.
+                  Bridge To is based in an old, postwar,
+                  Kyoto-style home with a stream flowing in
+                  front and a bridge (yes, the name isn't
+                  only metaphorical!) crossing over it to
+                  enter. After a renovation in 2019, it has
+                  found new life as a creative residence and
+                  community space. Though small, it
+                  functions fully as a residence as well as
+                  an event, gallery, and workshop space.
                 </p>
                 <p>
                   Having remodeled a large portion of the
@@ -333,17 +325,17 @@ const locale = i18n.locale
 }
 
 .overlayTitle {
-  font-size: 2em;
   display: inline-block;
-  background: var(--base-d);
-  color: white;
-  padding: 0.4em 0.4em 0.3em 0.4em;
-  line-height: 1;
   position: absolute;
-  top: 15%;
+  top: 2em;
   left: -5em;
+  z-index: 3;
 
-  mix-blend-mode: multiply;
+  img {
+    background: var(--base-d);
+    padding: 1em 2em;
+    width: 12em;
+  }
 }
 
 img {
@@ -377,7 +369,6 @@ img {
 }
 
 .sticky {
-  mix-blend-mode: multiply;
   position: sticky;
   top: 15vh;
   z-index: 3;
@@ -385,40 +376,6 @@ img {
   @media (max-width: 768px) {
     position: relative;
     top: 0;
-  }
-}
-.house {
-  width: 180%;
-  position: relative;
-  left: -70%;
-
-  @media (max-width: 768px) {
-    width: 145%;
-    left: -40%;
-    padding: 12vh 0 4vh 0;
-    background: var(--base-l2);
-  }
-}
-
-.mobilehouse {
-  position: relative;
-  z-index: 1;
-  width: 200%;
-  left: -80%;
-  margin-bottom: -60%;
-  margin-top: -20%;
-
-  &.workshop {
-    margin-bottom: -30%;
-    margin-top: -20%;
-    left: -100%;
-  }
-
-  &.bridge {
-    width: 120%;
-    margin-bottom: -5%;
-    margin-top: -25%;
-    left: -20%;
   }
 }
 
@@ -454,15 +411,6 @@ p {
   @media (max-width: 768px) {
     margin-bottom: 5em;
   }
-}
-
-.fullBg {
-  position: absolute;
-  top: 0;
-  left: -100vw;
-  right: -100vw;
-  bottom: 0;
-  background: var(--base-d);
 }
 
 .contentcolumn {

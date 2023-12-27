@@ -1,28 +1,37 @@
 <template>
   <PageSection class="section" id="top">
     <div class="introtext">
-      <template v-if="locale === 'ja'">
-        <h4>
-          <span>Bridge Studio / Bridge To</span>
-        </h4>
-        <h2 class="ja">
-          <span
-            >Bridge
-            Toは、建築・まちづくり・デザイン・アートなどに関わる実践者のための複合スペース
-            & プラットフォームです。</span
-          >
-        </h2>
-      </template>
-      <template v-else>
-        <h1><span>A place for urbanists.</span></h1>
-        <h4><span>Bridge Studio / Bridge To</span></h4>
-        <h2>
-          <span
-            >Bridge To is an urban library and event space
-            for cities.</span
-          >
-        </h2>
-      </template>
+      <div class="flex">
+        <div class="flexcolumn">
+          <div class="logo flexcenter">
+            <img src="/img/logos/bridgeTo.svg" />
+          </div>
+          <div class="minilogos flex">
+            <img src="/img/logos/bridgeStudio.svg" />
+            <img src="/img/logos/bridgeToKyoto.svg" />
+          </div>
+        </div>
+        <div class="rightbox flexverticalcenter">
+          <div class="bg"></div>
+          <template v-if="locale === 'ja'">
+            <h2 class="ja">
+              <span
+                >建築・まちづくり・デザイン・アートなどに関わる実践者のための複合スペース
+                & プラットフォームです。</span
+              >
+            </h2>
+          </template>
+          <template v-else>
+            <h1><span>A place for urbanists.</span></h1>
+            <h2>
+              <span
+                >Bridge To is an urban library and event
+                space for cities.</span
+              >
+            </h2>
+          </template>
+        </div>
+      </div>
     </div>
     <img
       v-if="!state.mobile.value"
@@ -61,9 +70,9 @@ function scrollDown() {
   }
 }
 .introtext {
-  width: 580px;
+  // width: 580px;
   position: absolute;
-  top: 300px;
+  top: 35vh;
   left: 5vw;
 
   @media (max-width: 768px) {
@@ -72,11 +81,46 @@ function scrollDown() {
     bottom: 15px;
   }
 
-  span {
-    padding: calc(max(4px, 0.05em)) 20px
-      calc(max(3px, 0.05em)) 20px;
-    box-decoration-break: clone;
-    background: var(--base);
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .logo {
+    width: 24em;
+    padding: 4em 5em 3em 5em;
+    background: var(--base-d);
+  }
+
+  .minilogos {
+    width: 24em;
+    padding: 2em 3em;
+    gap: 3em;
+    background: var(--base-d2);
+  }
+
+  // span {
+  //   padding: calc(max(4px, 0.05em)) 20px
+  //     calc(max(3px, 0.05em)) 20px;
+  //   box-decoration-break: clone;
+  //   background: var(--base);
+  // }
+
+  .rightbox {
+    max-width: 500px;
+    padding: 2em;
+    position: relative;
+
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--base-d2);
+      opacity: 0.7;
+      z-index: -1;
+    }
   }
 }
 
@@ -84,19 +128,6 @@ function scrollDown() {
   line-height: 1.5;
 }
 
-.bgillustration {
-  width: 100vw;
-  // margin-left: 13vw;
-  // margin-top: 3vh;
-
-  @media (max-width: 768px) {
-    width: 180vw;
-    max-width: 10000%;
-    margin-left: -55vw;
-    margin-top: -4vh;
-    // todo bigger line weight!!!
-  }
-}
 .downarrow {
   position: absolute;
   top: 80vh;

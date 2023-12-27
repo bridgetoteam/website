@@ -1,7 +1,9 @@
 <template>
-  <section class="about flexcenter">
+  <section class="about">
     <div class="textbox" id="about">
       <div class="hasBg">
+        <div class="bg"></div>
+
         <template v-if="locale === 'ja'">
           <!-- <h1>About</h1> -->
           <p>
@@ -48,13 +50,28 @@ const locale = i18n.locale
 
 .textbox {
   width: 800px;
-  padding: 6em 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
 
   .hasBg {
+    margin-top: 6em;
+    position: relative;
     font-size: 1.6em;
     padding: 2em 3em;
-    background: var(--base-d2);
+    // background: var(--base-d2);
     color: var(--base-l);
+
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--base-d2);
+      opacity: 0.9;
+      z-index: -1;
+    }
   }
 }
 </style>

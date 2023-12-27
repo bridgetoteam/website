@@ -132,6 +132,76 @@ section {
   background-image: var(--bg-texture);
   background-blend-mode: overlay;
   background-color: var(--bg);
+
+  &.shadowFromTop {
+    box-shadow: inset 0 20px 10px -20px rgba(0, 0, 0, 0.4),
+      inset 0 200px 100px -200px rgba(0, 0, 0, 0.3),
+      inset 0 400px 200px -400px rgba(0, 0, 0, 0.2),
+      inset 0 800px 400px -800px rgba(0, 0, 0, 0.1);
+  }
+
+  --interstitial-height: 90vh;
+  .interstitial {
+    height: var(--interstitial-height);
+    background-size: cover;
+    background-position: center center;
+    // overflow: hidden;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -60px;
+    width: 100%;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+    @media (max-width: 768px) {
+      height: 50vh;
+      margin-bottom: -50px;
+    }
+
+    &.shadow {
+      filter: drop-shadow(0 100px 10px red);
+    }
+  }
+
+  &:has(.light) {
+    overflow: hidden;
+  }
+  .light {
+    background-image: url('/img/light1.jpg');
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+
+    @keyframes light {
+      0% {
+        // opacity: 0.5;
+        transform: scale(1.1) skew(0deg, -1deg);
+      }
+      50% {
+        // opacity: 0.2;
+        transform: scale(1.15) skew(1deg, 1deg);
+      }
+      100% {
+        // opacity: 0.8;
+        transform: scale(1.1) skew(-1deg, 1deg);
+      }
+    }
+    animation: light 20s alternate infinite ease-in-out;
+
+    &.v2 {
+      background-image: url('/img/light2.jpg');
+    }
+    &.v3 {
+      background-image: url('/img/light3.jpg');
+    }
+  }
 }
 
 a,
@@ -150,7 +220,7 @@ img {
 
 h1 {
   font-family: var(--titleFontStack);
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-size: 4rem;
   font-weight: 800;
   line-height: 1;
@@ -280,36 +350,6 @@ a.button,
     max-width: inherit;
     width: auto;
     margin: 0;
-  }
-}
-
-.interstitial {
-  height: 90vh;
-  background-size: cover;
-  background-position: center center;
-  // overflow: hidden;
-  position: relative;
-  z-index: 1;
-  margin-bottom: -100px;
-  width: 100%;
-  overflow: hidden;
-
-  @media (max-width: 768px) {
-    height: 50vh;
-    margin-bottom: -50px;
-  }
-
-  .overlay {
-    position: absolute;
-    bottom: -10%;
-    top: 90%;
-    left: -50%;
-    right: -50%;
-    background-color: var(--bg);
-    background-image: var(--bg-texture);
-    background-blend-mode: overlay;
-    // mix-blend-mode: multiply;
-    transform: rotate(-4deg);
   }
 }
 
@@ -529,6 +569,13 @@ input[type='range'] {
   }
 }
 
+.screen {
+  mix-blend-mode: screen;
+}
+.multiply {
+  mix-blend-mode: multiply;
+}
+
 .grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -579,9 +626,6 @@ input[type='range'] {
   white-space: pre-wrap;
 }
 
-.shadow {
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
-}
 .outline {
   box-shadow: 0 0 0 0.2em rgba(0, 0, 0, 0.5);
 }

@@ -1,11 +1,10 @@
 <template>
-  <PageSection class="section" id="contact">
+  <PageSection class="section v5" id="contact">
+    <div class="light"></div>
     <div
       v-lazy:background-image="'/img/2023/7.jpg'"
       class="interstitial"
-    >
-      <div class="overlay"></div>
-    </div>
+    ></div>
 
     <div class="contentcolumn">
       <h1>Contact Us</h1>
@@ -17,7 +16,7 @@
             href="mailto:bridgetoresidency@gmail.com"
             target="_blank"
           >
-            <div>メールをください。</div>
+            <div class="">メールをください。</div>
           </a>
         </div>
         <div>

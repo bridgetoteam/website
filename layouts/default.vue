@@ -1,7 +1,8 @@
 <template>
   <div>
     <nav class="flexbetween z4">
-      <Logo class="logo" :collapse="true" />
+      <div></div>
+      <!-- <Logo class="logo" :collapse="true" /> -->
       <div class="pad">
         <LangPicker />
       </div>

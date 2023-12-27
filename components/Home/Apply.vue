@@ -1,5 +1,7 @@
 <template>
-  <PageSection class="section v3" id="apply">
+  <PageSection class="section v3 shadowFromTop" id="apply">
+    <div class="light v3"></div>
+
     <div class="contentcolumn">
       <h1>Apply</h1>
 
