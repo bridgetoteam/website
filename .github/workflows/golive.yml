@@ -3,9 +3,9 @@ name: go live to github pages
 on:
   release:
     types: [published]
-#   push:
-#     branches:
-#       - master
+  push:
+    branches:
+      - master
 
 jobs:
   build-deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v1
         with:
-          node-version: '16'
+          node-version: '18'
 
       - name: Cache dependencies
         uses: actions/cache@v1

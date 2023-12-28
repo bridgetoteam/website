@@ -36,10 +36,10 @@
             アート、デザイン、工芸分野を中心に、バックグラウンドに関わらずどなたでもご使用いただけます。応募内容によって、面談・ビデオ面接をさせて頂く場合もございます。ワークショップやイベントの開催希望の方も、お気軽にお問い合わせください。</template
           >
           <template v-else>
-            Anyone who is interested in cities, architecture, urbanism, or art.
-            For residency applicants, we will conduct face-to-face or video
-            interviews. If you would like to hold a workshop or event, please
-            feel free to contact us directly.</template
+            Anyone who is interested in design or art. For residency applicants,
+            we will conduct face-to-face or video interviews. If you would like
+            to hold a workshop or event, please feel free to contact us
+            directly.</template
           >
         </p>
 
