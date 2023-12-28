@@ -34,7 +34,7 @@
           height="450"
           frameborder="0"
           style="border: 0"
-          src="https://www.google.com/maps/embed/v1/place?q=2QGV%2H3%20Kyoto&key=AIzaSyCHF6DdpDLIG-1Ak4p0XyIK2Bc6DbVmgLY"
+          src="https://www.google.com/maps/embed/v1/place?q=69%20Jodoji%20Higashidacho%2C%20Sakyo%20Ward%2C%20Kyoto%2C%20606-8411&key=AIzaSyCHF6DdpDLIG-1Ak4p0XyIK2Bc6DbVmgLY"
           allowfullscreen
         ></iframe>
 
@@ -48,7 +48,7 @@
           height="450"
           frameborder="0"
           style="border: 0"
-          src="https://www.google.com/maps/embed/v1/place?q=2QGV%23H%20Kyoto&key=AIzaSyCHF6DdpDLIG-1Ak4p0XyIK2Bc6DbVmgLY"
+          src="https://www.google.com/maps/embed/v1/place?q=28-3%20Jodoji%20Banbacho%2C%20Sakyo%20Ward%2C%20Kyoto%2C%20606-8412&key=AIzaSyCHF6DdpDLIG-1Ak4p0XyIK2Bc6DbVmgLY"
           allowfullscreen
         ></iframe>
       </div>
