@@ -35,10 +35,6 @@ const locale = i18n.locale
 </script>
 
 <style lang="scss" scoped>
-// .section {
-//   width: 100%;
-//   overflow-x: hidden;
-// }
 .about {
   width: 100%;
   position: relative;
@@ -46,18 +42,23 @@ const locale = i18n.locale
   // height: 200px;
   padding: 0;
   z-index: 2;
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 }
 
 .textbox {
   width: 800px;
+  max-width: 90%;
   padding: 0;
   position: absolute;
   right: 0;
 
   .hasBg {
-    margin-top: 6em;
+    margin-top: 5em;
     position: relative;
-    font-size: 1.6em;
+    font-size: 1.5em;
     padding: 2em 3em;
     // background: var(--base-d2);
     color: var(--base-l);
@@ -72,6 +73,17 @@ const locale = i18n.locale
       opacity: 0.9;
       z-index: -1;
     }
+
+    @media (max-width: 768px) {
+      margin-top: -6em;
+      font-size: 1.1em;
+      padding: 3em 15%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    position: relative;
   }
 }
 </style>

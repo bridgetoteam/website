@@ -1,5 +1,5 @@
 <template>
-  <PageSection class="section v5" id="contact">
+  <section class="v5" id="contact">
     <div class="light"></div>
     <div
       v-lazy:background-image="'/img/2023/7.jpg'"
@@ -22,8 +22,9 @@
         <div>
           We are here:
           <blockquote>
-            28-3 Jodoji Banbacho, Sakyo-ku, Kyoto, 606-8412
-            <br />〒606-8412 京都市左京区浄土寺馬場町28-3
+            69 Jodoji Higashidacho, Sakyo Ward, Kyoto,
+            606-8411, Japan
+            <br />〒606-8411 京都市左京区浄土寺東田町69
           </blockquote>
         </div>
       </template>
@@ -51,11 +52,11 @@
         height="450"
         frameborder="0"
         style="border: 0"
-        src="https://www.google.com/maps/embed/v1/place?q=606-8412%20%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E6%B5%84%E5%9C%9F%E5%AF%BA%E9%A6%AC%E5%A0%B4%E7%94%BA28-3&key=AIzaSyCHF6DdpDLIG-1Ak4p0XyIK2Bc6DbVmgLY"
+        src="https://www.google.com/maps/embed/v1/place?q=2QGV%2H3%20Kyoto&key=AIzaSyCHF6DdpDLIG-1Ak4p0XyIK2Bc6DbVmgLY"
         allowfullscreen
       ></iframe>
     </div>
-  </PageSection>
+  </section>
 </template>
 
 <script setup lang="ts">

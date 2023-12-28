@@ -1,5 +1,5 @@
 <template>
-  <PageSection class="section v3 shadowFromTop" id="apply">
+  <section class="v3 shadowFromTop" id="apply">
     <div class="light v3"></div>
 
     <div class="contentcolumn">
@@ -218,7 +218,7 @@
         </div>
       </div>
     </div>
-  </PageSection>
+  </section>
 </template>
 
 <script setup lang="ts">

@@ -4,11 +4,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      titleTemplate(titleChunk) {
-        return (
-          `Bridge To` + (titleChunk ? ' ' + titleChunk : '')
-        )
-      },
+      title: `Bridge To`,
       meta: [
         { charset: 'utf-8' },
         {
@@ -18,13 +14,13 @@ export default defineNuxtConfig({
         {
           property: 'og:title',
           hid: `og:title`,
-          content: 'Bridge To Kyoto',
+          content: 'Bridge To',
         },
         {
           property: 'og:description',
           hid: `og:description`,
           content:
-            'Open Call: An urbanist residency in Kyoto, Japan',
+            'A historical studio, gallery, and event space for critical making in Kyoto, Japan',
         },
         {
           hid: `og:type`,
@@ -39,7 +35,17 @@ export default defineNuxtConfig({
         {
           hid: `og:image`,
           property: 'og:image',
-          content: `https://www.brdg.to/img/sitethumbnail.png`,
+          content: `https://www.brdg.to/img/2024/20231202_kyoto_258_4000.jpg`,
+        },
+        {
+          property: 'twitter:title',
+          hid: `twitter:title`,
+          content: 'Bridge To',
+        },
+        {
+          hid: `og:url`,
+          property: 'og:url',
+          content: `https://www.brdg.to/`,
         },
       ],
       link: [

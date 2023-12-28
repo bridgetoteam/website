@@ -63,7 +63,6 @@ html {
   font-family: var(--fontStack);
   font-display: swap;
 
-  overflow-x: hidden;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 
@@ -80,6 +79,7 @@ html {
 
   @media (max-width: 768px) {
     font-size: 1rem;
+    overflow-x: hidden;
   }
 }
 html[lang='ja-JP'] {
@@ -148,7 +148,7 @@ section {
     // overflow: hidden;
     position: relative;
     z-index: 2;
-    margin-bottom: -60px;
+    margin-bottom: -40px;
     width: 100%;
     overflow: hidden;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -163,9 +163,9 @@ section {
     }
   }
 
-  &:has(.light) {
-    overflow: hidden;
-  }
+  // &:has(.light) {
+  //   overflow: hidden;
+  // }
   .light {
     background-image: url('/img/light1.jpg');
     background-size: cover;
@@ -179,21 +179,21 @@ section {
     mix-blend-mode: overlay;
     pointer-events: none;
 
-    @keyframes light {
-      0% {
-        // opacity: 0.5;
-        transform: scale(1.1) skew(0deg, -1deg);
-      }
-      50% {
-        // opacity: 0.2;
-        transform: scale(1.15) skew(1deg, 1deg);
-      }
-      100% {
-        // opacity: 0.8;
-        transform: scale(1.1) skew(-1deg, 1deg);
-      }
-    }
-    animation: light 20s alternate infinite ease-in-out;
+    // @keyframes light {
+    //   0% {
+    //     // opacity: 0.5;
+    //     transform: scale(1.1) skew(0deg, -1deg);
+    //   }
+    //   50% {
+    //     // opacity: 0.2;
+    //     transform: scale(1.15) skew(1deg, 1deg);
+    //   }
+    //   100% {
+    //     // opacity: 0.8;
+    //     transform: scale(1.1) skew(-1deg, 1deg);
+    //   }
+    // }
+    // animation: light 15s alternate infinite ease-in-out;
 
     &.v2 {
       background-image: url('/img/light2.jpg');
