@@ -1,5 +1,5 @@
 <template>
-  <PageSection class="section v2" id="space">
+  <section class="v2" id="space">
     <div class="light"></div>
     <div
       v-lazy:background-image="'/img/2024/20231202_kyoto_238_4000.jpg'"
@@ -11,24 +11,29 @@
 
       <div class="leftright">
         <div class="sticky">
-          <div class="overlayTitle">
+          <!-- <div class="overlayTitle">
             <img src="/img/logos/bridgeStudio.svg" />
-          </div>
-          <img
+          </div> -->
+          <!-- <img
             class="screen"
             src="/img/bridgeStudioWhite.svg"
-            style="padding-bottom: 300px"
-          />
+            :class="{
+              active: activeItem !== 'bridgeToKyoto',
+            }"
+          /> -->
+
+          <BridgeStudioInteractive class="desktop" :activeItem="activeItem" />
         </div>
         <div class="text">
           <div
-            ref="intro"
+            ref="$intro"
             label="intro"
             class="textsection"
             :class="{
-              active: true,
+              active: activeItem === 'intro',
             }"
           >
+            <BridgeStudioInteractive class="mobile marbot" activeItem="intro" />
             <template v-if="locale === 'ja'">
               <p>
                 元々は小児科病院として使われていた、1934年（昭和9年）築の「Bridge
@@ -59,13 +64,18 @@
           </div>
 
           <div
-            ref="residence"
+            ref="$residence"
             label="residence"
             class="textsection"
             :class="{
-              active: true,
+              active: activeItem === 'residence',
             }"
           >
+            <BridgeStudioInteractive
+              class="mobile"
+              style="margin-bottom: -12em"
+              activeItem="residence"
+            />
             <h2>Residence</h2>
             <template v-if="locale === 'ja'">
               <p>
@@ -86,13 +96,18 @@
           </div>
 
           <div
-            ref="workshop"
-            label="workshop"
+            ref="$studio"
+            label="studio"
             class="textsection"
             :class="{
-              active: true,
+              active: activeItem === 'studio',
             }"
           >
+            <BridgeStudioInteractive
+              class="mobile"
+              style="margin-bottom: -8em"
+              activeItem="studio"
+            />
             <h2>Shared Studio</h2>
             <template v-if="locale === 'ja'">
               洋館部分の2階は、オープンなシェア工房になっています。随時入居アーティストを募集しています。詳しくは、下記のAPPLY項目をご参照ください。
@@ -106,7 +121,21 @@
                 for open research and dialogue.
               </p>
             </template>
+          </div>
 
+          <div
+            ref="$gallery"
+            label="gallery"
+            class="textsection"
+            :class="{
+              active: activeItem === 'gallery',
+            }"
+          >
+            <BridgeStudioInteractive
+              class="mobile"
+              style="margin-bottom: -4em"
+              activeItem="gallery"
+            />
             <h2>Gallery & Event Space</h2>
             <template v-if="locale === 'ja'">
               <p>
@@ -156,14 +185,15 @@
           </div>
 
           <div
-            ref="bridge"
-            label="bridge"
+            ref="$coworking"
+            label="coworking"
             class="textsection"
             :class="{
-              active: true,
+              active: activeItem === 'coworking',
             }"
           >
-            <!-- <h2>Coworking Space</h2>
+            <BridgeStudioInteractive class="mobile" activeItem="coworking" />
+            <h2>Coworking Space</h2>
             <template v-if="locale === 'ja'">
               <p>
                 会員の皆様には、コワーキングスペースとしての使用が可能です。
@@ -176,27 +206,34 @@
                 anyone interested in urban gardening is welcome to participate
                 in its upkeep and expansion.
               </p>
-            </template> -->
+            </template>
+            -->
           </div>
         </div>
       </div>
 
-      <div class="spacer martopbig padtopbig"></div>
+      <div class="spacer martopbig padtopbig desktop"></div>
 
       <div class="relative padtopbig padbotbig">
-        <div class="overlayTitle">
+        <!-- <div class="overlayTitle">
           <img src="/img/logos/bridgeToKyoto.svg" />
-        </div>
+        </div> -->
 
         <div class="leftright padbotbig marbotbig">
-          <img src="/img/bridgeTo.svg" class="flip screen" />
-          <div class="text">
+          <img
+            ref="$bridgeToKyoto"
+            label="bridgeToKyoto"
+            src="/img/bridgeToWhite.svg"
+            class="screen"
+            :class="{
+              active: activeItem === 'bridgeToKyoto',
+            }"
+          />
+          <div class="text martopbig">
             <div
-              ref="intro"
-              label="intro"
               class="textsection marnone"
               :class="{
-                active: true,
+                active: activeItem === 'bridgeToKyoto',
               }"
             >
               <template v-if="locale === 'ja'">
@@ -230,9 +267,9 @@
           </div>
         </div>
       </div>
-      <div class="padbig"></div>
+      <div class="padbig desktop"></div>
     </div>
-  </PageSection>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -240,55 +277,57 @@ import * as state from "~/assets/state";
 const i18n = useI18n();
 const locale = i18n.locale;
 
-// data() {
-//   return {
-//     observer: null,
-//     activeItem: 'intro',
-//   }
-// },
-// computed: {
-//   instersectionThreshold() {
-//     return true ? 0.1 : 0.9
-//   },
-// },
-// mounted() {
-//   let toObserve = [
-//     $refs.intro,
-//     $refs.residence,
-//     $refs.workshop,
-//     $refs.bridge,
-//   ]
-//   observer = new IntersectionObserver(
-//     intersectEvent,
-//     {
-//       threshold: instersectionThreshold,
-//     },
-//   )
-//   toObserve.forEach((el) => observer.observe(el))
-// },
-// beforeDestroy() {
-//   observer.disconnect()
-//   observer = null
-// },
-// methods: {
-//   intersectEvent(entries, observer) {
-//     entries.forEach((entry) => {
-//       // console.log(entry.intersectionRatio, entry.target)
-//       if (
-//         !true &&
-//         entry.intersectionRatio >
-//           instersectionThreshold
-//       )
-//         activeItem =
-//           entry.target.getAttribute('label')
-//     })
-//   },
-// },
+const activeItem = ref("intro");
+const observer = ref<IntersectionObserver | null>(null);
+const instersectionThreshold = ref(0.1);
+
+const $residence = ref<HTMLElement | null>(null),
+  $studio = ref<HTMLElement | null>(null),
+  $gallery = ref<HTMLElement | null>(null),
+  $coworking = ref<HTMLElement | null>(null),
+  $bridgeToKyoto = ref<HTMLElement | null>(null),
+  $intro = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  let toObserve = [
+    $intro.value,
+    $residence.value,
+    $studio.value,
+    $gallery.value,
+    $coworking.value,
+    $bridgeToKyoto.value,
+  ].filter((el) => el !== null) as HTMLElement[];
+  console.log(toObserve);
+  observer.value = new IntersectionObserver(intersectEvent, {
+    threshold: instersectionThreshold.value,
+    rootMargin: "-30% 0px -30% 0px",
+  });
+  toObserve.forEach((el) => {
+    observer.value?.observe(el);
+  });
+});
+
+onBeforeUnmount(() => {
+  observer.value?.disconnect();
+  observer.value = null;
+});
+
+function intersectEvent(entries, observer) {
+  entries.forEach((entry) => {
+    console.log(
+      entry.target.getAttribute("label"),
+      entry.intersectionRatio,
+      entry
+    );
+    if (entry.intersectionRatio > instersectionThreshold.value)
+      activeItem.value = entry.target.getAttribute("label");
+  });
+}
 </script>
 
 <style lang="scss" scoped>
 .section {
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     overflow-x: hidden;
   }
 }
@@ -307,7 +346,9 @@ const locale = i18n.locale;
   }
 }
 
-img {
+img,
+svg {
+  width: 100%;
   transform: scale(1.5);
   transform-origin: top right;
 
@@ -315,36 +356,61 @@ img {
     transform: scale(-1.5, 1.5);
     transform-origin: top center;
   }
+
+  transition: opacity 0.2s;
+  &:not(.active) {
+    opacity: 0.2;
+  }
+
+  @media (max-width: 900px) {
+    transform: none;
+    max-width: 700px;
+  }
+}
+
+.desktop {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+.mobile {
+  display: none;
+  @media (max-width: 900px) {
+    display: inherit;
+  }
 }
 
 .leftright {
   width: 100%;
   display: flex;
-  align-items: flex-start;
   position: relative;
-  justify-content: space-between;
-
   & > * {
     width: 45%;
   }
+  gap: 0 10%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: block;
 
     & > * {
       width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
 
 .sticky {
+  align-self: flex-start;
   position: sticky;
   top: 15vh;
   z-index: 3;
+  padding-bottom: 10em;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     position: relative;
     top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -354,8 +420,8 @@ h1 {
   position: relative;
   z-index: 4;
 
-  @media (max-width: 768px) {
-    margin-bottom: -1.6em;
+  @media (max-width: 900px) {
+    // margin-bottom: -1.6em;
   }
 }
 
@@ -370,15 +436,15 @@ p {
 }
 
 .textsection {
-  margin-bottom: 20em;
+  margin: 15em 0;
   transition: all 0.2s;
 
   &:not(.active) {
     opacity: 0.2;
   }
 
-  @media (max-width: 768px) {
-    margin-bottom: 5em;
+  @media (max-width: 900px) {
+    margin: 0 0 5em 0;
   }
 }
 

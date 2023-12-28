@@ -1,8 +1,8 @@
 <template>
-  <PageSection class="section" id="top">
+  <section id="top">
     <div class="introtext">
       <div class="flex">
-        <div class="flexcolumn">
+        <!-- <div class="flexcolumn">
           <div class="logo flexcenter">
             <img src="/img/logos/bridgeTo.svg" />
           </div>
@@ -10,7 +10,7 @@
             <img src="/img/logos/bridgeStudio.svg" />
             <img src="/img/logos/bridgeToKyoto.svg" />
           </div>
-        </div>
+        </div> -->
         <div class="rightbox flexverticalcenter">
           <div class="bg"></div>
           <template v-if="locale === 'ja'">
@@ -39,7 +39,7 @@
       src="/img/down_arrow.svg"
       @click="scrollDown"
     />
-  </PageSection>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -53,7 +53,7 @@ function scrollDown() {
 </script>
 
 <style lang="scss" scoped>
-.section {
+section {
   color: var(--base-l2);
   min-height: 115vh;
   width: 100%;
@@ -66,7 +66,7 @@ function scrollDown() {
   animation: fadeIn 1s ease-out;
 
   @media (max-width: 768px) {
-    min-height: 650px;
+    min-height: 80vh;
   }
 }
 .introtext {
@@ -76,9 +76,8 @@ function scrollDown() {
   left: 5vw;
 
   @media (max-width: 768px) {
-    width: 90vw;
-    top: auto;
-    bottom: 15px;
+    top: 25vh;
+    margin-right: 1em;
   }
 
   img {
@@ -107,7 +106,7 @@ function scrollDown() {
   // }
 
   .rightbox {
-    max-width: 500px;
+    max-width: 600px;
     padding: 2em;
     position: relative;
 

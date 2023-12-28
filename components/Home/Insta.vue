@@ -1,26 +1,26 @@
 <template>
-  <PageSection class="section" id="insta">
+  <section class="" id="insta">
     <template v-if="locale === 'ja'"></template>
 
     <div class="grid">
       <div
         class="img"
-        v-lazy:background-image="`/img/insta1.jpg`"
+        v-lazy:background-image="`/img/insta/insta17.jpg`"
         alt="Photo from the Bridge To Kyoto Instagram"
       ></div>
       <div
         class="img"
-        v-lazy:background-image="`/img/insta8.jpg`"
+        v-lazy:background-image="`/img/insta/insta14.jpg`"
         alt="Photo from the Bridge To Kyoto Instagram"
       ></div>
       <div
         class="img"
-        v-lazy:background-image="`/img/insta6.jpg`"
+        v-lazy:background-image="`/img/insta/insta16.jpg`"
         alt="Photo from the Bridge To Kyoto Instagram"
       ></div>
       <div
         class="img"
-        v-lazy:background-image="`/img/insta7.jpg`"
+        v-lazy:background-image="`/img/insta/insta15.jpg`"
         alt="Photo from the Bridge To Kyoto Instagram"
       ></div>
       <a
@@ -31,7 +31,7 @@
         <div>More Photos on Instagram →</div>
       </a>
     </div>
-  </PageSection>
+  </section>
 </template>
 
 <script setup lang="ts">

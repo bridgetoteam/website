@@ -1,179 +1,181 @@
 <template>
-  <PageSection class="section v5 contentcolumn full" id="residents">
+  <section class="v5" id="residents">
     <div
       v-lazy:background-image="'/img/2024/20231202_kyoto_184_4000.jpg'"
       class="interstitial shadow"
     ></div>
 
-    <template v-if="locale === 'ja'">
-      <h1>Residents</h1>
+    <div class="contentcolumn full">
+      <template v-if="locale === 'ja'">
+        <h1>Residents</h1>
 
-      <p>2024年3月より随時アーティストインレジデンスの応募受付中</p>
+        <p>2024年3月より随時アーティストインレジデンスの応募受付中</p>
 
-      <div class="row">
-        <div v-if="people.current?.length">
-          <h3>Current</h3>
+        <div class="row">
+          <div v-if="people.current?.length">
+            <h3>Current</h3>
 
-          <div class="grid">
-            <div
-              class="resident"
-              v-for="r in people.current"
-              :key="r.id + r.name + locale"
-            >
+            <div class="grid">
               <div
-                class="img"
-                v-lazy:background-image="`/img/residents/${r.id}.jpg`"
-                :alt="`Photo of ${r.name}`"
-              ></div>
-              <h2 class="name">{{ r.name }}</h2>
-              <div class="description">
-                {{ locale === "ja" ? r.descriptionJa : r.description }}
-                <span class="website" v-if="r.url">
-                  <a :href="r.url" target="_blank">Website</a>
-                </span>
+                class="resident"
+                v-for="r in people.current"
+                :key="r.id + r.name + locale"
+              >
+                <div
+                  class="img"
+                  v-lazy:background-image="`/img/residents/${r.id}.jpg`"
+                  :alt="`Photo of ${r.name}`"
+                ></div>
+                <h2 class="name">{{ r.name }}</h2>
+                <div class="description">
+                  {{ locale === "ja" ? r.descriptionJa : r.description }}
+                  <span class="website" v-if="r.url">
+                    <a :href="r.url" target="_blank">Website</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Upcoming</h3>
+
+            <div class="grid">
+              <div
+                class="resident"
+                v-for="r in people.upcoming"
+                :key="r.id + r.name + locale"
+              >
+                <div
+                  class="img"
+                  v-lazy:background-image="`/img/residents/${r.id}.jpg`"
+                  :alt="`Photo of ${r.name}`"
+                ></div>
+                <h2 class="name">{{ r.name }}</h2>
+                <div class="description">
+                  {{ locale === "ja" ? r.descriptionJa : r.description }}
+                  <span class="website" v-if="r.url">
+                    <a :href="r.url" target="_blank">Website</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Past</h3>
+
+            <div class="grid">
+              <div
+                class="resident"
+                v-for="r in people.past"
+                :key="r.id + r.name + locale"
+              >
+                <div
+                  class="img"
+                  v-lazy:background-image="`/img/residents/${r.id}.jpg`"
+                  :alt="`Photo of ${r.name}`"
+                ></div>
+                <h2 class="name">{{ r.name }}</h2>
+                <div class="description">
+                  {{ locale === "ja" ? r.descriptionJa : r.description }}
+                  <span class="website" v-if="r.url">
+                    <a :href="r.url" target="_blank">Website</a>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </template>
 
-        <div>
-          <h3>Upcoming</h3>
+      <template v-else>
+        <h1>Residents</h1>
 
-          <div class="grid">
-            <div
-              class="resident"
-              v-for="r in people.upcoming"
-              :key="r.id + r.name + locale"
-            >
+        <p>
+          We're not currently accepting new residents, but these are the people
+          who have stayed or organized events and workshops here!
+        </p>
+
+        <div class="row">
+          <div v-if="people.current?.length">
+            <h3>Current</h3>
+
+            <div class="grid">
               <div
-                class="img"
-                v-lazy:background-image="`/img/residents/${r.id}.jpg`"
-                :alt="`Photo of ${r.name}`"
-              ></div>
-              <h2 class="name">{{ r.name }}</h2>
-              <div class="description">
-                {{ locale === "ja" ? r.descriptionJa : r.description }}
-                <span class="website" v-if="r.url">
-                  <a :href="r.url" target="_blank">Website</a>
-                </span>
+                class="resident"
+                v-for="r in people.current"
+                :key="r.id + r.name + locale"
+              >
+                <div
+                  class="img"
+                  v-lazy:background-image="`/img/residents/${r.id}.jpg`"
+                  :alt="`Photo of ${r.name}`"
+                ></div>
+                <h2 class="name">{{ r.name }}</h2>
+                <div class="description">
+                  {{ locale === "ja" ? r.descriptionJa : r.description }}
+                  <span class="website" v-if="r.url">
+                    <a :href="r.url" target="_blank">Website</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div v-if="people.upcoming.length">
+            <h3>Upcoming</h3>
+
+            <div class="grid">
+              <div
+                class="resident"
+                v-for="r in people.upcoming"
+                :key="r.id + r.name + locale"
+              >
+                <div
+                  class="img"
+                  v-lazy:background-image="`/img/residents/${r.id}.jpg`"
+                  :alt="`Photo of ${r.name}`"
+                ></div>
+                <h2 class="name">{{ r.name }}</h2>
+                <div class="description">
+                  {{ locale === "ja" ? r.descriptionJa : r.description }}
+                  <span class="website" v-if="r.url">
+                    <a :href="r.url" target="_blank">Website</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Past</h3>
+
+            <div class="grid">
+              <div
+                class="resident"
+                v-for="r in people.past"
+                :key="r.id + r.name + locale"
+              >
+                <div
+                  class="img"
+                  v-lazy:background-image="`/img/residents/${r.id}.jpg`"
+                  :alt="`Photo of ${r.name}`"
+                ></div>
+                <h2 class="name">{{ r.name }}</h2>
+                <div class="description">
+                  {{ locale === "ja" ? r.descriptionJa : r.description }}
+                  <span class="website" v-if="r.url">
+                    <a :href="r.url" target="_blank">Website</a>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div>
-          <h3>Past</h3>
-
-          <div class="grid">
-            <div
-              class="resident"
-              v-for="r in people.past"
-              :key="r.id + r.name + locale"
-            >
-              <div
-                class="img"
-                v-lazy:background-image="`/img/residents/${r.id}.jpg`"
-                :alt="`Photo of ${r.name}`"
-              ></div>
-              <h2 class="name">{{ r.name }}</h2>
-              <div class="description">
-                {{ locale === "ja" ? r.descriptionJa : r.description }}
-                <span class="website" v-if="r.url">
-                  <a :href="r.url" target="_blank">Website</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
-
-    <template v-else>
-      <h1>Residents</h1>
-
-      <p>
-        We're not currently accepting new residents, but these are the people
-        who have stayed or organized events and workshops here!
-      </p>
-
-      <div class="row">
-        <div v-if="people.current?.length">
-          <h3>Current</h3>
-
-          <div class="grid">
-            <div
-              class="resident"
-              v-for="r in people.current"
-              :key="r.id + r.name + locale"
-            >
-              <div
-                class="img"
-                v-lazy:background-image="`/img/residents/${r.id}.jpg`"
-                :alt="`Photo of ${r.name}`"
-              ></div>
-              <h2 class="name">{{ r.name }}</h2>
-              <div class="description">
-                {{ locale === "ja" ? r.descriptionJa : r.description }}
-                <span class="website" v-if="r.url">
-                  <a :href="r.url" target="_blank">Website</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div v-if="people.upcoming.length">
-          <h3>Upcoming</h3>
-
-          <div class="grid">
-            <div
-              class="resident"
-              v-for="r in people.upcoming"
-              :key="r.id + r.name + locale"
-            >
-              <div
-                class="img"
-                v-lazy:background-image="`/img/residents/${r.id}.jpg`"
-                :alt="`Photo of ${r.name}`"
-              ></div>
-              <h2 class="name">{{ r.name }}</h2>
-              <div class="description">
-                {{ locale === "ja" ? r.descriptionJa : r.description }}
-                <span class="website" v-if="r.url">
-                  <a :href="r.url" target="_blank">Website</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h3>Past</h3>
-
-          <div class="grid">
-            <div
-              class="resident"
-              v-for="r in people.past"
-              :key="r.id + r.name + locale"
-            >
-              <div
-                class="img"
-                v-lazy:background-image="`/img/residents/${r.id}.jpg`"
-                :alt="`Photo of ${r.name}`"
-              ></div>
-              <h2 class="name">{{ r.name }}</h2>
-              <div class="description">
-                {{ locale === "ja" ? r.descriptionJa : r.description }}
-                <span class="website" v-if="r.url">
-                  <a :href="r.url" target="_blank">Website</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
-  </PageSection>
+      </template>
+    </div>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -309,7 +311,7 @@ const people: ResidentHomepage = {
 </script>
 
 <style lang="scss" scoped>
-.section {
+.contentcolumn {
   --side-pad: 5%;
 
   width: 100%;

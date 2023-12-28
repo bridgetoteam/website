@@ -1,5 +1,5 @@
 <template>
-  <PageSection class="section v2" id="about">
+  <section class="v2" id="about">
     <div class="contentcolumn">
       <div class="textcolumn">
         <h1>Newsletter</h1>
@@ -74,7 +74,7 @@
         </div>
       </div>
     </div>
-  </PageSection>
+  </section>
 </template>
 
 <script setup lang="ts">
