@@ -101,8 +101,9 @@ section {
 
   .rightbox {
     max-width: 700px;
-    padding: 2em;
+    padding: 2em 2em 1em 2em;
     position: relative;
+    // box-shadow: inset 0 0 0 6px var(--base-l2);
 
     .bridgeLogo {
       position: absolute;

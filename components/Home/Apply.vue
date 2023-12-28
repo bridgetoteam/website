@@ -78,7 +78,7 @@
 
               <h4 class="martopsmall">Cost:</h4>
               <div class="marleft">
-                <b>¥20,000/month</b>
+                <b>USD $150 per month</b>
                 <div class="sub">
                   This price includes taxes, utilities, and
                   operating costs.
@@ -88,7 +88,7 @@
           </div>
 
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfE7Pf0-G1MoVrvJR4YHYq1rXk8SGwUnXP8xW7Njhaq3Li7NA/viewform"
+            href="https://www.noway-form.com/f/25184a13-556f-4a14-bd11-f4edcdca0b27"
             target="_blank"
             class="button martop"
           >
@@ -118,7 +118,7 @@
               <div>
                 <!-- Bridge to
                 Kyotoは、「都市」をテーマに分野・文化・国籍を超えた活動を行うための場所です。海外を中心に、国内外から1〜6ヶ月の単位で「アーバニスト・イン・レジデンス」として実践者を受け入れ、地元のコミュニティや活動とつなぐ手助けをします。応募は、年間を通して随時可能です。 -->
-                年間を通して随時アーバニスト・イン・レジデンス滞在制作希望者を募集しています。費用や待遇についてはお問合せください。
+                年間を通して随時アーティスト・イン・レジデンス滞在制作希望者を募集しています。費用や待遇についてはお問合せください。
               </div>
               <br />
               対象者
@@ -163,10 +163,10 @@
               </div> -->
             </template>
             <template v-else>
-              We accept urbanists-in-residence from Japan
-              and abroad on a 1-6 month basis, and help them
-              connect with local communities and activities.
-              Applications are accepted throughout the year.
+              We accept residents from Japan and abroad on a
+              1-6 month basis, and help them connect with
+              local communities and activities. Applications
+              are accepted throughout the year.
 
               <br />
               <h4 class="martopsmall">Who can apply?</h4>
@@ -214,7 +214,7 @@
                     networking assistance
                   </li>
                   <li>
-                    Introductions to international urbanists
+                    Introductions to international creators
                   </li>
                 </ul>
               </div>
@@ -222,7 +222,7 @@
               <div>
                 <h4 class="martopsmall">Cost:</h4>
                 <div class="marleft">
-                  <b>¥75,000/month</b>
+                  <b>USD $600 per month</b>
                   <div class="sub">
                     This price includes taxes, utilities,
                     common expenses, and operating costs.
@@ -237,7 +237,7 @@
           </div>
 
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfE7Pf0-G1MoVrvJR4YHYq1rXk8SGwUnXP8xW7Njhaq3Li7NA/viewform"
+            href="https://www.noway-form.com/f/1f8ed720-37f8-4376-8308-3386dd7dfd67"
             target="_blank"
             class="button martop"
           >
@@ -312,7 +312,7 @@
 
               <h4 class="martopsmall">Cost:</h4>
               <div class="marleft">
-                <b>¥28,000/month</b>
+                <b>USD $200 per month</b>
                 <div class="sub">
                   This price includes taxes, utilities, and
                   operating costs.
@@ -322,7 +322,7 @@
           </div>
 
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfE7Pf0-G1MoVrvJR4YHYq1rXk8SGwUnXP8xW7Njhaq3Li7NA/viewform"
+            href="https://www.noway-form.com/f/c3058789-bcfd-4d48-9b41-8cad9048f5e1"
             target="_blank"
             class="button martop"
           >
@@ -423,7 +423,7 @@
 
               <h4 class="martopsmall">Cost:</h4>
               <div class="marleft">
-                <b>￥20,000 per day</b>
+                <b>USD $150 per day</b>
                 <div class="sub">
                   This price includes taxes.
                 </div>
@@ -432,7 +432,7 @@
           </div>
 
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSe0iPDaULQMc6BfS4puRMV0rfJcdrViyUOg-jjcSzefF_ivwA/viewform"
+            href="https://www.noway-form.com/f/1712e1e4-5011-4bb5-a72c-af389ca2cf0c"
             target="_blank"
             class="button martop"
           >

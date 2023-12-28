@@ -32,18 +32,18 @@ const head: Parameters<typeof useHead>[0] = {
       name: 'keywords',
       content:
         locale.value === 'ja'
-          ? 'アーバニスト, アーティス, 都市, 建築, 京都'
-          : 'urbanism, library, japan, urbanist, exhibition, kyoto',
+          ? 'アーバニスト, アーティスト, スタジオ, アトリエ, DIY, 都市, 建築, 京都'
+          : 'residency, coworking, studio, japan, art, DIY, urbanism, gallery, exhibition, kyoto',
     },
     {
       hid: 'description',
       name: 'description',
-      content: `An urban library and event space for cities.`,
+      content: `A multifunctional space for critical makers.`,
     },
     {
       hid: 'og:description',
       property: 'og:description',
-      content: `An urban library and event space for cities.`,
+      content: `A multifunctional space for critical makers.`,
     },
   ],
   script: [

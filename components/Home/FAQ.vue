@@ -40,12 +40,11 @@
             都市、建築、まちづくり、アートに興味がある人であれば誰でもご使用いただけます。レジデンス募集の場合は、面談・ビデオ面接をさせて頂く場合もあります。ワークショップやイベントの開催希望の方も、お気軽にお問い合わせください。</template
           >
           <template v-else>
-            Anyone who is interested in cities,
-            architecture, urbanism, or art. For residency
-            applicants, we will conduct face-to-face or
-            video interviews. If you would like to hold a
-            workshop or event, please feel free to contact
-            us directly.</template
+            Anyone who is interested in design or art. For
+            residency applicants, we will conduct
+            face-to-face or video interviews. If you would
+            like to hold a workshop or event, please feel
+            free to contact us directly.</template
           >
         </p>
 
