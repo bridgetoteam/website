@@ -1,22 +1,19 @@
 <template>
   <section class="v5" id="contact">
     <div class="light"></div>
-    <div
-      v-lazy:background-image="'/img/2023/7.jpg'"
-      class="interstitial"
-    ></div>
+    <div v-lazy:background-image="'/img/2023/2.jpg'" class="interstitial"></div>
 
     <div class="contentcolumn">
-      <h1>Contact Us</h1>
+      <!-- <h1>Contact Us</h1> -->
       <template v-if="locale === 'ja'">
         <div class="p">
-          <div>ご質問やご相談は、</div>
+          <!-- <div>ご質問やご相談は、</div> -->
           <a
             class="button"
             href="mailto:bridgetoresidency@gmail.com"
             target="_blank"
           >
-            <div class="">メールをください。</div>
+            <div class="">Contact Us</div>
           </a>
         </div>
         <div>
@@ -60,9 +57,9 @@
 </template>
 
 <script setup lang="ts">
-import * as state from '~/assets/state'
-const i18n = useI18n()
-const locale = i18n.locale
+import * as state from "~/assets/state";
+const i18n = useI18n();
+const locale = i18n.locale;
 </script>
 
 <style lang="scss" scoped>
