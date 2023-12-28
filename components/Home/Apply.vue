@@ -6,6 +6,38 @@
       <h1>Apply</h1>
 
       <div class="columns">
+        <div class="coworking">
+          <h2 v-if="locale === 'ja'">フェローシップ</h2>
+          <h2 v-else>Coworking</h2>
+          <div>
+            <template v-if="locale === 'ja'">
+              共同で「Bridge
+              Studio」を借りるような感覚で、運営方針や企画などにも積極的に参加し、この場所を活用してくださる"フェロー”を、10名〜20名程度募集します。
+              <br />
+              <br />
+              フェローの方には、
+              <ul>
+                <li>京都でのサテライトオフィスとしてのワークスペース利用</li>
+                <li>この場所を使用したイベントやワークショップの企画・開催</li>
+                <li>定期的な宿泊（1ヶ月以上の占有不可、要相談）</li>
+                <li>Bridge Toコミュニティへのアクセス</li>
+                <li>
+                  海外連携団体や拠点とのコラボレーションやレジデンスの機会の提供
+                </li>
+              </ul>
+              などの特典を得られます。
+            </template>
+            <template v-else>a</template>
+          </div>
+
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfE7Pf0-G1MoVrvJR4YHYq1rXk8SGwUnXP8xW7Njhaq3Li7NA/viewform"
+            target="_blank"
+            class="button"
+          >
+            <div class="secondary">Apply for Coworking</div>
+          </a>
+        </div>
         <div class="residency">
           <h2 v-if="locale === 'ja'">レジデンス</h2>
           <h2 v-else>Residency</h2>
@@ -13,23 +45,30 @@
           <div>
             <template v-if="locale === 'ja'">
               <div>
-                Bridge to
-                Kyotoは、「都市」をテーマに分野・文化・国籍を超えた活動を行うための場所です。海外を中心に、国内外から1〜6ヶ月の単位で「アーバニスト・イン・レジデンス」として実践者を受け入れ、地元のコミュニティや活動とつなぐ手助けをします。応募は、年間を通して随時可能です。
+                <!-- Bridge to
+                Kyotoは、「都市」をテーマに分野・文化・国籍を超えた活動を行うための場所です。海外を中心に、国内外から1〜6ヶ月の単位で「アーバニスト・イン・レジデンス」として実践者を受け入れ、地元のコミュニティや活動とつなぐ手助けをします。応募は、年間を通して随時可能です。 -->
+                年間を通して随時アーバニスト・イン・レジデンス滞在制作希望者を募集しています。費用や待遇についてはお問合せください。
               </div>
-              アーバニスト・イン・レジデンスの対象者
-              *建築、都市デザイン・プランニング、市民参加、コミュニティマネジメント、不動産、都市に関するテーマで活動を行うジャーナリズム、アートなどに関わる方々
-              - 英語、あるいは日本語での日常会話ができる方 -
-              生活費、家賃、旅費などを自己負担できる方 -
-              レジデンス期間中に、最低1回はワークショップ、イベント、展示などを自発的に開催できる方
-              -
-              年齢、宗教、ジェンダーなどに関わらず誰でもご応募頂けます
+              <br />
+              対象者
+              <ul>
+                <li>
+                  建築、都市デザイン・プランニング、市民参加、コミュニティマネジメント、不動産、都市に関するテーマで活動を行うジャーナリズム、アートなどに関わる方々
+                </li>
+                <li>英語、あるいは日本語での日常会話ができる方</li>
+                <li>生活費、家賃、旅費などを自己負担できる方</li>
+                <li>
+                  レジデンス期間中に、最低1回はワークショップ、イベント、展示などを自発的に開催できる方
+                </li>
+                <li>
+                  年齢、宗教、ジェンダーなどに関わらず誰でもご応募頂けます
+                </li>
+              </ul>
 
-              <div>
+              <!-- <div>
                 こちらが提供するもの
                 <ul>
-                  <li>
-                    滞在場所、オフィススペース（家具、Wifi付き）
-                  </li>
+                  <li>滞在場所、オフィススペース（家具、Wifi付き）</li>
                   <li>
                     キッチン、バルコニー、庭、お風呂やリビングなどのコモンスペース（共用）
                   </li>
@@ -48,20 +87,17 @@
                 オフィススペース、滞在中最低1回のコミュニティスペースの利用
                 ¥70,000 + ¥5,000（共用費） *
                 1ヶ月〜6ヶ月以外の滞在期間をご希望の方はご連絡ください。
-              </div>
+              </div> -->
             </template>
             <template v-else>
-              Bridge to Kyoto is a place for
-              trans-disciplinary &amp; trans-national
-              activities centered on the topic of "the
-              city". It encourages mutual learning and
-              collaborative practices of urbanism
-              transnationally. We are looking for urbanists
-              who want to stay with us for a period of 1–6
-              months, who are interested in doing research
-              in Kyoto or Japan in general, and who want to
-              connect with local practitioners. You can
-              apply anytime throughout the year!
+              Bridge to Kyoto is a place for trans-disciplinary &amp;
+              trans-national activities centered on the topic of "the city". It
+              encourages mutual learning and collaborative practices of urbanism
+              transnationally. We are looking for urbanists who want to stay
+              with us for a period of 1–6 months, who are interested in doing
+              research in Kyoto or Japan in general, and who want to connect
+              with local practitioners. You can apply anytime throughout the
+              year!
             </template>
           </div>
 
@@ -71,49 +107,6 @@
             class="button"
           >
             <div class="secondary">Apply for Residency</div>
-          </a>
-        </div>
-
-        <div class="coworking">
-          <h2 v-if="locale === 'ja'">コワーキング</h2>
-          <h2 v-else>Coworking</h2>
-          <div>
-            <template v-if="locale === 'ja'">
-              日々のパソコン社業や読書など、月契約でのコワーキング利用が可能です。
-              <ul>
-                <li>入会金 5,500円が必要です。</li>
-                <li>
-                  オプションとして登記利用が
-                  5,500円で可能です。
-                </li>
-                <li>
-                  ゲストを会議室に呼ぶ場合は無料ですが、フリースペース利用時には1ドリンク必要です。
-                </li>
-                <li>
-                  備え付けの机・椅子の利用が可能です。
-                </li>
-                <li>
-                  駐輪場は、フルタイム会員：1,650円/月・週末会員：1,100円/月
-                  で1台ご利用いただけます。
-                </li>
-                <li>
-                  ロッカーの利用が可能です。（大2,750円/月,
-                  中2,200円/月, 小1,650円/月）
-                </li>
-                <li>
-                  記載料金はすべて消費税込みの価格です。
-                </li>
-              </ul>
-            </template>
-            <template v-else>a</template>
-          </div>
-
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfE7Pf0-G1MoVrvJR4YHYq1rXk8SGwUnXP8xW7Njhaq3Li7NA/viewform"
-            target="_blank"
-            class="button"
-          >
-            <div class="secondary">Apply for Coworking</div>
           </a>
         </div>
 
@@ -128,19 +121,14 @@
                 <li>
                   ジャンルやキャリアは問いません。アート、デザイン、建築、工芸、印刷など、幅広く創作活動に携わる方を幅広く募集しています。
                 </li>
-                <li>
-                  利用料月額: 税込28,000円
-                  (光熱費、運営費含む)
-                </li>
+                <!-- <li>利用料月額: 税込28,000円 (光熱費、運営費含む)</li>
                 <li>
                   敷金としてスタジオ利用料1ヶ月分が必要です（退去後返却されます）
-                </li>
+                </li> -->
                 <li>
                   占有ではなく、オープンなスタジオとして使用するため、定期的に見学者などが入ってくることが大丈夫な方。
                 </li>
-                <li>
-                  1階のトイレ、洗面所、台所なども使用頂けます。
-                </li>
+                <li>1階のトイレ、洗面所、台所なども使用頂けます。</li>
               </ul>
             </template>
             <template v-else>a</template>
@@ -151,9 +139,7 @@
             target="_blank"
             class="button"
           >
-            <div class="secondary">
-              Apply for Shared Studio
-            </div>
+            <div class="secondary">Apply for Shared Studio</div>
           </a>
         </div>
 
@@ -174,11 +160,11 @@
                   <li>
                     企画運営、スタッフ、参加者管理、イベントページ作成や参加者募集は基本的に持ち込みとさせて頂きます
                   </li>
-                  <li>￥20,000 / 日</li>
+                  <!-- <li>￥20,000 / 日</li> -->
                 </ul>
               </div>
 
-              <div>
+              <!-- <div>
                 こちらから提供するもの
                 <ul>
                   <li>
@@ -189,19 +175,16 @@
                     海外の方も参加する場合、英語でのサポートも可能（別料金）
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </template>
             <template v-else
-              >You can organize an event, workshop, meetup,
-              etc. at our place to introduce your practices
-              or share your ideas! Instead of being a
-              regular tourist, organize something engaging
-              here to gain awareness of the local community
-              and start building meaningful relationships
-              with local practitioners. Our space is not
-              big, but it can comfortably fit 10–15 people
-              (depending on the event type), and we can help
-              you promote your event and communicate with
+              >You can organize an event, workshop, meetup, etc. at our place to
+              introduce your practices or share your ideas! Instead of being a
+              regular tourist, organize something engaging here to gain
+              awareness of the local community and start building meaningful
+              relationships with local practitioners. Our space is not big, but
+              it can comfortably fit 10–15 people (depending on the event type),
+              and we can help you promote your event and communicate with
               participants in Japanese.</template
             >
           </div>
@@ -211,9 +194,7 @@
             target="_blank"
             class="button"
           >
-            <div class="secondary">
-              Apply for Event or Workshop
-            </div>
+            <div class="secondary">Apply for Event or Workshop</div>
           </a>
         </div>
       </div>
@@ -222,9 +203,9 @@
 </template>
 
 <script setup lang="ts">
-import * as state from '~/assets/state'
-const i18n = useI18n()
-const locale = i18n.locale
+import * as state from "~/assets/state";
+const i18n = useI18n();
+const locale = i18n.locale;
 </script>
 
 <style lang="scss" scoped>
