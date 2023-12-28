@@ -1,43 +1,45 @@
-name: Deploy to GitHub Pages
+name: go live to github pages
+
 on:
   release:
     types: [published]
   push:
     branches:
-      - main
+      - master
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-deploy:
+    runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
-      - run: corepack enable
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@master
+
+      - name: Set up Node
+        uses: actions/setup-node@v1
         with:
-          node-version: '20'
-      - run: npm install
-      - run: npm run build --preset=github_pages
-      - run: npm run generate
-      - run: cp ./copyToLive/CNAME ./.output/public/CNAME
-      - run: cp ./copyToLive/.nojekyll ./.output/public/.nojekyll
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+          node-version: '18'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
         with:
-          path: ./.output/public
-  # Deployment job
-  deploy:
-    # Add a dependency to the build job
-    needs: build
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write # to deploy to Pages
-      id-token: write # to verify the deployment originates from an appropriate source
-    # Deploy to the github_pages environment
-    environment:
-      name: github_pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    # Specify runner + deployment step
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: install
+        run: npm install
+
+      - name: generate
+        run: |
+          npm run generate
+          cp ./copyToLive/CNAME ./dist/CNAME
+          cp ./copyToLive/.nojekyll ./dist/.nojekyll
+
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v2.5.0
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./.output/public
+        with:
+          emptyCommits: false
