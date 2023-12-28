@@ -56,10 +56,10 @@ const locale = i18n.locale
   right: 0;
 
   .hasBg {
-    margin-top: 5em;
+    margin-top: 10vh;
     position: relative;
     font-size: 1.5em;
-    padding: 2em 3em;
+    padding: 5vh 3em;
     // background: var(--base-d2);
     color: var(--base-l);
 
@@ -72,6 +72,10 @@ const locale = i18n.locale
       background: var(--base-d2);
       opacity: 0.9;
       z-index: -1;
+    }
+
+    @media (max-height: 900px) {
+      font-size: 1.3em;
     }
 
     @media (max-width: 768px) {

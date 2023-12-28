@@ -20,7 +20,7 @@
           </a>
         </div>
         <div>
-          We are here:
+          Bridge Studio:
           <blockquote>
             69 Jodoji Higashidacho, Sakyo Ward, Kyoto,
             606-8411, Japan
@@ -39,13 +39,13 @@
             <div>Email us!</div>
           </a>
         </div>
-        <div>
+        <!-- <div>
           We are located at:
           <blockquote>
             28-3 Jōdoji Banbachō, Sakyō-ku, Kyoto, 606-8412
             <br />〒606-8412 京都市左京区浄土寺馬場町28-3
           </blockquote>
-        </div>
+        </div> -->
       </template>
       <iframe
         width="600"

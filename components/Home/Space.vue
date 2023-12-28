@@ -6,6 +6,7 @@
         '/img/2024/20231202_kyoto_238_4000.jpg'
       "
       class="interstitial shadow"
+      style="min-height: 30em"
     ></div>
 
     <div class="contentcolumn">

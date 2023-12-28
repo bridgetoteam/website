@@ -12,6 +12,11 @@
           </div>
         </div> -->
         <div class="rightbox flexverticalcenter">
+          <div class="bridgeLogo">
+            <img
+              src="/img/logos/bridgeToKyotoBridgeOnly.svg"
+            />
+          </div>
           <div class="bg"></div>
           <template v-if="locale === 'ja'">
             <h2 class="ja">
@@ -109,6 +114,18 @@ section {
     max-width: 600px;
     padding: 2em;
     position: relative;
+
+    .bridgeLogo {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      background: var(--base-d3);
+      padding: 2em 2em;
+
+      img {
+        width: 10em;
+      }
+    }
 
     .bg {
       position: absolute;
