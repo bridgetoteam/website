@@ -8,17 +8,11 @@
       <div class="columns">
         <div class="coworking">
           <h2 v-if="locale === 'ja'">
-            <img
-              src="/img/icons/fellowship.svg"
-              class="applyIcon"
-            />
+            <img src="/img/icons/fellowship.svg" class="applyIcon" />
             フェローシップ
           </h2>
           <h2 v-else>
-            <img
-              src="/img/icons/fellowship.svg"
-              class="applyIcon"
-            />
+            <img src="/img/icons/fellowship.svg" class="applyIcon" />
             Fellowship
           </h2>
           <div>
@@ -27,17 +21,11 @@
               Studio」を借りるような感覚で、運営方針や企画などにも積極的に参加し、この場所を活用してくださる"フェロー”を、10名〜20名程度募集します。
               <br />
               <br />
-              フェローの方には、
+              個人の方は月額2.5万円、企業の場合は月額4万円で、フェローの方には、
               <ul>
-                <li>
-                  京都でのサテライトオフィスとしてのワークスペース利用
-                </li>
-                <li>
-                  この場所を使用したイベントやワークショップの企画・開催
-                </li>
-                <li>
-                  定期的な宿泊（1ヶ月以上の占有不可、要相談）
-                </li>
+                <li>京都でのサテライトオフィスとしてのワークスペース利用</li>
+                <li>この場所を使用したイベントやワークショップの企画・開催</li>
+                <li>定期的な宿泊（1ヶ月以上の占有不可、要相談）</li>
                 <li>Bridge Toコミュニティへのアクセス</li>
                 <li>
                   海外連携団体や拠点とのコラボレーションやレジデンスの機会の提供
@@ -46,42 +34,31 @@
               などの特典を得られます。
             </template>
             <template v-else>
-              We are looking for 10 to 20 "fellows" who will
-              actively participate in the management,
-              planning, and use of <b>Bridge Studio</b> in a
-              co-op format, as if they were joint renters.
+              We are looking for 10 to 20 "fellows" who will actively
+              participate in the management, planning, and use of
+              <b>Bridge Studio</b> in a co-op format, as if they were joint
+              renters.
               <br />
               <h4 class="martopsmall">Fellows get:</h4>
               <ul>
+                <li>Use of Bridge Studio as a satellite workspace</li>
+                <li>Use of the space for events and workshops</li>
                 <li>
-                  Use of Bridge Studio as a satellite
-                  workspace
+                  Overnight stays at Bridge Studio (Pending discussion, no more
+                  than a day or two per month)
                 </li>
                 <li>
-                  Use of the space for events and workshops
+                  Opportunities for collaboration and residency with overseas
+                  partner organizations and centers
                 </li>
-                <li>
-                  Overnight stays at Bridge Studio (Pending
-                  discussion, no more than a day or two per
-                  month)
-                </li>
-                <li>
-                  Opportunities for collaboration and
-                  residency with overseas partner
-                  organizations and centers
-                </li>
-                <li>
-                  Direct line of communication with the
-                  Bridge To team
-                </li>
+                <li>Direct line of communication with the Bridge To team</li>
               </ul>
 
               <h4 class="martopsmall">Cost:</h4>
               <div class="marleft">
                 <b>¥20,000/month</b>
                 <div class="sub">
-                  This price includes taxes, utilities, and
-                  operating costs.
+                  This price includes taxes, utilities, and operating costs.
                 </div>
               </div>
             </template>
@@ -92,24 +69,16 @@
             target="_blank"
             class="button martop"
           >
-            <div class="secondary">
-              Apply for Fellowship
-            </div>
+            <div class="secondary">Apply for Fellowship</div>
           </a>
         </div>
         <div class="residency">
           <h2 v-if="locale === 'ja'">
-            <img
-              src="/img/icons/residency.svg"
-              class="applyIcon"
-            />
+            <img src="/img/icons/residency.svg" class="applyIcon" />
             レジデンス
           </h2>
           <h2 v-else>
-            <img
-              src="/img/icons/residency.svg"
-              class="applyIcon"
-            />
+            <img src="/img/icons/residency.svg" class="applyIcon" />
             Residency
           </h2>
 
@@ -118,7 +87,7 @@
               <div>
                 <!-- Bridge to
                 Kyotoは、「都市」をテーマに分野・文化・国籍を超えた活動を行うための場所です。海外を中心に、国内外から1〜6ヶ月の単位で「アーバニスト・イン・レジデンス」として実践者を受け入れ、地元のコミュニティや活動とつなぐ手助けをします。応募は、年間を通して随時可能です。 -->
-                年間を通して随時アーバニスト・イン・レジデンス滞在制作希望者を募集しています。費用や待遇についてはお問合せください。
+                年間を通して随時アーティスト・イン・レジデンス滞在制作希望者を募集しています。費用や待遇についてはお問合せください。
               </div>
               <br />
               対象者
@@ -126,12 +95,8 @@
                 <li>
                   アート、デザイン、建築、工芸などに関わる方、研究者、リサーチャー、文筆家など
                 </li>
-                <li>
-                  英語、あるいは日本語での日常会話ができる方
-                </li>
-                <li>
-                  生活費、家賃、旅費などを自己負担できる方
-                </li>
+                <li>英語、あるいは日本語での日常会話ができる方</li>
+                <li>生活費、家賃、旅費などを自己負担できる方</li>
                 <li>
                   レジデンス期間中に、最低1回はワークショップ、イベント、展示などを自発的に開催できる方
                 </li>
@@ -163,59 +128,51 @@
               </div> -->
             </template>
             <template v-else>
-              We accept urbanists-in-residence from Japan
-              and abroad on a 1-6 month basis, and help them
-              connect with local communities and activities.
-              Applications are accepted throughout the year.
+              We accept urbanists-in-residence from Japan and abroad on a 1-6
+              month basis, and help them connect with local communities and
+              activities. Applications are accepted throughout the year.
 
               <br />
               <h4 class="martopsmall">Who can apply?</h4>
               <ul>
                 <li>
-                  Creatives in the fields of art, design,
-                  architecture, crafts, research, writing,
-                  games, etc.
+                  Creatives in the fields of art, design, architecture, crafts,
+                  research, writing, games, etc.
                 </li>
                 <li>
-                  Those who can speak English or Japanese in
-                  daily conversation.
+                  Those who can speak English or Japanese in daily conversation.
                 </li>
                 <li>
-                  Those who can pay for their own living
-                  expenses, rent, travel expenses, etc.
+                  Those who can pay for their own living expenses, rent, travel
+                  expenses, etc.
                 </li>
                 <li>
-                  Everyone is welcome to apply regardless of
-                  age, religion, gender, etc.
+                  Everyone is welcome to apply regardless of age, religion,
+                  gender, etc.
                 </li>
               </ul>
 
-              We ask residents to hold at least one
-              workshop, event, exhibition, etc. during their
-              residency.
+              We ask residents to hold at least one workshop, event, exhibition,
+              etc. during their residency.
 
               <div>
                 <h4 class="martopsmall">What we offer</h4>
                 <ul>
                   <li>
-                    Private room, common office space
-                    (furnished, wifi included)
+                    Private room, common office space (furnished, wifi included)
                   </li>
                   <li>
-                    Common spaces (kitchen, balcony, garden,
-                    bathroom and living room)
+                    Common spaces (kitchen, balcony, garden, bathroom and living
+                    room)
                   </li>
                   <li>
-                    Venue and minimal support for organizing
-                    events and workshops
+                    Venue and minimal support for organizing events and
+                    workshops
                   </li>
                   <li>
-                    Promotion of your activities and
-                    networking assistance
+                    Promotion of your activities and networking assistance
                   </li>
-                  <li>
-                    Introductions to international urbanists
-                  </li>
+                  <li>Introductions to international urbanists</li>
                 </ul>
               </div>
 
@@ -224,12 +181,12 @@
                 <div class="marleft">
                   <b>¥75,000/month</b>
                   <div class="sub">
-                    This price includes taxes, utilities,
-                    common expenses, and operating costs.
+                    This price includes taxes, utilities, common expenses, and
+                    operating costs.
                   </div>
                   <div class="sub">
-                    Please contact us if you would like to
-                    stay for a period other than 1-6 months.
+                    Please contact us if you would like to stay for a period
+                    other than 1-6 months.
                   </div>
                 </div>
               </div>
@@ -247,17 +204,11 @@
 
         <div class="studio">
           <h2 v-if="locale === 'ja'">
-            <img
-              src="/img/icons/studio.svg"
-              class="applyIcon"
-            />
+            <img src="/img/icons/studio.svg" class="applyIcon" />
             シェアスタジオ
           </h2>
           <h2 v-else>
-            <img
-              src="/img/icons/studio.svg"
-              class="applyIcon"
-            />
+            <img src="/img/icons/studio.svg" class="applyIcon" />
             Shared Studio
           </h2>
           <div>
@@ -274,39 +225,32 @@
                 <li>
                   占有ではなく、オープンなスタジオとして使用するため、定期的に見学者などが入ってくることが大丈夫な方。
                 </li>
-                <li>
-                  1階のトイレ、洗面所、台所なども使用頂けます。
-                </li>
+                <li>1階のトイレ、洗面所、台所なども使用頂けます。</li>
               </ul>
             </template>
             <template v-else>
-              We are looking for artists and designers who
-              would like to use the Western-style second
-              floor of Bridge Studio as a workspace. We plan
-              to hold open studios regularly and become a
-              shared studio open to the community.
+              We are looking for artists and designers who would like to use the
+              Western-style second floor of Bridge Studio as a workspace. We
+              plan to hold open studios regularly and become a shared studio
+              open to the community.
               <ul class="martopsmall">
                 <li>
-                  Any form of creator is accepted. We are
-                  looking for a wide range of people
-                  involved in a wide range of creative
-                  activities, including art, design,
-                  architecture, crafts, and printing.
+                  Any form of creator is accepted. We are looking for a wide
+                  range of people involved in a wide range of creative
+                  activities, including art, design, architecture, crafts, and
+                  printing.
                 </li>
                 <li>
-                  One month's worth of studio usage fee is
-                  required as a security deposit (to be
-                  returned on departure)
+                  One month's worth of studio usage fee is required as a
+                  security deposit (to be returned on departure)
                 </li>
                 <li>
-                  As the studio is a workspace and not a
-                  living space, be prepared for an active
-                  flow of creators and visitors.
+                  As the studio is a workspace and not a living space, be
+                  prepared for an active flow of creators and visitors.
                 </li>
                 <li>
-                  You can also use the toilet, washroom, and
-                  kitchen (within reason) on the first
-                  floor.
+                  You can also use the toilet, washroom, and kitchen (within
+                  reason) on the first floor.
                 </li>
               </ul>
 
@@ -314,8 +258,7 @@
               <div class="marleft">
                 <b>¥28,000/month</b>
                 <div class="sub">
-                  This price includes taxes, utilities, and
-                  operating costs.
+                  This price includes taxes, utilities, and operating costs.
                 </div>
               </div>
             </template>
@@ -326,25 +269,17 @@
             target="_blank"
             class="button martop"
           >
-            <div class="secondary">
-              Apply for Shared Studio
-            </div>
+            <div class="secondary">Apply for Shared Studio</div>
           </a>
         </div>
 
         <div class="spaceRental">
           <h2 v-if="locale === 'ja'">
-            <img
-              src="/img/icons/event.svg"
-              class="applyIcon"
-            />
-            スペースレンタル
+            <img src="/img/icons/event.svg" class="applyIcon" />
+            ギャラリー、イベント
           </h2>
           <h2 v-else>
-            <img
-              src="/img/icons/event.svg"
-              class="applyIcon"
-            />
+            <img src="/img/icons/event.svg" class="applyIcon" />
             Space Rental
           </h2>
 
@@ -380,53 +315,39 @@
             </template>
             <template v-else>
               <div>
-                We are open for proposals for events,
-                workshops, exhibitions, and more on the
-                themes of architecture, design, and
-                creation.
+                We are open for proposals for events, workshops, exhibitions,
+                and more on the themes of architecture, design, and creation.
               </div>
               <div class="martopsmall">
                 <ul>
                   <li>
-                    We can accept a wide range of
-                    applications, including art, design,
-                    architecture, crafts, manufacturing, and
+                    We can accept a wide range of applications, including art,
+                    design, architecture, crafts, manufacturing, and
                     university-related projects.
                   </li>
                   <li>
-                    We can not provide assistance in the
-                    planning, management, staff, event page
-                    creation, or marketing of the event.
+                    We can not provide assistance in the planning, management,
+                    staff, event page creation, or marketing of the event.
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h4 class="martopsmall">
-                  What we provide:
-                </h4>
+                <h4 class="martopsmall">What we provide:</h4>
                 <ul>
                   <li>
-                    Rental of basic tools such as
-                    projectors, speakers, stationery and
-                    whiteboards
+                    Rental of basic tools such as projectors, speakers,
+                    stationery and whiteboards
                   </li>
-                  <li>
-                    Basic event publicity on our social
-                    channels
-                  </li>
-                  <li>
-                    English language support (separate fee)
-                  </li>
+                  <li>Basic event publicity on our social channels</li>
+                  <li>English language support (separate fee)</li>
                 </ul>
               </div>
 
               <h4 class="martopsmall">Cost:</h4>
               <div class="marleft">
                 <b>￥20,000 per day</b>
-                <div class="sub">
-                  This price includes taxes.
-                </div>
+                <div class="sub">This price includes taxes.</div>
               </div>
             </template>
           </div>
@@ -436,9 +357,7 @@
             target="_blank"
             class="button martop"
           >
-            <div class="secondary">
-              Apply for Space Rental
-            </div>
+            <div class="secondary">Apply for Space Rental</div>
           </a>
         </div>
       </div>
@@ -447,9 +366,9 @@
 </template>
 
 <script setup lang="ts">
-import * as state from '~/assets/state'
-const i18n = useI18n()
-const locale = i18n.locale
+import * as state from "~/assets/state";
+const i18n = useI18n();
+const locale = i18n.locale;
 </script>
 
 <style lang="scss" scoped>
