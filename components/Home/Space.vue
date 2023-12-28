@@ -110,7 +110,7 @@
             />
             <h2>Shared Studio</h2>
             <template v-if="locale === 'ja'">
-              洋館部分の2階は、オープンなシェア工房になっています。随時入居アーティストを募集しています。詳しくは、下記のAPPLY項目をご参照ください。
+              洋館部分の2階は、オープンなシェアアトリエになっています。随時入居アーティストを募集しています。詳しくは、下記のAPPLY項目をご参照ください。
             </template>
 
             <template v-else>
@@ -193,10 +193,10 @@
             }"
           >
             <BridgeStudioInteractive class="mobile" activeItem="coworking" />
-            <h2>Coworking Space</h2>
+            <h2>Former doctor’s room</h2>
             <template v-if="locale === 'ja'">
               <p>
-                会員の皆様には、コワーキングスペースとしての使用が可能です。
+                小児科としてこの建物が使われていた時代の古い書籍や薬瓶などのヴィンテージアイテムが残った部屋です。イベントや古物のフリーマーケットなどを定期的に開催しています。
               </p>
             </template>
             <template v-else>
@@ -207,7 +207,6 @@
                 in its upkeep and expansion.
               </p>
             </template>
-            -->
           </div>
         </div>
       </div>
