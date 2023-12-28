@@ -18,19 +18,12 @@
             />
           </div>
           <div class="bg"></div>
-          <template v-if="locale === 'ja'">
-            <h2 class="ja">
-              <span>A multifunctional space for critical makers.</span>
-            </h2>
-          </template>
-          <template v-else>
-            <h1><span>A place for urbanists.</span></h1>
-            <h2>
-              <span
-                >Bridge To is an urban library and event space for cities.</span
-              >
-            </h2>
-          </template>
+          <h1>
+            <span
+              >A multifunctional space for critical
+              makers.</span
+            >
+          </h1>
         </div>
       </div>
     </div>
@@ -44,12 +37,12 @@
 </template>
 
 <script setup lang="ts">
-import * as state from "~/assets/state";
-const i18n = useI18n();
-const locale = i18n.locale;
+import * as state from '~/assets/state'
+const i18n = useI18n()
+const locale = i18n.locale
 
 function scrollDown() {
-  document.getElementById("about")?.scrollIntoView(true);
+  document.getElementById('about')?.scrollIntoView(true)
 }
 </script>
 
@@ -60,7 +53,7 @@ section {
   width: 100%;
   overflow-x: hidden;
   position: relative;
-  background-image: url("/img/2024/20231202_kyoto_258_4000.jpg");
+  background-image: url('/img/2024/20231202_kyoto_258_4000.jpg');
   background-size: cover;
   background-position: center center;
   background-blend-mode: normal;
@@ -107,7 +100,7 @@ section {
   // }
 
   .rightbox {
-    max-width: 600px;
+    max-width: 700px;
     padding: 2em;
     position: relative;
 

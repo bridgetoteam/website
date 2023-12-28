@@ -3,7 +3,9 @@
     <div class="light v2"></div>
 
     <div
-      v-lazy:background-image="'/img/2024/20231202_kyoto_244_4000.jpg'"
+      v-lazy:background-image="
+        '/img/2024/20231202_kyoto_244_4000.jpg'
+      "
       class="interstitial"
     ></div>
 
@@ -22,32 +24,28 @@
             都市、建築、まちづくりの分野でクリエイティブディレクションやリサーチの仕事を行うアーバン・デザイナーの杉田真理子と、デザイナー・ディベロッパーのジャスパー・スティーベンソンを主体とした合同会社TCUにて運営をしています。
           </template>
           <template v-else>
-            We are Mariko Sugita (an editor and writer on urban affairs) and
-            Jasper Stephenson (a designer and developer). We own an online
-            platform called
-            <a href="https://www.travelingcircusofurbanism.com" target="_blank"
-              >Traveling Circus of Urbanism</a
-            >, which collects urban narratives from around the world through
-            traveling. We run Bridge To Kyoto by ourselves (we also live here!)
-            through our passion for cities and urbanism, and it's entirely an
-            independent project. We have good connections with different
-            urbanism-related practitioners here in Japan as well as in the U.S.,
-            Europe, and Southeast Asia, and we will do our best to connect you
-            with the local urbanist scene!
+            Bridge To is run by TCU (Traveling Circus of
+            Urbanism), a team led by urban designer Mariko
+            Sugita, who works in creative direction and
+            research in the fields of cities, architecture,
+            and community development, and
+            designer/developer Jasper Stephenson.
           </template>
         </p>
 
         <h2 v-if="locale === 'ja'">誰が使用できるの？</h2>
-        <h2 v-else>What happens after I apply?</h2>
+        <h2 v-else>Who can use the space?</h2>
         <p>
-          <template v-if="locale === 'ja'"
-            >都市、建築、まちづくり、アートに興味がある人であれば誰でもご使用いただけます。レジデンス募集の場合は、面談・ビデオ面接をさせて頂く場合もあります。ワークショップやイベントの開催希望の方も、お気軽にお問い合わせください。</template
+          <template v-if="locale === 'ja'">
+            都市、建築、まちづくり、アートに興味がある人であれば誰でもご使用いただけます。レジデンス募集の場合は、面談・ビデオ面接をさせて頂く場合もあります。ワークショップやイベントの開催希望の方も、お気軽にお問い合わせください。</template
           >
-          <template v-else
-            >It's important for us to get to know you better, so we'll carefully
-            examine your application and perhaps ask for an online interview.
-            We'll get back to you within a week to let you know our
-            availability.</template
+          <template v-else>
+            Anyone who is interested in cities,
+            architecture, urbanism, or art. For residency
+            applicants, we will conduct face-to-face or
+            video interviews. If you would like to hold a
+            workshop or event, please feel free to contact
+            us directly.</template
           >
         </p>
 
@@ -58,67 +56,53 @@
             >銀閣寺と哲学の道から、徒歩5分ほどの場所にあります。京都大学も近く、カフェやレストランなどが徒歩圏内に数多くあるほか、クリエイティブな本屋や隠れ家的なアートスペースも点在するエリアです。</template
           >
           <template v-else>
-            We're only a 5 minute walk away from the Silver Temple (Ginkakuji)
-            &amp; the Philosopher's Path (one of the most popular icons of
-            Kyoto), and 25 minutes by bus from the city center. Kyoto University
-            is very close by, as well. On top of that, there are many small
-            independent art galleries, book stores, and craft shops nearby. One
-            of our favorites is
-            <a href="http://hohohoza.com/" target="_blank">Hohohoza</a>!
+            We're only a 5 minute walk away from the Silver
+            Temple (Ginkakuji) &amp; the Philosopher's Path
+            (one of the most popular icons of Kyoto), and 25
+            minutes by bus from the city center. Kyoto
+            University is very close by, as well. On top of
+            that, there are many small independent art
+            galleries, book stores, and craft shops nearby.
+            One of our favorites is
+            <a href="http://hohohoza.com/" target="_blank"
+              >Hohohoza</a
+            >!
           </template>
         </p>
+
         <h2 v-if="locale === 'ja'">
           建物の保存活動はどのようなプロセスで行われているの？
         </h2>
-        <h2 v-else>How much does it cost?</h2>
-        <div>
+        <h2 v-else>
+          What's involved in the renovation of Bridge
+          Studio?
+        </h2>
+        <p>
           <template v-if="locale === 'ja'">
-            <template v-if="locale === 'ja'"
-              >自分たちで改修費を工面し、まずはキッチンやお風呂場、トイレなどの水回り工事を優先的に行ったのち、痛み始めている外壁の工事を行っています。元々使われていたレンガやタイル、瓦屋根などの素材を再利用し、歴史的な趣をそのまま残しながら、現代の生活にもフィットする形で時間をかけて改修を行います。改修費へのカンパ、ドネーションを常に受け付けております。</template
-            >
+            自分たちで改修費を工面し、まずはキッチンやお風呂場、トイレなどの水回り工事を優先的に行ったのち、痛み始めている外壁の工事を行っています。元々使われていたレンガやタイル、瓦屋根などの素材を再利用し、歴史的な趣をそのまま残しながら、現代の生活にもフィットする形で時間をかけて改修を行います。改修費へのカンパ、ドネーションを常に受け付けております。
           </template>
           <template v-else>
-            <h3>Event / Workshop</h3>
-            <p>
-              We prefer the space to be noncommercial, but in the event that you
-              make a profit from ticket or goods sales, we kindly ask for 40% of
-              the earnings for our help with planning, promption, translation,
-              setup/teardown, documentation etc.
-            </p>
-            <p>
-              Price varies depending on the type &amp; length of the event.
-              <br />Please
-              <a href="mailto:bridgetoresidency@gmail.com" target="_blank"
-                >contact us</a
-              >
-              for inquiry.
-            </p>
+            After raising funds for renovation, we will
+            prioritize a redo of the aging plumbing and
+            electrical systems. Then, we will work on the
+            exterior walls, which were starting to show
+            signs of wear. By reusing original materials
+            such as bricks, tiles, and ceramic roof tiles,
+            we will take the time to renovate the building
+            to fit modern life while preserving its historic
+            charm. We are always accepting donations toward
+            renovation costs.
           </template>
-        </div>
-
-        <template v-if="locale !== 'ja'">
-          <h2>What kind of urbanists are you looking for?</h2>
-          <p>
-            <template v-if="locale === 'ja'"></template>
-            <template v-else
-              >We appreciate urban movements and architectural projects that are
-              small-scale, incremental, resident-generated, and bottom-up,
-              rather than top-down planning and mega-projects. We'd love to
-              invite inspiring practitioners who truly love their cities who are
-              part of motivating initiatives and topics that are unique to each
-              city.</template
-            >
-          </p>
-        </template>
+        </p>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import * as state from "~/assets/state";
-const i18n = useI18n();
-const locale = i18n.locale;
+import * as state from '~/assets/state'
+const i18n = useI18n()
+const locale = i18n.locale
 </script>
 
 <style lang="scss" scoped>

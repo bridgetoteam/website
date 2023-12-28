@@ -2,7 +2,9 @@
   <section class="v2" id="space">
     <div class="light"></div>
     <div
-      v-lazy:background-image="'/img/2024/20231202_kyoto_238_4000.jpg'"
+      v-lazy:background-image="
+        '/img/2024/20231202_kyoto_238_4000.jpg'
+      "
       class="interstitial shadow"
       style="min-height: 30em"
     ></div>
@@ -15,15 +17,11 @@
           <!-- <div class="overlayTitle">
             <img src="/img/logos/bridgeStudio.svg" />
           </div> -->
-          <!-- <img
-            class="screen"
-            src="/img/bridgeStudioWhite.svg"
-            :class="{
-              active: activeItem !== 'bridgeToKyoto',
-            }"
-          /> -->
 
-          <BridgeStudioInteractive class="desktop" :activeItem="activeItem" />
+          <BridgeStudioInteractive
+            class="desktop"
+            :activeItem="activeItem"
+          />
         </div>
         <div class="text">
           <div
@@ -34,32 +32,29 @@
               active: activeItem === 'intro',
             }"
           >
-            <BridgeStudioInteractive class="mobile marbot" activeItem="intro" />
+            <BridgeStudioInteractive
+              class="mobile marbot"
+              activeItem="intro"
+            />
             <template v-if="locale === 'ja'">
               <p>
                 元々は小児科病院として使われていた、1934年（昭和9年）築の「Bridge
                 Studio」。23年間の空き家期間を経て、2024年2月に新しい活動をスタートします。元診察室や待合室、居住空間だった場所も含め、1階・2階で合計8部屋。外観は洋館でありつつも、和の内装との組み合わせがユニークな建物です。アーティスト・イン・レジデンスやシェアアトリエ、作業スペース、イベントスペースなどとして広くコミュニティを巻き込みながら、建物保存のための改修を行っています。
               </p>
-              <p></p>
             </template>
             <template v-else>
               <p>
-                Bridge To is based in an old, postwar, Kyoto-style home with a
-                stream flowing in front and a bridge (yes, the name isn't only
-                metaphorical!) crossing over it to enter. After a renovation in
-                2019, it has found new life as a creative residence and
-                community space. Though small, it functions fully as a residence
-                as well as an event, gallery, and workshop space.
-              </p>
-              <p>
-                Having remodeled a large portion of the space by hand, we
-                welcome all those with a DIY spirit. On top of that, we use
-                renewable energy, try to limit plastic and one-time-use products
-                as much as possible, and do our best to keep our establishment
-                zero-waste. We're working to continue to shift the conversation
-                around how valuable Japan's old and vacant houses are, and how
-                possible it is renovate them using materials that are good for
-                the environment.
+                Originally used as a pediatric hospital,
+                <b>Bridge Studio</b> was left vacant for 23
+                years. In February 2024, it is reborn as our
+                largest and newest location. There are a
+                total of eight rooms in use across two
+                floors, including a former examination room,
+                waiting room, and living space. The building
+                itself has a unique architectural blend of
+                half Western and half Japanese; it is being
+                carefully renovated to preserve its
+                character and history.
               </p>
             </template>
           </div>
@@ -86,12 +81,12 @@
             </template>
             <template v-else>
               <p>
-                We currently don't have a room open for residency (we live
-                here!) but while we're abroad we rent the whole house to
-                creative-minded people who are also interested in hosting pop-up
-                exhibitions &amp; events in our space during their stay. We're
-                also planning to expand to more spaces in the same neighborhood
-                in Kyoto, so message us if you're looking for a residency!
+                Bridge Studio welcomes artists, designers,
+                researchers, and writers who wish to stay
+                and work in Kyoto. Our basic policy is to
+                offer medium-to-long-term stays ranging from
+                a few weeks up to three months. For details,
+                please refer to the Apply section below.
               </p>
             </template>
           </div>
@@ -116,10 +111,11 @@
 
             <template v-else>
               <p>
-                The library is regularly open to the public, showcasing our
-                collection of publications and items in the fields of
-                architecture and urbanism with the intention of creating a hub
-                for open research and dialogue.
+                The second floor of the Western-style part
+                of the building is an open shared studio. We
+                are always looking for artists to use the
+                space! For details, please refer to the
+                Apply section below.
               </p>
             </template>
           </div>
@@ -142,10 +138,6 @@
               <p>
                 1階のコモンスペースは、ギャラリーやイベントスペースとして使用できます。フェロー会員の方々には、コワーキングスペースとしてもご使用頂けます。
               </p>
-              <!-- <p>
-                ◉ライブラリー利用方法<br />最大収容人数：10名程度<br />利用可能日時:
-                毎週土曜日（変動あり）<br />利用時間：11:00～17:00<br />利用料金：無料（3月のみ）<br />設備：WIFI・冷暖房・トイレ<br />お申し込み方法：InstagramかfacebookにてDM
-              </p> -->
               <p>
                 イベント内容と日時は
                 <a
@@ -162,12 +154,10 @@
             </template>
             <template v-else>
               <p>
-                Our tatami-floored living &amp; dining spaces double as
-                community space for events of all kinds, such as exhibitions of
-                your work, meetups to engage and collaborate with local
-                urbanists, and more. There are also regularly scheduled
-                city-related workshops and events held in the community space,
-                outside of what the residents themselves organize. Follow our
+                The common space on the first floor can be
+                used as a gallery or event space. Fellowship
+                members can also use it as a coworking
+                space. Follow us on
                 <a
                   href="https://www.facebook.com/bridgetokyoto/"
                   target="_blank"
@@ -179,9 +169,8 @@
                   target="_blank"
                   >Instagram</a
                 >
-                for more information about our events!
+                for dates/info about our events.
               </p>
-              <p>The space has a capacity of about 10–15 people.</p>
             </template>
           </div>
 
@@ -193,8 +182,11 @@
               active: activeItem === 'coworking',
             }"
           >
-            <BridgeStudioInteractive class="mobile" activeItem="coworking" />
-            <h2>Former doctor’s room</h2>
+            <BridgeStudioInteractive
+              class="mobile"
+              activeItem="coworking"
+            />
+            <h2>Clinic</h2>
             <template v-if="locale === 'ja'">
               <p>
                 小児科としてこの建物が使われていた時代の古い書籍や薬瓶などのヴィンテージアイテムが残った部屋です。イベントや古物のフリーマーケットなどを定期的に開催しています。
@@ -202,10 +194,12 @@
             </template>
             <template v-else>
               <p>
-                There's a stream running in front of our space, and we have the
-                area's only private bridge. There's also a small garden, and
-                anyone interested in urban gardening is welcome to participate
-                in its upkeep and expansion.
+                This space retains vintage items such as old
+                books and medicine bottles from the days
+                when this building was used as a
+                pediatrician's clinic. Events and flea
+                markets for antique items are held here
+                regularly.
               </p>
             </template>
           </div>
@@ -245,22 +239,16 @@
               </template>
               <template v-else>
                 <p>
-                  Bridge To is based in an old, postwar, Kyoto-style home with a
-                  stream flowing in front and a bridge (yes, the name isn't only
-                  metaphorical!) crossing over it to enter. After a renovation
-                  in 2019, it has found new life as a creative residence and
-                  community space. Though small, it functions fully as a
-                  residence as well as an event, gallery, and workshop space.
-                </p>
-                <p>
-                  Having remodeled a large portion of the space by hand, we
-                  welcome all those with a DIY spirit. On top of that, we use
-                  renewable energy, try to limit plastic and one-time-use
-                  products as much as possible, and do our best to keep our
-                  establishment zero-waste. We're working to continue to shift
-                  the conversation around how valuable Japan's old and vacant
-                  houses are, and how possible it is renovate them using
-                  materials that are good for the environment.
+                  <b>Bridge Office</b> is our base of
+                  operations, housed in a post-war building
+                  near Bridge Studio. Since its renovation
+                  in 2019 it has functioned as a creative
+                  residency and community space for
+                  urbanists. It is primarily an office and
+                  residence for the team, but it also
+                  functions as a home for events, galleries,
+                  workshops, and other multi-purpose
+                  activities.
                 </p>
               </template>
             </div>
@@ -273,20 +261,20 @@
 </template>
 
 <script setup lang="ts">
-import * as state from "~/assets/state";
-const i18n = useI18n();
-const locale = i18n.locale;
+import * as state from '~/assets/state'
+const i18n = useI18n()
+const locale = i18n.locale
 
-const activeItem = ref("intro");
-const observer = ref<IntersectionObserver | null>(null);
-const instersectionThreshold = ref(0.1);
+const activeItem = ref('intro')
+const observer = ref<IntersectionObserver | null>(null)
+const instersectionThreshold = ref(0.1)
 
 const $residence = ref<HTMLElement | null>(null),
   $studio = ref<HTMLElement | null>(null),
   $gallery = ref<HTMLElement | null>(null),
   $coworking = ref<HTMLElement | null>(null),
   $bridgeToKyoto = ref<HTMLElement | null>(null),
-  $intro = ref<HTMLElement | null>(null);
+  $intro = ref<HTMLElement | null>(null)
 
 onMounted(() => {
   let toObserve = [
@@ -296,32 +284,37 @@ onMounted(() => {
     $gallery.value,
     $coworking.value,
     $bridgeToKyoto.value,
-  ].filter((el) => el !== null) as HTMLElement[];
-  console.log(toObserve);
-  observer.value = new IntersectionObserver(intersectEvent, {
-    threshold: instersectionThreshold.value,
-    rootMargin: "-30% 0px -30% 0px",
-  });
+  ].filter((el) => el !== null) as HTMLElement[]
+  console.log(toObserve)
+  observer.value = new IntersectionObserver(
+    intersectEvent,
+    {
+      threshold: instersectionThreshold.value,
+      rootMargin: '-30% 0px -30% 0px',
+    },
+  )
   toObserve.forEach((el) => {
-    observer.value?.observe(el);
-  });
-});
+    observer.value?.observe(el)
+  })
+})
 
 onBeforeUnmount(() => {
-  observer.value?.disconnect();
-  observer.value = null;
-});
+  observer.value?.disconnect()
+  observer.value = null
+})
 
 function intersectEvent(entries, observer) {
   entries.forEach((entry) => {
     console.log(
-      entry.target.getAttribute("label"),
+      entry.target.getAttribute('label'),
       entry.intersectionRatio,
-      entry
-    );
-    if (entry.intersectionRatio > instersectionThreshold.value)
-      activeItem.value = entry.target.getAttribute("label");
-  });
+      entry,
+    )
+    if (
+      entry.intersectionRatio > instersectionThreshold.value
+    )
+      activeItem.value = entry.target.getAttribute('label')
+  })
 }
 </script>
 
@@ -436,7 +429,7 @@ p {
 }
 
 .textsection {
-  margin: 15em 0;
+  margin: 10em 0 20em 0;
   transition: all 0.2s;
 
   &:not(.active) {

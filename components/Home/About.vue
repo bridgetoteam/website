@@ -5,25 +5,30 @@
         <div class="bg"></div>
 
         <template v-if="locale === 'ja'">
-          <!-- <h1>About</h1> -->
           <p>
             京都・左京区に位置するBridge
             Toは、建築・まちづくり・デザイン・アートなどに関わる実践者のための複合スペース
             &
             プラットフォームです。国内外のアーティストが滞在できるレジデンスや、シェアアトリエ、イベントスペース、建築・都市・まちづくり関係の蔵書やアイテムを公開する私設ライブラリーほか、文化芸術事業の企画運営・展覧会の企画やキュレーションなども行なっています。現在、「Bridge
-            Studio」「Bridge Office」の2拠点を運営しています。
-
-            <!-- 世界中からアーバニストやアーティストを受け入れ、国内の建築・都市・まちづくり・アート関係者や市民と交流し、コラボレーションを生み出すきっかけをつくるための場所です。 -->
+            Studio」「Bridge
+            Office」の2拠点を運営しています。
           </p>
         </template>
 
         <template v-else>
-          <!-- <h1>About</h1> -->
           <p>
-            <b>"Bridge To Kyoto"</b> is a curatorial platform and cultural space
-            for architecture and urbanism based in Kyoto, Japan. It is a private
-            gallery and library that showcases a collection of publications and
-            items in the fields of architecture and urbanism.
+            Located in Sakyo-ku, Kyoto, Bridge To is a space
+            for practitioners involved in architecture,
+            urban development, design, art, and beyond. We
+            offer residencies for artists from Japan and
+            abroad, a shared atelier, an event space, and a
+            private library of books and items related to
+            architecture, urban planning, and city planning.
+            We also plan, manage, and host cultural and
+            artistic projects, organize and curate
+            exhibitions, and more. Our two active locations
+            are
+            <b>Bridge Studio</b> and <b>Bridge Office</b>.
           </p>
         </template>
       </div>
@@ -32,9 +37,9 @@
 </template>
 
 <script setup lang="ts">
-import * as state from "~/assets/state";
-const i18n = useI18n();
-const locale = i18n.locale;
+import * as state from '~/assets/state'
+const i18n = useI18n()
+const locale = i18n.locale
 </script>
 
 <style lang="scss" scoped>

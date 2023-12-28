@@ -319,8 +319,8 @@ a.button,
 
     &.reverse,
     &.invert {
-      background: var(--base-l2) !important;
-      color: var(--primary) !important;
+      background: var(--base-d) !important;
+      color: var(--primary-l) !important;
     }
 
     @media (max-width: 768px) {
@@ -338,8 +338,8 @@ a.button,
 
       &.reverse,
       &.invert {
-        background: var(--base-l2) !important;
-        color: var(--primary-d2) !important;
+        background: var(--base) !important;
+        color: var(--primary-l) !important;
       }
     }
   }
@@ -705,41 +705,41 @@ input[type='range'] {
 }
 
 .flex {
-  display: flex;
+  display: flex !important;
 }
 .flexwrap {
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
 }
 .flexrow {
-  display: flex;
+  display: flex !important;
   flex-direction: row;
 }
 .flexcolumn {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
 }
 .flexcenter {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
 }
 .flexverticalcenter,
 .flexvertcenter {
-  display: flex;
+  display: flex !important;
   align-items: center;
 }
 .flexhorizontalcenter,
 .flexhorizcenter {
-  display: flex;
+  display: flex !important;
   justify-content: center;
 }
 .flexbetween {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
 }
 .flexstretch {
-  display: flex;
+  display: flex !important;
   align-items: stretch;
   justify-content: stretch;
   & > * {

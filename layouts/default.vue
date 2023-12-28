@@ -3,8 +3,12 @@
     <nav class="flexbetween z4">
       <div></div>
       <!-- <Logo class="logo" :collapse="true" /> -->
-      <div class="pad">
+      <div
+        class="pad flexcolumn"
+        style="align-items: flex-end; gap: 0.5em"
+      >
         <LangPicker />
+        <Social />
       </div>
     </nav>
     <NuxtPage />
