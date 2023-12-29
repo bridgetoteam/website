@@ -302,7 +302,7 @@ a.button,
 
   div {
     text-align: center;
-    background: var(--primary);
+    background-color: var(--primary);
     height: 100%;
     width: 100%;
     min-width: 180px;
@@ -313,13 +313,13 @@ a.button,
     transition: all 0.2s ease-in-out;
 
     &.secondary {
-      background: var(--primary-l) !important;
+      background-color: var(--primary-l) !important;
       color: var(--primary-d2) !important;
     }
 
     &.reverse,
     &.invert {
-      background: var(--base-d) !important;
+      background-color: var(--base-d) !important;
       color: var(--primary-l) !important;
     }
 
@@ -330,15 +330,15 @@ a.button,
     }
 
     &:hover {
-      background: var(--primary-l);
+      background-color: var(--primary-l);
 
       &.secondary {
-        background: var(--primary) !important;
+        background-color: var(--primary) !important;
       }
 
       &.reverse,
       &.invert {
-        background: var(--base) !important;
+        background-color: var(--base) !important;
         color: var(--primary-l) !important;
       }
     }

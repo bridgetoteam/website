@@ -72,6 +72,10 @@ section {
   @media (max-width: 768px) {
     top: 25vh;
     margin-right: 1em;
+
+    h1 {
+      font-size: 2em;
+    }
   }
 
   img {

@@ -87,7 +87,7 @@ const locale = i18n.locale
     }
 
     @media (max-width: 768px) {
-      margin-top: -6em;
+      margin-top: 0;
       font-size: 1.1em;
       padding: 3em 15%;
     }

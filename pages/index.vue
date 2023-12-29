@@ -1,6 +1,7 @@
 <template>
   <main>
     <HomeIntro />
+    <Kickstarter />
     <HomeAbout />
     <HomeSpace />
     <HomeInsta />
@@ -40,32 +41,5 @@ main {
   width: 100%;
   min-height: 100vh;
   background: var(--accent);
-}
-
-.intro {
-  width: 580px;
-  position: absolute;
-  top: 350px;
-  left: 5vw;
-}
-
-.headline {
-  text-transform: uppercase;
-  font-size: 4em;
-  font-weight: 800;
-  line-height: 1;
-  margin-bottom: 15px;
-}
-
-.subhead {
-  font-size: 1.5em;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-.bgillustration {
-  width: 85vw;
-  margin-left: 13vw;
-  margin-top: 15vh;
 }
 </style>
