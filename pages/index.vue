@@ -8,6 +8,7 @@
     <HomeApply />
     <HomeResidents />
     <HomeFAQ />
+    <HomePartners />
     <HomeMailingList />
     <!-- <HomeTCU /> -->
     <HomeContact />
