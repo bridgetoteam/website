@@ -199,9 +199,9 @@
                 <h4 class="martopsmall">What we offer</h4>
                 <ul>
                   <li>
-                    Private room, common office space
-                    (furnished, wifi included)
+                    Private room (furnished, wifi included)
                   </li>
+                  <li>A desk in our shared studio</li>
                   <li>
                     Common spaces (kitchen, balcony, garden,
                     bathroom and living room)
@@ -218,6 +218,21 @@
                     Introductions to international urbanists
                   </li>
                 </ul>
+              </div>
+
+              <div>
+                <h4 class="martopsmall">Availability</h4>
+                <div class="marleft">
+                  We're currently booked solid until
+                  December 2024.
+                </div>
+              </div>
+
+              <div class="sub martopsmall">
+                Please be aware that we're a small team
+                receiving a large volume of applications. We
+                will only be able to respond to accepted
+                applicants.
               </div>
 
               <!-- <div>
