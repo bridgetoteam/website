@@ -172,7 +172,22 @@
                   <li>
                     Promotion of your activities and networking assistance
                   </li>
-                  <li>Introductions to international urbanists</li>
+                  <li>Basic translation support</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="martopsmall">What we expect from you</h4>
+                <ul>
+                  <li>
+                    We don’t ask for any specific artistic output during your
+                    stay — your residency could be research-based or
+                    production-based.
+                  </li>
+                  <li>
+                    At the end of your stay, we expect you to organize either an
+                    exhibition, a talk, a workshop, etc. to showcase what you’ve
+                    worked on during your stay.
+                  </li>
                 </ul>
               </div>
 
