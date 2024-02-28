@@ -10,7 +10,7 @@
     <div class="contentcolumn full">
       <h1>Residents</h1>
 
-      <p>
+      <!-- <p>
         <template v-if="locale === 'ja'">
           2024年3月より随時アーティストインレジデンスの応募受付中
         </template>
@@ -18,7 +18,7 @@
           Now accepting applications; space available from
           March 2024.
         </template>
-      </p>
+      </p> -->
 
       <div class="row">
         <div v-if="people.current?.length">

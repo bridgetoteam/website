@@ -1,7 +1,7 @@
 <template>
   <main>
     <HomeIntro />
-    <Kickstarter />
+    <!-- <Kickstarter /> -->
     <HomeAbout />
     <HomeSpace />
     <HomeInsta />

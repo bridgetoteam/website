@@ -6,7 +6,7 @@
       <h1>Apply</h1>
 
       <div class="columns">
-        <div class="coworking">
+        <div class="coworking" v-if="locale === 'ja'">
           <h2 v-if="locale === 'ja'">
             <img
               src="/img/icons/fellowship.svg"
@@ -52,7 +52,7 @@
               <b>Bridge Studio</b> in a co-op format, as if
               they were joint renters.
               <br />
-              <h4 class="martopsmall">Fellows get:</h4>
+              <h4>Fellows get:</h4>
               <ul>
                 <li>
                   Use of Bridge Studio as a satellite
@@ -77,7 +77,7 @@
                 </li>
               </ul>
 
-              <!-- <h4 class="martopsmall">Cost:</h4>
+              <!-- <h4>Cost:</h4>
               <div class="marleft">
                 <b>USD $150 per month</b>
                 <div class="sub">
@@ -98,7 +98,13 @@
             </div>
           </a>
         </div>
-        <div class="residency">
+
+        <div
+          class="residency"
+          :class="{
+            'span2 textcolumn': locale !== 'ja',
+          }"
+        >
           <h2 v-if="locale === 'ja'">
             <img
               src="/img/icons/residency.svg"
@@ -163,6 +169,7 @@
                 1ヶ月〜6ヶ月以外の滞在期間をご希望の方はご連絡ください。
               </div> -->
             </template>
+
             <template v-else>
               We accept residents from Japan and abroad on a
               1-6 month basis, and help them connect with
@@ -170,7 +177,7 @@
               are accepted throughout the year.
 
               <br />
-              <h4 class="martopsmall">Who can apply?</h4>
+              <h4>Who can apply?</h4>
               <ul>
                 <li>
                   Creatives in the fields of art, design,
@@ -196,7 +203,7 @@
               residency.
 
               <div>
-                <h4 class="martopsmall">What we offer</h4>
+                <h4>What we offer</h4>
                 <ul>
                   <li>
                     Private room (furnished, wifi included)
@@ -207,48 +214,93 @@
                     bathroom and living room)
                   </li>
                   <li>
-                    Venue and minimal support for organizing
-                    events and workshops
+                    Venue and support for organizing events
+                    and workshops
                   </li>
                   <li>
                     Promotion of your activities and
                     networking assistance
                   </li>
-                  <li>
-                    Introductions to international urbanists
-                  </li>
+                  <li>Basic translation support</li>
                 </ul>
               </div>
 
               <div>
-                <h4 class="martopsmall">Availability</h4>
+                <h4>What we expect from you</h4>
                 <div class="marleft">
-                  We're currently booked solid until
-                  December 2024.
+                  <div>
+                    We don't ask for any specific artistic
+                    output during your stay — your residency
+                    could be research-based or
+                    production-based, it's up to you.
+                    However, at the end of your stay, we
+                    expect you to organize an exhibition, a
+                    talk, a workshop, etc. to showcase what
+                    you've worked on during your stay. It
+                    doesn't have to be highly produced, but
+                    we hope to have you share your insights
+                    and perspectives with the local
+                    community.
+                  </div>
                 </div>
               </div>
 
-              <div class="sub martopsmall">
-                Please be aware that we're a small team
-                receiving a large volume of applications. We
-                will only be able to respond to accepted
-                applicants.
-              </div>
-
-              <!-- <div>
-                <h4 class="martopsmall">Cost:</h4>
+              <div>
+                <h4>Availability</h4>
                 <div class="marleft">
-                  <b>USD $600 per month</b>
-                  <div class="sub">
-                    This price includes taxes, utilities, common expenses, and
-                    operating costs.
+                  <div>
+                    We're currently booked solid for 2024,
+                    except for May 1-15 and December 20-30.
                   </div>
-                  <div class="sub">
-                    Please contact us if you would like to stay for a period
-                    other than 1-6 months.
+                  <div class="sub martopsmall">
+                    Please be aware that we're a small team
+                    receiving a large volume of
+                    applications. We will only be able to
+                    respond to accepted applicants.
                   </div>
                 </div>
-              </div> -->
+              </div>
+
+              <div>
+                <h4>Rates</h4>
+                <div class="marleft">
+                  <div>
+                    <b>Monthly: USD $1200 per month</b>
+                  </div>
+                  <div>
+                    <b>Daily: USD $50 per day</b>
+                  </div>
+                  <ul class="sub padleftsmall martopsmall">
+                    <li>
+                      This price includes taxes, utilities,
+                      common expenses, and operating costs.
+                    </li>
+                    <li>
+                      Unlimited use of the shared studio and
+                      3 days' use of the ground floor for an
+                      exhibition or event are included.
+                    </li>
+
+                    <li>
+                      All money from the residency goes into
+                      the renovation and preservation of
+                      this historical building.
+                    </li>
+                    <li>
+                      If you are from a less affluent part
+                      of the world and cannot afford the
+                      residency, let's talk. We'd love to
+                      help as much as we can to give you an
+                      equal opportunity.
+                    </li>
+                    <li>
+                      Please contact us if you would like to
+                      stay for a period other than 1-6
+                      months.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </template>
           </div>
 
@@ -326,7 +378,7 @@
                 </li>
               </ul>
 
-              <!-- <h4 class="martopsmall">Cost:</h4>
+              <!-- <h4>Cost:</h4>
               <div class="marleft">
                 <b>USD $200 per month</b>
                 <div class="sub">
@@ -418,9 +470,7 @@
               </div>
 
               <div>
-                <h4 class="martopsmall">
-                  What we provide:
-                </h4>
+                <h4>What we provide:</h4>
                 <ul>
                   <li>
                     Rental of basic tools such as
@@ -437,7 +487,7 @@
                 </ul>
               </div>
 
-              <!-- <h4 class="martopsmall">Cost:</h4>
+              <!-- <h4>Cost:</h4>
               <div class="marleft">
                 <b>USD $150 per day</b>
                 <div class="sub">
@@ -499,6 +549,19 @@ h1 {
   }
 }
 
+.residency {
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+.span2 {
+  grid-column: span 2;
+
+  @media (max-width: 768px) {
+    grid-column: span 1;
+  }
+}
+
 h2 {
   display: flex;
   align-items: center;
@@ -543,6 +606,16 @@ h3 {
 
   @media (max-width: 768px) {
     margin-top: 30px;
+  }
+}
+
+h4 {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
   }
 }
 
