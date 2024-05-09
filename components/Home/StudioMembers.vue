@@ -1,66 +1,16 @@
 <template>
-  <section class="v5" id="residents">
-    <div
-      v-lazy:background-image="
-        '/img/2024/20231202_kyoto_184_4000.jpg'
-      "
-      class="interstitial shadow"
-    ></div>
-
+  <section class="v2" id="studioMembers">
     <div class="contentcolumn full">
-      <h1>Residents</h1>
-
-      <!-- <p>
-        <template v-if="locale === 'ja'">
-          2024年3月より随時アーティストインレジデンスの応募受付中
-        </template>
-        <template v-else>
-          Now accepting applications; space available from
-          March 2024.
-        </template>
-      </p> -->
+      <h1>Studio Members</h1>
 
       <div class="row">
-        <!--   <div v-if="residents.current?.length">
+        <div>
           <h3>Current</h3>
 
           <div class="grid">
             <div
               class="resident"
-              v-for="r in residents.current"
-              :key="r.id + r.name + locale"
-            >
-              <div
-                class="img"
-                v-lazy:background-image="
-                  `/img/people/${r.id}.jpg`
-                "
-                :alt="`Photo of ${r.name}`"
-              ></div>
-              <h2 class="name">{{ r.name }}</h2>
-              <div class="description">
-                {{
-                  locale === 'ja'
-                    ? r.descriptionJa
-                    : r.description
-                }}
-                <span class="website" v-if="r.url">
-                  <a :href="r.url" target="_blank"
-                    >Website</a
-                  >
-                </span>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <div>
-          <h3>Upcoming</h3>
-
-          <div class="grid">
-            <div
-              class="resident"
-              v-for="r in residents.upcoming || []"
+              v-for="r in studioMembers.current || []"
               :key="r.id + r.name + locale"
             >
               <div
@@ -93,7 +43,7 @@
           <div class="grid">
             <div
               class="resident"
-              v-for="r in residents.past"
+              v-for="r in studioMembers.past"
               :key="r.id + r.name + locale"
             >
               <div
@@ -129,7 +79,7 @@ import * as state from '~/assets/state'
 const i18n = useI18n()
 const locale = i18n.locale
 
-import { residents } from '~/assets/people'
+import { studioMembers } from '~/assets/people'
 </script>
 
 <style lang="scss" scoped>

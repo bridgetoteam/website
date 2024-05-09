@@ -7,6 +7,7 @@
     <HomeInsta />
     <HomeApply />
     <HomeResidents />
+    <HomeStudioMembers />
     <HomeFAQ />
     <HomePartners />
     <HomeMailingList />

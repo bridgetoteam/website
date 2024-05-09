@@ -76,17 +76,17 @@
             <template v-if="locale === 'ja'">
               <p>
                 Bridge
-                Studioでは、京都で滞在制作を行いたいアーティストやデザイナー、リサーチャー、文筆家などを積極的に受け入れています。数週間〜3ヶ月程度の中長期滞在が基本です。詳しくは、下記のAPPLY項目をご参照ください。
+                Studioでは、京都で滞在制作を行いたいアーティストやデザイナー、リサーチャー、文筆家などを積極的に受け入れています。1ヶ月からの中長期滞在が基本です。詳しくは、下記のAPPLY項目をご参照ください。
               </p>
             </template>
             <template v-else>
               <p>
                 Bridge Studio welcomes artists, designers,
                 researchers, and writers who wish to stay
-                and work in Kyoto. Our basic policy is to
-                offer medium-to-long-term stays ranging from
-                a few weeks up to three months. For details,
-                please refer to the Apply section below.
+                and work in Kyoto. We host residents for
+                medium-to-long-term stays of at least one
+                month. For details, please refer to the
+                Apply section below.
               </p>
             </template>
           </div>
