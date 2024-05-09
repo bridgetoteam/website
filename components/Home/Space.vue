@@ -233,13 +233,13 @@
               <template v-if="locale === 'ja'">
                 <p>
                   戦後に建てられた一軒家「Bridge
-                  Office」。目の前には川が走り、このエリアで唯一という個人用の橋がかかっています。2019年に改装・補強をし、アーバニストのクリエイティブレジデンスおよびコミュニティスペースとしてオープンしました。現在はチームの事務所兼住居として使用しながら、イベント・ギャラリー・ワークショップなど多目的に活用しています。
+                  To」。目の前には川が走り、このエリアで唯一という個人用の橋がかかっています。2019年に改装・補強をし、アーバニストのクリエイティブレジデンスおよびコミュニティスペースとしてオープンしました。現在はチームの事務所兼住居として使用しながら、イベント・ギャラリー・ワークショップなど多目的に活用しています。
                 </p>
                 <p></p>
               </template>
               <template v-else>
                 <p>
-                  <b>Bridge Office</b> is our base of
+                  <b>Bridge To</b> is our base of
                   operations, housed in a post-war building
                   near Bridge Studio. Since its renovation
                   in 2019 it has functioned as a creative
