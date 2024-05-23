@@ -28,9 +28,24 @@
                     : r.description
                 }}
                 <span class="website" v-if="r.url">
-                  <a :href="r.url" target="_blank"
+                  <a
+                    v-if="!Array.isArray(r.url)"
+                    :href="r.url"
+                    target="_blank"
                     >Website</a
                   >
+                  <template
+                    v-else
+                    v-for="(url, index) in r.url"
+                    :key="index"
+                  >
+                    <a :href="url" target="_blank"
+                      >Website {{ index + 1 }}</a
+                    >
+                    <span v-if="index < r.url.length - 1"
+                      >,
+                    </span>
+                  </template>
                 </span>
               </div>
             </div>
@@ -61,9 +76,24 @@
                     : r.description
                 }}
                 <span class="website" v-if="r.url">
-                  <a :href="r.url" target="_blank"
+                  <a
+                    v-if="!Array.isArray(r.url)"
+                    :href="r.url"
+                    target="_blank"
                     >Website</a
                   >
+                  <template
+                    v-else
+                    v-for="(url, index) in r.url"
+                    :key="index"
+                  >
+                    <a :href="url" target="_blank"
+                      >Website {{ index + 1 }}</a
+                    >
+                    <span v-if="index < r.url.length - 1"
+                      >,
+                    </span>
+                  </template>
                 </span>
               </div>
             </div>

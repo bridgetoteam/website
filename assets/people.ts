@@ -3,7 +3,7 @@ interface ResidentHomepageData {
   name: string
   description: string
   descriptionJa: string
-  url?: string
+  url?: string | string[]
 }
 interface ResidentHomepage {
   current?: ResidentHomepageData[]
@@ -21,7 +21,6 @@ export const studioMembers: ResidentHomepage = {
       descriptionJa: `写真家と画家のユニット。`,
       url: 'https://www.instagram.com/unnun_sha/',
     },
-    // colin
     {
       id: 'colin',
       name: 'Colin Zimbleman',
@@ -35,6 +34,12 @@ export const studioMembers: ResidentHomepage = {
       description: `Taipei-born painter, Japanese contemporary literature researcher.`,
       descriptionJa: `台湾・台北出身、京都芸術大学大学院博士課程在籍中。画家､日本現代文学研究。`,
       url: 'https://www.instagram.com/ichen2193/',
+    },
+    {
+      id: 'martin',
+      name: 'Martin De Mello',
+      description: `A poet, short fiction writer and editor based in Glasgow.`,
+      descriptionJa: `グラスゴー拠点の詩人、短編小説家、編集者。`,
     },
   ],
   past: [
@@ -74,6 +79,23 @@ export const residents: ResidentHomepage = {
     },
   ],
   past: [
+    {
+      id: 'celineAndAliki',
+      name: 'Céline Pelcé and Aliki van der Kruijs',
+      description: `Food and textile designers.`,
+      descriptionJa: `フードデザイナー、テキスタイルデザイナー。`,
+      url: [
+        'http://www.celinepelce.fr/',
+        'http://www.alikivanderkruijs.com',
+      ],
+    },
+    {
+      id: 'vincent',
+      name: 'Vincent Collet',
+      description: `Author-director, performer and visual artist.`,
+      descriptionJa: `ディレクター、パフォーマー、ビジュアルアーティスト。`,
+      url: 'http://www.theatre-airelibre.fr/',
+    },
     {
       id: 'jasmine',
       name: 'Jasmine Shigemura Lee',
