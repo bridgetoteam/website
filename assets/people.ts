@@ -22,13 +22,6 @@ export const studioMembers: ResidentHomepage = {
       url: 'https://www.instagram.com/unnun_sha/',
     },
     {
-      id: 'colin',
-      name: 'Colin Zimbleman',
-      description: `A clinical psychologist working with images.`,
-      descriptionJa: `臨床心理学者`,
-      url: 'http://www.zimbleman.com/',
-    },
-    {
       id: 'lin',
       name: 'Lin Ichen',
       description: `Taipei-born painter, Japanese contemporary literature researcher.`,
@@ -36,10 +29,24 @@ export const studioMembers: ResidentHomepage = {
       url: 'https://www.instagram.com/ichen2193/',
     },
     {
+      id: 'colin',
+      name: 'Colin Zimbleman',
+      description: `A clinical psychologist working with images.`,
+      descriptionJa: `臨床心理学者`,
+      url: 'http://www.zimbleman.com/',
+    },
+    {
       id: 'martin',
       name: 'Martin De Mello',
       description: `A poet, short fiction writer and editor based in Glasgow.`,
       descriptionJa: `グラスゴー拠点の詩人、短編小説家、編集者。`,
+    },
+    {
+      id: 'osawa',
+      name: 'Yuki Osawa',
+      description: `Architect.`,
+      descriptionJa: `建築家。`,
+      url: 'https://www.instagram.com/osawa_opdo/',
     },
   ],
   past: [
