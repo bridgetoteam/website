@@ -1,5 +1,5 @@
 <template>
-  <section class="v2" id="about">
+  <section class="v2" id="mailingList">
     <div class="contentcolumn">
       <div class="textcolumn">
         <h1>Newsletter</h1>
@@ -8,12 +8,11 @@
           ニュースレターでは、オープンコールやイベント情報などを不定期でお送りしています。
         </div>
         <div v-else>
-          Sign up for our newsletter for upcoming open calls and events! No spam
-          — we'll only send mail when we actually have something useful to say.
+          Sign up for our newsletter for upcoming open calls
+          and events! No spam — we'll only send mail when we
+          actually have something useful to say.
         </div>
-
-        <!-- Begin Mailchimp Signup Form -->
-
+        <!-- Mailchimp
         <div id="mc_embed_signup">
           <form
             action="https://brdg.us11.list-manage.com/subscribe/post?u=89bd154de3e56c4285b8d19ab&amp;id=54bc678374&amp;f_id=007fa9e0f0"
@@ -49,7 +48,6 @@
                   style="display: none"
                 ></div>
               </div>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px" aria-hidden="true">
                 <input
                   type="text"
@@ -71,72 +69,81 @@
               </div>
             </div>
           </form>
-        </div>
+        </div> -->
+
+        <iframe
+          src="https://bridgestudiobridgeto.substack.com/embed"
+          id="substack"
+          width="100%"
+          height="150"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import * as state from "~/assets/state";
-const i18n = useI18n();
-const locale = i18n.locale;
+import * as state from '~/assets/state'
+const i18n = useI18n()
+const locale = i18n.locale
 
-onMounted(async () => {
-  if (!window) return;
+// onMounted(async () => {
+//   if (!window) return;
 
-  // @ts-ignore
-  while (!window.jQuery) {
-    console.log("waiting for jQuery");
-    await new Promise((resolve) => setTimeout(resolve, 100));
-  }
+//   // @ts-ignore
+//   while (!window.jQuery) {
+//     console.log("waiting for jQuery");
+//     await new Promise((resolve) => setTimeout(resolve, 100));
+//   }
 
-  (function ($) {
-    // @ts-ignore
-    window.fnames = new Array();
-    // @ts-ignore
-    window.ftypes = new Array();
-    // @ts-ignore
-    fnames[0] = "EMAIL";
-    // @ts-ignore
-    ftypes[0] = "email";
-    // @ts-ignore
-    fnames[1] = "FNAME";
-    // @ts-ignore
-    ftypes[1] = "text";
-    // @ts-ignore
-    fnames[2] = "LNAME";
-    // @ts-ignore
-    ftypes[2] = "text";
-    // @ts-ignore
-    fnames[3] = "ADDRESS";
-    // @ts-ignore
-    ftypes[3] = "address";
-    // @ts-ignore
-    fnames[4] = "PHONE";
-    // @ts-ignore
-    ftypes[4] = "phone";
-    // @ts-ignore
-    fnames[5] = "BIRTHDAY";
-    // @ts-ignore
-    ftypes[5] = "birthday";
-    // @ts-ignore
-  })(window.jQuery);
-  // @ts-ignore
-  window.$mcj = jQuery.noConflict(true);
-});
+//   (function ($) {
+//     // @ts-ignore
+//     window.fnames = new Array();
+//     // @ts-ignore
+//     window.ftypes = new Array();
+//     // @ts-ignore
+//     fnames[0] = "EMAIL";
+//     // @ts-ignore
+//     ftypes[0] = "email";
+//     // @ts-ignore
+//     fnames[1] = "FNAME";
+//     // @ts-ignore
+//     ftypes[1] = "text";
+//     // @ts-ignore
+//     fnames[2] = "LNAME";
+//     // @ts-ignore
+//     ftypes[2] = "text";
+//     // @ts-ignore
+//     fnames[3] = "ADDRESS";
+//     // @ts-ignore
+//     ftypes[3] = "address";
+//     // @ts-ignore
+//     fnames[4] = "PHONE";
+//     // @ts-ignore
+//     ftypes[4] = "phone";
+//     // @ts-ignore
+//     fnames[5] = "BIRTHDAY";
+//     // @ts-ignore
+//     ftypes[5] = "birthday";
+//     // @ts-ignore
+//   })(window.jQuery);
+//   // @ts-ignore
+//   window.$mcj = jQuery.noConflict(true);
+// });
 </script>
 
 <style lang="scss" scoped>
-.section {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 .textcolumn {
   max-width: 600px;
 }
 
+#substack {
+  margin-top: 2em;
+}
+
+/*
 #mc-embedded-subscribe-form {
   margin: 0;
   margin-top: 1.5em;
@@ -186,5 +193,5 @@ onMounted(async () => {
       letter-spacing: 2.5px;
     }
   }
-}
+}*/
 </style>

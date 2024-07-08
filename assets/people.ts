@@ -62,12 +62,19 @@ export const studioMembers: ResidentHomepage = {
 export const residents: ResidentHomepage = {
   upcoming: [
     {
-      id: 'lemos',
-      name: 'Lemos + Lehmann',
-      description:
-        'Perception, contemplation, and emotion.',
-      descriptionJa: 'アーティスト・デュオ',
-      url: 'https://www.lemosandlehmann.com',
+      id: 'celeste',
+      name: 'Celeste Gatier',
+      description: `Sound artist, PhD searcher on Japanese architecture and acoustics.`,
+      descriptionJa: `サウンドアーティスト、日本の建築と音響に関する博士号取得者。`,
+      url: 'https://www.instagram.com/celeste.gatier/',
+    },
+
+    {
+      id: 'hidemi',
+      name: 'Hidemi Takagi',
+      description: `Photographer, Visual artist, & Social Practitioner based in NYC`,
+      descriptionJa: `ニューヨーク拠点の写真家、ビジュアルアーティスト、社会活動家。`,
+      url: 'http://hidemitakagi.com/',
     },
 
     {
@@ -77,15 +84,17 @@ export const residents: ResidentHomepage = {
       descriptionJa: `シドニー出身のイラストレーター・アニメーター・コミックアーティスト。`,
       url: 'https://claudinsky.com',
     },
-    {
-      id: 'celeste',
-      name: 'Celeste Gatier',
-      description: `Sound artist, PhD searcher on Japanese architecture and acoustics.`,
-      descriptionJa: `サウンドアーティスト、日本の建築と音響に関する博士号取得者。`,
-      url: 'https://www.instagram.com/celeste.gatier/',
-    },
   ],
   past: [
+    {
+      id: 'lemos',
+      name: 'Lemos + Lehmann',
+      description:
+        'Perception, contemplation, and emotion.',
+      descriptionJa: 'アーティスト・デュオ',
+      url: 'https://www.lemosandlehmann.com',
+    },
+
     {
       id: 'celineAndAliki',
       name: 'Céline Pelcé and Aliki van der Kruijs',
