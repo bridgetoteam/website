@@ -260,7 +260,7 @@
                 </div>
               </div>
 
-              <div>
+              <!-- <div>
                 <h4>Rates</h4>
                 <div class="marleft">
                   <div>
@@ -299,7 +299,7 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
             </template>
           </div>
 
