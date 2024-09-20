@@ -1,17 +1,20 @@
 <template>
   <main>
     <HomeIntro />
-    <Kickstarter />
+    <HomeOpenCallBanner />
+    <!-- <Kickstarter /> -->
     <HomeAbout />
     <HomeSpace />
     <HomeInsta />
     <HomeApply />
     <HomeResidents />
+    <HomeStudioMembers />
     <HomeFAQ />
     <HomePartners />
     <HomeMailingList />
     <!-- <HomeTCU /> -->
     <HomeContact />
+    <HomeFooter />
   </main>
 </template>
 
@@ -20,20 +23,20 @@ import * as state from '~/assets/state'
 const i18n = useI18n()
 const locale = i18n.locale
 
-useHead({
-  link: [
-    {
-      rel: 'stylesheet',
-      href: 'https://cdn-images.mailchimp.com/embedcode/classic-071822.css',
-    },
-  ],
-  script: [
-    {
-      src: 'https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',
-      type: 'text/javascript',
-    },
-  ],
-})
+// useHead({
+//   link: [
+//     {
+//       rel: 'stylesheet',
+//       href: 'https://cdn-images.mailchimp.com/embedcode/classic-071822.css',
+//     },
+//   ],
+//   script: [
+//     {
+//       src: 'https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',
+//       type: 'text/javascript',
+//     },
+//   ],
+// })
 </script>
 
 <style lang="scss" scoped>

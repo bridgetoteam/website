@@ -3,5 +3,13 @@
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "noImplicitAny": false
-  }
+  },
+  "include": [
+    "./.nuxt/nuxt.d.ts",
+    "./**/*",
+    "./node_modules/@nuxtjs/i18n/runtime",
+    "./node_modules/@nuxt/devtools/runtime",
+    ".",
+    "./types.d.ts"
+  ]
 }

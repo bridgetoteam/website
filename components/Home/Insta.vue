@@ -25,7 +25,7 @@
       ></div>
       <a
         class="button"
-        href="https://www.instagram.com/bridgetokyoto/"
+        href="https://www.instagram.com/bridgestudio_kyoto/"
         target="_blank"
       >
         <div>More Photos on Instagram →</div>

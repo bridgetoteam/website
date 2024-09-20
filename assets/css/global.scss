@@ -128,6 +128,11 @@ section {
     --text: var(--primary-d2);
     --bg-texture: url('/img/paper2.jpg');
   }
+  &.v6 {
+    --bg: var(--primary);
+    --text: var(--base-d3);
+    --bg-texture: url('/img/paper4.jpg');
+  }
 
   color: var(--text);
   background-image: var(--bg-texture);
@@ -294,6 +299,15 @@ a.button,
   line-height: 1.4;
   border-radius: 0;
 
+  &.big {
+    font-size: 1.3em;
+    height: 110px;
+
+    div {
+      padding: 0 60px;
+    }
+  }
+
   @media (max-width: 768px) {
     height: 70px;
     margin-left: auto;
@@ -323,6 +337,11 @@ a.button,
       color: var(--primary-l) !important;
     }
 
+    &.dark {
+      background-color: var(--base-d) !important;
+      color: var(--primary-l) !important;
+    }
+
     @media (max-width: 768px) {
       letter-spacing: 2.5px;
       font-size: 1rem;
@@ -339,6 +358,11 @@ a.button,
       &.reverse,
       &.invert {
         background-color: var(--base) !important;
+        color: var(--primary-l) !important;
+      }
+
+      &.dark {
+        background-color: var(--base-d2) !important;
         color: var(--primary-l) !important;
       }
     }

@@ -2,7 +2,9 @@
   <section class="v5" id="contact">
     <div class="light"></div>
     <div
-      v-lazy:background-image="'/img/2023/2.jpg'"
+      v-lazy:background-image="
+        '/img/2024/20231202_kyoto_198_4000.jpg'
+      "
       class="interstitial"
     ></div>
 
@@ -22,6 +24,7 @@
 
         <Social style="transform: scale(1.5); --gap: 1em" />
       </div>
+
       <div>
         <h3>Bridge Studio</h3>
         <blockquote>
@@ -38,7 +41,7 @@
           allowfullscreen
         ></iframe>
 
-        <h3>Bridge Office</h3>
+        <!-- <h3>Bridge Office</h3>
         <blockquote>
           28-3 Jōdoji Banbachō, Sakyō-ku, Kyoto, 606-8412
           <br />〒606-8412 京都市左京区浄土寺馬場町28-3
@@ -50,7 +53,7 @@
           style="border: 0"
           src="https://www.google.com/maps/embed/v1/place?q=28-3%20Jodoji%20Banbacho%2C%20Sakyo%20Ward%2C%20Kyoto%2C%20606-8412&key=AIzaSyCHF6DdpDLIG-1Ak4p0XyIK2Bc6DbVmgLY"
           allowfullscreen
-        ></iframe>
+        ></iframe> -->
       </div>
     </div>
   </section>
@@ -63,8 +66,7 @@ const locale = i18n.locale
 </script>
 
 <style lang="scss" scoped>
-.section {
-  padding-bottom: 30vh;
+section {
   padding-top: 0;
 }
 

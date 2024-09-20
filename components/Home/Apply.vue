@@ -6,99 +6,7 @@
       <h1>Apply</h1>
 
       <div class="columns">
-        <div class="coworking">
-          <h2 v-if="locale === 'ja'">
-            <img
-              src="/img/icons/fellowship.svg"
-              class="applyIcon"
-            />
-            フェローシップ
-          </h2>
-          <h2 v-else>
-            <img
-              src="/img/icons/fellowship.svg"
-              class="applyIcon"
-            />
-            Fellowship
-          </h2>
-          <div>
-            <template v-if="locale === 'ja'">
-              共同で「Bridge
-              Studio」を借りるような感覚で、運営方針や企画などにも積極的に参加し、この場所を活用してくださる"フェロー”を、10名〜20名程度募集します。
-              <br />
-              <br />
-              個人の方は月額2.5万円、企業の場合は月額4万円で、フェローの方には、
-              <ul>
-                <li>
-                  京都でのサテライトオフィスとしてのワークスペース利用
-                </li>
-                <li>
-                  この場所を使用したイベントやワークショップの企画・開催
-                </li>
-                <li>
-                  定期的な宿泊（1ヶ月以上の占有不可、要相談）
-                </li>
-                <li>Bridge Toコミュニティへのアクセス</li>
-                <li>
-                  海外連携団体や拠点とのコラボレーションやレジデンスの機会の提供
-                </li>
-              </ul>
-              などの特典を得られます。
-            </template>
-            <template v-else>
-              We are looking for 10 to 20 "fellows" who will
-              actively participate in the management,
-              planning, and use of
-              <b>Bridge Studio</b> in a co-op format, as if
-              they were joint renters.
-              <br />
-              <h4 class="martopsmall">Fellows get:</h4>
-              <ul>
-                <li>
-                  Use of Bridge Studio as a satellite
-                  workspace
-                </li>
-                <li>
-                  Use of the space for events and workshops
-                </li>
-                <li>
-                  Overnight stays at Bridge Studio (Pending
-                  discussion, no more than a day or two per
-                  month)
-                </li>
-                <li>
-                  Opportunities for collaboration and
-                  residency with overseas partner
-                  organizations and centers
-                </li>
-                <li>
-                  Direct line of communication with the
-                  Bridge To team
-                </li>
-              </ul>
-
-              <!-- <h4 class="martopsmall">Cost:</h4>
-              <div class="marleft">
-                <b>USD $150 per month</b>
-                <div class="sub">
-                  This price includes taxes, utilities, and
-                  operating costs.
-                </div>
-              </div> -->
-            </template>
-          </div>
-
-          <a
-            href="https://www.noway-form.com/f/25184a13-556f-4a14-bd11-f4edcdca0b27"
-            target="_blank"
-            class="button martop"
-          >
-            <div class="secondary">
-              Apply for Fellowship
-            </div>
-          </a>
-        </div>
-        <div class="residency">
+        <div class="residency span2 textcolumn">
           <h2 v-if="locale === 'ja'">
             <img
               src="/img/icons/residency.svg"
@@ -113,6 +21,55 @@
             />
             Residency
           </h2>
+
+          <div
+            class="openCallBanner"
+            v-if="state.openCall.value"
+          >
+            <template v-if="locale === 'ja'">
+              <h3>Open Call</h3>
+              <div>
+                現在、来年度のレジデンスの応募を受け付けています！詳細は以下をご覧ください。
+              </div>
+            </template>
+            <template v-else>
+              <h3>Open Call</h3>
+              <div>
+                We are currently accepting applications for
+                residencies for the coming year!
+              </div>
+              <div class="martoptiny themes">
+                Our current research themes are:
+                <ul>
+                  <li>Community engagement</li>
+                  <li>Alternative urbanism</li>
+                  <li>Critical making</li>
+                  <li>
+                    Space design, architecture, carpentry
+                  </li>
+                  <li>Cross-cultural research</li>
+                </ul>
+              </div>
+
+              <div class="bottomHighlight">
+                Additionally, we're looking for
+                videographers and carpenters who might want
+                to help us on projects for the space in
+                exchange for a reduced rate! Let us know if
+                you're interested.
+              </div>
+            </template>
+          </div>
+
+          <div class="grid2 gapsmall marbotsmall">
+            <img
+              class="sectionImage"
+              src="/img/2024_2/8.jpg"
+            /><img
+              class="sectionImage"
+              src="/img/2024_2/15.jpg"
+            />
+          </div>
 
           <div>
             <template v-if="locale === 'ja'">
@@ -163,6 +120,7 @@
                 1ヶ月〜6ヶ月以外の滞在期間をご希望の方はご連絡ください。
               </div> -->
             </template>
+
             <template v-else>
               We accept residents from Japan and abroad on a
               1-6 month basis, and help them connect with
@@ -170,7 +128,7 @@
               are accepted throughout the year.
 
               <br />
-              <h4 class="martopsmall">Who can apply?</h4>
+              <h4>Who can apply?</h4>
               <ul>
                 <li>
                   Creatives in the fields of art, design,
@@ -196,24 +154,25 @@
               residency.
 
               <div>
-                <h4 class="martopsmall">What we offer</h4>
+                <h4>What we offer</h4>
                 <ul>
                   <li>
                     Private room (furnished, wifi included)
                   </li>
-                  <li>A desk in our shared studio</li>
+                  <li>A private workspace</li>
                   <li>
                     Common spaces (kitchen, balcony, garden,
                     bathroom and living room)
                   </li>
                   <li>
-                    Venue and minimal support for organizing
-                    events and workshops
+                    Venue and support for organizing events
+                    and workshops
                   </li>
                   <li>
                     Promotion of your activities and
                     networking assistance
                   </li>
+<<<<<<< HEAD
                   <li>
                     Introductions to international urbanists
                   </li>
@@ -236,43 +195,93 @@
                   </li>
 =======
 >>>>>>> 5b64f9d4c238e31a18fa23d0f5bac58774de68a7
+=======
+                  <li>Basic translation support</li>
+>>>>>>> c64a18c8cb3cda7f41b26ed81389a467954220ee
                 </ul>
               </div>
 
               <div>
-                <h4 class="martopsmall">Availability</h4>
+                <h4>What we expect from you</h4>
                 <div class="marleft">
-                  We're currently booked solid until
-                  December 2024.
+                  <div>
+                    We don't ask for any specific artistic
+                    output during your stay — your residency
+                    could be research-based or
+                    production-based, it's up to you.
+                    However, at the end of your stay, we
+                    expect you to organize an exhibition, a
+                    talk, a workshop, etc. to showcase what
+                    you've worked on during your stay. It
+                    doesn't have to be highly produced, but
+                    we hope to have you share your insights
+                    and perspectives with the local
+                    community.
+                  </div>
                 </div>
               </div>
 
-              <div class="sub martopsmall">
-                Please be aware that we're a small team
-                receiving a large volume of applications. We
-                will only be able to respond to accepted
-                applicants.
+              <div>
+                <h4>Availability</h4>
+                <div class="marleft">
+                  <div>
+                    We're currently open for residencies
+                    starting from March 2025 or beyond.
+                  </div>
+                  <div class="sub martopsmall">
+                    Please be aware that we're a small team
+                    receiving a large volume of
+                    applications. We will only be able to
+                    respond to accepted applicants.
+                  </div>
+                </div>
               </div>
 
               <!-- <div>
-                <h4 class="martopsmall">Cost:</h4>
+                <h4>Rates</h4>
                 <div class="marleft">
-                  <b>USD $600 per month</b>
-                  <div class="sub">
-                    This price includes taxes, utilities, common expenses, and
-                    operating costs.
+                  <div>
+                    <b>Monthly: USD $1200 per month</b>
                   </div>
-                  <div class="sub">
-                    Please contact us if you would like to stay for a period
-                    other than 1-6 months.
+                  <div>
+                    <b>Daily: USD $50 per day</b>
                   </div>
+                  <ul class="sub padleftsmall martopsmall">
+                    <li>
+                      This price includes taxes, utilities,
+                      common expenses, and operating costs.
+                    </li>
+                    <li>
+                      Unlimited use of the shared studio and
+                      3 days' use of the ground floor for an
+                      exhibition or event are included.
+                    </li>
+
+                    <li>
+                      All money from the residency goes into
+                      the renovation and preservation of
+                      this historical building.
+                    </li>
+                    <li>
+                      If you are from a less affluent part
+                      of the world and cannot afford the
+                      residency, let's talk. We'd love to
+                      help as much as we can to give you an
+                      equal opportunity.
+                    </li>
+                    <li>
+                      Please contact us if you would like to
+                      stay for a period other than 1-6
+                      months.
+                    </li>
+                  </ul>
                 </div>
               </div> -->
             </template>
           </div>
 
           <a
-            href="https://www.noway-form.com/f/1f8ed720-37f8-4376-8308-3386dd7dfd67"
+            href="https://forms.gle/Aexb7oEZFzB5s1JN7"
             target="_blank"
             class="button martop"
           >
@@ -280,7 +289,7 @@
           </a>
         </div>
 
-        <div class="studio">
+        <div class="studio span2 textcolumn">
           <h2 v-if="locale === 'ja'">
             <img
               src="/img/icons/studio.svg"
@@ -295,6 +304,18 @@
             />
             Shared Studio
           </h2>
+
+          <div class="grid2 gapsmall marbotsmall">
+            <img
+              class="sectionImage"
+              src="/img/2024_2/13.jpg"
+            />
+            <img
+              class="sectionImage"
+              src="/img/2024_2/14.jpg"
+            />
+          </div>
+
           <div>
             <template v-if="locale === 'ja'">
               洋館部分の2階を使用したいアーティストやデザイナーを募集しています。オープンスタジオを定期的に開催し、地域に開いたシェアスタジオとなる予定です。
@@ -345,7 +366,7 @@
                 </li>
               </ul>
 
-              <!-- <h4 class="martopsmall">Cost:</h4>
+              <!-- <h4>Cost:</h4>
               <div class="marleft">
                 <b>USD $200 per month</b>
                 <div class="sub">
@@ -367,6 +388,112 @@
           </a>
         </div>
 
+        <div class="coworking">
+          <h2 v-if="locale === 'ja'">
+            <img
+              src="/img/icons/fellowship.svg"
+              class="applyIcon"
+            />
+            コワーキング
+          </h2>
+          <h2 v-else>
+            <img
+              src="/img/icons/fellowship.svg"
+              class="applyIcon"
+            />
+            Coworking
+          </h2>
+
+          <div class="marbotsmall">
+            <img
+              class="sectionImage"
+              src="/img/2024_2/6.jpg"
+            />
+          </div>
+
+          <div>
+            <template v-if="locale === 'ja'">
+              この場所を一緒に活用してくださるフェローを募集しています。
+              <br />
+              <br />
+              個人の方は月額2.5万円、企業の場合は月額4万円で、フェローの方には、
+              <ul>
+                <li>
+                  京都でのサテライトオフィスとしてのワークスペース利用
+                </li>
+                <li>
+                  この場所を使用したイベントやワークショップの企画・開催
+                </li>
+                <li>
+                  定期的な宿泊（1ヶ月以上の占有不可、要相談）
+                </li>
+                <!-- <li>Bridge Toコミュニティへのアクセス</li>
+                <li>
+                  海外連携団体や拠点とのコラボレーションやレジデンスの機会の提供
+                </li> -->
+              </ul>
+              などの特典を得られます。
+            </template>
+            <template v-else>
+              Coworking members get access to the common
+              spaces of Bridge Studio from 10AM to 6PM, any
+              day of the week.
+              <br />
+              You may work, have meetings, use the
+              fridge/kitchen (within reason), and generally
+              come and go as you please.
+              <!--               
+              We are looking for 10 to 20 "fellows" who will
+              actively participate in the management,
+              planning, and use of
+              <b>Bridge Studio</b> in a co-op format, as if
+              they were joint renters.
+              <br />
+              <h4>Fellows get:</h4>
+              <ul>
+                <li>
+                  Use of Bridge Studio as a satellite
+                  workspace
+                </li>
+                <li>
+                  Use of the space for events and workshops
+                </li>
+                <li>
+                  Overnight stays at Bridge Studio (Pending
+                  discussion, no more than a day or two per
+                  month)
+                </li>
+                <li>
+                  Opportunities for collaboration and
+                  residency with overseas partner
+                  organizations and centers
+                </li>
+                <li>
+                  Direct line of communication with the
+                  Bridge To team
+                </li>
+              </ul> -->
+
+              <!-- <h4>Cost:</h4>
+              <div class="marleft">
+                <b>USD $150 per month</b>
+                <div class="sub">
+                  This price includes taxes, utilities, and
+                  operating costs.
+                </div>
+              </div> -->
+            </template>
+          </div>
+
+          <a
+            href="https://www.noway-form.com/f/25184a13-556f-4a14-bd11-f4edcdca0b27"
+            target="_blank"
+            class="button martop"
+          >
+            <div class="secondary">Apply for Coworking</div>
+          </a>
+        </div>
+
         <div class="spaceRental">
           <h2 v-if="locale === 'ja'">
             <img
@@ -382,6 +509,13 @@
             />
             Space Rental
           </h2>
+
+          <div class="marbotsmall">
+            <img
+              class="sectionImage"
+              src="/img/2024/20231202_kyoto_209_4000.jpg"
+            />
+          </div>
 
           <div>
             <template v-if="locale === 'ja'">
@@ -437,9 +571,7 @@
               </div>
 
               <div>
-                <h4 class="martopsmall">
-                  What we provide:
-                </h4>
+                <h4>What we provide:</h4>
                 <ul>
                   <li>
                     Rental of basic tools such as
@@ -456,7 +588,7 @@
                 </ul>
               </div>
 
-              <!-- <h4 class="martopsmall">Cost:</h4>
+              <!-- <h4>Cost:</h4>
               <div class="marleft">
                 <b>USD $150 per day</b>
                 <div class="sub">
@@ -518,6 +650,95 @@ h1 {
   }
 }
 
+.openCallBanner {
+  // text-align: center;
+  position: relative;
+  padding: 2rem 2rem 1rem 2rem;
+  // max-width: 550px;
+  margin: 3.2em auto 2em auto;
+  color: var(--primary);
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   width: 100%;
+  //   height: 100%;
+  //   background: var(--primary-d3);
+  //   opacity: 0.5;
+  //   // background: radial-gradient(
+  //   //   var(--primary-d),
+  //   //   transparent
+  //   // );
+  //   // filter: blur(40px);
+  //   z-index: -1;
+  // }
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    --inset: 0rem;
+    top: var(--inset);
+    left: var(--inset);
+    width: calc(100% - calc(var(--inset) * 2));
+    height: calc(100% - calc(var(--inset) * 2));
+    border: 1px solid var(--primary);
+    opacity: 0.5;
+  }
+
+  h3 {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    transform: translateY(-50%);
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: 0.2em;
+    background: var(--primary);
+    padding: 0.1rem 1rem;
+    color: var(--primary-d2);
+    z-index: 3;
+  }
+
+  .bottomHighlight {
+    margin: 1rem -2rem -1rem -2rem;
+    // background: var(--base-d);
+    // color: var(--base-d2);
+    padding: 1rem 2rem;
+    // border-top: 1px solid var(--primary);
+    width: calc(100% + 4rem);
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--primary);
+      opacity: 0.1;
+      z-index: -1;
+    }
+  }
+}
+
+.residency {
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+.span2 {
+  grid-column: span 2;
+
+  @media (max-width: 768px) {
+    grid-column: span 1;
+  }
+}
+
 h2 {
   display: flex;
   align-items: center;
@@ -565,11 +786,27 @@ h3 {
   }
 }
 
+h4 {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+}
+
 .button {
   margin-top: 1em;
 }
 
 .indent {
   margin-left: 1.5em;
+}
+
+.themes {
+  li {
+    margin: 0;
+  }
 }
 </style>

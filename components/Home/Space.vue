@@ -76,17 +76,17 @@
             <template v-if="locale === 'ja'">
               <p>
                 Bridge
-                Studioでは、京都で滞在制作を行いたいアーティストやデザイナー、リサーチャー、文筆家などを積極的に受け入れています。数週間〜3ヶ月程度の中長期滞在が基本です。詳しくは、下記のAPPLY項目をご参照ください。
+                Studioでは、京都で滞在制作を行いたいアーティストやデザイナー、リサーチャー、文筆家などを積極的に受け入れています。1ヶ月からの中長期滞在が基本です。詳しくは、下記のAPPLY項目をご参照ください。
               </p>
             </template>
             <template v-else>
               <p>
                 Bridge Studio welcomes artists, designers,
                 researchers, and writers who wish to stay
-                and work in Kyoto. Our basic policy is to
-                offer medium-to-long-term stays ranging from
-                a few weeks up to three months. For details,
-                please refer to the Apply section below.
+                and work in Kyoto. We host residents for
+                medium-to-long-term stays of at least one
+                month. For details, please refer to the
+                Apply section below.
               </p>
             </template>
           </div>
@@ -194,8 +194,10 @@
             </template>
             <template v-else>
               <p>
-                This space retains vintage items such as old
-                books and medicine bottles from the days
+                The clinic is home to our private library as
+                well as housing our fledgling publishing
+                label. It also retains vintage items such as
+                old books and medicine bottles from the days
                 when this building was used as a
                 pediatrician's clinic. Events and flea
                 markets for antique items are held here
@@ -233,13 +235,13 @@
               <template v-if="locale === 'ja'">
                 <p>
                   戦後に建てられた一軒家「Bridge
-                  Office」。目の前には川が走り、このエリアで唯一という個人用の橋がかかっています。2019年に改装・補強をし、アーバニストのクリエイティブレジデンスおよびコミュニティスペースとしてオープンしました。現在はチームの事務所兼住居として使用しながら、イベント・ギャラリー・ワークショップなど多目的に活用しています。
+                  To」。目の前には川が走り、このエリアで唯一という個人用の橋がかかっています。2019年に改装・補強をし、アーバニストのクリエイティブレジデンスおよびコミュニティスペースとしてオープンしました。現在はチームの事務所兼住居として使用しながら、イベント・ギャラリー・ワークショップなど多目的に活用しています。
                 </p>
                 <p></p>
               </template>
               <template v-else>
                 <p>
-                  <b>Bridge Office</b> is our base of
+                  <b>Bridge To</b> is our base of
                   operations, housed in a post-war building
                   near Bridge Studio. Since its renovation
                   in 2019 it has functioned as a creative
@@ -285,7 +287,7 @@ onMounted(() => {
     $coworking.value,
     $bridgeToKyoto.value,
   ].filter((el) => el !== null) as HTMLElement[]
-  console.log(toObserve)
+  // console.log(toObserve)
   observer.value = new IntersectionObserver(
     intersectEvent,
     {
@@ -305,11 +307,11 @@ onBeforeUnmount(() => {
 
 function intersectEvent(entries, observer) {
   entries.forEach((entry) => {
-    console.log(
-      entry.target.getAttribute('label'),
-      entry.intersectionRatio,
-      entry,
-    )
+    // console.log(
+    //   entry.target.getAttribute('label'),
+    //   entry.intersectionRatio,
+    //   entry,
+    // )
     if (
       entry.intersectionRatio > instersectionThreshold.value
     )
