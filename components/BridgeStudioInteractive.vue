@@ -25,12 +25,12 @@
       >
         <img
           class="bgImageForBS"
-          style="left: -30%; top: 40%"
+          style="left: 10%; top: 30%"
           src="/img/2024_2/5.jpg"
         />
         <img
           class="bgImageForBS"
-          style="left: -50%; top: 110%"
+          style="left: -10%; top: 120%"
           src="/img/2024_2/12.jpg"
         />
       </div>
