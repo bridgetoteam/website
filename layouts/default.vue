@@ -118,6 +118,11 @@ nav {
   position: fixed;
   top: 0em;
   width: 100%;
+  pointer-events: none;
+
+  & > * {
+    pointer-events: auto;
+  }
 
   .logo {
     width: 200px;

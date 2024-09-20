@@ -9,7 +9,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "g": "npm run generate"
+    "g": "npm run generate",
+    "golive": "git push"
   },
   "dependencies": {
     "@nuxt/devtools": "latest",
