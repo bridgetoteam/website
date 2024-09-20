@@ -8,10 +8,11 @@
           <p>
             京都・左京区に位置するBridge
             Toは、建築・まちづくり・デザイン・アートなどに関わる実践者のための複合スペース
-            &
-            プラットフォームです。国内外のアーティストが滞在できるレジデンスや、シェアアトリエ、イベントスペース、建築・都市・まちづくり関係の蔵書やアイテムを公開する私設ライブラリーほか、文化芸術事業の企画運営・展覧会の企画やキュレーションなども行なっています。現在、「Bridge
+            &amp;
+            プラットフォームです。国内外のアーティストが滞在できるレジデンスや、シェアアトリエ、イベントスペース、建築・都市・まちづくり関係の蔵書やアイテムを公開する私設ライブラリーほか、文化芸術事業の企画運営・展覧会の企画やキュレーションなども行なっています。
+            <!-- 現在、「Bridge
             Studio」「Bridge
-            Office」の2拠点を運営しています。
+            Office」の2拠点を運営しています。 -->
           </p>
         </template>
 
@@ -26,9 +27,10 @@
             architecture, urban planning, and city planning.
             We also plan, manage, and host cultural and
             artistic projects, organize and curate
-            exhibitions, and more. Our two active locations
+            exhibitions, and more.
+            <!-- Our two active locations
             are
-            <b>Bridge Studio</b> and <b>Bridge Office</b>.
+            <b>Bridge Studio</b> and <b>Bridge Office</b>. -->
           </p>
         </template>
       </div>

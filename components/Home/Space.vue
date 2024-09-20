@@ -194,8 +194,10 @@
             </template>
             <template v-else>
               <p>
-                This space retains vintage items such as old
-                books and medicine bottles from the days
+                The clinic is home to our private library as
+                well as housing our fledgling publishing
+                label. It also retains vintage items such as
+                old books and medicine bottles from the days
                 when this building was used as a
                 pediatrician's clinic. Events and flea
                 markets for antique items are held here
@@ -285,7 +287,7 @@ onMounted(() => {
     $coworking.value,
     $bridgeToKyoto.value,
   ].filter((el) => el !== null) as HTMLElement[]
-  console.log(toObserve)
+  // console.log(toObserve)
   observer.value = new IntersectionObserver(
     intersectEvent,
     {
@@ -305,11 +307,11 @@ onBeforeUnmount(() => {
 
 function intersectEvent(entries, observer) {
   entries.forEach((entry) => {
-    console.log(
-      entry.target.getAttribute('label'),
-      entry.intersectionRatio,
-      entry,
-    )
+    // console.log(
+    //   entry.target.getAttribute('label'),
+    //   entry.intersectionRatio,
+    //   entry,
+    // )
     if (
       entry.intersectionRatio > instersectionThreshold.value
     )

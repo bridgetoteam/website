@@ -42,7 +42,10 @@ const i18n = useI18n()
 const locale = i18n.locale
 
 function scrollDown() {
-  document.getElementById('about')?.scrollIntoView(true)
+  ;(
+    document.getElementById('openCall') ||
+    document.getElementById('about')
+  )?.scrollIntoView(true)
 }
 </script>
 
@@ -142,7 +145,7 @@ section {
   position: absolute;
   top: 80vh;
   left: 85vw;
-  transition: all 0.2s ease-out;
+  transition: transform 0.2s ease-out;
 
   &:hover {
     cursor: pointer;

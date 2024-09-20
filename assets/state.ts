@@ -6,3 +6,5 @@ export const dev = computed(() =>
 )
 export const windowScroll = ref(0)
 export const mousePos = ref([0, 0])
+
+export const openCall = ref(true)

@@ -123,6 +123,16 @@ const partners: PartnerHomepageData[] = [
     descriptionJa:
       'アーティストが運営する台湾のアートスペース＆レジデンス。日本と台湾のアーティストの交流やエクスチェンジを促進するプログラムを連携して行っています。',
   },
+  {
+    id: 'resartis',
+    name: 'Res Artis',
+    nameJa: 'Res Artis',
+    url: 'https://resartis.org/',
+    description:
+      'An artist-run space and residency in Taiwan. We encourage artists exchange between Japan and Taiwan and share opportunities.',
+    descriptionJa:
+      'アーティストが運営する台湾のアートスペース＆レジデンス。日本と台湾のアーティストの交流やエクスチェンジを促進するプログラムを連携して行っています。',
+  },
 ]
 
 const shuffledPartners = partners.sort(

@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: `Bridge To`,
+
       meta: [
         { charset: 'utf-8' },
         {

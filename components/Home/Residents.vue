@@ -2,7 +2,7 @@
   <section class="v5" id="residents">
     <div
       v-lazy:background-image="
-        '/img/2024/20231202_kyoto_184_4000.jpg'
+        '/img/2024/20231202_kyoto_220_4000.jpg'
       "
       class="interstitial shadow"
     ></div>
@@ -54,99 +54,27 @@
           </div>
         </div> -->
 
-        <div>
+        <div class="marright">
           <h3>Upcoming</h3>
 
-          <div class="grid">
-            <div
-              class="resident"
+          <div class="flex">
+            <HomeResident
               v-for="r in residents.upcoming || []"
               :key="r.id + r.name + locale"
-            >
-              <div
-                class="img"
-                v-lazy:background-image="
-                  `/img/people/${r.id}.jpg`
-                "
-                :alt="`Photo of ${r.name}`"
-              ></div>
-              <h2 class="name">{{ r.name }}</h2>
-              <div class="description">
-                {{
-                  locale === 'ja'
-                    ? r.descriptionJa
-                    : r.description
-                }}
-                <span class="website" v-if="r.url">
-                  <a
-                    v-if="!Array.isArray(r.url)"
-                    :href="r.url"
-                    target="_blank"
-                    >Website</a
-                  >
-                  <template
-                    v-else
-                    v-for="(url, index) in r.url"
-                    :key="index"
-                  >
-                    <a :href="url" target="_blank"
-                      >Website {{ index + 1 }}</a
-                    >
-                    <span v-if="index < r.url.length - 1"
-                      >,
-                    </span>
-                  </template>
-                </span>
-              </div>
-            </div>
+              :r="r"
+            />
           </div>
         </div>
 
         <div>
           <h3>Past</h3>
 
-          <div class="grid">
-            <div
-              class="resident"
-              v-for="r in residents.past"
+          <div class="flex">
+            <HomeResident
+              v-for="r in residents.past || []"
               :key="r.id + r.name + locale"
-            >
-              <div
-                class="img"
-                v-lazy:background-image="
-                  `/img/people/${r.id}.jpg`
-                "
-                :alt="`Photo of ${r.name}`"
-              ></div>
-              <h2 class="name">{{ r.name }}</h2>
-              <div class="description">
-                {{
-                  locale === 'ja'
-                    ? r.descriptionJa
-                    : r.description
-                }}
-                <span class="website" v-if="r.url">
-                  <a
-                    v-if="!Array.isArray(r.url)"
-                    :href="r.url"
-                    target="_blank"
-                    >Website</a
-                  >
-                  <template
-                    v-else
-                    v-for="(url, index) in r.url"
-                    :key="index"
-                  >
-                    <a :href="url" target="_blank"
-                      >Website {{ index + 1 }}</a
-                    >
-                    <span v-if="index < r.url.length - 1"
-                      >,
-                    </span>
-                  </template>
-                </span>
-              </div>
-            </div>
+              :r="r"
+            />
           </div>
         </div>
       </div>
@@ -175,17 +103,7 @@ import { residents } from '~/assets/people'
 }
 h1 {
   margin-top: 130px;
-}
-h1,
-p {
   margin-left: var(--side-pad);
-}
-p {
-  max-width: 550px;
-}
-h2 {
-  margin-top: 0;
-  margin-bottom: 0.3em;
 }
 h3 {
   opacity: 0.5;
@@ -198,37 +116,5 @@ h3 {
   width: 100%;
   overflow-x: auto;
   padding-bottom: calc(min(var(--side-pad) * 2, 6em));
-}
-
-.grid {
-  display: flex;
-}
-
-.resident {
-  width: 250px;
-  margin-right: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  word-break: break-word;
-
-  div {
-    width: 100%;
-  }
-}
-
-.img {
-  width: 100%;
-  padding-top: 100%;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.05);
-  background-size: cover;
-  background-position: center center;
-  margin-bottom: 1em;
-}
-
-a {
-  color: inherit;
 }
 </style>

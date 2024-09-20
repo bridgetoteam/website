@@ -1,7 +1,7 @@
 <template>
   <div class="social flexcenter">
     <a
-      href="https://www.instagram.com/bridgetokyoto/"
+      href="https://www.instagram.com/bridgestudio_kyoto/"
       target="_blank"
     >
       <img
@@ -9,12 +9,12 @@
         alt="Instagram"
       />
     </a>
-    <a
+    <!-- <a
       href="https://www.facebook.com/bridgetokyoto"
       target="_blank"
     >
       <img src="/img/social/facebook.svg" alt="Facebook" />
-    </a>
+    </a> -->
   </div>
 </template>
 

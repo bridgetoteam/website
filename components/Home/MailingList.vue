@@ -1,7 +1,7 @@
 <template>
   <section class="v2" id="mailingList">
     <div class="contentcolumn">
-      <div class="textcolumn">
+      <div class="textcolumn newsletter">
         <h1>Newsletter</h1>
 
         <div v-if="locale === 'ja'">
@@ -71,6 +71,7 @@
           </form>
         </div> -->
 
+        <div id="substack-feed-embed" class="martop"></div>
         <iframe
           src="https://bridgestudiobridgeto.substack.com/embed"
           id="substack"
@@ -88,6 +89,29 @@
 import * as state from '~/assets/state'
 const i18n = useI18n()
 const locale = i18n.locale
+
+useHead({
+  script: [
+    {
+      src: 'https://substackapi.com/embeds/feed.js',
+      async: true,
+    },
+  ],
+})
+
+onMounted(() => {
+  ;(window as any).SubstackFeedWidget = {
+    substackUrl: 'bridgestudiobridgeto.substack.com',
+    posts: 3,
+    layout: 'left',
+    hidden: ['author', 'reactions', 'comments', 'premium'],
+    colors: {
+      primary: '#404040',
+      secondary: '#808080',
+      background: '#FFFFFF',
+    },
+  }
+})
 
 // onMounted(async () => {
 //   if (!window) return;
@@ -134,13 +158,17 @@ const locale = i18n.locale
 // });
 </script>
 
-<style lang="scss" scoped>
-.textcolumn {
+<style lang="scss">
+.newsletter.textcolumn {
   max-width: 600px;
 }
 
-#substack {
-  margin-top: 2em;
+// #substack {
+//   margin-top: 2em;
+// }
+
+.substack-feed-widget {
+  border-radius: 0 !important;
 }
 
 /*

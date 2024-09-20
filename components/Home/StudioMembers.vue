@@ -8,47 +8,11 @@
           <h3>Current</h3>
 
           <div class="grid">
-            <div
-              class="resident"
+            <HomeResident
               v-for="r in studioMembers.current || []"
               :key="r.id + r.name + locale"
-            >
-              <div
-                class="img"
-                v-lazy:background-image="
-                  `/img/people/${r.id}.jpg`
-                "
-                :alt="`Photo of ${r.name}`"
-              ></div>
-              <h2 class="name">{{ r.name }}</h2>
-              <div class="description">
-                {{
-                  locale === 'ja'
-                    ? r.descriptionJa
-                    : r.description
-                }}
-                <span class="website" v-if="r.url">
-                  <a
-                    v-if="!Array.isArray(r.url)"
-                    :href="r.url"
-                    target="_blank"
-                    >Website</a
-                  >
-                  <template
-                    v-else
-                    v-for="(url, index) in r.url"
-                    :key="index"
-                  >
-                    <a :href="url" target="_blank"
-                      >Website {{ index + 1 }}</a
-                    >
-                    <span v-if="index < r.url.length - 1"
-                      >,
-                    </span>
-                  </template>
-                </span>
-              </div>
-            </div>
+              :r="r"
+            />
           </div>
         </div>
 
@@ -56,47 +20,11 @@
           <h3>Past</h3>
 
           <div class="grid">
-            <div
-              class="resident"
-              v-for="r in studioMembers.past"
+            <HomeResident
+              v-for="r in studioMembers.past || []"
               :key="r.id + r.name + locale"
-            >
-              <div
-                class="img"
-                v-lazy:background-image="
-                  `/img/people/${r.id}.jpg`
-                "
-                :alt="`Photo of ${r.name}`"
-              ></div>
-              <h2 class="name">{{ r.name }}</h2>
-              <div class="description">
-                {{
-                  locale === 'ja'
-                    ? r.descriptionJa
-                    : r.description
-                }}
-                <span class="website" v-if="r.url">
-                  <a
-                    v-if="!Array.isArray(r.url)"
-                    :href="r.url"
-                    target="_blank"
-                    >Website</a
-                  >
-                  <template
-                    v-else
-                    v-for="(url, index) in r.url"
-                    :key="index"
-                  >
-                    <a :href="url" target="_blank"
-                      >Website {{ index + 1 }}</a
-                    >
-                    <span v-if="index < r.url.length - 1"
-                      >,
-                    </span>
-                  </template>
-                </span>
-              </div>
-            </div>
+              :r="r"
+            />
           </div>
         </div>
       </div>
