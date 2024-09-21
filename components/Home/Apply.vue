@@ -20,7 +20,7 @@
             <template v-if="locale === 'ja'">
               <h3>Open Call</h3>
               <div>
-                現在、来年度のレジデンスの応募を受け付けています！詳細は以下をご覧ください。
+                現在、2025年度のレジデンスの応募を受け付けています。詳細は以下をご覧ください。
               </div>
             </template>
             <template v-else>
@@ -73,9 +73,11 @@
                 <li>
                   レジデンス期間中に、最低1回はワークショップ、イベント、展示などを自発的に開催できる方
                 </li>
+                <li>
+                  年齢、宗教、ジェンダーなどに関わらず誰でもご応募頂けます。
+                </li>
               </ul>
 
-              年齢、宗教、ジェンダーなどに関わらず誰でもご応募頂けます。
               <!-- <div>
                 こちらが提供するもの
                 <ul>
@@ -339,27 +341,41 @@
 
           <div>
             <template v-if="locale === 'ja'">
-              この場所を一緒に活用してくださるフェローを募集しています。
               <br />
               <br />
-              個人の方は月額2.5万円、企業の場合は月額4万円で、フェローの方には、
+              コワーキングメンバーは、パソコン作業や読書などでブリッジスタジオの共有スペースを午前10時から午後6時まで好きな時間でご利用いただけます。
               <ul>
-                <li>京都でのサテライトオフィスとしてのワークスペース利用</li>
-                <li>この場所を使用したイベントやワークショップの企画・開催</li>
-                <li>定期的な宿泊（1ヶ月以上の占有不可、要相談）</li>
+                <li>月額12,000円</li>
+                <li>冷蔵庫・キッチンの使用可</li>
+                <li>備え付けの机と椅子が利用可</li>
+                <li>Wi-Fi、プロジェクター、プリンター、スピーカーが利用可</li>
+                <li>
+                  個人の所持品を保管するロッカーはありませんのでご注意ください
+                </li>
                 <!-- <li>Bridge Toコミュニティへのアクセス</li>
                 <li>
                   海外連携団体や拠点とのコラボレーションやレジデンスの機会の提供
                 </li> -->
               </ul>
-              などの特典を得られます。
             </template>
             <template v-else>
               Coworking members get access to the common spaces of Bridge Studio
               from 10AM to 6PM, any day of the week.
               <br />
-              You may work, have meetings, use the fridge/kitchen (within
-              reason), and generally come and go as you please.
+              You may work, have meetings, use the fridge/kitchen, and generally
+              come and go as you please.
+
+              <ul>
+                <li>12,000 yen per month</li>
+                <li>Desks and chairs are provided for use</li>
+                <li>Bicycle parking is available</li>
+                <li>Wi-Fi, projector, printer, and speaker are available</li>
+                <li>
+                  Please note that there are no lockers for storing personal
+                  belongings
+                </li>
+              </ul>
+
               <!--               
               We are looking for 10 to 20 "fellows" who will
               actively participate in the management,
@@ -465,7 +481,7 @@
                 and more on the themes of architecture, design, and creation.
               </div>
               <div class="martopsmall">
-                <ul>
+                <!-- <ul>
                   <li>
                     We can accept a wide range of applications, including art,
                     design, architecture, crafts, manufacturing, and
@@ -475,7 +491,7 @@
                     We can not provide assistance in the planning, management,
                     staff, event page creation, or marketing of the event.
                   </li>
-                </ul>
+                </ul> -->
               </div>
 
               <div>
