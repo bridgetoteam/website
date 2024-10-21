@@ -55,14 +55,22 @@ export const studioMembers: ResidentHomepage = {
 export const residents: ResidentHomepage = {
   upcoming: [
     {
+      id: 'tony',
+      name: 'Tony Jouanneau',
+      description: `A textile designer, craftsman and researcher. 
+      Founded Atelier Sumbiosis, a textile+science laboratory, including experimenting with microalgae dyeing, patterns devoured by insects, or bacterial printing on fabrics.`,
+      descriptionJa: `テキスタイルデザイナー、工芸者、研究者。`,
+      url: 'https://www.atelier-sumbiosis.com',
+    },
+  ],
+  past: [
+    {
       id: 'claudia',
       name: 'Claudia Chinyere Akole',
       description: `Illustrator, animator, comic artist from Sydney, Australia.`,
       descriptionJa: `シドニー出身のイラストレーター・アニメーター・コミックアーティスト。`,
       url: 'https://claudinsky.com',
     },
-  ],
-  past: [
     {
       id: 'hidemi',
       name: 'Hidemi Takagi',
