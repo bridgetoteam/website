@@ -6,7 +6,6 @@ interface ResidentHomepage {
 
 export const studioMembers: ResidentHomepage = {
   current: [
-    // unnuntei
     {
       id: 'unnuntei',
       name: 'Unnuntei',
@@ -22,11 +21,18 @@ export const studioMembers: ResidentHomepage = {
       url: 'https://www.instagram.com/ichen2193/',
     },
     {
-      id: 'colin',
-      name: 'Colin Zimbleman',
-      description: `A clinical psychologist working with images.`,
-      descriptionJa: `臨床心理学者`,
-      url: 'http://www.zimbleman.com/',
+      id: 'hmw',
+      name: 'Hand Made Works',
+      description: `Leather artists.`,
+      descriptionJa: `革職人。`,
+      url: 'https://at0.handcrafted.jp/',
+    },
+    {
+      id: 'kawasaki',
+      name: 'Mineo Kawasaki',
+      description: 'Drummer and composer.',
+      descriptionJa: 'ドラマー、ビートメイカー',
+      url: 'https://linktr.ee/mineo_kawasaki',
     },
     {
       id: 'osawa',
@@ -37,6 +43,13 @@ export const studioMembers: ResidentHomepage = {
     },
   ],
   past: [
+    {
+      id: 'colin',
+      name: 'Colin Zimbleman',
+      description: `A clinical psychologist working with images.`,
+      descriptionJa: `臨床心理学者`,
+      url: 'http://www.zimbleman.com/',
+    },
     {
       id: 'martin',
       name: 'Martin De Mello',
