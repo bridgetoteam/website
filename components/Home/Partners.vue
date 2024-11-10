@@ -26,25 +26,16 @@
         >
           <div
             class="img"
-            v-lazy:background-image="
-              `/img/partners/${r.id}.jpg`
-            "
+            v-lazy:background-image="`/img/partners/${r.id}.jpg`"
             :alt="`Photo of ${r.name}`"
           ></div>
           <div class="overlayText flexcolumn flexcenter">
             <h2 class="name">
-              {{
-                locale === 'ja'
-                  ? r.nameJa || r.name
-                  : r.name
-              }}
+              {{ locale === "ja" ? r.nameJa || r.name : r.name }}
             </h2>
-            <div
-              class="description"
-              v-if="r.description || r.descriptionJa"
-            >
+            <div class="description" v-if="r.description || r.descriptionJa">
               {{
-                locale === 'ja'
+                locale === "ja"
                   ? r.descriptionJa || r.description
                   : r.description || r.descriptionJa
               }}
@@ -60,84 +51,82 @@
 </template>
 
 <script setup lang="ts">
-import * as state from '~/assets/state'
-const i18n = useI18n()
-const locale = i18n.locale
+import * as state from "~/assets/state";
+const i18n = useI18n();
+const locale = i18n.locale;
 
-const hovered = ref<string | null>(null)
+const hovered = ref<string | null>(null);
 
 interface PartnerHomepageData {
-  id: string
-  name: string
-  nameJa?: string
-  description?: string
-  descriptionJa?: string
-  url: string
+  id: string;
+  name: string;
+  nameJa?: string;
+  description?: string;
+  descriptionJa?: string;
+  url: string;
 }
 const partners: PartnerHomepageData[] = [
   {
-    id: 'ethno',
-    name: 'Ethnography Lab, Osaka',
-    nameJa: '大阪大学・人類学研究室',
-    url: 'http://ethnography.hus.osaka-u.ac.jp',
+    id: "ethno",
+    name: "Ethnography Lab, Osaka",
+    nameJa: "大阪大学・人類学研究室",
+    url: "http://ethnography.hus.osaka-u.ac.jp",
     description:
-      'A research initiative of critical making and anthropology, especially focusing on energy and a sustainable future.',
+      "A research initiative of critical making and anthropology, especially focusing on energy and a sustainable future.",
     descriptionJa:
-      '人類学者・森田敦郎氏が率いるクリティカル・メイキングの研究ラボラトリーと共に、エネルギーや持続可能な未来を考えるための連携拠点としてBridge Toを活用頂いています。',
+      "人類学者・森田敦郎氏が率いるクリティカル・メイキングの研究ラボラトリーと共に、エネルギーや持続可能な未来を考えるための連携拠点としてBridge Toを活用頂いています。",
   },
   {
-    id: 'forest',
-    name: 'Forest of Craft',
-    nameJa: '工藝の森',
-    url: 'https://www.forest-of-craft.jp',
+    id: "forest",
+    name: "Forest of Craft",
+    nameJa: "工藝の森",
+    url: "https://www.forest-of-craft.jp",
     description:
-      'An initiative to promote craft and forestry in Keihoku, a norther part of Kyoto, as well as an fabrication lab. We collaborate with them in case artsits want to focus on woodworking and need a studio with power tools.',
+      "An initiative to promote craft and forestry in Keihoku, a norther part of Kyoto, as well as an fabrication lab. We collaborate with them in case artsits want to focus on woodworking and need a studio with power tools.",
     descriptionJa:
-      '京都・京北を拠点に林業や工芸に取り組むイニシアチブであり、ものづくりの拠点であるファブリケーション・ラボも併設。ものづくり協力や資材の調達で連携しています。',
+      "京都・京北を拠点に林業や工芸に取り組むイニシアチブであり、ものづくりの拠点であるファブリケーション・ラボも併設。ものづくり協力や資材の調達で連携しています。",
   },
   {
-    id: 'haioku',
-    name: 'Haioku Residency',
-    url: 'https://haioku-air.studio.site/',
+    id: "haioku",
+    name: "Haioku Residency",
+    url: "https://haioku-air.studio.site/",
     description:
-      'An artist in residency and architecture collective focusing on abandoned buildings based in Kobe. They offer carpentry workshops and on-site apprenticeships in construction sites, and we send artists to their studios.',
+      "An artist in residency and architecture collective focusing on abandoned buildings based in Kobe. They offer carpentry workshops and on-site apprenticeships in construction sites, and we send artists to their studios.",
     descriptionJa:
-      '廃墟を専門とする建築集団・西村組による神戸のアーティスト・イン・レジデンス。半人前大工講座や現場実習を行っており、アーティストのエクスチェンジや共同企画などを複数行なっています。',
+      "廃墟を専門とする建築集団・西村組による神戸のアーティスト・イン・レジデンス。半人前大工講座や現場実習を行っており、アーティストのエクスチェンジや共同企画などを複数行なっています。",
   },
   {
-    id: 'space',
-    name: 'Space Department',
-    url: 'https://www.spacedepartment-nara.com/',
+    id: "space",
+    name: "Space Department",
+    url: "https://www.spacedepartment-nara.com/",
     description:
-      'An artist in residency focusing on architecture in Nara, Japan. We organize joint residencies, exhibitions as well as tours to visit creative spots across Kansai region.',
+      "An artist in residency focusing on architecture in Nara, Japan. We organize joint residencies, exhibitions as well as tours to visit creative spots across Kansai region.",
     descriptionJa:
-      '建築部門に特化した奈良のアーティスト・イン・レジデンス。関西圏での共同レジデンスや展覧会連携などを行っています。',
+      "建築部門に特化した奈良のアーティスト・イン・レジデンス。関西圏での共同レジデンスや展覧会連携などを行っています。",
   },
   {
-    id: 'surf',
-    name: 'Hyper Wave x Surfy Space',
-    nameJa: '超級浪 x 浪花',
-    url: 'https://www.hyperwavemit.com/',
+    id: "surf",
+    name: "Hyper Wave x Surfy Space",
+    nameJa: "超級浪 x 浪花",
+    url: "https://www.hyperwavemit.com/",
     description:
-      'An artist-run space and residency in Taiwan. We encourage artists exchange between Japan and Taiwan and share opportunities.',
+      "An artist-run space and residency in Taiwan. We encourage artists exchange between Japan and Taiwan and share opportunities.",
     descriptionJa:
-      'アーティストが運営する台湾のアートスペース＆レジデンス。日本と台湾のアーティストの交流やエクスチェンジを促進するプログラムを連携して行っています。',
+      "アーティストが運営する台湾のアートスペース＆レジデンス。日本と台湾のアーティストの交流やエクスチェンジを促進するプログラムを連携して行っています。",
   },
   {
-    id: 'resartis',
-    name: 'Res Artis',
-    nameJa: 'Res Artis',
-    url: 'https://resartis.org/',
+    id: "resartis",
+    name: "Res Artis",
+    nameJa: "Res Artis",
+    url: "https://resartis.org/",
     description:
-      'An artist-run space and residency in Taiwan. We encourage artists exchange between Japan and Taiwan and share opportunities.',
+      "Res Artis: Worldwide Network of Arts Residencies is a 31 year old network of arts residency operators from around the globe.",
     descriptionJa:
-      'アーティストが運営する台湾のアートスペース＆レジデンス。日本と台湾のアーティストの交流やエクスチェンジを促進するプログラムを連携して行っています。',
+      "80か国以上で650を超えるメンバーが所属するアーティスト・イン・レジデンスの世界的なネットワーク。",
   },
-]
+];
 
-const shuffledPartners = partners.sort(
-  () => Math.random() - 0.5,
-)
+const shuffledPartners = partners.sort(() => Math.random() - 0.5);
 </script>
 
 <style lang="scss" scoped>

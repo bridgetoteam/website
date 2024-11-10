@@ -26,17 +26,17 @@
             <template v-else>
               <h3>Open Call</h3>
               <div>
-                We are currently accepting applications for residencies for the
-                coming year!
+                We are currently accepting applications for 2025 residencies
+                from designers, architects, researchers, and artists.
               </div>
               <div class="martoptiny themes">
-                Our current research themes are:
+                Our work is guided by specific research themes designed to
+                stimulate open discussions:
                 <ul>
-                  <li>Community engagement</li>
-                  <li>Alternative urbanism</li>
-                  <li>Critical making</li>
-                  <li>Space design, architecture, carpentry</li>
-                  <li>Cross-cultural research</li>
+                  <li>Critical Making and Design Anthropology</li>
+                  <li>Urban Ecology and Alternative Urbanism</li>
+                  <li>Cross-Cultural Design and Creative Adaptation</li>
+                  <li></li>
                 </ul>
               </div>
 
