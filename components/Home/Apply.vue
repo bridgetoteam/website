@@ -29,16 +29,15 @@
                 We are currently accepting applications for 2025 residencies
                 from designers, architects, researchers, and artists.
               </div>
-              <div class="martoptiny themes">
+              <!-- <div class="martoptiny themes">
                 Our work is guided by specific research themes designed to
                 stimulate open discussions:
                 <ul>
                   <li>Critical Making and Design Anthropology</li>
                   <li>Urban Ecology and Alternative Urbanism</li>
                   <li>Cross-Cultural Design and Creative Adaptation</li>
-                  <li></li>
                 </ul>
-              </div>
+              </div> -->
 
               <div class="bottomHighlight">
                 Additionally, we're looking for videographers and carpenters who
