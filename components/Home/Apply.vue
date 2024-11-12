@@ -29,6 +29,7 @@
                 We are currently accepting applications for 2025 residencies
                 from designers, architects, researchers, and artists.
               </div>
+
               <!-- <div class="martoptiny themes">
                 Our work is guided by specific research themes designed to
                 stimulate open discussions:
