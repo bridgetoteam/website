@@ -102,7 +102,7 @@ useHead({
 onMounted(() => {
   ;(window as any).SubstackFeedWidget = {
     substackUrl: 'bridgestudiobridgeto.substack.com',
-    posts: 3,
+    posts: 1,
     layout: 'left',
     hidden: ['author', 'reactions', 'comments', 'premium'],
     colors: {

@@ -7,13 +7,6 @@ interface ResidentHomepage {
 export const studioMembers: ResidentHomepage = {
   current: [
     {
-      id: 'unnuntei',
-      name: 'Unnuntei',
-      description: `Photographer and painter unit.`,
-      descriptionJa: `写真家と画家のユニット。`,
-      url: 'https://www.instagram.com/unnun_sha/',
-    },
-    {
       id: 'lin',
       name: 'Lin Ichen',
       description: `Taipei-born painter, Japanese contemporary literature researcher.`,
@@ -26,6 +19,24 @@ export const studioMembers: ResidentHomepage = {
       description: `Leather artists.`,
       descriptionJa: `革職人。`,
       url: 'https://at0.handcrafted.jp/',
+    },
+    {
+      id: 'teo',
+      name: 'Teo Knives',
+      description:
+        'A clinical psychologist working with mindfulness / tea ceremony and ikebana artist',
+      descriptionJa:
+        '臨床心理学者、茶道とイケバナのアーティスト',
+      url: 'https://teo.knives.li/',
+    },
+    {
+      id: 'ian',
+      name: 'Ian Knives',
+      description:
+        'Japanese poet writing in Russian, white-hat hacker.',
+      descriptionJa:
+        'ロシア語で書いている日本詩人、白帽ハッカー。',
+      url: 'https://t.me/s/iannoshi',
     },
     {
       id: 'kawasaki',
@@ -43,6 +54,13 @@ export const studioMembers: ResidentHomepage = {
     },
   ],
   past: [
+    {
+      id: 'unnuntei',
+      name: 'Unnuntei',
+      description: `Photographer and painter unit.`,
+      descriptionJa: `写真家と画家のユニット。`,
+      url: 'https://www.instagram.com/unnun_sha/',
+    },
     {
       id: 'colin',
       name: 'Colin Zimbleman',
@@ -68,6 +86,25 @@ export const studioMembers: ResidentHomepage = {
 export const residents: ResidentHomepage = {
   upcoming: [
     {
+      id: 'tsai',
+      name: 'Tsai Shih-Hsiang',
+      description: `Co-founder of the art collective “Hyper Wave" in Taiwan.  
+      Tsai’s works often use video and photography to contemplate the city, landscapes, and the people toiling within them, or to document processes of drifting, shifting, and transcending the identity.`,
+      descriptionJa: `台湾にあるアートコレクティブ「Hyper Wave」の創始者。作品はビデオや写真を使って、都市や風景、その中で働く人々について考えたり、漂流や移動、アイデンティティの超越のプロセスを記録したりする。`,
+      url: 'https://www.tsaishihhsiang-artstudio.com/',
+    },
+    {
+      id: 'konstanze',
+      name: 'Konstanze Stoiber',
+      description: `Artist and PhD candidate.
+      Konstanze draws upon references of fallen systems, dissecting the remnants of monarchial and religious structures. An analysis of extremes - sublimity and violence in power structures and their self-contradictory nature.`,
+      descriptionJa: `アーティスト、博士号候補
+      彼女は、崩壊したシステムを参照し、君主制や宗教構造の残滓を解剖する。権力構造に潜む崇高さと暴力、そしてそれが内包する矛盾について分析する。`,
+      url: 'https://konstanzestoiber.com/',
+    },
+  ],
+  past: [
+    {
       id: 'tony',
       name: 'Tony Jouanneau',
       description: `A textile designer, craftsman and researcher. 
@@ -75,8 +112,6 @@ export const residents: ResidentHomepage = {
       descriptionJa: `テキスタイルデザイナー、工芸者、研究者。`,
       url: 'https://www.atelier-sumbiosis.com',
     },
-  ],
-  past: [
     {
       id: 'claudia',
       name: 'Claudia Chinyere Akole',
