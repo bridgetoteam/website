@@ -86,14 +86,6 @@ export const studioMembers: ResidentHomepage = {
 export const residents: ResidentHomepage = {
   upcoming: [
     {
-      id: 'tsai',
-      name: 'Tsai Shih-Hsiang',
-      description: `Co-founder of the art collective “Hyper Wave" in Taiwan.  
-      Tsai’s works often use video and photography to contemplate the city, landscapes, and the people toiling within them, or to document processes of drifting, shifting, and transcending the identity.`,
-      descriptionJa: `台湾にあるアートコレクティブ「Hyper Wave」の創始者。作品はビデオや写真を使って、都市や風景、その中で働く人々について考えたり、漂流や移動、アイデンティティの超越のプロセスを記録したりする。`,
-      url: 'https://www.tsaishihhsiang-artstudio.com/',
-    },
-    {
       id: 'konstanze',
       name: 'Konstanze Stoiber',
       description: `Artist and PhD candidate.
@@ -101,6 +93,23 @@ export const residents: ResidentHomepage = {
       descriptionJa: `アーティスト、博士号候補
       彼女は、崩壊したシステムを参照し、君主制や宗教構造の残滓を解剖する。権力構造に潜む崇高さと暴力、そしてそれが内包する矛盾について分析する。`,
       url: 'https://konstanzestoiber.com/',
+    },
+    {
+      id: 'karien',
+      name: 'Karien Vandekerkhove',
+      description: `Belgian photographer and visual artist.
+      Her body of work encompasses photography, installations, paintings and small scale models, generating ‘a sense of absence’ through spiritual- and meditative compositions.`,
+      descriptionJa: `ベルギー出身の写真家でビジュアル・アーティスト。
+      彼女の作品は、写真、インスタレーション、絵画、小規模な模型を含み、スピリチュアルで瞑想的な構図を通して「不在の感覚」を生み出している。`,
+      url: 'https://karienvandekerkhove.mypixieset.com/',
+    },
+    {
+      id: 'tsai',
+      name: 'Tsai Shih-Hsiang',
+      description: `Co-founder of the art collective “Hyper Wave" in Taiwan.  
+      Tsai’s works often use video and photography to contemplate the city, landscapes, and the people toiling within them, or to document processes of drifting, shifting, and transcending the identity.`,
+      descriptionJa: `台湾にあるアートコレクティブ「Hyper Wave」の創始者。作品はビデオや写真を使って、都市や風景、その中で働く人々について考えたり、漂流や移動、アイデンティティの超越のプロセスを記録したりする。`,
+      url: 'https://www.tsaishihhsiang-artstudio.com/',
     },
   ],
   past: [
@@ -231,7 +240,7 @@ export const residents: ResidentHomepage = {
     {
       id: 'eliza',
       name: 'Eliza Soroga',
-      description: `A site-Specific Performance Artist from Athens.
+      description: `A site-specific performance artist from Athens.
         Eliza hosted a "performance architecture" workshop, inviting the people of Jodoji to playfully explore the relationship between the body and the built spaces around them.`,
       descriptionJa: 'パフォーミングアーティスト。',
       url: 'http://www.elizasoroga.com/',
