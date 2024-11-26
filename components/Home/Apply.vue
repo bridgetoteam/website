@@ -8,15 +8,24 @@
       <div class="columns">
         <div class="residency span2 textcolumn">
           <h2 v-if="locale === 'ja'">
-            <img src="/img/icons/residency.svg" class="applyIcon" />
+            <img
+              src="/img/icons/residency.svg"
+              class="applyIcon"
+            />
             レジデンス
           </h2>
           <h2 v-else>
-            <img src="/img/icons/residency.svg" class="applyIcon" />
+            <img
+              src="/img/icons/residency.svg"
+              class="applyIcon"
+            />
             Residency
           </h2>
 
-          <div class="openCallBanner" v-if="state.openCall.value">
+          <div
+            class="openCallBanner"
+            v-if="state.openCall.value"
+          >
             <template v-if="locale === 'ja'">
               <h3>Open Call</h3>
               <div>
@@ -26,8 +35,9 @@
             <template v-else>
               <h3>Open Call</h3>
               <div>
-                We are currently accepting applications for 2025 residencies
-                from designers, architects, researchers, and artists.
+                We are currently accepting applications for
+                2025 residencies from designers, architects,
+                researchers, and artists.
               </div>
 
               <!-- <div class="martoptiny themes">
@@ -41,15 +51,20 @@
               </div> -->
 
               <div class="bottomHighlight">
-                Additionally, we're looking for videographers and carpenters who
-                might want to help us on projects for the space in exchange for
-                a reduced rate! Let us know if you're interested.
+                Additionally, we're looking for
+                videographers and carpenters who might want
+                to help us on projects for the space in
+                exchange for a reduced rate! Let us know if
+                you're interested.
               </div>
             </template>
           </div>
 
           <div class="grid2 gapsmall marbotsmall">
-            <img class="sectionImage" src="/img/2024_2/8.jpg" /><img
+            <img
+              class="sectionImage"
+              src="/img/2024_2/8.jpg"
+            /><img
               class="sectionImage"
               src="/img/2024_2/15.jpg"
             />
@@ -68,8 +83,12 @@
                 <li>
                   アート、デザイン、建築、工芸などに関わる方、研究者、リサーチャー、文筆家など
                 </li>
-                <li>英語、あるいは日本語での日常会話ができる方</li>
-                <li>生活費、家賃、旅費などを自己負担できる方</li>
+                <li>
+                  英語、あるいは日本語での日常会話ができる方
+                </li>
+                <li>
+                  生活費、家賃、旅費などを自己負担できる方
+                </li>
                 <li>
                   レジデンス期間中に、最低1回はワークショップ、イベント、展示などを自発的に開催できる方
                 </li>
@@ -104,61 +123,75 @@
             </template>
 
             <template v-else>
-              We accept residents from Japan and abroad on a 1-6 month basis,
-              and help them connect with local communities and activities.
-              Applications are accepted throughout the year.
+              We accept residents from Japan and abroad on a
+              1-6 month basis, and help them connect with
+              local communities and activities. Applications
+              are accepted throughout the year.
 
               <br />
               <h4>Who can apply?</h4>
               <ul>
                 <li>
-                  Creatives in the fields of art, design, architecture, crafts,
-                  research, writing, games, etc.
+                  Creatives in the fields of art, design,
+                  architecture, crafts, research, writing,
+                  games, etc.
                 </li>
                 <li>
-                  Those who can speak English or Japanese in daily conversation.
+                  Those who can speak English or Japanese in
+                  daily conversation.
                 </li>
                 <li>
-                  Those who can pay for their own living expenses, rent, travel
-                  expenses, etc.
+                  Those who can pay for their own living
+                  expenses, rent, travel expenses, etc.
                 </li>
                 <li>
-                  Everyone is welcome to apply regardless of age, religion,
-                  gender, etc.
+                  Everyone is welcome to apply regardless of
+                  age, religion, gender, etc.
                 </li>
               </ul>
 
-              We ask residents to hold at least one workshop, event, exhibition,
-              etc. during their residency.
+              We ask residents to hold at least one
+              workshop, event, exhibition, etc. during their
+              residency.
 
               <div>
                 <h4>What we offer</h4>
                 <ul>
-                  <li>Private room (furnished, wifi included)</li>
+                  <li>
+                    Private room (furnished, wifi included)
+                  </li>
                   <li>A private workspace</li>
                   <li>
-                    Common spaces (kitchen, balcony, garden, bathroom and living
-                    room)
+                    Common spaces (kitchen, balcony, garden,
+                    bathroom and living room)
                   </li>
-                  <li>Venue and support for organizing events and workshops</li>
                   <li>
-                    Promotion of your activities and networking assistance
+                    Venue and support for organizing events
+                    and workshops
+                  </li>
+                  <li>
+                    Promotion of your activities and
+                    networking assistance
                   </li>
                   <li>Basic translation support</li>
                 </ul>
               </div>
               <div>
-                <h4 class="martopsmall">What we expect from you</h4>
+                <h4 class="martopsmall">
+                  What we expect from you
+                </h4>
                 <ul>
                   <li>
-                    We don’t ask for any specific artistic output during your
-                    stay — your residency could be research-based or
+                    We don’t ask for any specific artistic
+                    output during your stay — your residency
+                    could be research-based or
                     production-based.
                   </li>
                   <li>
-                    At the end of your stay, we expect you to organize either an
-                    exhibition, a talk, a workshop, etc. to showcase what you’ve
-                    worked on during your stay.
+                    At the end of your stay, we expect you
+                    to organize either an exhibition, a
+                    talk, a workshop, etc. to showcase what
+                    you’ve worked on during your stay.
                   </li>
                   <li>Basic translation support</li>
                 </ul>
@@ -168,14 +201,18 @@
                 <h4>What we expect from you</h4>
                 <div class="marleft">
                   <div>
-                    We don't ask for any specific artistic output during your
-                    stay — your residency could be research-based or
-                    production-based, it's up to you. However, at the end of
-                    your stay, we expect you to organize an exhibition, a talk,
-                    a workshop, etc. to showcase what you've worked on during
-                    your stay. It doesn't have to be highly produced, but we
-                    hope to have you share your insights and perspectives with
-                    the local community.
+                    We don't ask for any specific artistic
+                    output during your stay — your residency
+                    could be research-based or
+                    production-based, it's up to you.
+                    However, at the end of your stay, we
+                    expect you to organize an exhibition, a
+                    talk, a workshop, etc. to showcase what
+                    you've worked on during your stay. It
+                    doesn't have to be highly produced, but
+                    we hope to have you share your insights
+                    and perspectives with the local
+                    community.
                   </div>
                 </div>
               </div>
@@ -184,13 +221,21 @@
                 <h4>Availability</h4>
                 <div class="marleft">
                   <div>
-                    We're currently open for residencies starting from March
-                    2025 or beyond.
+                    We're currently open for residencies
+                    starting from March 2025 or beyond.
                   </div>
-                  <div class="sub martopsmall">
-                    Please be aware that we're a small team receiving a large
-                    volume of applications. We will only be able to respond to
-                    accepted applicants.
+                  <div class="small martopsmall">
+                    <span class="fade">
+                      Please be aware that we're a small
+                      team receiving a large volume of
+                      applications. We will only be able to
+                      respond to accepted applicants.
+                    </span>
+                    <span class="highlight">
+                      If you need more detailed information
+                      about the residency, you can find it
+                      by clicking the apply link below.
+                    </span>
                   </div>
                 </div>
               </div>
@@ -249,17 +294,29 @@
 
         <div class="studio span2 textcolumn">
           <h2 v-if="locale === 'ja'">
-            <img src="/img/icons/studio.svg" class="applyIcon" />
+            <img
+              src="/img/icons/studio.svg"
+              class="applyIcon"
+            />
             シェアスタジオ
           </h2>
           <h2 v-else>
-            <img src="/img/icons/studio.svg" class="applyIcon" />
+            <img
+              src="/img/icons/studio.svg"
+              class="applyIcon"
+            />
             Shared Studio
           </h2>
 
           <div class="grid2 gapsmall marbotsmall">
-            <img class="sectionImage" src="/img/2024_2/13.jpg" />
-            <img class="sectionImage" src="/img/2024_2/14.jpg" />
+            <img
+              class="sectionImage"
+              src="/img/2024_2/13.jpg"
+            />
+            <img
+              class="sectionImage"
+              src="/img/2024_2/14.jpg"
+            />
           </div>
 
           <div>
@@ -276,32 +333,39 @@
                 <li>
                   占有ではなく、オープンなスタジオとして使用するため、定期的に見学者などが入ってくることが大丈夫な方。
                 </li>
-                <li>1階のトイレ、洗面所、台所なども使用頂けます。</li>
+                <li>
+                  1階のトイレ、洗面所、台所なども使用頂けます。
+                </li>
               </ul>
             </template>
             <template v-else>
-              We are looking for artists and designers who would like to use the
-              Western-style second floor of Bridge Studio as a workspace. We
-              plan to hold open studios regularly and become a shared studio
-              open to the community.
+              We are looking for artists and designers who
+              would like to use the Western-style second
+              floor of Bridge Studio as a workspace. We plan
+              to hold open studios regularly and become a
+              shared studio open to the community.
               <ul class="martopsmall">
                 <li>
-                  Any form of creator is accepted. We are looking for a wide
-                  range of people involved in a wide range of creative
-                  activities, including art, design, architecture, crafts, and
-                  printing.
+                  Any form of creator is accepted. We are
+                  looking for a wide range of people
+                  involved in a wide range of creative
+                  activities, including art, design,
+                  architecture, crafts, and printing.
                 </li>
                 <li>
-                  One month's worth of studio usage fee is required as a
-                  security deposit (to be returned on departure)
+                  One month's worth of studio usage fee is
+                  required as a security deposit (to be
+                  returned on departure)
                 </li>
                 <li>
-                  As the studio is a workspace and not a living space, be
-                  prepared for an active flow of creators and visitors.
+                  As the studio is a workspace and not a
+                  living space, be prepared for an active
+                  flow of creators and visitors.
                 </li>
                 <li>
-                  You can also use the toilet, washroom, and kitchen (within
-                  reason) on the first floor.
+                  You can also use the toilet, washroom, and
+                  kitchen (within reason) on the first
+                  floor.
                 </li>
               </ul>
 
@@ -321,22 +385,33 @@
             target="_blank"
             class="button martop"
           >
-            <div class="secondary">Apply for Shared Studio</div>
+            <div class="secondary">
+              Apply for Shared Studio
+            </div>
           </a>
         </div>
 
         <div class="coworking">
           <h2 v-if="locale === 'ja'">
-            <img src="/img/icons/fellowship.svg" class="applyIcon" />
+            <img
+              src="/img/icons/fellowship.svg"
+              class="applyIcon"
+            />
             コワーキング
           </h2>
           <h2 v-else>
-            <img src="/img/icons/fellowship.svg" class="applyIcon" />
+            <img
+              src="/img/icons/fellowship.svg"
+              class="applyIcon"
+            />
             Coworking
           </h2>
 
           <div class="marbotsmall">
-            <img class="sectionImage" src="/img/2024_2/6.jpg" />
+            <img
+              class="sectionImage"
+              src="/img/2024_2/6.jpg"
+            />
           </div>
 
           <div>
@@ -348,7 +423,9 @@
                 <li>月額12,000円</li>
                 <li>冷蔵庫・キッチンの使用可</li>
                 <li>備え付けの机と椅子が利用可</li>
-                <li>Wi-Fi、プロジェクター、プリンター、スピーカーが利用可</li>
+                <li>
+                  Wi-Fi、プロジェクター、プリンター、スピーカーが利用可
+                </li>
                 <li>
                   個人の所持品を保管するロッカーはありませんのでご注意ください
                 </li>
@@ -359,20 +436,27 @@
               </ul>
             </template>
             <template v-else>
-              Coworking members get access to the common spaces of Bridge Studio
-              from 10AM to 6PM, any day of the week.
+              Coworking members get access to the common
+              spaces of Bridge Studio from 10AM to 6PM, any
+              day of the week.
               <br />
-              You may work, have meetings, use the fridge/kitchen, and generally
-              come and go as you please.
+              You may work, have meetings, use the
+              fridge/kitchen, and generally come and go as
+              you please.
 
               <ul>
                 <li>12,000 yen per month</li>
-                <li>Desks and chairs are provided for use</li>
-                <li>Bicycle parking is available</li>
-                <li>Wi-Fi, projector, printer, and speaker are available</li>
                 <li>
-                  Please note that there are no lockers for storing personal
-                  belongings
+                  Desks and chairs are provided for use
+                </li>
+                <li>Bicycle parking is available</li>
+                <li>
+                  Wi-Fi, projector, printer, and speaker are
+                  available
+                </li>
+                <li>
+                  Please note that there are no lockers for
+                  storing personal belongings
                 </li>
               </ul>
 
@@ -430,11 +514,17 @@
 
         <div class="spaceRental">
           <h2 v-if="locale === 'ja'">
-            <img src="/img/icons/event.svg" class="applyIcon" />
+            <img
+              src="/img/icons/event.svg"
+              class="applyIcon"
+            />
             ギャラリー、イベント
           </h2>
           <h2 v-else>
-            <img src="/img/icons/event.svg" class="applyIcon" />
+            <img
+              src="/img/icons/event.svg"
+              class="applyIcon"
+            />
             Space Rental
           </h2>
 
@@ -477,8 +567,10 @@
             </template>
             <template v-else>
               <div>
-                We are open for proposals for events, workshops, exhibitions,
-                and more on the themes of architecture, design, and creation.
+                We are open for proposals for events,
+                workshops, exhibitions, and more on the
+                themes of architecture, design, and
+                creation.
               </div>
               <div class="martopsmall">
                 <!-- <ul>
@@ -498,11 +590,17 @@
                 <h4>What we provide:</h4>
                 <ul>
                   <li>
-                    Rental of basic tools such as projectors, speakers,
-                    stationery and whiteboards
+                    Rental of basic tools such as
+                    projectors, speakers, stationery and
+                    whiteboards
                   </li>
-                  <li>Basic event publicity on our social channels</li>
-                  <li>English language support (separate fee)</li>
+                  <li>
+                    Basic event publicity on our social
+                    channels
+                  </li>
+                  <li>
+                    English language support (separate fee)
+                  </li>
                 </ul>
               </div>
 
@@ -521,7 +619,9 @@
             target="_blank"
             class="button martop"
           >
-            <div class="secondary">Apply for Space Rental</div>
+            <div class="secondary">
+              Apply for Space Rental
+            </div>
           </a>
         </div>
       </div>
@@ -530,9 +630,9 @@
 </template>
 
 <script setup lang="ts">
-import * as state from "~/assets/state";
-const i18n = useI18n();
-const locale = i18n.locale;
+import * as state from '~/assets/state'
+const i18n = useI18n()
+const locale = i18n.locale
 </script>
 
 <style lang="scss" scoped>
@@ -593,7 +693,7 @@ h1 {
   // }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     z-index: 2;
     --inset: 0rem;
@@ -629,7 +729,7 @@ h1 {
     position: relative;
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;

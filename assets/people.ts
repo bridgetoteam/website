@@ -124,9 +124,11 @@ export const residents: ResidentHomepage = {
     {
       id: 'claudia',
       name: 'Claudia Chinyere Akole',
-      description: `Illustrator, animator, comic artist from Sydney, Australia.`,
+      description: `Illustrator, animator, comic artist from Sydney, Australia.
+      Claudia exhibited pages from "Fog" — her graphic novel memoir that she worked on during her residency. Her illustrations are done in her unique ʻTracing Paper Comixʼ style of comic-making, which involves using POSCA acrylic paint markers on multiple layers of tracing paper.`,
       descriptionJa: `シドニー出身のイラストレーター・アニメーター・コミックアーティスト。`,
       url: 'https://claudinsky.com',
+      showProject: true,
     },
     {
       id: 'hidemi',
