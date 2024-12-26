@@ -100,7 +100,7 @@ export const residents: ResidentHomepage = {
       Her work often combines urban narratives with layered compositions. During her residency, she aims to explore themes of home, the dynamic relationship between nature and city, and shifting perspectives from exterior to interior as a foreigner in unknown territory.`,
       descriptionJa: `ハンブルクを拠点とするグラフィックアーティスト、画家。
       彼女の作品は、都市の物語とレイヤー構成を組み合わせたものが多い。滞在制作中には、「家」、自然と都市のダイナミックな関係、そして未知の領域における外国人としての外から内への視点の変化といったテーマを探求する。`,
-      url: 'https://anjagiese.de/',
+      url: 'https://diegiese.de/',
     },
   ],
   past: [
