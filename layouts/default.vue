@@ -47,9 +47,15 @@ const head: Parameters<typeof useHead>[0] = {
     },
   ],
   script: [
+    // {
+    //   async: true,
+    //   src: 'https://www.googletagmanager.com/gtag/js?id=UA-112989318-2',
+    // },
     {
-      async: true,
-      src: 'https://www.googletagmanager.com/gtag/js?id=UA-112989318-2',
+      src: 'https://umm.jasperstephenson.com/script.js',
+      defer: true,
+      'data-website-id':
+        '0d7c5af3-67a0-478a-9eb5-2bf66a3a4d63',
     },
   ],
 }
