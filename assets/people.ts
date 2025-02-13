@@ -86,10 +86,18 @@ export const studioMembers: ResidentHomepage = {
 export const residents: ResidentHomepage = {
   upcoming: [
     {
+      id: 'maciej',
+      name: 'Maciej Burdalski',
+      description: `Practicing architect with over 13 years of experience from leading design companies in Europe and Asia. Working on large scale mixed use projects. Currently searching for his own design language by exploring complex geometries, watercolor and 3d printing.`,
+      descriptionJa: `ヨーロッパやアジアの大手設計会社で13年以上の経験を持つ建築家。大規模な複合施設のプロジェクトに携わる。現在は、自身のデザインスタイルを模索しながら、複雑な形状、水彩画、3Dプリントを探求している。`,
+    },
+  ],
+  past: [
+    {
       id: 'tsai',
       name: 'Tsai Shih-Hsiang',
       description: `Co-founder of the art collective “Hyper Wave" in Taiwan.  
-      Tsai’s works often use video and photography to contemplate the city, landscapes, and the people toiling within them, or to document processes of drifting, shifting, and transcending the identity.`,
+    Tsai’s works often use video and photography to contemplate the city, landscapes, and the people toiling within them, or to document processes of drifting, shifting, and transcending the identity.`,
       descriptionJa: `台湾にあるアートコレクティブ「Hyper Wave」の創始者。作品はビデオや写真を使って、都市や風景、その中で働く人々について考えたり、漂流や移動、アイデンティティの超越のプロセスを記録したりする。`,
       url: 'https://www.tsaishihhsiang-artstudio.com/',
     },
@@ -97,13 +105,11 @@ export const residents: ResidentHomepage = {
       id: 'anja',
       name: 'Anja Giese',
       description: `A Hamburg based Graphic artist and painter.
-      Her work often combines urban narratives with layered compositions. During her residency, she aims to explore themes of home, the dynamic relationship between nature and city, and shifting perspectives from exterior to interior as a foreigner in unknown territory.`,
+    Her work often combines urban narratives with layered compositions. During her residency, she aims to explore themes of home, the dynamic relationship between nature and city, and shifting perspectives from exterior to interior as a foreigner in unknown territory.`,
       descriptionJa: `ハンブルクを拠点とするグラフィックアーティスト、画家。
-      彼女の作品は、都市の物語とレイヤー構成を組み合わせたものが多い。滞在制作中には、「家」、自然と都市のダイナミックな関係、そして未知の領域における外国人としての外から内への視点の変化といったテーマを探求する。`,
+    彼女の作品は、都市の物語とレイヤー構成を組み合わせたものが多い。滞在制作中には、「家」、自然と都市のダイナミックな関係、そして未知の領域における外国人としての外から内への視点の変化といったテーマを探求する。`,
       url: 'https://diegiese.de/',
     },
-  ],
-  past: [
     {
       id: 'konstanze',
       name: 'Konstanze Stoiber',
